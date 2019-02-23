@@ -1,0 +1,2364 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #011 NAME:		Script 3
+
+//POINTER #0 @ $2A010 - STRING #0 @ $2A1A8
+
+#W16($2A010)
+[Event3]<$70><$01>[LoadEnemySprite]<$6B>P"れP"? ワシZ B- NFB[Line]
+NB!HV vIS わや-<$A1>Y FBZRV[Line]
+BOF"LBYQ"ゃ![Next]
+
+WWっ! E-DPQZ![Line]
+よH<$A2> わF"H"んP"んY ?BLを[Line]
+やっRIS HれPU![Next]
+
+わPLF" ABSを LSやろC[Line]
+FFっS GUKB![YesNo]<$02>[Jump]Hぉ-Y JLWI<$A1>っ![Line]
+JれS"<$A2> HらD![Next]
+
+[MiscEvent]<$19><$FF>[LoadEnemySprite]<$6B>[SetItem]<$83>-P" [VarItem]F" .LBYFB?[Next]
+
+OれS"Z...[Next]
+
+[Event]<$03>[Skip]ェ[Jump]ワシを EOれWTZ アッハ°レUやR![Line]
+OY ゆCGをPPD[Line]
+[SetItem]<$83>[VarItem]を RHっSやろC![Next]
+
+[Event]<$04>[Event4]<$A9><$05><$D2>[SetItem]<$83><$D3><$06>[Jump]よLっ! QょっT-っTれよ...[Next]
+
+ホ-ラ S"GAF"りQ"ゃ![Line]
+<$A2>っSBGUKB[Next]
+
+[End]
+
+
+//POINTER #1 @ $2A012 - STRING #1 @ $2A248
+
+#W16($2A012)
+[LoadEnemySprite]<$6B>[SetItem]<$83>-P" [VarItem]F" .LBYFB?[Next]
+
+OれS"Z...[Next]
+
+[Event]<$03>[Skip]ェ[Jump]ワシを EOれWTZ アッハ°レUやR![Line]
+OY ゆCGをPPD[Line]
+[SetItem]<$83>[VarItem]を RHっSやろC![Next]
+
+[Event]<$04>[Event4]<$A9><$05><$D2>[SetItem]<$83><$D3><$06>[Jump]よLっ! QょっT-っTれよ...[Next]
+
+ホ-ラ S"GAF"りQ"ゃ![Line]
+<$A2>っSBGUKB[Next]
+
+[End]
+
+
+//POINTER #2 @ $2A014 - STRING #2 @ $2A268
+
+#W16($2A014)
+[Skip]ェ[Jump]ワシを EOれWTZ アッハ°レUやR![Line]
+OY ゆCGをPPD[Line]
+[SetItem]<$83>[VarItem]を RHっSやろC![Next]
+
+[Event]<$04>[Event4]<$A9><$05><$D2>[SetItem]<$83><$D3><$06>[Jump]よLっ! QょっT-っTれよ...[Next]
+
+ホ-ラ S"GAF"りQ"ゃ![Line]
+<$A2>っSBGUKB[Next]
+
+[End]
+
+
+//POINTER #3 @ $2A016 - STRING #3 @ $2A28B
+
+#W16($2A016)
+[SetItem]<$83>[VarItem]を RHっSやろC![Next]
+
+[Event]<$04>[Event4]<$A9><$05><$D2>[SetItem]<$83><$D3><$06>[Jump]よLっ! QょっT-っTれよ...[Next]
+
+ホ-ラ S"GAF"りQ"ゃ![Line]
+<$A2>っSBGUKB[Next]
+
+[End]
+
+
+//POINTER #4 @ $2A018 - STRING #4 @ $2A29B
+
+#W16($2A018)
+[Event4]<$A9><$05><$D2>[SetItem]<$83><$D3><$06>[Jump]よLっ! QょっT-っTれよ...[Next]
+
+ホ-ラ S"GAF"りQ"ゃ![Line]
+<$A2>っSBGUKB[Next]
+
+[End]
+
+
+//POINTER #5 @ $2A01A - STRING #5 @ $2A2D0
+
+#W16($2A01A)
+[SetItem]<$A9>[Jump]T E<$A2>っPIT"[Next]
+
+[VarItem]F" UHSZ[Line]
+[SetItem]<$83>[VarItem]Z RHれUBYQ"ゃ![Next]
+
+[End]
+
+
+//POINTER #6 @ $2A01C - STRING #6 @ $2A2F7
+
+#W16($2A01C)
+[End]
+
+
+//POINTER #7 @ $2A01E - STRING #7 @ $2A2F8
+
+#W16($2A01E)
+[Event3]<$B5><$05>[Event3]<$6A><$06>[LoadNPC]<$3D>[Jump]MBLょCY ZLらV -TりY ナイトF"[Line]
+TL"J<$A1>られSBる...[Next]
+
+[SetVar]<$C4>[MiscEvent]<$0A><$05>[Jump]AY....[Next]
+
+[Var]F" BBP"LP[Line]
+わPLUら JY !CBんを[Line]
+THJTF" S"G-MIT"[Line]
+やっS'S<$A2> BBS"MF?[YesNo]<$01>[End]
+
+
+//POINTER #8 @ $2A020 - STRING #8 @ $2A36E
+
+#W16($2A020)
+[Jump][Var]Z L"ゅ<$A2>んを TUDる...[Next]
+
+MBLょCY L"ゅZ"Hより[Line]
+[SetVar]<$B0>[Var]を TGZUS![Next]
+
+[Jump][Var]Z MBLょCY[Line]
+L"ゅZ"HFら TGZUPれP![Next]
+
+[LoadNPC]<$00>MるT シルフZ SれUF"ら[Line]
+BっP...[Next]
+
+EXF"BS"M![Next]
+
+[Var]T わPLを[Line]
+L"ゃGょCYやFPS"[Line]
+BっLょVLS HP"KB...[Next]
+
+[LoadEnemySprite]<$B0>わPLZ [Var][Next]
+
+シルフY-<$A1> AりF"TCJ"K"B-M[Line]
+アスタロトV KFらっPP<$A1>[Line]
+!CBんKれPTGZ <$A2>Cタ"メP"T[Line]
+E<$A2>B-LPよ![Next]
+
+TJろS" わPLを ナカマVLS[Line]
+Hれ-NんF?[Line]
+シルフY-<$A1> T<$A2>T"<$A2>[Line]
+EやHV PQPBYS"M[YesNo]<$03>[Jump]OCS"MF...[Line]
+S"Z JJS" E-QLSEり-M[Next]
+
+[End]
+
+
+//POINTER #9 @ $2A022 - STRING #9 @ $2A484
+
+#W16($2A022)
+[Jump]OCS"MF...[Line]
+S"Z JJS" E-QLSEり-M[Next]
+
+[End]
+
+
+//POINTER #10 @ $2A024 - STRING #10 @ $2A4A3
+
+#W16($2A024)
+[MiscEvent]<$08><$04>[Jump]Eや OれBL"ょC ナカマZRHれ-NんX[Line]
+S"Z -PYGFBV...[Next]
+
+[Skip]ロ[End]
+
+
+//POINTER #11 @ $2A026 - STRING #11 @ $2A4D0
+
+#W16($2A026)
+[Skip]っ[MiscEvent]<$4A><$B0>[Jump][Var]Z ナカマVUっP![Next]
+
+[End]
+
+
+//POINTER #12 @ $2A028 - STRING #12 @ $2A4E2
+
+#W16($2A028)
+[End]
+
+
+//POINTER #13 @ $2A02A - STRING #13 @ $2A4E3
+
+#W16($2A02A)
+[LoadEnemySprite]<$B0>E-QLSEり-LP[Line]
+N"- ナカマV HわDSHP"KB![YesNo]<$03>[Event]<$02>[Event3]<$21><$08>[Event4]<$AF><$01>[Event]<$05>[Event4]<$B0><$02>[Event]<$05>[Event4]<$B1><$03>[Event]<$05>[Event4]<$B2><$04>[Event]<$05>[Event4]<$B3><$06>EE! ウマソウUモノ[Line]
+<$A2>っSBるL"ゃUBF![Line]
+ワシV コ"チソウLSHれ[YesNo]<$09>[Jump]ウ-ン[Line]
+BB LVFP NんO"[Next]
+
+[End]
+
+
+//POINTER #14 @ $2A02C - STRING #14 @ $2A508
+
+#W16($2A02C)
+[Event3]<$21><$08>[Event4]<$AF><$01>[Event]<$05>[Event4]<$B0><$02>[Event]<$05>[Event4]<$B1><$03>[Event]<$05>[Event4]<$B2><$04>[Event]<$05>[Event4]<$B3><$06>EE! ウマソウUモノ[Line]
+<$A2>っSBるL"ゃUBF![Line]
+ワシV コ"チソウLSHれ[YesNo]<$09>[Jump]ウ-ン[Line]
+BB LVFP NんO"[Next]
+
+[End]
+
+
+//POINTER #15 @ $2A02E - STRING #15 @ $2A510
+
+#W16($2A02E)
+[Event4]<$B0><$02>[Event]<$05>[Event4]<$B1><$03>[Event]<$05>[Event4]<$B2><$04>[Event]<$05>[Event4]<$B3><$06>EE! ウマソウUモノ[Line]
+<$A2>っSBるL"ゃUBF![Line]
+ワシV コ"チソウLSHれ[YesNo]<$09>[Jump]ウ-ン[Line]
+BB LVFP NんO"[Next]
+
+[End]
+
+
+//POINTER #16 @ $2A030 - STRING #16 @ $2A515
+
+#W16($2A030)
+[Event4]<$B1><$03>[Event]<$05>[Event4]<$B2><$04>[Event]<$05>[Event4]<$B3><$06>EE! ウマソウUモノ[Line]
+<$A2>っSBるL"ゃUBF![Line]
+ワシV コ"チソウLSHれ[YesNo]<$09>[Jump]ウ-ン[Line]
+BB LVFP NんO"[Next]
+
+[End]
+
+
+//POINTER #17 @ $2A032 - STRING #17 @ $2A51A
+
+#W16($2A032)
+[Event4]<$B2><$04>[Event]<$05>[Event4]<$B3><$06>EE! ウマソウUモノ[Line]
+<$A2>っSBるL"ゃUBF![Line]
+ワシV コ"チソウLSHれ[YesNo]<$09>[Jump]ウ-ン[Line]
+BB LVFP NんO"[Next]
+
+[End]
+
+
+//POINTER #18 @ $2A034 - STRING #18 @ $2A51F
+
+#W16($2A034)
+[Event4]<$B3><$06>EE! ウマソウUモノ[Line]
+<$A2>っSBるL"ゃUBF![Line]
+ワシV コ"チソウLSHれ[YesNo]<$09>[Jump]ウ-ン[Line]
+BB LVFP NんO"[Next]
+
+[End]
+
+
+//POINTER #19 @ $2A036 - STRING #19 @ $2A522
+
+#W16($2A036)
+EE! ウマソウUモノ[Line]
+<$A2>っSBるL"ゃUBF![Line]
+ワシV コ"チソウLSHれ[YesNo]<$09>[Jump]ウ-ン[Line]
+BB LVFP NんO"[Next]
+
+[End]
+
+
+//POINTER #20 @ $2A038 - STRING #20 @ $2A55D
+
+#W16($2A038)
+[Event3]<$B7><$07>[Skip],[Jump]Eや -KL!"り![Next]
+
+C-B<$A2>YF" HDるT[Line]
+BCFら JJ-S" GPYL"ゃF"[Line]
+ワシYHQV AC<$A2>YF"UHSY[Next]
+
+[End]
+
+
+//POINTER #21 @ $2A03A - STRING #21 @ $2A5A2
+
+#W16($2A03A)
+[Jump]UんF C-B<$A2>んZ UB<$A2>んFY[Next]
+
+[End]
+
+
+//POINTER #22 @ $2A03C - STRING #22 @ $2A5B6
+
+#W16($2A03C)
+[Event2]<$13>[YesNo]<$10>[End]
+
+
+//POINTER #23 @ $2A03E - STRING #23 @ $2A5BB
+
+#W16($2A03E)
+[Event4]<$AF><$0A><$D2>[Event]<$0F>[Event4]<$B3><$0B><$D2>[Event]<$0E>[Event4]<$B0><$0C><$D2>[Event]<$0E>[Event4]<$B1><$0D><$D2>[Event]<$0E>[Event4]<$B2><$0E><$D2>[Jump]-M"HS HDP<$A2>んL"ゃUB![Next]
+
+[End]
+
+
+//POINTER #24 @ $2A040 - STRING #24 @ $2A5C1
+
+#W16($2A040)
+[Event4]<$B3><$0B><$D2>[Event]<$0E>[Event4]<$B0><$0C><$D2>[Event]<$0E>[Event4]<$B1><$0D><$D2>[Event]<$0E>[Event4]<$B2><$0E><$D2>[Jump]-M"HS HDP<$A2>んL"ゃUB![Next]
+
+[End]
+
+
+//POINTER #25 @ $2A042 - STRING #25 @ $2A5C7
+
+#W16($2A042)
+[Event4]<$B0><$0C><$D2>[Event]<$0E>[Event4]<$B1><$0D><$D2>[Event]<$0E>[Event4]<$B2><$0E><$D2>[Jump]-M"HS HDP<$A2>んL"ゃUB![Next]
+
+[End]
+
+
+//POINTER #26 @ $2A044 - STRING #26 @ $2A5CD
+
+#W16($2A044)
+[Event4]<$B1><$0D><$D2>[Event]<$0E>[Event4]<$B2><$0E><$D2>[Jump]-M"HS HDP<$A2>んL"ゃUB![Next]
+
+[End]
+
+
+//POINTER #27 @ $2A046 - STRING #27 @ $2A5D3
+
+#W16($2A046)
+[Event4]<$B2><$0E><$D2>[Jump]-M"HS HDP<$A2>んL"ゃUB![Next]
+
+[End]
+
+
+//POINTER #28 @ $2A048 - STRING #28 @ $2A5D7
+
+#W16($2A048)
+[Jump]-M"HS HDP<$A2>んL"ゃUB![Next]
+
+[End]
+
+
+//POINTER #29 @ $2A04A - STRING #29 @ $2A5EB
+
+#W16($2A04A)
+[Jump]EEC![Next]
+
+UんTBC...AL"P"![Next]
+
+コイツZ ウマイ![Next]
+
+EれBTLS vJCG"LV[Line]
+わPLS AI"よC![Next]
+
+[Skip]QわPるF?[YesNo]<$10>[End]
+
+
+//POINTER #30 @ $2A04C - STRING #30 @ $2A62F
+
+#W16($2A04C)
+[MiscEvent]<$35><$08>[End]
+
+
+//POINTER #31 @ $2A04E - STRING #31 @ $2A633
+
+#W16($2A04E)
+[Event2]<$02>[YesNo]<$01>[End]
+
+
+//POINTER #32 @ $2A050 - STRING #32 @ $2A638
+
+#W16($2A050)
+[MiscEvent]<$35><$07>[End]
+
+
+//POINTER #33 @ $2A052 - STRING #33 @ $2A63C
+
+#W16($2A052)
+vJCV BHUら ZJんS"やるよ[End]
+
+
+//POINTER #34 @ $2A054 - STRING #34 @ $2A64F
+
+#W16($2A054)
+[Jump]BらっLゃB-N![Line]
+ヒ"ストロ アンク"リ-? よCJO![Next]
+
+TCSんS"Z EGゃHK-V[Line]
+-んO"HLS BPP"Iる りょCりを[Line]
+.C!V TりOろDS Eり-M[Next]
+
+[Event]<$01>[Jump]KA メニュ-を T"CO"![Next]
+
+[Choices]<$05>オ♂カ▽キ!ク?ケ<$06>[Jump]メニュ-F" GVBらUB[Line]
+よCS"MX...K"んXんS"M[Next]
+
+[End]
+
+
+//POINTER #35 @ $2A056 - STRING #35 @ $2A6A6
+
+#W16($2A056)
+[Jump]KA メニュ-を T"CO"![Next]
+
+[Choices]<$05>オ♂カ▽キ!ク?ケ<$06>[Jump]メニュ-F" GVBらUB[Line]
+よCS"MX...K"んXんS"M[Next]
+
+[End]
+
+
+//POINTER #36 @ $2A058 - STRING #36 @ $2A6E5
+
+#W16($2A058)
+[Jump]フォアク"ラ ニライタメSBLょH[Line]
+キャヒ"アT"ん[Line]
+トリュフY T"-"んvL[Line]
+EXP"ん £2000[Next]
+
+[Skip][VarSpell]<$C1><$F9><$C1>[MiscEvent]<$C1><$FB><$C1>[YesNo]<$EB>0[Jump]Lろ?-"Y FZ"やG[Line]
+テ"ンキウナキ"T"ん[Line]
+QょCNんVんL"んY ケ-キ[Line]
+EXP"ん £1500[Next]
+
+[Skip]<$F9><$C1>[VarSpell]<$C1>[MiscEvent]<$C1><$FB><$C1>[YesNo]<$EB>0[Jump]ヘ°カ"サスY SZ"やG[Line]
+VんG"ょY ERHり[Line]
+ユニコ-ンY ツノY EMB<$A2>Y[Line]
+シ-メイルY レハ"KL[Line]
+EXP"ん £3500[Next]
+
+[Skip][MiscEvent]<$C1><$F8><$C1><$F9><$C1><$FB><$C1>[YesNo]<$EB>0[Jump]ハ°ンT フ"ト"ウLゅ[Line]
+EXP"ん £3000[Next]
+
+[Skip]<$FB><$C1>[VarSpell]<$C1><$F9><$C1>[MiscEvent]<$C1><$FC>[Event]<$07>[Jump]フナムシY ET"りH"B[Line]
+ウシ"ヒ°ラフ[Line]
+カマト"ウマY カラAI"[Line]
+XっPBG"ょY VG"りM"L[Line]
+EXP"ん £2500[Next]
+
+[Skip][YesNo]<$C1>[VarSpell]<$C1><$F9><$C1>[MiscEvent]<$C1><$FB>[Event]<$07>[Jump]OれS" よろLBS"MF?[YesNo]<$09>[Jump]EGV <$A1>L-NんF?[Line]
+S"Z <$A2>CBQT" メニュ-を[Line]
+J"らんHP"KB![Next]
+
+[Event]<$01>[Event3]<$F8><$0A>[Event3]<$F9><$0B>[Event3]<$FA><$0C>[Event3]<$FB><$0D>[Event]<$0E>[Jump]S"Z LょC-N"Bフ°ラスS"[Line]
+£2060 BPP"G-M[Next]
+
+[SetMoney]<$0C><$08><$CC>9[SetItem]<$AF>[Event]<$0F>[Jump]D-T LょC-N"Bを[Line]
+HわDS...[Next]
+
+£1545 BPP"G-M[Next]
+
+[SetMoney]<$09><$06><$CC>9[SetItem]<$B0>[Event]<$0F>[Jump]LょC-N"B J'S"[Line]
+£3605 BPP"G-M[Next]
+
+[SetMoney]<$15><$0E><$CC>9[SetItem]<$B1>[Event]<$0F>[Jump]?"RV LょC-N"Bを[Line]
+BPP"BS...[Next]
+
+£3090 BPP"G-M[Next]
+
+[SetMoney]<$06><$04><$CC>9[SetItem]<$B2>[Event]<$0F>[Jump]MB-Nん LょC-N"Bを[Line]
+?"RV BPP"BS...[Next]
+
+£2575 BPP"G-M[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #37 @ $2A05A - STRING #37 @ $2A727
+
+#W16($2A05A)
+[Jump]Lろ?-"Y FZ"やG[Line]
+テ"ンキウナキ"T"ん[Line]
+QょCNんVんL"んY ケ-キ[Line]
+EXP"ん £1500[Next]
+
+[Skip]<$F9><$C1>[VarSpell]<$C1>[MiscEvent]<$C1><$FB><$C1>[YesNo]<$EB>0[Jump]ヘ°カ"サスY SZ"やG[Line]
+VんG"ょY ERHり[Line]
+ユニコ-ンY ツノY EMB<$A2>Y[Line]
+シ-メイルY レハ"KL[Line]
+EXP"ん £3500[Next]
+
+[Skip][MiscEvent]<$C1><$F8><$C1><$F9><$C1><$FB><$C1>[YesNo]<$EB>0[Jump]ハ°ンT フ"ト"ウLゅ[Line]
+EXP"ん £3000[Next]
+
+[Skip]<$FB><$C1>[VarSpell]<$C1><$F9><$C1>[MiscEvent]<$C1><$FC>[Event]<$07>[Jump]フナムシY ET"りH"B[Line]
+ウシ"ヒ°ラフ[Line]
+カマト"ウマY カラAI"[Line]
+XっPBG"ょY VG"りM"L[Line]
+EXP"ん £2500[Next]
+
+[Skip][YesNo]<$C1>[VarSpell]<$C1><$F9><$C1>[MiscEvent]<$C1><$FB>[Event]<$07>[Jump]OれS" よろLBS"MF?[YesNo]<$09>[Jump]EGV <$A1>L-NんF?[Line]
+S"Z <$A2>CBQT" メニュ-を[Line]
+J"らんHP"KB![Next]
+
+[Event]<$01>[Event3]<$F8><$0A>[Event3]<$F9><$0B>[Event3]<$FA><$0C>[Event3]<$FB><$0D>[Event]<$0E>[Jump]S"Z LょC-N"Bフ°ラスS"[Line]
+£2060 BPP"G-M[Next]
+
+[SetMoney]<$0C><$08><$CC>9[SetItem]<$AF>[Event]<$0F>[Jump]D-T LょC-N"Bを[Line]
+HわDS...[Next]
+
+£1545 BPP"G-M[Next]
+
+[SetMoney]<$09><$06><$CC>9[SetItem]<$B0>[Event]<$0F>[Jump]LょC-N"B J'S"[Line]
+£3605 BPP"G-M[Next]
+
+[SetMoney]<$15><$0E><$CC>9[SetItem]<$B1>[Event]<$0F>[Jump]?"RV LょC-N"Bを[Line]
+BPP"BS...[Next]
+
+£3090 BPP"G-M[Next]
+
+[SetMoney]<$06><$04><$CC>9[SetItem]<$B2>[Event]<$0F>[Jump]MB-Nん LょC-N"Bを[Line]
+?"RV BPP"BS...[Next]
+
+£2575 BPP"G-M[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #38 @ $2A05C - STRING #38 @ $2A769
+
+#W16($2A05C)
+[Jump]ヘ°カ"サスY SZ"やG[Line]
+VんG"ょY ERHり[Line]
+ユニコ-ンY ツノY EMB<$A2>Y[Line]
+シ-メイルY レハ"KL[Line]
+EXP"ん £3500[Next]
+
+[Skip][MiscEvent]<$C1><$F8><$C1><$F9><$C1><$FB><$C1>[YesNo]<$EB>0[Jump]ハ°ンT フ"ト"ウLゅ[Line]
+EXP"ん £3000[Next]
+
+[Skip]<$FB><$C1>[VarSpell]<$C1><$F9><$C1>[MiscEvent]<$C1><$FC>[Event]<$07>[Jump]フナムシY ET"りH"B[Line]
+ウシ"ヒ°ラフ[Line]
+カマト"ウマY カラAI"[Line]
+XっPBG"ょY VG"りM"L[Line]
+EXP"ん £2500[Next]
+
+[Skip][YesNo]<$C1>[VarSpell]<$C1><$F9><$C1>[MiscEvent]<$C1><$FB>[Event]<$07>[Jump]OれS" よろLBS"MF?[YesNo]<$09>[Jump]EGV <$A1>L-NんF?[Line]
+S"Z <$A2>CBQT" メニュ-を[Line]
+J"らんHP"KB![Next]
+
+[Event]<$01>[Event3]<$F8><$0A>[Event3]<$F9><$0B>[Event3]<$FA><$0C>[Event3]<$FB><$0D>[Event]<$0E>[Jump]S"Z LょC-N"Bフ°ラスS"[Line]
+£2060 BPP"G-M[Next]
+
+[SetMoney]<$0C><$08><$CC>9[SetItem]<$AF>[Event]<$0F>[Jump]D-T LょC-N"Bを[Line]
+HわDS...[Next]
+
+£1545 BPP"G-M[Next]
+
+[SetMoney]<$09><$06><$CC>9[SetItem]<$B0>[Event]<$0F>[Jump]LょC-N"B J'S"[Line]
+£3605 BPP"G-M[Next]
+
+[SetMoney]<$15><$0E><$CC>9[SetItem]<$B1>[Event]<$0F>[Jump]?"RV LょC-N"Bを[Line]
+BPP"BS...[Next]
+
+£3090 BPP"G-M[Next]
+
+[SetMoney]<$06><$04><$CC>9[SetItem]<$B2>[Event]<$0F>[Jump]MB-Nん LょC-N"Bを[Line]
+?"RV BPP"BS...[Next]
+
+£2575 BPP"G-M[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #39 @ $2A05E - STRING #39 @ $2A7BA
+
+#W16($2A05E)
+[Jump]ハ°ンT フ"ト"ウLゅ[Line]
+EXP"ん £3000[Next]
+
+[Skip]<$FB><$C1>[VarSpell]<$C1><$F9><$C1>[MiscEvent]<$C1><$FC>[Event]<$07>[Jump]フナムシY ET"りH"B[Line]
+ウシ"ヒ°ラフ[Line]
+カマト"ウマY カラAI"[Line]
+XっPBG"ょY VG"りM"L[Line]
+EXP"ん £2500[Next]
+
+[Skip][YesNo]<$C1>[VarSpell]<$C1><$F9><$C1>[MiscEvent]<$C1><$FB>[Event]<$07>[Jump]OれS" よろLBS"MF?[YesNo]<$09>[Jump]EGV <$A1>L-NんF?[Line]
+S"Z <$A2>CBQT" メニュ-を[Line]
+J"らんHP"KB![Next]
+
+[Event]<$01>[Event3]<$F8><$0A>[Event3]<$F9><$0B>[Event3]<$FA><$0C>[Event3]<$FB><$0D>[Event]<$0E>[Jump]S"Z LょC-N"Bフ°ラスS"[Line]
+£2060 BPP"G-M[Next]
+
+[SetMoney]<$0C><$08><$CC>9[SetItem]<$AF>[Event]<$0F>[Jump]D-T LょC-N"Bを[Line]
+HわDS...[Next]
+
+£1545 BPP"G-M[Next]
+
+[SetMoney]<$09><$06><$CC>9[SetItem]<$B0>[Event]<$0F>[Jump]LょC-N"B J'S"[Line]
+£3605 BPP"G-M[Next]
+
+[SetMoney]<$15><$0E><$CC>9[SetItem]<$B1>[Event]<$0F>[Jump]?"RV LょC-N"Bを[Line]
+BPP"BS...[Next]
+
+£3090 BPP"G-M[Next]
+
+[SetMoney]<$06><$04><$CC>9[SetItem]<$B2>[Event]<$0F>[Jump]MB-Nん LょC-N"Bを[Line]
+?"RV BPP"BS...[Next]
+
+£2575 BPP"G-M[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #40 @ $2A060 - STRING #40 @ $2A7E0
+
+#W16($2A060)
+[Jump]フナムシY ET"りH"B[Line]
+ウシ"ヒ°ラフ[Line]
+カマト"ウマY カラAI"[Line]
+XっPBG"ょY VG"りM"L[Line]
+EXP"ん £2500[Next]
+
+[Skip][YesNo]<$C1>[VarSpell]<$C1><$F9><$C1>[MiscEvent]<$C1><$FB>[Event]<$07>[Jump]OれS" よろLBS"MF?[YesNo]<$09>[Jump]EGV <$A1>L-NんF?[Line]
+S"Z <$A2>CBQT" メニュ-を[Line]
+J"らんHP"KB![Next]
+
+[Event]<$01>[Event3]<$F8><$0A>[Event3]<$F9><$0B>[Event3]<$FA><$0C>[Event3]<$FB><$0D>[Event]<$0E>[Jump]S"Z LょC-N"Bフ°ラスS"[Line]
+£2060 BPP"G-M[Next]
+
+[SetMoney]<$0C><$08><$CC>9[SetItem]<$AF>[Event]<$0F>[Jump]D-T LょC-N"Bを[Line]
+HわDS...[Next]
+
+£1545 BPP"G-M[Next]
+
+[SetMoney]<$09><$06><$CC>9[SetItem]<$B0>[Event]<$0F>[Jump]LょC-N"B J'S"[Line]
+£3605 BPP"G-M[Next]
+
+[SetMoney]<$15><$0E><$CC>9[SetItem]<$B1>[Event]<$0F>[Jump]?"RV LょC-N"Bを[Line]
+BPP"BS...[Next]
+
+£3090 BPP"G-M[Next]
+
+[SetMoney]<$06><$04><$CC>9[SetItem]<$B2>[Event]<$0F>[Jump]MB-Nん LょC-N"Bを[Line]
+?"RV BPP"BS...[Next]
+
+£2575 BPP"G-M[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #41 @ $2A062 - STRING #41 @ $2A82E
+
+#W16($2A062)
+[Jump]OれS" よろLBS"MF?[YesNo]<$09>[Jump]EGV <$A1>L-NんF?[Line]
+S"Z <$A2>CBQT" メニュ-を[Line]
+J"らんHP"KB![Next]
+
+[Event]<$01>[Event3]<$F8><$0A>[Event3]<$F9><$0B>[Event3]<$FA><$0C>[Event3]<$FB><$0D>[Event]<$0E>[Jump]S"Z LょC-N"Bフ°ラスS"[Line]
+£2060 BPP"G-M[Next]
+
+[SetMoney]<$0C><$08><$CC>9[SetItem]<$AF>[Event]<$0F>[Jump]D-T LょC-N"Bを[Line]
+HわDS...[Next]
+
+£1545 BPP"G-M[Next]
+
+[SetMoney]<$09><$06><$CC>9[SetItem]<$B0>[Event]<$0F>[Jump]LょC-N"B J'S"[Line]
+£3605 BPP"G-M[Next]
+
+[SetMoney]<$15><$0E><$CC>9[SetItem]<$B1>[Event]<$0F>[Jump]?"RV LょC-N"Bを[Line]
+BPP"BS...[Next]
+
+£3090 BPP"G-M[Next]
+
+[SetMoney]<$06><$04><$CC>9[SetItem]<$B2>[Event]<$0F>[Jump]MB-Nん LょC-N"Bを[Line]
+?"RV BPP"BS...[Next]
+
+£2575 BPP"G-M[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #42 @ $2A064 - STRING #42 @ $2A83F
+
+#W16($2A064)
+[Jump]EGV <$A1>L-NんF?[Line]
+S"Z <$A2>CBQT" メニュ-を[Line]
+J"らんHP"KB![Next]
+
+[Event]<$01>[Event3]<$F8><$0A>[Event3]<$F9><$0B>[Event3]<$FA><$0C>[Event3]<$FB><$0D>[Event]<$0E>[Jump]S"Z LょC-N"Bフ°ラスS"[Line]
+£2060 BPP"G-M[Next]
+
+[SetMoney]<$0C><$08><$CC>9[SetItem]<$AF>[Event]<$0F>[Jump]D-T LょC-N"Bを[Line]
+HわDS...[Next]
+
+£1545 BPP"G-M[Next]
+
+[SetMoney]<$09><$06><$CC>9[SetItem]<$B0>[Event]<$0F>[Jump]LょC-N"B J'S"[Line]
+£3605 BPP"G-M[Next]
+
+[SetMoney]<$15><$0E><$CC>9[SetItem]<$B1>[Event]<$0F>[Jump]?"RV LょC-N"Bを[Line]
+BPP"BS...[Next]
+
+£3090 BPP"G-M[Next]
+
+[SetMoney]<$06><$04><$CC>9[SetItem]<$B2>[Event]<$0F>[Jump]MB-Nん LょC-N"Bを[Line]
+?"RV BPP"BS...[Next]
+
+£2575 BPP"G-M[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #43 @ $2A066 - STRING #43 @ $2A86A
+
+#W16($2A066)
+[Event3]<$F8><$0A>[Event3]<$F9><$0B>[Event3]<$FA><$0C>[Event3]<$FB><$0D>[Event]<$0E>[Jump]S"Z LょC-N"Bフ°ラスS"[Line]
+£2060 BPP"G-M[Next]
+
+[SetMoney]<$0C><$08><$CC>9[SetItem]<$AF>[Event]<$0F>[Jump]D-T LょC-N"Bを[Line]
+HわDS...[Next]
+
+£1545 BPP"G-M[Next]
+
+[SetMoney]<$09><$06><$CC>9[SetItem]<$B0>[Event]<$0F>[Jump]LょC-N"B J'S"[Line]
+£3605 BPP"G-M[Next]
+
+[SetMoney]<$15><$0E><$CC>9[SetItem]<$B1>[Event]<$0F>[Jump]?"RV LょC-N"Bを[Line]
+BPP"BS...[Next]
+
+£3090 BPP"G-M[Next]
+
+[SetMoney]<$06><$04><$CC>9[SetItem]<$B2>[Event]<$0F>[Jump]MB-Nん LょC-N"Bを[Line]
+?"RV BPP"BS...[Next]
+
+£2575 BPP"G-M[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #44 @ $2A068 - STRING #44 @ $2A878
+
+#W16($2A068)
+[Jump]S"Z LょC-N"Bフ°ラスS"[Line]
+£2060 BPP"G-M[Next]
+
+[SetMoney]<$0C><$08><$CC>9[SetItem]<$AF>[Event]<$0F>[Jump]D-T LょC-N"Bを[Line]
+HわDS...[Next]
+
+£1545 BPP"G-M[Next]
+
+[SetMoney]<$09><$06><$CC>9[SetItem]<$B0>[Event]<$0F>[Jump]LょC-N"B J'S"[Line]
+£3605 BPP"G-M[Next]
+
+[SetMoney]<$15><$0E><$CC>9[SetItem]<$B1>[Event]<$0F>[Jump]?"RV LょC-N"Bを[Line]
+BPP"BS...[Next]
+
+£3090 BPP"G-M[Next]
+
+[SetMoney]<$06><$04><$CC>9[SetItem]<$B2>[Event]<$0F>[Jump]MB-Nん LょC-N"Bを[Line]
+?"RV BPP"BS...[Next]
+
+£2575 BPP"G-M[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #45 @ $2A06A - STRING #45 @ $2A8A2
+
+#W16($2A06A)
+[Jump]D-T LょC-N"Bを[Line]
+HわDS...[Next]
+
+£1545 BPP"G-M[Next]
+
+[SetMoney]<$09><$06><$CC>9[SetItem]<$B0>[Event]<$0F>[Jump]LょC-N"B J'S"[Line]
+£3605 BPP"G-M[Next]
+
+[SetMoney]<$15><$0E><$CC>9[SetItem]<$B1>[Event]<$0F>[Jump]?"RV LょC-N"Bを[Line]
+BPP"BS...[Next]
+
+£3090 BPP"G-M[Next]
+
+[SetMoney]<$06><$04><$CC>9[SetItem]<$B2>[Event]<$0F>[Jump]MB-Nん LょC-N"Bを[Line]
+?"RV BPP"BS...[Next]
+
+£2575 BPP"G-M[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #46 @ $2A06C - STRING #46 @ $2A8CF
+
+#W16($2A06C)
+[Jump]LょC-N"B J'S"[Line]
+£3605 BPP"G-M[Next]
+
+[SetMoney]<$15><$0E><$CC>9[SetItem]<$B1>[Event]<$0F>[Jump]?"RV LょC-N"Bを[Line]
+BPP"BS...[Next]
+
+£3090 BPP"G-M[Next]
+
+[SetMoney]<$06><$04><$CC>9[SetItem]<$B2>[Event]<$0F>[Jump]MB-Nん LょC-N"Bを[Line]
+?"RV BPP"BS...[Next]
+
+£2575 BPP"G-M[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #47 @ $2A06E - STRING #47 @ $2A8F4
+
+#W16($2A06E)
+[Jump]?"RV LょC-N"Bを[Line]
+BPP"BS...[Next]
+
+£3090 BPP"G-M[Next]
+
+[SetMoney]<$06><$04><$CC>9[SetItem]<$B2>[Event]<$0F>[Jump]MB-Nん LょC-N"Bを[Line]
+?"RV BPP"BS...[Next]
+
+£2575 BPP"G-M[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #48 @ $2A070 - STRING #48 @ $2A924
+
+#W16($2A070)
+[Jump]MB-Nん LょC-N"Bを[Line]
+?"RV BPP"BS...[Next]
+
+£2575 BPP"G-M[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #49 @ $2A072 - STRING #49 @ $2A95A
+
+#W16($2A072)
+[Skip]ハ[Jump]S"Z MH"V テイクアウトY[Line]
+LPHを L-MYS" LZ"らH[Line]
+<$D3>AE-QHP"KB[Pause6][Next]
+
+E-PNL-LP! -PT"CO"![Next]
+
+[End]
+
+
+//POINTER #50 @ $2A074 - STRING #50 @ $2A9A0
+
+#W16($2A074)
+[Jump]Aらっ? EFXF"PりUB?[Next]
+
+-KF...vNんBんLょH...?[Next]
+
+[End]
+
+
+//POINTER #51 @ $2A076 - STRING #51 @ $2A9C5
+
+#W16($2A076)
+[End]
+
+
+//POINTER #52 @ $2A078 - STRING #52 @ $2A9C6
+
+#W16($2A078)
+LZ"らH AるHT[Line]
+MB-V EOわれP[Line]
+<$A2>C JれBL"ょC AるIUB![Next]
+
+...XvB...[Line]
+...[Next]
+
+[MiscEvent]<$0E><$01>[MiscEvent]<$0D><$01>...ZZZ...[Line]
+...[Next]
+
+...[Next]
+
+L-っP![Line]
+[SetVar]<$15>GF"RHT [Var]F"[Line]
+RれKられよCT LSBる![Next]
+
+[LoadEnemySprite]<$05>.-っ.っ.っ![Line]
+OY-- XvっS EれZ" よB<$A2>Yを[Next]
+
+LFL OY よCMS"Z[Line]
+EっS<$A2> Jれ-B![Next]
+
+JY vM<$A1>Z AM"FっPO"よ[Line]
+KらZ"L"ゃ[MiscEvent]<$4C><$C0><$3E>[LoadNPC]<$00>[MiscEvent]<$50><$5A>[Next]
+
+[End]
+
+
+//POINTER #53 @ $2A07A - STRING #53 @ $2AA93
+
+#W16($2A07A)
+[End]
+
+
+//POINTER #54 @ $2A07C - STRING #54 @ $2AA94
+
+#W16($2A07C)
+[End]
+
+
+//POINTER #55 @ $2A07E - STRING #55 @ $2AA95
+
+#W16($2A07E)
+[MiscEvent]<$0D><$01>[Event3]<$06><$02>[LoadNPC]<$42>[Jump]AA..[Line]
+キミV <$A2>っT QFらF"AれZ"[Line]
+JY RるG"を WBS[Line]
+<$A2>らDるYV...[Next]
+
+[End]
+
+
+//POINTER #56 @ $2A080 - STRING #56 @ $2AACD
+
+#W16($2A080)
+[LoadNPC]<$42>[Jump]JJZ キミVZ GIんP"![Next]
+
+[End]
+
+
+//POINTER #57 @ $2A082 - STRING #57 @ $2AAE1
+
+#W16($2A082)
+[Event3]<$6D><$03>[Event3]<$00><$06>[Event3]<$08><$0A>[Skip] [LoadNPC]<$42>[SetVar]<$F5>[Jump]AA JY[Var][Line]
+!FHを TっP[Next]
+
+[SetVar]<$0B>[Var]J"TGV SJM"り[Line]
+[SetVar]<$13>[Var]UO"V !CBんKれるTZ...[Next]
+
+!PP-" PPFB[Line]
+ヤツらを や'V .CvらXZ"[Next]
+
+PYv! JY RるG"を WBSHれ![YesNo]<$08>[Event]<$07>[Event3]<$08><$0A>[LoadEnemySprite]<$F5>[MiscEvent]<$08><$05>-RよCVUっPら BRS"<$A2>[Line]
+JDを FISHれ[Next]
+
+[End]
+
+
+//POINTER #58 @ $2A084 - STRING #58 @ $2AB59
+
+#W16($2A084)
+[Event3]<$08><$0A>[LoadEnemySprite]<$F5>[MiscEvent]<$08><$05>-RよCVUっPら BRS"<$A2>[Line]
+JDを FISHれ[Next]
+
+[End]
+
+
+//POINTER #59 @ $2A086 - STRING #59 @ $2AB62
+
+#W16($2A086)
+-RよCVUっPら BRS"<$A2>[Line]
+JDを FISHれ[Next]
+
+[End]
+
+
+//POINTER #60 @ $2A088 - STRING #60 @ $2AB7D
+
+#W16($2A088)
+[Jump][Hero2?]よ キミYP<$A1>V[Line]
+よろJんS" ナカマV UろC[YesNo]<$0D>[Jump]OCF...K"んXんP"U...[Next]
+
+[Event]<$04>[LoadNPC]<$42>[Jump]!CBんを TIるYZ キミLFBUB[Line]
+PYv![Line]
+わPLを JJFら FB.CLSHれ[YesNo]<$08>[End]
+
+
+//POINTER #61 @ $2A08A - STRING #61 @ $2ABAE
+
+#W16($2A08A)
+[LoadNPC]<$42>[Jump]!CBんを TIるYZ キミLFBUB[Line]
+PYv![Line]
+わPLを JJFら FB.CLSHれ[YesNo]<$08>[End]
+
+
+//POINTER #62 @ $2A08C - STRING #62 @ $2ABDF
+
+#W16($2A08C)
+[Jump]K"んXんP"U[Line]
+GっT WBSHれるT[Line]
+LんL"S BPF"...[Next]
+
+[End]
+
+
+//POINTER #63 @ $2A08E - STRING #63 @ $2AC04
+
+#W16($2A08E)
+[SetItem]<$1C><$D3>4[Skip]ン[SetVar]<$F5>[Jump][Hero2?]Z[Line]
+[Var]V KKっP RるG"V[Line]
+Sを YZ"M[Next]
+
+SV QFらF" ZBる....[Next]
+
+RるG"Z LM"FV [Var]Y[Line]
+カラタ"Fら ZUれる...![Next]
+
+[SetItem]<$CD>!CBんZ [VarItem]V よっS[Line]
+TFれ [Hero2?]Z[Line]
+[SetItem]<$1C>[VarItem]を SV BれP![Next]
+
+[MiscEvent]<$08><$0C>[Hero2?]よ キミVZ FんLゃY[Line]
+JTZ"<$A2>UB[Next]
+
+[Jump]わPLZ T<$A2>V[Line]
+PPFBPFっPF"[Next]
+
+BM"れ GFBF" AっPら[Line]
+ナカマVUろC[Next]
+
+[End]
+
+
+//POINTER #64 @ $2A090 - STRING #64 @ $2AC92
+
+#W16($2A090)
+[Jump]わPLZ T<$A2>V[Line]
+PPFBPFっPF"[Next]
+
+BM"れ GFBF" AっPら[Line]
+ナカマVUろC[Next]
+
+[End]
+
+
+//POINTER #65 @ $2A092 - STRING #65 @ $2ACC0
+
+#W16($2A092)
+[Jump]<$A2>C JJVZ よCF"UB...[Next]
+
+[End]
+
+
+//POINTER #66 @ $2A094 - STRING #66 @ $2ACD4
+
+#W16($2A094)
+[Jump]-P" WHJTZ S"GUBYF[Next]
+
+[End]
+
+
+//POINTER #67 @ $2A096 - STRING #67 @ $2ACE8
+
+#W16($2A096)
+[Jump]!CBんF"TFれP[Next]
+
+AりF"TC[Line]
+わPLを ナカマVLS HれUBF?[YesNo]<$0D>[Event]<$09>[Skip]1[MiscEvent]<$11><$FA>C[MiscEvent]<$4A><$F5>[Jump]S"Z ゆJC![Next]
+
+[End]
+
+
+//POINTER #68 @ $2A098 - STRING #68 @ $2AD11
+
+#W16($2A098)
+[Skip]1[MiscEvent]<$11><$FA>C[MiscEvent]<$4A><$F5>[Jump]S"Z ゆJC![Next]
+
+[End]
+
+
+//POINTER #69 @ $2A09A - STRING #69 @ $2AD25
+
+#W16($2A09A)
+[Event4]<$D4><$01>[Event4]<$2F><$02>[Event3]<$0A><$04>[LoadNPC]<$37>[Jump]UVやら AやLI"U RるG"F"[Line]
+KKっSBる...[Line]
+WBS'-MF?[YesNo]<$05>[End]
+
+
+//POINTER #70 @ $2A09C - STRING #70 @ $2AD2B
+
+#W16($2A09C)
+[Event3]<$0A><$04>[LoadNPC]<$37>[Jump]UVやら AやLI"U RるG"F"[Line]
+KKっSBる...[Line]
+WBS'-MF?[YesNo]<$05>[End]
+
+
+//POINTER #71 @ $2A09E - STRING #71 @ $2AD59
+
+#W16($2A09E)
+[Event3]<$2E><$0B>[LoadNPC]<$37>RGFらY EHり<$A2>YF?[Line]
+AY [VarItem]F"[Line]
+RGKKっSBる[Line]
+WBS'-MF?[YesNo]<$03>[End]
+
+
+//POINTER #72 @ $2A0A0 - STRING #72 @ $2AD87
+
+#W16($2A0A0)
+<$D3>4[Skip]/[Jump][VarItem]を -GWG[Line]
+SVBれP[Next]
+
+[End]
+
+
+//POINTER #73 @ $2A0A2 - STRING #73 @ $2AD9B
+
+#W16($2A0A2)
+[Event2]<$0A>Z"LょP"[Next]
+
+[End]
+
+
+//POINTER #74 @ $2A0A4 - STRING #74 @ $2ADA5
+
+#W16($2A0A4)
+[Jump]P"F" -TりS"WHLFUB[Line]
+P"れF" WG-MF?[MiscEvent]<$5F><$EE>4<$C5> <$06><$C5>♂0[End]
+
+
+//POINTER #75 @ $2A0A6 - STRING #75 @ $2ADCE
+
+#W16($2A0A6)
+[MiscEvent]<$0D><$09>[Event]<$08>[MiscEvent]<$0E><$09>[SetItem]<$23><$D3>4[Jump][Hero2?]Z[Line]
+[Event2]<$0A>![Next]
+
+[Skip]3[End]
+
+
+//POINTER #76 @ $2A0A8 - STRING #76 @ $2ADD3
+
+#W16($2A0A8)
+[MiscEvent]<$0E><$09>[SetItem]<$23><$D3>4[Jump][Hero2?]Z[Line]
+[Event2]<$0A>![Next]
+
+[Skip]3[End]
+
+
+//POINTER #77 @ $2A0AA - STRING #77 @ $2ADD6
+
+#W16($2A0AA)
+[SetItem]<$23><$D3>4[Jump][Hero2?]Z[Line]
+[Event2]<$0A>![Next]
+
+[Skip]3[End]
+
+
+//POINTER #78 @ $2A0AC - STRING #78 @ $2ADE5
+
+#W16($2A0AC)
+[Jump]WHJTF" S"GUB![Next]
+
+[Event]<$05>よCTC ニヒルを SVBれP[End]
+
+
+//POINTER #79 @ $2A0AE - STRING #79 @ $2ADF6
+
+#W16($2A0AE)
+よCTC ニヒルを SVBれP[End]
+
+
+//POINTER #80 @ $2A0B0 - STRING #80 @ $2AE06
+
+#W16($2A0B0)
+[End]
+
+
+//POINTER #81 @ $2A0B2 - STRING #81 @ $2AE07
+
+#W16($2A0B2)
+[LoadBackground]<$23>[Event2]<$04>[MiscEvent]<$2E><$19>T> 6[End]
+
+
+//POINTER #82 @ $2A0B4 - STRING #82 @ $2AE14
+
+#W16($2A0B4)
+[LoadBackground]<$24>[Event2]<$03>[MiscEvent]<$2E><$27><$C7>!A [End]
+
+
+//POINTER #83 @ $2A0B6 - STRING #83 @ $2AE21
+
+#W16($2A0B6)
+[LoadBackground]<$0A>[Event2]<$02>[MiscEvent]<$2E><$35>T> 9[End]
+
+
+//POINTER #84 @ $2A0B8 - STRING #84 @ $2AE2E
+
+#W16($2A0B8)
+[LoadBackground]<$12>[Event2]<$01>[MiscEvent]<$2E><$40><$AF>!C [End]
+
+
+//POINTER #85 @ $2A0BA - STRING #85 @ $2AE3B
+
+#W16($2A0BA)
+APりY よCMF" ?んP"[Line]
+HCGY UF"れF" FわっPよCP"[Next]
+
+[End]
+
+
+//POINTER #86 @ $2A0BC - STRING #86 @ $2AE61
+
+#W16($2A0BC)
+T-"らを AIるT[Line]
+OJVZ CRHLB <$A1>F"'O"CF"[Line]
+FF"やBSBP[Line]
+TRN"ん OY<$A1>F"'O"CZ[Line]
+<$A1>を -らG JCBっP[Line]
+LM"FV <$A1>を TL"UKB[YesNo]<$01>[LoadNPC]<$00>[End]
+
+
+//POINTER #87 @ $2A0BE - STRING #87 @ $2AEBC
+
+#W16($2A0BE)
+[MiscEvent]<$2E><$51>1▽  [End]
+
+
+//POINTER #88 @ $2A0C0 - STRING #88 @ $2AEC4
+
+#W16($2A0C0)
+[Event3]<$7A><$04>[Event3]<$79><$01>わLY 4VんY JT"<$A2>Y -TりF"[Line]
+アクマT MりFわっSBるYP"...[Next]
+
+アクマZ ウソLFBわW![Line]
+やRを KF"LP"LSHれ![Next]
+
+[Skip]♀[End]
+
+
+//POINTER #89 @ $2A0C2 - STRING #89 @ $2AF14
+
+#W16($2A0C2)
+P"れF" アクマP"っP?[Line]
+[Choices]<$04>コ♂サ♂シ▽ス♂[End]
+
+
+//POINTER #90 @ $2A0C4 - STRING #90 @ $2AF2E
+
+#W16($2A0C4)
+[Skip](circle)[Jump]OYJを RれSGSHれ[Next]
+
+[End]
+
+
+//POINTER #91 @ $2A0C6 - STRING #91 @ $2AF3F
+
+#W16($2A0C6)
+[Skip]°[Jump]OYJを RれSGSHれ[Next]
+
+[End]
+
+
+//POINTER #92 @ $2A0C8 - STRING #92 @ $2AF50
+
+#W16($2A0C8)
+AりF"TC よHやっSHれP[Next]
+
+EれBV AらPUる T-"らを[Line]
+-らBSAI"よC![Next]
+
+[Skip]"[End]
+
+
+//POINTER #93 @ $2A0CA - STRING #93 @ $2AF7F
+
+#W16($2A0CA)
+[Event3]<$7A><$02>[Event3]<$78><$01>EれZ ホフ"リンP"[Next]
+
+マシュリンF" QFJ"ろ[Line]
+ウソRGVUっSX...[Line]
+ABRZ アヤシイよ![Next]
+
+[End]
+
+
+//POINTER #94 @ $2A0CC - STRING #94 @ $2AFB9
+
+#W16($2A0CC)
+EれZ アクマL"ゃUB![Next]
+
+[End]
+
+
+//POINTER #95 @ $2A0CE - STRING #95 @ $2AFC8
+
+#W16($2A0CE)
+[Event2]<$0B>[End]
+
+
+//POINTER #96 @ $2A0D0 - STRING #96 @ $2AFCB
+
+#W16($2A0D0)
+[Event3]<$7A><$02>[Event3]<$78><$01>やA ."H カ"-コ"ルK[Next]
+
+ホフ"リンVBKんZ ウソZ BわUBよ![Next]
+
+[End]
+
+
+//POINTER #97 @ $2A0D2 - STRING #97 @ $2AFF7
+
+#W16($2A0D2)
+."HF" アクマP"っS?[Line]
+わらっQゃCU![Next]
+
+[End]
+
+
+//POINTER #98 @ $2A0D4 - STRING #98 @ $2B010
+
+#W16($2A0D4)
+[Event2]<$08>[End]
+
+
+//POINTER #99 @ $2A0D6 - STRING #99 @ $2B013
+
+#W16($2A0D6)
+[Event3]<$77><$01>."HF" マシュリンK[Next]
+
+トフ°カフ°F" ウソRGVUっPFら[Line]
+LんZ°BLSるんP"...[Next]
+
+[Skip]♀[End]
+
+
+//POINTER #100 @ $2A0D8 - STRING #100 @ $2B049
+
+#W16($2A0D8)
+[Event3]<$7A><$02>L-っP! Z"れPFッ![Next]
+
+アクマZ VI"P![Line]
+[Hero2?]Z JT"<$A2>を[Line]
+PMIP![Next]
+
+[Skip]ぅ[End]
+
+
+//POINTER #101 @ $2A0DA - STRING #101 @ $2B077
+
+#W16($2A0DA)
+[Event2]<$05>[End]
+
+
+//POINTER #102 @ $2A0DC - STRING #102 @ $2B07A
+
+#W16($2A0DC)
+[Event3]<$7A><$02>[Event3]<$78><$01>トフ°カフ°っSYZ EれP"よ[Next]
+
+カ"-コ"ルVBKんZ vFLっFら[Line]
+LょCL"G<$A2>YK![Next]
+
+[End]
+
+
+//POINTER #103 @ $2A0DE - STRING #103 @ $2B0B0
+
+#W16($2A0DE)
+EれF" アクマP"TE<$A2>っPY?![Next]
+
+[End]
+
+
+//POINTER #104 @ $2A0E0 - STRING #104 @ $2B0C4
+
+#W16($2A0E0)
+PMIP"LSHれS AりF"TC![Next]
+
+[End]
+
+
+//POINTER #105 @ $2A0E2 - STRING #105 @ $2B0D8
+
+#W16($2A0E2)
+[Event3]<$72><$06>[Event3]<$73><$03>[MiscEvent]<$07><$01>[Event]<$06>[LoadEnemySprite]<$A9>わPLZ [Var][Line]
+ZんNBG QFH AるFPY <$A1>BVより[Line]
+JJS" AUPF"Pを E-QLS[Line]
+Eり-LP[Next]
+
+T"CF ナカマV HわDSHP"KB[YesNo]<$04>[Skip]ュ[Jump]S"Z AUPPQY JJろF"[Line]
+Fわる-S" -Q-LょC[Next]
+
+[End]
+
+
+//POINTER #106 @ $2A0E4 - STRING #106 @ $2B0E3
+
+#W16($2A0E4)
+[LoadEnemySprite]<$A9>わPLZ [Var][Line]
+ZんNBG QFH AるFPY <$A1>BVより[Line]
+JJS" AUPF"Pを E-QLS[Line]
+Eり-LP[Next]
+
+T"CF ナカマV HわDSHP"KB[YesNo]<$04>[Skip]ュ[Jump]S"Z AUPPQY JJろF"[Line]
+Fわる-S" -Q-LょC[Next]
+
+[End]
+
+
+//POINTER #107 @ $2A0E6 - STRING #107 @ $2B11C
+
+#W16($2A0E6)
+T"CF ナカマV HわDSHP"KB[YesNo]<$04>[Skip]ュ[Jump]S"Z AUPPQY JJろF"[Line]
+Fわる-S" -Q-LょC[Next]
+
+[End]
+
+
+//POINTER #108 @ $2A0E8 - STRING #108 @ $2B154
+
+#W16($2A0E8)
+[LoadEnemySprite]<$A9>-っSEり-LP[Line]
+[Event]<$02>[MiscEvent]<$08><$05>[Skip]ュ[Jump]ナカマF" EEBよCP"[Next]
+
+[End]
+
+
+//POINTER #109 @ $2A0EA - STRING #109 @ $2B162
+
+#W16($2A0EA)
+[MiscEvent]<$08><$05>[Skip]ュ[Jump]ナカマF" EEBよCP"[Next]
+
+[End]
+
+
+//POINTER #110 @ $2A0EC - STRING #110 @ $2B177
+
+#W16($2A0EC)
+[MiscEvent]<$11><$FA>A[MiscEvent]<$13><$FA>C[MiscEvent]<$4A><$A9>[Skip]ャ[Jump][Var]Z ナカマV HわわっP[Next]
+
+[End]
+
+
+//POINTER #111 @ $2A0EE - STRING #111 @ $2B193
+
+#W16($2A0EE)
+[End]
+
+
+//POINTER #112 @ $2A0F0 - STRING #112 @ $2B194
+
+#W16($2A0F0)
+[Event3]<$76><$01>[MiscEvent]<$5C><$1B>[LoadBackground]<$21>T-"らZ FPH TK"KれSBる[Next]
+
+[Event]<$03>[LoadBackground]<$FF>[Event3]<$14><$03>[MiscEvent]<$5C><$1D>[LoadEnemySprite]<$1A>よCJO わF<$A2>Yよ![Line]
+KA ABSを LSAI"よC![Next]
+
+[Fight]<$01>▽[MiscEvent]<$33><$DD>J[Jump]ホストコンヒ°ュ-タ-TY アクセスF"[Line]
+FYCVUり テ"ヒ"ルアナライス"F"[Line]
+S"GるよCVUっP[Next]
+
+[Teleport]<$2A><$0E>!![Skip]リ[Skip]D[MiscEvent]<$5C><$1B>[End]
+
+
+//POINTER #113 @ $2A0F2 - STRING #113 @ $2B1B2
+
+#W16($2A0F2)
+[LoadBackground]<$FF>[Event3]<$14><$03>[MiscEvent]<$5C><$1D>[LoadEnemySprite]<$1A>よCJO わF<$A2>Yよ![Line]
+KA ABSを LSAI"よC![Next]
+
+[Fight]<$01>▽[MiscEvent]<$33><$DD>J[Jump]ホストコンヒ°ュ-タ-TY アクセスF"[Line]
+FYCVUり テ"ヒ"ルアナライス"F"[Line]
+S"GるよCVUっP[Next]
+
+[Teleport]<$2A><$0E>!![Skip]リ[Skip]D[MiscEvent]<$5C><$1B>[End]
+
+
+//POINTER #114 @ $2A0F4 - STRING #114 @ $2B1DF
+
+#W16($2A0F4)
+[MiscEvent]<$33><$DD>J[Jump]ホストコンヒ°ュ-タ-TY アクセスF"[Line]
+FYCVUり テ"ヒ"ルアナライス"F"[Line]
+S"GるよCVUっP[Next]
+
+[Teleport]<$2A><$0E>!![Skip]リ[Skip]D[MiscEvent]<$5C><$1B>[End]
+
+
+//POINTER #115 @ $2A0F6 - STRING #115 @ $2B223
+
+#W16($2A0F6)
+[MiscEvent]<$5C><$1B>[End]
+
+
+//POINTER #116 @ $2A0F8 - STRING #116 @ $2B227
+
+#W16($2A0F8)
+[Event3]<$64><$0B>[Event4]<$AF><$01>[Event]<$05>[Event4]<$B0><$02>[Event]<$05>[Event4]<$B1><$03>[Event]<$05>[Event4]<$B2><$04>[Event]<$05>[Event4]<$B3><$0A>[Event3]<$BB><$06>[Event2]<$09><$A2>っSるX[Next]
+
+[Event2]<$08>-THQ BPP"Hよ[Next]
+
+[Event]<$07>[Event2]<$09><$A2>っSGS HれPYF[Next]
+
+[Event2]<$08>T"れ T"れ KっOH -THQ..[Next]
+
+[Event4]<$B3><$0C><$D2>[Event]<$11>Zら?っS -BっSPんP"よ[Line]
+[End]
+
+
+//POINTER #117 @ $2A0FA - STRING #117 @ $2B22F
+
+#W16($2A0FA)
+[Event4]<$B0><$02>[Event]<$05>[Event4]<$B1><$03>[Event]<$05>[Event4]<$B2><$04>[Event]<$05>[Event4]<$B3><$0A>[Event3]<$BB><$06>[Event2]<$09><$A2>っSるX[Next]
+
+[Event2]<$08>-THQ BPP"Hよ[Next]
+
+[Event]<$07>[Event2]<$09><$A2>っSGS HれPYF[Next]
+
+[Event2]<$08>T"れ T"れ KっOH -THQ..[Next]
+
+[Event4]<$B3><$0C><$D2>[Event]<$11>Zら?っS -BっSPんP"よ[Line]
+[End]
+
+
+//POINTER #118 @ $2A0FC - STRING #118 @ $2B234
+
+#W16($2A0FC)
+[Event4]<$B1><$03>[Event]<$05>[Event4]<$B2><$04>[Event]<$05>[Event4]<$B3><$0A>[Event3]<$BB><$06>[Event2]<$09><$A2>っSるX[Next]
+
+[Event2]<$08>-THQ BPP"Hよ[Next]
+
+[Event]<$07>[Event2]<$09><$A2>っSGS HれPYF[Next]
+
+[Event2]<$08>T"れ T"れ KっOH -THQ..[Next]
+
+[Event4]<$B3><$0C><$D2>[Event]<$11>Zら?っS -BっSPんP"よ[Line]
+[End]
+
+
+//POINTER #119 @ $2A0FE - STRING #119 @ $2B239
+
+#W16($2A0FE)
+[Event4]<$B2><$04>[Event]<$05>[Event4]<$B3><$0A>[Event3]<$BB><$06>[Event2]<$09><$A2>っSるX[Next]
+
+[Event2]<$08>-THQ BPP"Hよ[Next]
+
+[Event]<$07>[Event2]<$09><$A2>っSGS HれPYF[Next]
+
+[Event2]<$08>T"れ T"れ KっOH -THQ..[Next]
+
+[Event4]<$B3><$0C><$D2>[Event]<$11>Zら?っS -BっSPんP"よ[Line]
+[End]
+
+
+//POINTER #120 @ $2A100 - STRING #120 @ $2B23E
+
+#W16($2A100)
+[Event4]<$B3><$0A>[Event3]<$BB><$06>[Event2]<$09><$A2>っSるX[Next]
+
+[Event2]<$08>-THQ BPP"Hよ[Next]
+
+[Event]<$07>[Event2]<$09><$A2>っSGS HれPYF[Next]
+
+[Event2]<$08>T"れ T"れ KっOH -THQ..[Next]
+
+[Event4]<$B3><$0C><$D2>[Event]<$11>Zら?っS -BっSPんP"よ[Line]
+[End]
+
+
+//POINTER #121 @ $2A102 - STRING #121 @ $2B241
+
+#W16($2A102)
+[Event3]<$BB><$06>[Event2]<$09><$A2>っSるX[Next]
+
+[Event2]<$08>-THQ BPP"Hよ[Next]
+
+[Event]<$07>[Event2]<$09><$A2>っSGS HれPYF[Next]
+
+[Event2]<$08>T"れ T"れ KっOH -THQ..[Next]
+
+[Event4]<$B3><$0C><$D2>[Event]<$11>Zら?っS -BっSPんP"よ[Line]
+[End]
+
+
+//POINTER #122 @ $2A104 - STRING #122 @ $2B25C
+
+#W16($2A104)
+[Event2]<$09><$A2>っSGS HれPYF[Next]
+
+[Event2]<$08>T"れ T"れ KっOH -THQ..[Next]
+
+[Event4]<$B3><$0C><$D2>[Event]<$11>Zら?っS -BっSPんP"よ[Line]
+[End]
+
+
+//POINTER #123 @ $2A106 - STRING #123 @ $2B280
+
+#W16($2A106)
+[Event4]<$B3><$0C><$D2>[Event]<$11>Zら?っS -BっSPんP"よ[Line]
+[End]
+
+
+//POINTER #124 @ $2A108 - STRING #124 @ $2B286
+
+#W16($2A108)
+Zら?っS -BっSPんP"よ[Line]
+[End]
+
+
+//POINTER #125 @ $2A10A - STRING #125 @ $2B297
+
+#W16($2A10A)
+[Jump]EE! P?"<$A2>Yを[Line]
+[End]
+
+
+//POINTER #126 @ $2A10C - STRING #126 @ $2B2A4
+
+#W16($2A10C)
+[Skip]<$BB>AA ハラ?っPU ク"ルメYオレY[Line]
+HQV ACよCU<$A2>Yを HわLSHれよ![Next]
+
+[End]
+
+
+//POINTER #127 @ $2A10E - STRING #127 @ $2B2D0
+
+#W16($2A10E)
+[Jump]Bや! -KL!"りV ウマイ<$A2>Yを[Line]
+P?"Pよ[Next]
+
+J"っRAん![Next]
+
+[End]
+
+
+//POINTER #128 @ $2A110 - STRING #128 @ $2B2F3
+
+#W16($2A110)
+[Event4]<$AF><$0D><$D2>[Event]<$10>[Event4]<$B0><$0E><$D2>[Event]<$10>[Event4]<$B1><$0F><$D2>[Event]<$10>[Event4]<$B2><$10><$D2>[Jump]ケ"ケ"ッ! UんP"Jりゃ![Next]
+
+JんU HDUB<$A2>Y[Line]
+HわLSHれPU![Next]
+
+[End]
+
+
+//POINTER #129 @ $2A112 - STRING #129 @ $2B2F9
+
+#W16($2A112)
+[Event4]<$B0><$0E><$D2>[Event]<$10>[Event4]<$B1><$0F><$D2>[Event]<$10>[Event4]<$B2><$10><$D2>[Jump]ケ"ケ"ッ! UんP"Jりゃ![Next]
+
+JんU HDUB<$A2>Y[Line]
+HわLSHれPU![Next]
+
+[End]
+
+
+//POINTER #130 @ $2A114 - STRING #130 @ $2B2FF
+
+#W16($2A114)
+[Event4]<$B1><$0F><$D2>[Event]<$10>[Event4]<$B2><$10><$D2>[Jump]ケ"ケ"ッ! UんP"Jりゃ![Next]
+
+JんU HDUB<$A2>Y[Line]
+HわLSHれPU![Next]
+
+[End]
+
+
+//POINTER #131 @ $2A116 - STRING #131 @ $2B305
+
+#W16($2A116)
+[Event4]<$B2><$10><$D2>[Jump]ケ"ケ"ッ! UんP"Jりゃ![Next]
+
+JんU HDUB<$A2>Y[Line]
+HわLSHれPU![Next]
+
+[End]
+
+
+//POINTER #132 @ $2A118 - STRING #132 @ $2B309
+
+#W16($2A118)
+[Jump]ケ"ケ"ッ! UんP"Jりゃ![Next]
+
+JんU HDUB<$A2>Y[Line]
+HわLSHれPU![Next]
+
+[End]
+
+
+//POINTER #133 @ $2A11A - STRING #133 @ $2B330
+
+#W16($2A11A)
+[Jump]JれZ[Pause3] ウマイO"---![Next]
+
+ウ-ム PんY-LP![Line]
+.C-"V Jれを やろC[Next]
+
+[Event3]<$41><$13>[Event3]<$5A><$13>[SetItem]<$D8><$D3>A[Hero2?]Z[Line]
+[VarItem]を SVBれP[Next]
+
+[Skip]ユ[End]
+
+
+//POINTER #134 @ $2A11C - STRING #134 @ $2B362
+
+#W16($2A11C)
+<$D3>A[Hero2?]Z[Line]
+[VarItem]を SVBれP[Next]
+
+[Skip]ユ[End]
+
+
+//POINTER #135 @ $2A11E - STRING #135 @ $2B373
+
+#W16($2A11E)
+[SetItem]<$D7>[Event]<$12>[SetVar]<$03>[SetItem]<$D7>BVLDより RPわる[Line]
+[VarItem] Uる<$A2>YZ[Line]
+OY CQUる QFらS"[Line]
+[Var]LんS"ん?[Line]
+'Q-"H<$A2>Y[Next]
+
+[Event4]<$D7><$02>[End]
+
+
+//POINTER #136 @ $2A120 - STRING #136 @ $2B377
+
+#W16($2A120)
+[SetVar]<$03>[SetItem]<$D7>BVLDより RPわる[Line]
+[VarItem] Uる<$A2>YZ[Line]
+OY CQUる QFらS"[Line]
+[Var]LんS"ん?[Line]
+'Q-"H<$A2>Y[Next]
+
+[Event4]<$D7><$02>[End]
+
+
+//POINTER #137 @ $2A122 - STRING #137 @ $2B3B0
+
+#W16($2A122)
+[End]
+
+
+//POINTER #138 @ $2A124 - STRING #138 @ $2B3B1
+
+#W16($2A124)
+[Event3]<$41><$01>[Event3]<$5A><$01>[SetVar]<$04>わF" [Var]ECJO[Line]
+OYQFらを LるFPUり[Next]
+
+[End]
+
+
+//POINTER #139 @ $2A126 - STRING #139 @ $2B3B7
+
+#W16($2A126)
+[SetVar]<$04>わF" [Var]ECJO[Line]
+OYQFらを LるFPUり[Next]
+
+[End]
+
+
+//POINTER #140 @ $2A128 - STRING #140 @ $2B3D2
+
+#W16($2A128)
+[Event3]<$02><$02>[Event3]<$80><$02>YOU SEE A LARGE[Line]
+BEAST IN THE DARK. [Next]
+
+[LoadEnemySprite]<$AE>IS THAT [Var]...?[Next]
+
+[Fight]<$01>♂<$EE>♂[End]
+
+
+//POINTER #141 @ $2A12A - STRING #141 @ $2B3D8
+
+#W16($2A12A)
+YOU SEE A LARGE[Line]
+BEAST IN THE DARK. [Next]
+
+[LoadEnemySprite]<$AE>IS THAT [Var]...?[Next]
+
+[Fight]<$01>♂<$EE>♂[End]
+
+
+//POINTER #142 @ $2A12C - STRING #142 @ $2B413
+
+#W16($2A12C)
+[End]
+
+
+//POINTER #143 @ $2A12E - STRING #143 @ $2B414
+
+#W16($2A12E)
+[Event3]<$8B><$01>A JAMMED ELEVATOR..[Next]
+
+[End]
+
+
+//POINTER #144 @ $2A130 - STRING #144 @ $2B42C
+
+#W16($2A130)
+エレヘ"-タ-F"Aる RFB-MF ?[Line]
+[MiscEvent]<$34><$EE>0[End]
+
+
+//POINTER #145 @ $2A132 - STRING #145 @ $2B446
+
+#W16($2A132)
+[Event2]<$04>[Line]
+[MiscEvent]<$34><$EE>?[End]
+
+
+//POINTER #146 @ $2A134 - STRING #146 @ $2B44E
+
+#W16($2A134)
+[Event3]<$1C><$01>エレヘ"-タ-Z RFCJTF"[Line]
+S"GUFっP[Next]
+
+[End]
+
+
+//POINTER #147 @ $2A136 - STRING #147 @ $2B46B
+
+#W16($2A136)
+[Event2]<$03>[Line]
+[MiscEvent]<$34><$EE>![End]
+
+
+//POINTER #148 @ $2A138 - STRING #148 @ $2B473
+
+#W16($2A138)
+エレヘ"-タ-を RFB-MF?[Line]
+[MiscEvent]<$34><$EE>♂[End]
+
+
+//POINTER #149 @ $2A13A - STRING #149 @ $2B489
+
+#W16($2A13A)
+PLEASE CHOOSE A FLOOR.[End]
+
+
+//POINTER #150 @ $2A13C - STRING #150 @ $2B4A0
+
+#W16($2A13C)
+[End]
+
+
+//POINTER #151 @ $2A13E - STRING #151 @ $2B4A1
+
+#W16($2A13E)
+[Skip].[Event2]<$0D>[YesNo]<$01>[End]
+
+
+//POINTER #152 @ $2A140 - STRING #152 @ $2B4A8
+
+#W16($2A140)
+[LoadNPC]<$3B>[Teleport]<$4F><$37>26[End]
+
+
+//POINTER #153 @ $2A142 - STRING #153 @ $2B4B1
+
+#W16($2A142)
+[Event2]<$0B>[YesNo]<$01>[End]
+
+
+//POINTER #154 @ $2A144 - STRING #154 @ $2B4B6
+
+#W16($2A144)
+[LoadNPC]<$3B>[Teleport]<$4F><$30>26[End]
+
+
+//POINTER #155 @ $2A146 - STRING #155 @ $2B4BF
+
+#W16($2A146)
+[Event2]<$0A>[YesNo]<$01>[End]
+
+
+//POINTER #156 @ $2A148 - STRING #156 @ $2B4C4
+
+#W16($2A148)
+[LoadNPC]<$3B>[MiscEvent]<$2E><$23>U> N[End]
+
+
+//POINTER #157 @ $2A14A - STRING #157 @ $2B4CE
+
+#W16($2A14A)
+[Event2]<$08>[YesNo]<$01>[End]
+
+
+//POINTER #158 @ $2A14C - STRING #158 @ $2B4D3
+
+#W16($2A14C)
+[LoadNPC]<$3B>[MiscEvent]<$2E><$28>ィ  M[End]
+
+
+//POINTER #159 @ $2A14E - STRING #159 @ $2B4DD
+
+#W16($2A14E)
+[Event2]<$06>[YesNo]<$01>[End]
+
+
+//POINTER #160 @ $2A150 - STRING #160 @ $2B4E2
+
+#W16($2A150)
+[Event3]<$41><$02>[Event3]<$5A><$02>[Skip]I[MiscEvent]<$4F><$38>[MiscEvent]<$4F><$39>[MiscEvent]<$4F><$3A>[MiscEvent]<$4F><$3B>[MiscEvent]<$4F><$43>[MiscEvent]<$4F><$44>[MiscEvent]<$4F><$46>[MiscEvent]<$4F><$47>[MiscEvent]<$2E><$26>E> -[End]
+
+
+//POINTER #161 @ $2A152 - STRING #161 @ $2B502
+
+#W16($2A152)
+[MiscEvent]<$2E><$26>E> -[End]
+
+
+//POINTER #162 @ $2A154 - STRING #162 @ $2B50A
+
+#W16($2A154)
+[Event2]<$02>[YesNo]<$01>[End]
+
+
+//POINTER #163 @ $2A156 - STRING #163 @ $2B50F
+
+#W16($2A156)
+[LoadNPC]<$3B><$C1>I[MiscEvent]<$50><$38>[MiscEvent]<$50><$39>[MiscEvent]<$50><$3A>[MiscEvent]<$50><$3B>[MiscEvent]<$50><$43>[MiscEvent]<$50><$44>[MiscEvent]<$50><$46>[MiscEvent]<$50><$47>[Teleport]<$3B><$30>?G[End]
+
+
+//POINTER #164 @ $2A158 - STRING #164 @ $2B532
+
+#W16($2A158)
+UFV ZBり-MF?[End]
+
+
+//POINTER #165 @ $2A15A - STRING #165 @ $2B53E
+
+#W16($2A15A)
+OTV S"-MF?[End]
+
+
+//POINTER #166 @ $2A15C - STRING #166 @ $2B549
+
+#W16($2A15C)
+アイテムを RFB-MF?[YesNo]<$01>[MiscEvent]<$2E><$0F>F> Q[End]
+
+
+//POINTER #167 @ $2A15E - STRING #167 @ $2B560
+
+#W16($2A15E)
+[Jump]UVを RFB-MF?[Line]
+[MiscEvent]<$1F><$02><$EE>♂<$D1><$DA>♂<$D2>[MiscEvent]<$4F><$60>[MiscEvent]<$4F><$61>[MiscEvent]<$4F><$62>[MiscEvent]<$4F><$63>[Jump][VarItem]Fら PGYよCV[Line]
+PHKんY 'M"F" A!れS"P[Next]
+
+[Skip]B[MiscEvent]<$5B><$9D>YEZ GDP[Next]
+
+[End]
+
+
+//POINTER #168 @ $2A160 - STRING #168 @ $2B5AF
+
+#W16($2A160)
+[Jump]...L-ん[Next]
+
+[MiscEvent]<$2E><$0F>F> Q[End]
+
+
+//POINTER #169 @ $2A162 - STRING #169 @ $2B5BF
+
+#W16($2A162)
+[Event3]<$68><$05>[Event3]<$BE><$04>PY'F" AるYL"ゃF"[Line]
+GBS HP"KるF?[YesNo]<$02>[Jump]OCF...[Next]
+
+[End]
+
+
+//POINTER #170 @ $2A164 - STRING #170 @ $2B5E1
+
+#W16($2A164)
+[Jump]OCF...[Next]
+
+[End]
+
+
+//POINTER #171 @ $2A166 - STRING #171 @ $2B5EA
+
+#W16($2A166)
+[SetVar]<$07>[Jump]L"RZ よCNBY JT"<$A2>PQF"[Line]
+マオウ [Var]V KらわれPYL"ゃ[Next]
+
+JT"<$A2>PQを PMIS HP"Kれ[Line]
+EXF"BL"ゃ[YesNo]<$03>[Event]<$01>[Skip]<$BE>[Jump]vらY .HNB[Line]
+[Var]YLんS"んV BっSHP"Kれ[Next]
+
+PY'-LPO"[Next]
+
+[End]
+
+
+//POINTER #172 @ $2A168 - STRING #172 @ $2B631
+
+#W16($2A168)
+[Skip]<$BE>[Jump]vらY .HNB[Line]
+[Var]YLんS"んV BっSHP"Kれ[Next]
+
+PY'-LPO"[Next]
+
+[End]
+
+
+//POINTER #173 @ $2A16A - STRING #173 @ $2B64F
+
+#W16($2A16A)
+PY'-LPO"[Next]
+
+[End]
+
+
+//POINTER #174 @ $2A16C - STRING #174 @ $2B659
+
+#W16($2A16C)
+AY モロクYLんS"んFら[Line]
+JT"<$A2>PQを PMISHれS[Line]
+AりF"TC J"K"B-LP[Next]
+
+[Event3]<$69><$06>[SetItem]<$D6>[Skip]レEれBT BっSZ UんL"ゃF"[Line]
+[VarItem]を KLAI"-LょC[Next]
+
+<$D3>?[SetVar]<$0D>JれS" [Var]Y Mv[Line]
+TCV ZBれるYL"ゃ[Next]
+
+PBOCU EPFらF"[Line]
+AるTF[Next]
+
+[End]
+
+
+//POINTER #175 @ $2A16E - STRING #175 @ $2B6DC
+
+#W16($2A16E)
+[End]
+
+
+//POINTER #176 @ $2A170 - STRING #176 @ $2B6DD
+
+#W16($2A170)
+[Event3]<$44><$01>...[Next]
+
+よCJO わF" メシアGょCFB?[Next]
+
+シフ"ヤY インテリシ"ェントヒ"ル?Z[Line]
+BFれ-LPF?[Line]
+AY UFV ZBるP<$A1>Y IDコ-ト"を[Line]
+EELD BPL-LょC[Next]
+
+[Hero2?]Z[Line]
+IDコ-ト"をGBP[Next]
+
+OれS"Z EGをRIS[Next]
+
+[Skip]L[End]
+
+
+//POINTER #177 @ $2A172 - STRING #177 @ $2B756
+
+#W16($2A172)
+BRO"やY...[Next]
+
+OろOろ KGF"'DSGPFX?[Line]
+S"Z EGをRIS[Next]
+
+[End]
+
+
+//POINTER #178 @ $2A174 - STRING #178 @ $2B77E
+
+#W16($2A174)
+TRN"ん モ-ラF" C'? LM"'[Line]
+[Hero2?]Z サ"ラタンV[Line]
+Y'J-れP[Next]
+
+[Teleport]<$40><$1F><$06>3[End]
+
+
+//POINTER #179 @ $2A176 - STRING #179 @ $2B7AB
+
+#W16($2A176)
+[Event3]<$AE><$01>[Event3]<$45><$05>よZ PBらY -KFT" Uり[Line]
+[Event3]<$AE><$02>[Event3]<$42><$02>[Event4]<$CE><$06>N"んQ N"んYCY QFらVより[Line]
+UんL"を FYQ?T 'Q-"Fん[Next]
+
+[Event3]<$2D><$04>[MiscEvent]<$2E><$28>ィ  M[End]
+
+
+//POINTER #180 @ $2A178 - STRING #180 @ $2B7B1
+
+#W16($2A178)
+よZ PBらY -KFT" Uり[Line]
+[Event3]<$AE><$02>[Event3]<$42><$02>[Event4]<$CE><$06>N"んQ N"んYCY QFらVより[Line]
+UんL"を FYQ?T 'Q-"Fん[Next]
+
+[Event3]<$2D><$04>[MiscEvent]<$2E><$28>ィ  M[End]
+
+
+//POINTER #181 @ $2A17A - STRING #181 @ $2B7CB
+
+#W16($2A17A)
+N"んQ N"んYCY QFらVより[Line]
+UんL"を FYQ?T 'Q-"Fん[Next]
+
+[Event3]<$2D><$04>[MiscEvent]<$2E><$28>ィ  M[End]
+
+
+//POINTER #182 @ $2A17C - STRING #182 @ $2B7F1
+
+#W16($2A17C)
+[Event3]<$2D><$04>[MiscEvent]<$2E><$28>ィ  M[End]
+
+
+//POINTER #183 @ $2A17E - STRING #183 @ $2B7FC
+
+#W16($2A17E)
+[MiscEvent]<$2E><$23>U> N[End]
+
+
+//POINTER #184 @ $2A180 - STRING #184 @ $2B804
+
+#W16($2A180)
+[SetItem]<$54>よY F!"Tを[Line]
+KM"Iる TGF" GPよCP"[Next]
+
+<$D3>0[VarItem]を SVBれP[Next]
+
+[Skip]<$AE>[Event]<$03>[Event3]<$AC><$02>UんL" [VarItem]を <$A2>R?"L[Line]
+KれZ" RG"Uる'QZ -らFれる[Next]
+
+[End]
+
+
+//POINTER #185 @ $2A182 - STRING #185 @ $2B830
+
+#W16($2A182)
+[Event3]<$AC><$02>UんL" [VarItem]を <$A2>R?"L[Line]
+KれZ" RG"Uる'QZ -らFれる[Next]
+
+[End]
+
+
+//POINTER #186 @ $2A184 - STRING #186 @ $2B855
+
+#W16($2A184)
+[End]
+
+
+//POINTER #187 @ $2A186 - STRING #187 @ $2B856
+
+#W16($2A186)
+[SetVar]<$1C>JY UI"GY PV VZ[Line]
+QSBJ F"Aる[Next]
+
+[SetItem]<$DA>OY 'M"Z [VarItem]Fら[Line]
+A!れ S"SBるYL"ゃ[Next]
+
+[VarItem]Z[Line]
+'M"Y りゅC [Var]V[Line]
+-<$A2>られSEる[Next]
+
+[SetVar]<$C3>[VarItem]を TれるYZ[Line]
+'M"Y NBれB[Line]
+[Var] P"IL"ゃ[Next]
+
+[End]
+
+
+//POINTER #188 @ $2A188 - STRING #188 @ $2B8C3
+
+#W16($2A188)
+[Event3]<$42><$03>[Event3]<$45><$03>[SetVar]<$03>[Event3]<$1F><$01>[Event3]<$15><$02>[LoadNPC]<$1C>[Jump]JれZ! マオウ [Var]L"ゃUBF![Next]
+
+UN" JんUTJろV?[Line]
+JBRZ vFL PEKれP ZM"UYV![Next]
+
+[Skip]E[End]
+
+
+//POINTER #189 @ $2A18A - STRING #189 @ $2B90D
+
+#W16($2A18A)
+[Var]Y MF"PF" UB...[Next]
+
+-KF !っFR LPTS"<$A2>[Line]
+P"TLPら...[Next]
+
+TんS"<$A2>UBJTV UっP![Next]
+
+[End]
+
+
+//POINTER #190 @ $2A18C - STRING #190 @ $2B948
+
+#W16($2A18C)
+[LoadNPC]<$1C>[Jump]マオウ [Var]F...[Next]
+
+[End]
+
+
+//POINTER #191 @ $2A18E - STRING #191 @ $2B956
+
+#W16($2A18E)
+[End]
+
+
+//POINTER #192 @ $2A190 - STRING #192 @ $2B957
+
+#W16($2A190)
+JJZ AんJHY<$A2>んS"M[Line]
+UFV ZBり-MF?[YesNo]<$01>[End]
+
+
+//POINTER #193 @ $2A192 - STRING #193 @ $2B974
+
+#W16($2A192)
+[LoadNPC]<$3B>[Teleport]<$31><$37>?G[End]
+
+
+//POINTER #194 @ $2A194 - STRING #194 @ $2B97D
+
+#W16($2A194)
+UんS"<$A2> サ"ラタンS L-VZ[Line]
+?んU QFらを<$A2>っP L"BKんF"[Line]
+BるらLBN"[Next]
+
+[End]
+
+
+//POINTER #195 @ $2A196 - STRING #195 @ $2B9AC
+
+#W16($2A196)
+P"れ<$A2>BUB[Next]
+
+[End]
+
+
+//POINTER #196 @ $2A198 - STRING #196 @ $2B9B5
+
+#W16($2A198)
+[SetVar]<$B0>[Var]Z RよHS PH-LBんP"[Line]
+やRを'P EんUYJZ[Line]
+'んU -T<$A1>."れ P"TK[Next]
+
+[End]
+
+
+//POINTER #197 @ $2A19A - STRING #197 @ $2B9E6
+
+#W16($2A19A)
+<$C4> [Event3]<$09><$02>AUPZ アクマT GょCO"ん[Line]
+S"G-MF?[YesNo]<$01>[Jump]UんT UI"FわLB[Next]
+
+[End]
+
+
+//POINTER #198 @ $2A19C - STRING #198 @ $2BA13
+
+#W16($2A19C)
+[Jump]わF"テ"ィ-ハ"GょC? よCJO[Line]
+KA UF?[Next]
+
+[Teleport]<$4C><$37>!O[End]
+
+
+//POINTER #199 @ $2A19E - STRING #199 @ $2BA35
+
+#W16($2A19E)
+[SetItem]<$C3>わるB ゆ<$A1>Fら K<$A1>KNSHれS[Line]
+AりF"TC[Next]
+
+[Event3]<$BD><$03>EれBV イケフ"クロVBる[Line]
+B<$A2>CTV ACTBBわ[Next]
+
+わり!っSBCYを <$A2>っSるFら[Line]
+Oれ AI"るわ[Next]
+
+[End]
+
+
+//POINTER #200 @ $2A1A0 - STRING #200 @ $2BA89
+
+#W16($2A1A0)
+[End]
+
+
+//POINTER #201 @ $2A1A2 - STRING #201 @ $2BA8A
+
+#W16($2A1A2)
+T-"らを AI-MF?[YesNo]<$01>[End]
+
+
+//POINTER #202 @ $2A1A4 - STRING #202 @ $2BA99
+
+#W16($2A1A4)
+[SetVar]<$C5>[MiscEvent]<$0A><$02>[Jump][Var]F" EEGHSを -らHT[Line]
+T-"らF" ET<$A2>PSM"V -らBP[Next]
+
+[LoadNPC]<$3B>[Teleport]<$18><$20><$06>A[End]
+
+
+//POINTER #203 @ $2A1A6 - STRING #203 @ $2BACD
+
+#W16($2A1A6)
+[Jump]LFL P"れ<$A2> -らHJTZ[Line]
+S"GUFっP[Next]
+
+[End]
+

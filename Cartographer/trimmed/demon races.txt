@@ -1,0 +1,165 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #011 NAME:		Demon Race Names
+
+//POINTER #0 @ $2BB04 - STRING #0 @ $2BB3A
+
+#W16($2BB04)
+[End]
+
+
+//POINTER #1 @ $2BB06 - STRING #1 @ $2BB3B
+
+#W16($2BB06)
+ユイイツシン[End]
+
+
+//POINTER #2 @ $2BB08 - STRING #2 @ $2BB42
+
+#W16($2BB08)
+マオウ[End]
+
+
+//POINTER #3 @ $2BB0A - STRING #3 @ $2BB46
+
+#W16($2BB0A)
+シ"ャシン[End]
+
+
+//POINTER #4 @ $2BB0C - STRING #4 @ $2BB4C
+
+#W16($2BB0C)
+カイシ"ュウ[End]
+
+
+//POINTER #5 @ $2BB0E - STRING #5 @ $2BB53
+
+#W16($2BB0E)
+キシ"ョ[End]
+
+
+//POINTER #6 @ $2BB10 - STRING #6 @ $2BB58
+
+#W16($2BB10)
+ヤマ[End]
+
+
+//POINTER #7 @ $2BB12 - STRING #7 @ $2BB5B
+
+#W16($2BB12)
+ユウキ[End]
+
+
+//POINTER #8 @ $2BB14 - STRING #8 @ $2BB5F
+
+#W16($2BB14)
+ヨウシ"ュウ[End]
+
+
+//POINTER #9 @ $2BB16 - STRING #9 @ $2BB66
+
+#W16($2BB16)
+シ"ャキ[End]
+
+
+//POINTER #10 @ $2BB18 - STRING #10 @ $2BB6B
+
+#W16($2BB18)
+マシン[End]
+
+
+//POINTER #11 @ $2BB1A - STRING #11 @ $2BB6F
+
+#W16($2BB1A)
+アクリョウ[End]
+
+
+//POINTER #12 @ $2BB1C - STRING #12 @ $2BB75
+
+#W16($2BB1C)
+キョウシ"ン[End]
+
+
+//POINTER #13 @ $2BB1E - STRING #13 @ $2BB7C
+
+#W16($2BB1E)
+ケ"ト"ウ[End]
+
+
+//POINTER #14 @ $2BB20 - STRING #14 @ $2BB82
+
+#W16($2BB20)
+ヨウセイ[End]
+
+
+//POINTER #15 @ $2BB22 - STRING #15 @ $2BB87
+
+#W16($2BB22)
+チレイ[End]
+
+
+//POINTER #16 @ $2BB24 - STRING #16 @ $2BB8B
+
+#W16($2BB24)
+ヨウキ[End]
+
+
+//POINTER #17 @ $2BB26 - STRING #17 @ $2BB8F
+
+#W16($2BB26)
+マシ"ュウ[End]
+
+
+//POINTER #18 @ $2BB28 - STRING #18 @ $2BB95
+
+#W16($2BB28)
+ヨウマ[End]
+
+
+//POINTER #19 @ $2BB2A - STRING #19 @ $2BB99
+
+#W16($2BB2A)
+セイレイ[End]
+
+
+//POINTER #20 @ $2BB2C - STRING #20 @ $2BB9E
+
+#W16($2BB2C)
+セイシ"ュウ[End]
+
+
+//POINTER #21 @ $2BB2E - STRING #21 @ $2BBA5
+
+#W16($2BB2E)
+ケ"ンマ[End]
+
+
+//POINTER #22 @ $2BB30 - STRING #22 @ $2BBAA
+
+#W16($2BB30)
+テンシ[End]
+
+
+//POINTER #23 @ $2BB32 - STRING #23 @ $2BBAE
+
+#W16($2BB32)
+キシ"ン[End]
+
+
+//POINTER #24 @ $2BB34 - STRING #24 @ $2BBB3
+
+#W16($2BB34)
+シンシ"ュウ[End]
+
+
+//POINTER #25 @ $2BB36 - STRING #25 @ $2BBBA
+
+#W16($2BB36)
+マシ"ン[End]
+
+
+//POINTER #26 @ $2BB38 - STRING #26 @ $2BBBF
+
+#W16($2BB38)
+メシア[End]
+

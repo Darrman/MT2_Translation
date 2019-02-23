@@ -1,0 +1,564 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #009 NAME:		Script 2, Raw
+//Block Range: $183E8 - $1C00F
+
+BORN[Pause3] FROM[Pause3] FIRE[Pause3] AND[Pause3] STORM[Line]
+I[Pause3] AM[Pause3] PAZUZU[Pause3].[Pause3].[Pause3].[Pause6] FREEDOM[Pause3].[Pause3].[Pause3][Line]
+REALITY[Pause3] AT[Pause3] LAST[Pause3].[Pause3].[Pause3].[End]
+
+LATER...[Line]
+A TERRIBLE ENEMY HAS[Line]
+ARISEN TO THREATEN[Line]
+MANKIND.                      [Line]
+[Next]
+
+[End]
+
+IS, UNTIL YOU[Line]
+SAVED ME. THERE ARE ALSO[Line]
+MORE FOR WHOM YOU[Line]
+WILL BE SAVIOURS.[Line]
+   [Next]
+
+[End]
+
+EMON SUMMONING[Line]
+PROGRAM. YOU CAN[Line]
+SUMMON DEMONS[Line]
+ANYWHERE WITH IT. [Line]
+[Next]
+
+THIS INCLUDES DEMONS[Line]
+FROM DEVIL BUSTER![Next]
+
+[End]
+
+D KILL[Line]
+NEBRO.  [Line]
+[Next]
+
+HE IS IN B1. [Line]
+PROCEED WITH CAUTION.[Line]
+WE WILL SPEAK LATER.[Next]
+
+[Hero] AND [Var][Line]
+LOOKED AT EACH OTHER.[Line]
+THEY NODDED AND CHOSE[Line]
+TO HEAD FOR THE[Line]
+ARMORY.[Line]
+  [Next]
+
+[End]
+
+GRRR... THIS TIME THE[Line]
+MESSIAHS ARE WITH ME.[Line]
+I'LL WIN...[Next]
+
+[LoadEnemySprite]<$15>HMMM, KEEP THAT[Line]
+STUPID DOG SHUT, K?[Next]
+
+[Fight]<$01>!<$EE>![End]
+
+[Line]
+[Choices]<$03>▽2E?B4[Event]<$09>[Jump]WANT TO SAVE? [Line]
+[Choices]<$02>▽2E?[Event]<$09>[Jump]CHOOSE A SLOT. [Line]
+[MiscEvent]<$32><$EE>♂[MiscEvent]<$3A><$F1>RECORDED.  [Next]
+
+[Event]<$02>[Event3]<$03><$07>[Event]<$04>[Event4]<$C1><$08>[Event]<$04>[Event3]<$6F><$04>[Skip]ィTHERE'S AN [VarItem][Line]
+FOR YOU FROM HIROKO.[Line]
+GO!   [Line]
+[Next]
+
+[Event]<$04>[Jump]CAREFUL! [Line]
+[Next]
+
+[End]
+
+<$06>[Event]<$02>[Jump]T"JY チェックマンV BHYP"[Line]
+[MiscEvent]<$3C><$EE>♂[Jump]OれS"Z <$F2>DY[Line]
+チェックマンY TJろV EHっSやるO"[Next]
+
+[Event]<$09>[Jump]S"Z T"れを GH[Line]
+[Choices]<$05>エ7チ8ツ9テAトB[End]
+
+-M[Next]
+
+OY-DV FんLゃY G<$A2>QTLS[Line]
+£300P"I BPP"GPBYS"M[Line]
+よろLBS"MF?[YesNo]<$06><$D4>0![Event]<$03>[Jump]JTわるっS? UんT ハ"チAPりU![Next]
+
+[End]
+
+V HらNるよCV Uり-LP[Next]
+
+[End]
+
+<$A2>Y<$A1>! わF" QFらY -DV[Line]
+や!"れKるF"BB![Next]
+
+[Fight]<$01>▽[Skip]?[SetItem]<$C7>[Jump]KBP"んYCらS" UVF -FっP![Next]
+
+[VarItem]P"!<$D3>>[Hero2?]Z[Line]
+[VarItem]を SVBれP[Next]
+
+[End]
+
+AGWAN MON! [Line]
+[Event]<$01>[Jump]YA NUH SEE? I FINNA [Line]
+SELL FI BEST BWOY! [Line]
+[Choices]<$05>!3?4<$06>506♂1[Event]<$05>[Event2]<$3E>[Event]<$06>[Jump]CHOOSE   [Line]
+[End]
+
+ANNA SELL? [Line]
+[Event]<$13>[Event2]<$3F>GOT ANYTING MON?[Line]
+[YesNo]<$13>[Event]<$05>[Jump]YOU NOTIN' MON! [Next]
+
+[Event]<$05>[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>WELCOME!-[Line]
+UんS"<$A2>っS わIVZ[Line]
+BFUBIT" ゆっHり 'SっSX[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]CQZ レテ"ィ-スよ[Line]
+OれT<$A2> UVF よCF" AるY[Line]
+[YesNo]<$05>[Jump]-P GSX[Next]
+
+[End]
+
+YZ T"れ<$A2> ハンハ° <$A2>ん ULよ[Line]
+[Choices]<$05>!5?6<$06>708♂3[Event]<$07>[Event2]<$28>[Event]<$08>[Jump]オススメZ コレX T"C?[Line]
+[End]
+
+" UB'PBよ[Next]
+
+[Event]<$07>HELLO. ASK ME ANYTHING[Line]
+ABOUT WEAPONS.  [Line]
+[Choices]<$04> ?>4♂▽▽♂[Jump]GOODBYE.[Next]
+
+[End]
+
+S!  [Next]
+
+[End]
+
+[Next]
+
+[Event4]<$C1><$02>[Jump][Event2]<$14>[YesNo]<$01>[End]
+
+>[End]
+
+Y [Hero]..[Line]
+[SetVar]<$FE>[Var]? WHO'S THAT? [Next]
+
+[End]
+
+EGF"Aる[Next]
+
+[End]
+
+ZFDMわ[Next]
+
+[DrawMoney][Event]<$03>[Jump]WHICH ITEM?  [Line]
+[MiscEvent]<$03><$12><$EE>▽[Jump]GIVE ME THE[Line]
+[VarItem] FOR £[VarNum].[Line]
+[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]WANT TO SELL ANOTHER? [Line]
+[YesNo]<$10>[Event]<$03>YOU'VE NOTHING...[Line]
+[Next]
+
+[Event]<$03>[LoadNPC]<$0F>[Event4]<$A2><$01>[Event]<$03>[Event4]<$A1><$02>[Event]<$03>[Event4]<$A0><$04>Eや Eや AんPPQY !TJろFら[Line]
+.CNGY BBVEBF" MるUA[Next]
+
+ワシZ OBRV <$A1>F"UHっSX[Next]
+
+T"CP"B? ワシY <$A2>YT[Line]
+JCFんっS JTV LUBF?[YesNo]<$17>[Jump]や<$A1>るP"っS?[Line]
+JんU ウマイZULZ OC[Line]
+Aる<$A2>YL"ゃ UBYV[Line]
+GF"FわっPら -P HるF"BB[Next]
+
+[End]
+
+ょCP"ァU![Next]
+
+[End]
+
+<$A2>っSBるんP"ろ?[Next]
+
+KA JCFんP"![Line]
+P-YLBUァ...?っ?っ?っ![Next]
+
+[Jump]CQS" ARFC .CNGZ[Line]
+3LゅるBP"IP"よ...[Next]
+
+KA T"Y.CNGを P"MFX?[Line]
+[Choices]<$03>タHソ?セ0<$EE>A[Event4]<$A2><$09>[Jump]EEEっ! エメラルト"! UんSJっPB![Line]
+Jりゃ よろJんS" JCFんLよC![Next]
+
+[Choices]<$03><$32>I<$33>3<$34>4<$EE>A[Skip]よ[Event]<$10>[Jump]-P .CNGF" SVZBっPら[Line]
+HるF" BBよ[Next]
+
+[End]
+
+C<$C1>'[SetItem]<$A0><$D2>[SetItem]<$96><$D3>S[Event]<$13><$C1>v[SetItem]<$A0><$D2>[SetItem]<$95><$D3>S[Event]<$13>[End]
+
+ [Next]
+
+THE' HELL IS HE[Line]
+TALKING ABOUT? [Next]
+
+[MiscEvent]<$27><$FA>ネ▽[SetVar]<$FD>[Var] WATCHED[Line]
+[Hero] QUIT THE[Line]
+GAME AND[Line]
+SPOKE. [End]
+
+ツ1▽  [End]
+
+ゆ[VarItem]を <$A2>っS[Line]
+BG-MF?[YesNo]<$02>[End]
+
+ SVBれP[Next]
+
+S"Z PYんP"O"[Next]
+
+[End]
+
+れP[Line]
+EろF<$A2>YY KBJ"...P"[Next]
+
+[Hero]...[Line]
+E-DY'QF" PP"LFっP...[Line]
+[SetVar]<$0A>[Var]をPELSHれ[Next]
+
+[LoadBackground]<$2C>[LoadNPC]<$64>[LoadNPC]<$E5>[Jump]ハ-[Pause1]ハッ[Pause1]ハッ[Pause1]ハッ[Next]
+
+GょCZ EろF<$A2>YF" よHHる[Next]
+
+LんゆCY FPGをCっS'るF?[Next]
+
+KA FFっSJB![Next]
+
+[SetVar]<$0A>[Fight]<$01>♂[Jump]O OんUッ! わPLF"-IるTZッ![Next]
+
+[LoadBackground]<$25>[LoadNPC]<$00>LろBケムリF" [Var]をRRv...[Line]
+EOろLGFU よCFB?んI"[Line]
+[Var]Z 'VHB カエルVUっP![Next]
+
+[LoadNPC]<$C3>TT"<$A1>を KL-MF?[YesNo]<$03>[Event]<$04>[Skip]Z[Jump][Hero2?]Z カエルを[Line]
+!'R!"LP![Next]
+
+[Event]<$09>[Jump]S"Z RF-D-MF?[YesNo]<$05>[Event]<$06>[Skip]<$34>[Jump][Hero2?]Z カエルをRF-DP![Next]
+
+[Event3]<$83><$07>[Event]<$09>[Skip]Q[Jump][Hero2?]Z[Line]
+AわれんS" VF"LP[Next]
+
+[Event]<$09>[End]
+
+ [VarItem]を[Line]
+[Var]Y ゆ-"V RISやっP[Next]
+
+[Skip]D[LoadNPC]<$00>[End]
+
+NS<$A2>らEC[Next]
+
+[Fight]<$01> [Skip]<$37>[Jump]JY [Var]を PEMTZU[Line]
+E-DV RるG"を やろC[Line]
+<$A2>っSゆI[Next]
+
+[SetItem]<$2E><$D3>▽[Jump][VarItem]を SVBれP[Next]
+
+[End]
+
+れP"?[Line]
+わPLY Xvりを K-PI"る<$A2>YZ[Next]
+
+EE! ハ°ス"スを PENL<$A2>Y![Next]
+
+アタ"ムT EUL"H EんUY[Line]
+JTZ"V YっP CらG"り<$A2>Yよ[Next]
+
+FHJ"LS JJV-BっPF![Next]
+
+[Fight]<$01> [Skip]ア[SetItem]<$43>[Jump][VarItem]F" Aる[Next]
+
+<$D3>▽[VarItem]を SVBれP[Next]
+
+[End]
+
+[Line]
+AUPF" PMISHれるっS[Line]
+わPL LんL"SPわ[Next]
+
+[Var]Z[Line]
+[SetVar]<$15>[Var]を PMIP"LP[Next]
+
+[MiscEvent]<$11><$FA>A[End]
+
+F'Y MF"PV[Line]
+<$A2>T"KNSHれ![Next]
+
+PYv! GゅCNBLゅよ[YesNo]<$06>[Jump][Hero2?]Z カエルを[Line]
+!'R!"LP[Next]
+
+Uっ UんTBCJTを![Line]
+EYれ! ハ"エルYFPG![Next]
+
+[Event]<$03>[Skip]ん[Jump][Var]Z ハ"エルT[Line]
+F"っPBLP[Next]
+
+[Event2]<$10>[LoadBackground]<$25>[Event3]<$5A><$0C>[LoadEnemySprite]<$F9>わPLZ [Var][Line]
+OUPYEんV vHB[Line]
+T<$A2>V PPFEC[Next]
+
+[MiscEvent]<$08><$08>LFL ナカマF" EEB![Next]
+
+[End]
+
+[Next]
+
+[SetItem]<$D7><$D3>3OLS [VarItem]F"[Line]
+AらわれP[Next]
+
+[Event2]<$19>[End]
+
+F" UVゆD PPFCYP"?[Next]
+
+L"んるBY P<$A1>F? Bや[Next]
+
+F' R-り ゆBBRLんV[Line]
+ET"らKれSBるV MG"W[Next]
+
+FRS わPLZ テンシTLS[Line]
+ゆBBRLんY OZ"V RFDSBP[Next]
+
+VんI"んV QDを KM"IるP<$A1>[Line]
+QL"ょCV EりPっPYP"[Next]
+
+VんI"んZ よりMH"れP QDを<$A2>T<$A1>[Line]
+ゆBBRLん S"ZUH[Line]
+わPLを MCZBLP[Next]
+
+ゆBBRLんZ BFり[Line]
+VんI"んT わPLを .ろ."OCTLP[Next]
+
+わPLZ KBJ"-S" PPFっPF"[Line]
+RBV マカイ?T ETKれP[Next]
+
+OJVBる ハ"アル<$A2> FRSZ[Line]
+ハ"ヒ"ロニアY <$A1>H"'YF'[Next]
+
+P"F" ゆBBRLんVより[Line]
+!PRV -GKFれPYP"[Next]
+
+ハ"アルP"I S"ZUB[Next]
+
+NFBL"ゅCY F'F"'F"[Line]
+ゆBBRLんY NFBTCBRYP<$A1>[Line]
+CQPEKれSBっP[Next]
+
+OLS アクマTLS[Line]
+マカイV ETKれPYP"...[Next]
+
+B-JO BVLDY F'F"'T[Line]
+VんI"んY ECJ"んL"P"Bを[Line]
+!PP-" GM"HTGP"[Next]
+
+わPLTT<$A2>V F'を PELSHれるF?[Line]
+-TY Jよ...[Next]
+
+[YesNo]<$05>[Jump]LょNんZ F'Y L<$A2>?"F...[Next]
+
+[Event]<$01>>[MiscEvent]<$08><$06>[Skip]ァ[Jump]ナカマF" EEBよCP"[Next]
+
+[End]
+
+R-らんYC[Next]
+
+JんU TGVZ やっZ°り[Line]
+イロケF" .LBXっ![Line]
+エシェシェシェ![Next]
+
+OLPら キ"ンサ"V BIるBB<$A2>Y[Line]
+AI"QゃCよ![Next]
+
+[End]
+
+<$C7>[Jump]わるFっP[Line]
+Jれを やるFら 'YF"LSHれ![Next]
+
+[SetItem]<$C4><$D3>▽[Hero2?]Z [VarItem]を[Line]
+SVBれP[Next]
+
+[End]
+
+[Var]L"ょCP"[Next]
+
+[MiscEvent]<$2E><$3D>ア> W[End]
+
+[End]
+
+を[Line]
+CZ"っP AH-Y HQP"[Next]
+
+[End]
+
+Z[Line]
+アクマV <$A2>G"TられQ-っP[Next]
+
+OれS" キ"ンサ"Y[Line]
+サイハ"ネIんGゅCL"ょS"[Line]
+CS"を RIPんP"[Next]
+
+れんQゅC !っFIやF"っS[Line]
+EFI"S" BQ<$A2>んULK[Next]
+
+[End]
+
+"MF[Line]
+OれZ K"んXんS"M[Next]
+
+[End]
+
+ムY QょCLZ[Line]
+BFF"S"LょC[Next]
+
+[End]
+
+[Line]
+JY [VarItem]を[Line]
+わPLS HP"KB![Next]
+
+EXF"BL-M...[Next]
+
+<$D3>![Jump][Hero2?]Z [VarItem]を[Line]
+AM"FっP[Next]
+
+[End]
+
+[Line]
+キ"ンキ"ンV I"んGV UるY[Next]
+
+EXP"んZ £40よ[Line]
+BFF"FLら?[YesNo]<$0B>[Event]<$15>[Event3]<$3F><$03>[Event]<$04>[MiscEvent]<$0F><$0A>[Event]<$09>[MiscEvent]<$0E><$0A>[Jump]YOU'RE ALLERGIC?[Line]
+NO SALE.  [Next]
+
+[End]
+
+んS"X![Next]
+
+EっEっEっ! G!GH! や'RGV[Line]
+UりOCP"[Next]
+
+AUP EクスリMGUYX[Next]
+
+S"Z ステキU ゆ<$A1>YNFBV[Line]
+BIる JY コ"ッツアン.ス-ハ°-C![Next]
+
+£80 ZらっS コ"クラクを YO"BS[Line]
+'る?[YesNo]<$10>[Jump]Aら? PFFっPFLら?[Line]
+S"<$A2> JYHらBY FQZ AるYよ[Line]
+LっFり FNBS" -PGSXっ![Next]
+
+[End]
+
+Yよ[Line]
+OYU<$A2> アオヒ°-コ"-ルト".DX[Next]
+
+E-ILS £200S"[Pause3][Line]
+ノ[Pause2].マ[Pause2].セ[Pause2].テ[Pause2].ア[Pause2].ケ"[Pause2].ル[Pause2]!![YesNo]<$13>[Jump]PFBっS? OんUJTUBわよ[Line]
+Jれを Y<$A1>Z" L"んNB FわるYV[Next]
+
+[End]
+
+れS"<$A2> YvY?[Next]
+
+[Event]<$0C>[SetVar]<$15>[Jump][Var][Line]
+DDっ! -P"YvY?![Line]
+AUP FEBろ わるBわよ[Line]
+や<$A1>TBPら?[Next]
+
+[Event]<$0E>[SetVar]<$15>[Jump][Var][Line]
+XD ムタ"R"FBZ や<$A1>-LょC[Next]
+
+£80P<$A1>るYV T"れP"I[Line]
+PPFわUHQゃ BIUBF[Line]
+LっSる S"Lょ[Next]
+
+[Event]<$11>[Jump]<$A2>C!LんZ°BLS AI"SるYV[Line]
+-P" YvUんS![Next]
+
+わPL EJっPFらXッ![Next]
+
+[SetVar]<$15>[Jump]UんT [Var]Z[Line]
+[Hero]V ABOを RFLS[Line]
+E'Nを S"SBっQゃっP![Next]
+
+[Var]Y ATを EB-MF?[YesNo]<$1C>[Event]<$14>[Jump][Hero]Z KOBを !りGっS[Line]
+[Var]Y ATを EBFIP[Next]
+
+[End]
+
+ゃ>[Skip]ょイサ"ナキ"F" AらわれP[Next]
+
+[LoadNPC]<$5C>イサ"ナミを PMIS .LFっP[Next]
+
+LFL Oれ<$A2> BBS"LょC[Line]
+M?"S AUPPQY[Line]
+DらんP" 'QS"M[Next]
+
+[Event]<$02>イサ"ナミF" AらわれP[Next]
+
+[LoadNPC]<$5D>[Event3]<$AC><$03>[Skip]を[Jump]JJZ[Line]
+[Var]LんS"ん S"M[Next]
+
+5RY P-を JJV KKI"UKB[Next]
+
+[SetItem]<$CE><$D2>[SetItem]<$CF><$D2>[SetItem]<$D0><$D2>[SetItem]<$D1><$D2>[SetItem]<$D2><$D2>[SetItem]<$D4><$D3> -Z"ゆB -Fりを ZっLS[Line]
+5RY P-Z -TRVUっP![Next]
+
+[Hero2?]Z [VarItem]を[Line]
+SV BれP[Next]
+
+[VarItem]Y QFらZ[Line]
+[SetVar]<$03>AUPPQを[Line]
+[Var]L"ょC? EHり-M[Next]
+
+AUPPQF"[Line]
+KBJ"Y G."C UYS"M...[Next]
+
+[LoadNPC]<$00>[MiscEvent]<$35><$10>[End]
+
+[Line]
+-FNられ-M[Next]
+
+KA CITりUKB[Line]
+[SetItem]<$C9><$D3> [MiscEvent]<$11><$FA>A[MiscEvent]<$13><$FA>C[Hero2?]Z [VarItem]を[Line]
+SVBれP[Next]
+
+[MiscEvent]<$27><$C0>T[MiscEvent]<$2E><$3D>ヤ  H[End]
+
+ラ-を[Line]
+Z"HLんQY QゅCLんV RGKLP[Next]
+
+OれらZ MBJ-れ[Line]
+AらPV 1RY EEGU ZLらF"[Line]
+!L"ょCLSGP[Next]
+
+[End]
+
+B?んU JTVUっPO"[Line]
+[Var]F" ルシファ-を[Line]
+!っFRKNS L-っPYP"ッ![Next]
+
+[End]
+
+LょCUり[Next]
+
+OYJT ゆ<$A1>ゆ<$A1> わMれUKるU[Next]
+
+[End]
+
+"[Next]
+
+[End]
+
+APLを よんS"るわ[Line]
+XD BFNS?[YesNo]<$02>[End]
+

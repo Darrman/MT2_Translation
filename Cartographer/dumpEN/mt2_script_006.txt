@@ -1,0 +1,153 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #006 NAME:		Healing Menu, etc?
+
+//POINTER #0 @ $15E5C - STRING #0 @ $15E8E
+
+#W16($15E5C)
+DATA1[End]
+
+
+//POINTER #1 @ $15E5E - STRING #1 @ $15E94
+
+#W16($15E5E)
+DATA2[End]
+
+
+//POINTER #2 @ $15E60 - STRING #2 @ $15E9A
+
+#W16($15E60)
+ATTEMPT--- ----  [End]
+
+
+//POINTER #3 @ $15E62 - STRING #3 @ $15EAC
+
+#W16($15E62)
+KA やるF"よB  FB<$A1>L"ゃ [End]
+
+
+//POINTER #4 @ $15E64 - STRING #4 @ $15EBF
+
+#W16($15E64)
+---- HIT  BLOW-  [End]
+
+
+//POINTER #5 @ $15E66 - STRING #5 @ $15ED1
+
+#W16($15E66)
+NAMASTE! YOU WON![End]
+
+
+//POINTER #6 @ $15E68 - STRING #6 @ $15EE3
+
+#W16($15E68)
+アチャ- APっP よCP"U  [End]
+
+
+//POINTER #7 @ $15E6A - STRING #7 @ $15EF5
+
+#W16($15E6A)
+SORRY. I HAD    ... [End]
+
+
+//POINTER #8 @ $15E6C - STRING #8 @ $15F0A
+
+#W16($15E6C)
+フッ フッ フッ JPDZ     L"ゃ[End]
+
+
+//POINTER #9 @ $15E6E - STRING #9 @ $15F20
+
+#W16($15E6E)
+# NAME    HIT-PTS MP PRICE[End]
+
+
+//POINTER #10 @ $15E70 - STRING #10 @ $15F3B
+
+#W16($15E70)
+# CLASS  NAME    12345678910[End]
+
+
+//POINTER #11 @ $15E72 - STRING #11 @ $15F57
+
+#W16($15E72)
+DEAD    ..[End]
+
+
+//POINTER #12 @ $15E74 - STRING #12 @ $15F62
+
+#W16($15E74)
+STONE   ..[End]
+
+
+//POINTER #13 @ $15E76 - STRING #13 @ $15F6D
+
+#W16($15E76)
+PALSY   ..[End]
+
+
+//POINTER #14 @ $15E78 - STRING #14 @ $15F78
+
+#W16($15E78)
+POISON  ..[End]
+
+
+//POINTER #15 @ $15E7A - STRING #15 @ $15F83
+
+#W16($15E7A)
+SLEEP   ..[End]
+
+
+//POINTER #16 @ $15E7C - STRING #16 @ $15F8E
+
+#W16($15E7C)
+ FULL [End]
+
+
+//POINTER #17 @ $15E7E - STRING #17 @ $15F95
+
+#W16($15E7E)
+ ....[End]
+
+
+//POINTER #18 @ $15E80 - STRING #18 @ $15F9B
+
+#W16($15E80)
+ ..[End]
+
+
+//POINTER #19 @ $15E82 - STRING #19 @ $15F9F
+
+#W16($15E82)
+1ST SELECT[End]
+
+
+//POINTER #20 @ $15E84 - STRING #20 @ $15FAA
+
+#W16($15E84)
+ NAME     STATUS    PRICE[End]
+
+
+//POINTER #21 @ $15E86 - STRING #21 @ $15FC4
+
+#W16($15E86)
+  テ"スフ"レイト" £ 1000[End]
+
+
+//POINTER #22 @ $15E88 - STRING #22 @ $15FD7
+
+#W16($15E88)
+  よCTCニヒル   £  500[End]
+
+
+//POINTER #23 @ $15E8A - STRING #23 @ $15FEA
+
+#W16($15E8A)
+  DEATH     £  600[End]
+
+
+//POINTER #24 @ $15E8C - STRING #24 @ $15FFD
+
+#W16($15E8C)
+  PIG       £  300[End]
+

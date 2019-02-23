@@ -1,0 +1,43 @@
+﻿// because messing with inserters is the best way to handle this
+
+#VAR(name, TABLE)
+#ADDTBL("dialogue.tbl", name)
+#ACTIVETBL(name)
+
+#JMP($3A8FE)
+//What each tile corresponds to
+ABCDEabcde01234
+FGHIJfghij56789
+KLMNOklmno!?-. 
+PQRSTpqrst',/♂♀
+UVWXYuvwxy"&()#
+Zz    
+
+#JMP($7EE80)
+//The tilemap so things show correctly
+<$00><$01>ABCDE<$00><$01>abcde<$00><$01>01234<$00><$01>Zz<$00><$04>
+<$DD><$00><$05><$DD><$00><$19><$DD><$00><$05><$DD>
+<$00><$01>FGHIJ<$00><$01>fghij<$00><$01>56789<$00><$07>
+<$DD><$00><$05><$DD><$00><$19><$DD><$00><$05><$DD>
+<$00><$01>KLMNO<$00><$01>klmno<$00><$01>!?-.<$00><$02>Next<$00><$02>
+<$DD><$00><$05><$DD><$00><$19><$DD><$00><$05><$DD>
+<$00><$01>PQRST<$00><$01>pqrst<$00><$01>',/♂♀<$00><$01>Back<$00><$02>
+<$DD><$00><$05><$DD><$00><$19><$DD><$00><$05><$DD>
+<$00><$01>UVWXY<$00><$01>uvwxy<$00><$01>"&()#<$00><$01>End<$00><$03>
+<$DD><$00><$05><$DD><$00><$19><$DD><$00><$05><$DD>
+//[EndTilemap] commented out, I convinently saved enough
+//bytes for glitchy overwriting to look good somehow
+//The DD becomes an EA, good enough place to end it.
+//Not like I need to change the borders.
+
+#JMP($3A9C7)
+//Playable character default names.
+//Option 1: Take after the Japanese filler names.
+//Hero????
+//Girl!!!!
+//Friend..
+//Option 2: Trust in the wikia and assume the manual says what it says.
+//Actual names beat filler names.
+Hideto[End] 
+Rosanna[End]
+Senda[End]  

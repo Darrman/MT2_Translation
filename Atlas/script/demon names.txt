@@ -1,0 +1,1866 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+#VAR(text, TABLE)
+#ADDTBL("items.tbl", text)
+#ACTIVETBL(text)
+
+#VAR(Demons, CUSTOMPOINTER)
+#CREATEPTR(Demons, "LINEAR", $2010, 16)
+
+#JMP($D963, $E00F)
+
+
+//BLOCK #001 NAME:		Demon Names
+//Character limit: 10
+//Limit of 8 on health bar
+
+//Evil demons
+//Enemy only
+//POINTER #0 @ $D763 - STRING #0 @ $D963
+
+#WRITE(Demons, $D763)
+//タ"-クヒ-ロ-[End]
+//Dark Hero[End]
+//Unused
+DH[End]
+
+
+//POINTER #1 @ $D765 - STRING #1 @ $D96C
+
+#WRITE(Demons, $D765)
+//Y.H.V.H[End]
+YHVH[End]
+
+
+//Tyrant Race
+//POINTER #2 @ $D767 - STRING #2 @ $D974
+
+#WRITE(Demons, $D767)
+//サタン[End]
+Satan[End]
+
+
+//POINTER #3 @ $D769 - STRING #3 @ $D978
+
+#WRITE(Demons, $D769)
+#WRITE(Demons, $D94F)
+//ルシファ-[End]
+Lucifer[End]
+
+
+//POINTER #4 @ $D76B - STRING #4 @ $D97E
+
+#WRITE(Demons, $D76B)
+//ヘ"ルセ"フ"フ"[End]
+Beelzebub[End]
+
+
+//POINTER #5 @ $D76D - STRING #5 @ $D988
+
+#WRITE(Demons, $D76D)
+//アスタロ-ト[End]
+Astaroth[End]
+
+
+//POINTER #6 @ $D76F - STRING #6 @ $D98F
+
+#WRITE(Demons, $D76F)
+//ミトラ[End]
+Mitra[End]
+
+
+//POINTER #7 @ $D771 - STRING #7 @ $D993
+
+#WRITE(Demons, $D771)
+//モロク[End]
+Moloch[End]
+
+
+//POINTER #8 @ $D773 - STRING #8 @ $D997
+
+#WRITE(Demons, $D773)
+//ヘ"リアル[End]
+Belial[End]
+
+
+//POINTER #9 @ $D775 - STRING #9 @ $D99D
+
+#WRITE(Demons, $D775)
+//アスモタ"イ[End]
+Asmodai[End]
+
+
+//POINTER #10 @ $D777 - STRING #10 @ $D9A4
+
+#WRITE(Demons, $D777)
+//ハ"エル[End]
+Bael[End]
+
+
+//POINTER #11 @ $D779 - STRING #11 @ $D9A9
+
+#WRITE(Demons, $D779)
+//ハ°ス"ス[End]
+Pazuzu[End]
+
+
+//Vile Race
+//POINTER #12 @ $D77B - STRING #12 @ $D9AF
+
+#WRITE(Demons, $D77B)
+//アシュラ[End]
+Asura[End]
+
+
+//POINTER #13 @ $D77D - STRING #13 @ $D9B4
+
+#WRITE(Demons, $D77D)
+//ヘ"ルフェコ"-ル[End]
+Belphegor[End]
+
+
+//POINTER #14 @ $D77F - STRING #14 @ $D9BE
+
+#WRITE(Demons, $D77F)
+//ケ"-リュオン[End]
+Geryon[End]
+
+
+//POINTER #15 @ $D781 - STRING #15 @ $D9C6
+
+#WRITE(Demons, $D781)
+//セト[End]
+Set[End]
+
+
+//POINTER #16 @ $D783 - STRING #16 @ $D9C9
+
+#WRITE(Demons, $D783)
+//ロキ[End]
+Loki[End]
+
+
+//POINTER #17 @ $D785 - STRING #17 @ $D9CC
+
+#WRITE(Demons, $D785)
+//クロノス[End]
+Cronus[End]
+
+
+//POINTER #18 @ $D787 - STRING #18 @ $D9D1
+
+#WRITE(Demons, $D787)
+//エキト"ナ[End]
+Echidna[End]
+
+
+//POINTER #19 @ $D789 - STRING #19 @ $D9D7
+
+#WRITE(Demons, $D789)
+//マンモン[End]
+Mammon[End]
+
+
+//POINTER #20 @ $D78B - STRING #20 @ $D9DC
+
+#WRITE(Demons, $D78B)
+//アリオク[End]
+Arioch[End]
+
+
+//POINTER #21 @ $D78D - STRING #21 @ $2428
+
+//#WRITE(Demons, $D78D)
+////The hell? Something broke here.
+//TCRF list suggests the heroine's here.
+//And considering she has no fixed name...
+//Whatever the pointer's pointing at
+//is probably somewhere in RAM, so
+//I ain't messing with that.
+
+//POINTER #22 @ $D78F - STRING #22 @ $D9E1
+
+#WRITE(Demons, $D78F)
+//ハ"ラム[End]
+Balaam[End]
+
+
+//POINTER #23 @ $D791 - STRING #23 @ $D9E6
+
+#WRITE(Demons, $D791)
+//サルカ"タナス[End]
+Sargatanas[End]
+
+
+//"Kaijuu" - untranslated
+//POINTER #24 @ $D793 - STRING #24 @ $D9EE
+
+#WRITE(Demons, $D793)
+//ティアマット[End]
+Tiamat[End]
+
+
+//POINTER #25 @ $D795 - STRING #25 @ $D9F5
+
+#WRITE(Demons, $D795)
+//レウ"ィアサン[End]
+Leviathan[End]
+
+
+//POINTER #26 @ $D797 - STRING #26 @ $D9FD
+
+#WRITE(Demons, $D797)
+//ニトホック"[End]
+Nidhogg[End]
+
+
+//POINTER #27 @ $D799 - STRING #27 @ $DA04
+
+#WRITE(Demons, $D799)
+//ウ"リトラ[End]
+Vritra[End]
+
+
+//POINTER #28 @ $D79B - STRING #28 @ $DA0A
+
+#WRITE(Demons, $D79B)
+//ヒト"ラ[End]
+Hydra[End]
+
+
+//POINTER #29 @ $D79D - STRING #29 @ $DA0F
+
+#WRITE(Demons, $D79D)
+//フェンリル[End]
+Fenrir[End]
+
+
+//POINTER #30 @ $D79F - STRING #30 @ $DA15
+
+#WRITE(Demons, $D79F)
+//ティホン[End]
+Typhon[End]
+
+
+//POINTER #31 @ $D7A1 - STRING #31 @ $DA1A
+
+#WRITE(Demons, $D7A1)
+//アホ°リオン[End]
+//Abaddon[End]
+Apollyon[End]
+
+//POINTER #32 @ $D7A3 - STRING #32 @ $DA21
+
+#WRITE(Demons, $D7A3)
+//スキュラ[End]
+Scylla[End]
+
+
+//POINTER #33 @ $D7A5 - STRING #33 @ $DA26
+
+#WRITE(Demons, $D7A5)
+//ハ"シ"リスク[End]
+Basilisk[End]
+
+
+//POINTER #34 @ $D7A7 - STRING #34 @ $DA2E
+
+#WRITE(Demons, $D7A7)
+//マンティコア[End]
+Manticore[End]
+
+
+//POINTER #35 @ $D7A9 - STRING #35 @ $DA35
+
+#WRITE(Demons, $D7A9)
+//ワイハ"-ン[End]
+Wyvern[End]
+
+
+//Femme Race
+//POINTER #36 @ $D7AB - STRING #36 @ $DA3C
+
+#WRITE(Demons, $D7AB)
+//ランタ"[End]
+Rangda[End]
+
+
+//POINTER #37 @ $D7AD - STRING #37 @ $DA41
+
+#WRITE(Demons, $D7AD)
+//タマモノマエ[End]
+//Tamamo no Mae[End]
+Tamamo[End]
+
+
+//POINTER #38 @ $D7AF - STRING #38 @ $DA48
+
+#WRITE(Demons, $D7AF)
+//ホ"ルホ"[End]
+Volva[End]
+
+
+//POINTER #39 @ $D7B1 - STRING #39 @ $DA4E
+
+#WRITE(Demons, $D7B1)
+//メテ"ュ-サ[End]
+Medusa[End]
+
+
+//POINTER #40 @ $D7B3 - STRING #40 @ $DA55
+
+#WRITE(Demons, $D7B3)
+//ラルン[End]
+Rarung[End]
+
+
+//POINTER #41 @ $D7B5 - STRING #41 @ $DA59
+
+#WRITE(Demons, $D7B5)
+//ナアス[End]
+Nasu[End]
+
+
+//POINTER #42 @ $D7B7 - STRING #42 @ $DA5D
+
+#WRITE(Demons, $D7B7)
+//キヨヒメ[End]
+//Kiyo-hime[End]
+Kiyo[End]
+
+
+//POINTER #43 @ $D7B9 - STRING #43 @ $DA62
+
+#WRITE(Demons, $D7B9)
+//アルケニ-[End]
+Arachne[End]
+
+
+//POINTER #44 @ $D7BB - STRING #44 @ $DA68
+
+#WRITE(Demons, $D7BB)
+//タ-ラカ"[End]
+Taraka[End]
+
+
+//POINTER #45 @ $D7BD - STRING #45 @ $DA6E
+
+#WRITE(Demons, $D7BD)
+//セイレ-ン[End]
+Siren[End]
+
+
+//POINTER #46 @ $D7BF - STRING #46 @ $DA74
+
+#WRITE(Demons, $D7BF)
+//フリアイ[End]
+//Furiae[End]
+Fury[End]
+
+
+//Night Race
+//POINTER #47 @ $D7C1 - STRING #47 @ $DA79
+
+#WRITE(Demons, $D7C1)
+//サウォハ"ク[End]
+Sawo Bhaku[End]
+
+
+//POINTER #48 @ $D7C3 - STRING #48 @ $DA80
+
+#WRITE(Demons, $D7C3)
+//チュルルック[End]
+Celuluk[End]
+
+
+//POINTER #49 @ $D7C5 - STRING #49 @ $DA87
+
+#WRITE(Demons, $D7C5)
+//サキュハ"ス[End]
+Succubus[End]
+
+
+//POINTER #50 @ $D7C7 - STRING #50 @ $DA8E
+
+#WRITE(Demons, $D7C7)
+//アムト"ウシアス[End]
+Amdusias[End]
+
+
+//POINTER #51 @ $D7C9 - STRING #51 @ $DA97
+
+#WRITE(Demons, $D7C9)
+//ファントム[End]
+Phantom[End]
+
+
+//POINTER #52 @ $D7CB - STRING #52 @ $DA9D
+
+#WRITE(Demons, $D7CB)
+//レオナルト"[End]
+Leonard[End]
+
+
+//POINTER #53 @ $D7CD - STRING #53 @ $DAA4
+
+#WRITE(Demons, $D7CD)
+//ラルウァイ[End]
+//Larvae[End]
+Larva[End]
+
+
+//POINTER #54 @ $D7CF - STRING #54 @ $DAAA
+
+#WRITE(Demons, $D7CF)
+//ネヒ"ロス[End]
+Nebiros[End]
+
+
+//POINTER #55 @ $D7D1 - STRING #55 @ $DAB0
+
+#WRITE(Demons, $D7D1)
+//レムル-ス[End]
+Lemures[End]
+
+
+//Haunt Race
+//POINTER #56 @ $D7D3 - STRING #56 @ $DAB6
+
+#WRITE(Demons, $D7D3)
+//キ"リメカテ[End]
+//Girimekhala[End]
+Girimekala[End]
+
+
+//POINTER #57 @ $D7D5 - STRING #57 @ $DABD
+
+#WRITE(Demons, $D7D5)
+//ウトウク[End]
+Utukku[End]
+
+
+//POINTER #58 @ $D7D7 - STRING #58 @ $DAC2
+
+#WRITE(Demons, $D7D7)
+//ハクマ フ" トウ[End]
+//Hakuma Bhoot[End]
+Hakuma[End]
+
+//POINTER #59 @ $D7D9 - STRING #59 @ $DACC
+
+#WRITE(Demons, $D7D9)
+//テ"ュラハ-ン[End]
+Dullahan[End]
+
+
+//POINTER #60 @ $D7DB - STRING #60 @ $DAD4
+
+#WRITE(Demons, $D7DB)
+//ウ"ェ-タラ[End]
+Vetala[End]
+
+
+//POINTER #61 @ $D7DD - STRING #61 @ $DADB
+
+#WRITE(Demons, $D7DD)
+//リッチ[End]
+Lich[End]
+
+
+//POINTER #62 @ $D7DF - STRING #62 @ $DADF
+
+#WRITE(Demons, $D7DF)
+//ヒ"ワほうし[End]
+//Biwahoushi[End]
+Biwa Hoshi[End]
+
+
+//POINTER #63 @ $D7E1 - STRING #63 @ $DAE6
+
+#WRITE(Demons, $D7E1)
+//マット"マン[End]
+Mudman[End]
+
+
+//POINTER #64 @ $D7E3 - STRING #64 @ $DAED
+
+#WRITE(Demons, $D7E3)
+//ノスフェラトウ[End]
+Nosferatu[End]
+
+
+//POINTER #65 @ $D7E5 - STRING #65 @ $DAF5
+
+#WRITE(Demons, $D7E5)
+//ワイト[End]
+Wight[End]
+
+
+//Wilder Race
+//POINTER #66 @ $D7E7 - STRING #66 @ $DAF9
+
+#WRITE(Demons, $D7E7)
+//ファフニ-ル[End]
+Fafnir[End]
+
+
+//POINTER #67 @ $D7E9 - STRING #67 @ $DB00
+
+#WRITE(Demons, $D7E9)
+//ウルム[End]
+Wurm[End]
+
+
+//POINTER #68 @ $D7EB - STRING #68 @ $DB04
+
+#WRITE(Demons, $D7EB)
+//ウ"ォラク[End]
+Volac[End]
+
+
+//POINTER #69 @ $D7ED - STRING #69 @ $DB0A
+
+#WRITE(Demons, $D7ED)
+//ト"ト"ンコ"-[End]
+Dodongo[End]
+
+
+//POINTER #70 @ $D7EF - STRING #70 @ $DB13
+
+#WRITE(Demons, $D7EF)
+//ラト"ン[End]
+Ladon[End]
+
+
+//POINTER #71 @ $D7F1 - STRING #71 @ $DB18
+
+#WRITE(Demons, $D7F1)
+//ヌエ[End]
+Nue[End]
+
+
+//POINTER #72 @ $D7F3 - STRING #72 @ $DB1B
+
+#WRITE(Demons, $D7F3)
+//ハンハ"ハ"[End]
+Humbaba[End]
+
+
+//POINTER #73 @ $D7F5 - STRING #73 @ $DB22
+
+#WRITE(Demons, $D7F5)
+//コカトライス[End]
+Cockatrice[End]
+
+
+//POINTER #74 @ $D7F7 - STRING #74 @ $DB29
+
+#WRITE(Demons, $D7F7)
+//オロハ"ス[End]
+Orobas[End]
+
+
+//POINTER #75 @ $D7F9 - STRING #75 @ $DB2F
+
+#WRITE(Demons, $D7F9)
+//カ"ルム[End]
+Garm[End]
+
+
+//POINTER #76 @ $D7FB - STRING #76 @ $DB34
+
+#WRITE(Demons, $D7FB)
+//シ"ャハ"ウォ-ク[End]
+Jabberwock[End]
+
+
+//POINTER #77 @ $D7FD - STRING #77 @ $DB3E
+
+#WRITE(Demons, $D7FD)
+//ワイア-ム[End]
+Wyrm[End]
+
+
+//POINTER #78 @ $D7FF - STRING #78 @ $DB44
+
+#WRITE(Demons, $D7FF)
+//テ"ット"ロフ"スタ[End]
+//Dead Lobster[End]
+Lobster[End]
+
+
+//"Jaki" Race
+//POINTER #79 @ $D801 - STRING #79 @ $DB4F
+
+#WRITE(Demons, $D801)
+//アセ"サ"ル[End]
+Azazel[End]
+
+
+//POINTER #80 @ $D803 - STRING #80 @ $DB56
+
+#WRITE(Demons, $D803)
+//エキンム[End]
+Ekimmu[End]
+
+
+//POINTER #81 @ $D805 - STRING #81 @ $DB5B
+
+#WRITE(Demons, $D805)
+//ヘ"リス[End]
+Berith[End]
+
+
+//POINTER #82 @ $D807 - STRING #82 @ $DB60
+
+#WRITE(Demons, $D807)
+//フル-レティ[End]
+//Fleuretty[End]
+Fleuretty[End]
+
+
+//POINTER #83 @ $D809 - STRING #83 @ $DB67
+
+#WRITE(Demons, $D809)
+//スト-ン コ"-レム[End]
+//Stone Golem[End]
+Rock Golem[End]
+
+//POINTER #84 @ $D80B - STRING #84 @ $DB72
+
+#WRITE(Demons, $D80B)
+//サイクロフ°ス[End]
+Cyclops[End]
+
+
+//POINTER #85 @ $D80D - STRING #85 @ $DB7A
+
+#WRITE(Demons, $D80D)
+//アイン[End]
+Aim[End]
+
+
+//POINTER #86 @ $D80F - STRING #86 @ $DB7E
+
+#WRITE(Demons, $D80F)
+//クレイ コ"-レム[End]
+Clay Golem[End]
+
+
+//POINTER #87 @ $D811 - STRING #87 @ $DB88
+
+#WRITE(Demons, $D811)
+//ミノタウロス[End]
+Minotaur[End]
+
+
+//POINTER #88 @ $D813 - STRING #88 @ $DB8F
+
+#WRITE(Demons, $D813)
+//ハ"ク"ヘ"ア[End]
+Bugbear[End]
+
+
+//POINTER #89 @ $D815 - STRING #89 @ $DB97
+
+#WRITE(Demons, $D815)
+//ウェンテ"ィコ"[End]
+Wendigo[End]
+
+
+//POINTER #90 @ $D817 - STRING #90 @ $DBA0
+
+#WRITE(Demons, $D817)
+//オ-ク[End]
+Orc[End]
+
+
+//Machine Race
+//POINTER #91 @ $D819 - STRING #91 @ $DBA4
+
+#WRITE(Demons, $D819)
+//タロス[End]
+Talos[End]
+
+
+//POINTER #92 @ $D81B - STRING #92 @ $DBA8
+
+#WRITE(Demons, $D81B)
+GDR1000[End]
+
+
+//POINTER #93 @ $D81D - STRING #93 @ $DBB0
+
+#WRITE(Demons, $D81D)
+LB-501A[End]
+
+
+//Spirit Race
+//POINTER #94 @ $D81F - STRING #94 @ $DBB8
+
+#WRITE(Demons, $D81F)
+//スハ°ルチ[End]
+Spartoi[End]
+
+
+//POINTER #95 @ $D821 - STRING #95 @ $DBBE
+
+#WRITE(Demons, $D821)
+//スヘ°クタ-[End]
+Spectre[End]
+
+
+//POINTER #96 @ $D823 - STRING #96 @ $DBC5
+
+#WRITE(Demons, $D823)
+//ウィフ°リ[End]
+Upyr[End]
+
+
+//POINTER #97 @ $D825 - STRING #97 @ $DBCB
+
+#WRITE(Demons, $D825)
+//ヒ°シャ-チャ[End]
+Pishacha[End]
+
+
+//POINTER #98 @ $D827 - STRING #98 @ $DBD3
+
+#WRITE(Demons, $D827)
+//チョンチョン[End]
+Chonchon[End]
+
+
+//POINTER #99 @ $D829 - STRING #99 @ $DBDA
+
+#WRITE(Demons, $D829)
+//サカサクヒ"[End]
+//Inverted Head[End]
+Inv. Head[End]
+
+
+//POINTER #100 @ $D82B - STRING #100 @ $DBE1
+
+#WRITE(Demons, $D82B)
+//ホ"テ"コニアン[End]
+//Body-Conian[End]
+Bodyconian[End]
+
+//POINTER #101 @ $D82D - STRING #101 @ $DBEA
+
+#WRITE(Demons, $D82D)
+//コ-フ°ス[End]
+Corpse[End]
+
+
+//POINTER #102 @ $D82F - STRING #102 @ $DBF0
+
+#WRITE(Demons, $D82F)
+//ク"-ル[End]
+Ghoul[End]
+
+
+//POINTER #103 @ $D831 - STRING #103 @ $DBF5
+
+#WRITE(Demons, $D831)
+//ソ"ンヒ"[End]
+Zombie[End]
+
+
+//Madman Race
+//POINTER #104 @ $D833 - STRING #104 @ $DBFB
+
+#WRITE(Demons, $D833)
+//インテリヘ°リ[End]
+//Imtellipperi[End]
+Imtell[End]
+
+
+//POINTER #105 @ $D835 - STRING #105 @ $DC03
+
+#WRITE(Demons, $D835)
+//レット"ラム[End]
+Redrum[End]
+
+
+//POINTER #106 @ $D837 - STRING #106 @ $DC0A
+
+#WRITE(Demons, $D837)
+//ヒ"-メ[End]
+V Met[End]
+
+
+//POINTER #107 @ $D839 - STRING #107 @ $DC0F
+
+#WRITE(Demons, $D839)
+//ト"クタ-ハ"クタ[End]
+//Dr. Bakuta[End]
+//Unused
+DB[End]
+
+//POINTER #108 @ $D83B - STRING #108 @ $DC19
+
+#WRITE(Demons, $D83B)
+//シ"ャンキ-[End]
+Junkie[End]
+
+
+//POINTER #109 @ $D83D - STRING #109 @ $DC20
+
+#WRITE(Demons, $D83D)
+//アサシン[End]
+Assassin[End]
+
+
+//POINTER #110 @ $D83F - STRING #110 @ $DC25
+
+#WRITE(Demons, $D83F)
+//ミュ-タント[End]
+Mutant[End]
+
+
+//POINTER #111 @ $D841 - STRING #111 @ $DC2C
+
+#WRITE(Demons, $D841)
+//ハカイ ソウ[End]
+//Sinful Priest[End]
+Sinner[End]
+
+
+//POINTER #112 @ $D843 - STRING #112 @ $DC33
+
+#WRITE(Demons, $D843)
+//フライテ"イ[End]
+Friday[End]
+
+
+//POINTER #113 @ $D845 - STRING #113 @ $DC3A
+
+#WRITE(Demons, $D845)
+//ハイウェイスタ-[End]
+//Highway Star[End]
+Joyrider[End]
+
+
+//POINTER #114 @ $D847 - STRING #114 @ $DC43
+
+#WRITE(Demons, $D847)
+//メタル[End]
+Metal[End]
+
+
+//POINTER #115 @ $D849 - STRING #115 @ $DC47
+
+#WRITE(Demons, $D849)
+//キンス" ヘット"[End]
+//Kin's Head[End]
+Kinhead[End]
+
+
+//POINTER #116 @ $D84B - STRING #116 @ $DC51
+
+#WRITE(Demons, $D84B)
+//ハ°ンクス[End]
+Punk[End]
+
+
+//Foul Race
+//POINTER #117 @ $D84D - STRING #117 @ $DC57
+
+#WRITE(Demons, $D84D)
+//ト"リ-ム キッス[End]
+Dream Kiss[End]
+
+
+//POINTER #118 @ $D84F - STRING #118 @ $DC61
+
+#WRITE(Demons, $D84F)
+//シ"ャックランタン[End]
+//Jack o'Lantern[End]
+J'Lantern[End]
+
+
+//POINTER #119 @ $D851 - STRING #119 @ $DC6B
+
+#WRITE(Demons, $D851)
+//ハ"ックヘ"ア-ト"[End]
+Backbeard[End]
+
+
+//POINTER #120 @ $D853 - STRING #120 @ $DC76
+
+#WRITE(Demons, $D853)
+//ホ"-ンコ"-レム[End]
+Bone Golem[End]
+
+
+//POINTER #121 @ $D855 - STRING #121 @ $DC80
+
+#WRITE(Demons, $D855)
+//コ"-ルト"スライム[End]
+Gold Slime[End]
+
+
+//POINTER #122 @ $D857 - STRING #122 @ $DC8B
+
+#WRITE(Demons, $D857)
+//マンイ-タ-[End]
+Maneater[End]
+
+
+//POINTER #123 @ $D859 - STRING #123 @ $DC92
+
+#WRITE(Demons, $D859)
+//クラヘ"ヒ"[End]
+Kurabebi[End]
+
+
+//POINTER #124 @ $D85B - STRING #124 @ $DC99
+
+#WRITE(Demons, $D85B)
+//アスコモイト"[End]
+//Ascomoid[End]
+Ascomid[End]
+
+
+//POINTER #125 @ $D85D - STRING #125 @ $DCA1
+
+#WRITE(Demons, $D85D)
+//クラッフ°スライム[End]
+Crap Slime[End]
+
+
+//POINTER #126 @ $D85F - STRING #126 @ $DCAB
+
+#WRITE(Demons, $D85F)
+//ウィルオウィスフ°[End]
+//Will o'Wisp[End]
+Willowisp[End]
+
+
+//POINTER #127 @ $D861 - STRING #127 @ $DCB5
+
+#WRITE(Demons, $D861)
+//ク"リ-ンスライム[End]
+//Green Slime[End]
+Slime[End]
+
+//Fairy Race
+//Demons recruitable from here on
+//Character limit 8
+//POINTER #128 @ $D863 - STRING #128 @ $DCBF
+
+#WRITE(Demons, $D863)
+//トロ-ル[End]
+Troll[End]
+
+
+//POINTER #129 @ $D865 - STRING #129 @ $DCC4
+
+#WRITE(Demons, $D865)
+//レク"ハ"[End]
+Legba[End]
+
+
+//POINTER #130 @ $D867 - STRING #130 @ $DCCA
+
+#WRITE(Demons, $D867)
+//ホ"-ク"ル[End]
+Bogle[End]
+
+
+//POINTER #131 @ $D869 - STRING #131 @ $DCD1
+
+#WRITE(Demons, $D869)
+//ルサ-ルカ[End]
+Rusalka[End]
+
+
+//POINTER #132 @ $D86B - STRING #132 @ $DCD7
+
+#WRITE(Demons, $D86B)
+//ケライノ[End]
+Celaeno[End]
+
+
+//POINTER #133 @ $D86D - STRING #133 @ $DCDC
+
+#WRITE(Demons, $D86D)
+//アエロ-[End]
+Aello[End]
+
+
+//POINTER #134 @ $D86F - STRING #134 @ $DCE1
+
+#WRITE(Demons, $D86F)
+//オキュヘ°テ[End]
+Ocypete[End]
+
+
+//POINTER #135 @ $D871 - STRING #135 @ $DCE8
+
+#WRITE(Demons, $D871)
+//アフ°サラス[End]
+Apsaras[End]
+
+
+//POINTER #136 @ $D873 - STRING #136 @ $DCEF
+
+#WRITE(Demons, $D873)
+//ケルヒ°-[End]
+Kelpie[End]
+
+
+//POINTER #137 @ $D875 - STRING #137 @ $DCF5
+
+#WRITE(Demons, $D875)
+//メロウ[End]
+Merrow[End]
+
+
+//POINTER #138 @ $D877 - STRING #138 @ $DCF9
+
+#WRITE(Demons, $D877)
+//エルフ[End]
+Elf[End]
+
+
+//POINTER #139 @ $D879 - STRING #139 @ $DCFD
+
+#WRITE(Demons, $D879)
+//コ"フ"リン[End]
+Goblin[End]
+
+
+//POINTER #140 @ $D87B - STRING #140 @ $DD04
+
+#WRITE(Demons, $D87B)
+//ハ-ヒ°-[End]
+Harpy[End]
+
+
+//POINTER #141 @ $D87D - STRING #141 @ $DD0A
+
+#WRITE(Demons, $D87D)
+//ヒ°クシ-[End]
+Pixie[End]
+
+
+//"Jirae" Race
+//POINTER #142 @ $D87F - STRING #142 @ $DD10
+
+#WRITE(Demons, $D87F)
+//ウヘ°ルリ[End]
+Upelluri[End]
+
+
+//POINTER #143 @ $D881 - STRING #143 @ $DD16
+
+#WRITE(Demons, $D881)
+//シ"ャイアント[End]
+Giant[End]
+
+
+//POINTER #144 @ $D883 - STRING #144 @ $DD1E
+
+#WRITE(Demons, $D883)
+//サレオス[End]
+Saleos[End]
+
+
+//POINTER #145 @ $D885 - STRING #145 @ $DD23
+
+#WRITE(Demons, $D885)
+//アトラス[End]
+Atlas[End]
+
+
+//POINTER #146 @ $D887 - STRING #146 @ $DD28
+
+#WRITE(Demons, $D887)
+//ツチク"モ[End]
+//Tsuchigumo[End]
+Tsuchi[End]
+
+
+//POINTER #147 @ $D889 - STRING #147 @ $DD2E
+
+#WRITE(Demons, $D889)
+//タンキ[End]
+Dan Gui[End]
+
+
+//POINTER #148 @ $D88B - STRING #148 @ $DD32
+
+#WRITE(Demons, $D88B)
+//フ"ッカフ"-[End]
+Buccaboo[End]
+
+
+//POINTER #149 @ $D88D - STRING #149 @ $DD3A
+
+#WRITE(Demons, $D88D)
+//ト"ワ-フ[End]
+Dwarf[End]
+
+
+//POINTER #150 @ $D88F - STRING #150 @ $DD40
+
+#WRITE(Demons, $D88F)
+//コホ"ルト[End]
+Kobold[End]
+
+
+//Brute Race
+//POINTER #151 @ $D891 - STRING #151 @ $DD46
+
+#WRITE(Demons, $D891)
+//コロンソ"ン[End]
+//Choronzon[End]
+Coronzon[End]
+
+//POINTER #152 @ $D893 - STRING #152 @ $DD4D
+
+#WRITE(Demons, $D893)
+//オニ[End]
+Oni[End]
+
+
+//POINTER #153 @ $D895 - STRING #153 @ $DD50
+
+#WRITE(Demons, $D895)
+//メフィスト[End]
+Mephisto[End]
+
+
+//POINTER #154 @ $D897 - STRING #154 @ $DD56
+
+#WRITE(Demons, $D897)
+//フ°ルシキ[End]
+//Pulukisi[End]
+Purski[End]
+
+//POINTER #155 @ $D899 - STRING #155 @ $DD5C
+
+#WRITE(Demons, $D899)
+//メス"キ[End]
+Mezuki[End]
+
+
+//POINTER #156 @ $D89B - STRING #156 @ $DD61
+
+#WRITE(Demons, $D89B)
+//シ"ニ-[End]
+Djinn[End]
+
+
+//POINTER #157 @ $D89D - STRING #157 @ $DD66
+
+#WRITE(Demons, $D89D)
+//コ"ス"キ[End]
+Gozuki[End]
+
+
+//POINTER #158 @ $D89F - STRING #158 @ $DD6C
+
+#WRITE(Demons, $D89F)
+//アラハハ"キ[End]
+//Arahabaki[End]
+Araha[End]
+
+
+//POINTER #159 @ $D8A1 - STRING #159 @ $DD73
+
+#WRITE(Demons, $D8A1)
+//シトリ-[End]
+Sitri[End]
+
+
+//POINTER #160 @ $D8A3 - STRING #160 @ $DD78
+
+#WRITE(Demons, $D8A3)
+//モムノフ[End]
+Momunofu[End]
+
+
+//POINTER #161 @ $D8A5 - STRING #161 @ $DD7D
+
+#WRITE(Demons, $D8A5)
+//カ"-フ°[End]
+Gaap[End]
+
+
+//POINTER #162 @ $D8A7 - STRING #162 @ $DD83
+
+#WRITE(Demons, $D8A7)
+//カワンチャ[End]
+Kwancha[End]
+
+
+//POINTER #163 @ $D8A9 - STRING #163 @ $DD89
+
+#WRITE(Demons, $D8A9)
+//フォルネウス[End]
+Forneus[End]
+
+
+//POINTER #164 @ $D8AB - STRING #164 @ $DD90
+
+#WRITE(Demons, $D8AB)
+//キマリス[End]
+Kimaris[End]
+
+
+//POINTER #165 @ $D8AD - STRING #165 @ $DD95
+
+#WRITE(Demons, $D8AD)
+//カ-ハ"ンクル[End]
+//Carbuncle[End]
+Carbunk[End]
+
+
+//Beast Race
+//POINTER #166 @ $D8AF - STRING #166 @ $DD9D
+
+#WRITE(Demons, $D8AF)
+//ハ°イロン[End]
+Bailong[End]
+
+
+//POINTER #167 @ $D8B1 - STRING #167 @ $DDA3
+
+#WRITE(Demons, $D8B1)
+//キマイラ[End]
+Chimera[End]
+
+
+//POINTER #168 @ $D8B3 - STRING #168 @ $DDA8
+
+#WRITE(Demons, $D8B3)
+//9ヒ"ノ キツネ[End]
+//9-Tailed Fox[End]
+9-Tailed[End]
+
+
+//POINTER #169 @ $D8B5 - STRING #169 @ $DDB1
+
+#WRITE(Demons, $D8B5)
+//ケルヘ"ロス[End]
+Cerberus[End]
+
+
+//POINTER #170 @ $D8B7 - STRING #170 @ $DDB8
+
+#WRITE(Demons, $D8B7)
+//ク"リフォン[End]
+Gryphon[End]
+
+
+//POINTER #171 @ $D8B9 - STRING #171 @ $DDBF
+
+#WRITE(Demons, $D8B9)
+//ヤタカ"ラス[End]
+//Yatagarasu[End]
+Yataga[End]
+
+
+//POINTER #172 @ $D8BB - STRING #172 @ $DDC6
+
+#WRITE(Demons, $D8BB)
+//タムス"[End]
+Tammuz[End]
+
+
+//POINTER #173 @ $D8BD - STRING #173 @ $DDCB
+
+#WRITE(Demons, $D8BD)
+//スト-ンカ[End]
+//Stanga[End]
+Stonka[End]
+
+//POINTER #174 @ $D8BF - STRING #174 @ $DDD1
+
+#WRITE(Demons, $D8BF)
+//オルトロス[End]
+Orthrus[End]
+
+
+//POINTER #175 @ $D8C1 - STRING #175 @ $DDD7
+
+#WRITE(Demons, $D8C1)
+//ヘ°カ"サス[End]
+Pegasus[End]
+
+
+//"Yoma" Race
+//POINTER #176 @ $D8C3 - STRING #176 @ $DDDE
+
+#WRITE(Demons, $D8C3)
+//ソ-ト"ナイト[End]
+//Sword Knight[End]
+Sword Kn.[End]
+
+//POINTER #177 @ $D8C5 - STRING #177 @ $DDE6
+
+#WRITE(Demons, $D8C5)
+//ワント"ナイト[End]
+//Wand Knight[End]
+Wand Kn.[End]
+
+//POINTER #178 @ $D8C7 - STRING #178 @ $DDEE
+
+#WRITE(Demons, $D8C7)
+//ク"レモリ-[End]
+Gremory[End]
+
+
+//POINTER #179 @ $D8C9 - STRING #179 @ $DDF5
+
+#WRITE(Demons, $D8C9)
+//ウ"ァルキリ-[End]
+Valkyrie[End]
+
+
+//POINTER #180 @ $D8CB - STRING #180 @ $DDFD
+
+#WRITE(Demons, $D8CB)
+//フ-リ-[End]
+Huris[End]
+
+
+//POINTER #181 @ $D8CD - STRING #181 @ $DE02
+
+#WRITE(Demons, $D8CD)
+//ハンシ"ャ[End]
+Hannya[End]
+
+
+//POINTER #182 @ $D8CF - STRING #182 @ $DE08
+
+#WRITE(Demons, $D8CF)
+//アミイ[End]
+Amy[End]
+
+
+//POINTER #183 @ $D8D1 - STRING #183 @ $DE0C
+
+#WRITE(Demons, $D8D1)
+//オオナムチ[End]
+//Oonamuchi[End]
+Onamuchi[End]
+
+
+//POINTER #184 @ $D8D3 - STRING #184 @ $DE12
+
+#WRITE(Demons, $D8D3)
+//カッフ°ナイト[End]
+//Cup Knight[End]
+Cup Kn.[End]
+
+
+//POINTER #185 @ $D8D5 - STRING #185 @ $DE1A
+
+#WRITE(Demons, $D8D5)
+//モルカ"ン[End]
+Morgan[End]
+
+
+//POINTER #186 @ $D8D7 - STRING #186 @ $DE20
+
+#WRITE(Demons, $D8D7)
+//クシナタ"ヒメ[End]
+//Kushinada-hime[End]
+Kushi[End]
+
+
+//POINTER #187 @ $D8D9 - STRING #187 @ $DE28
+
+#WRITE(Demons, $D8D9)
+//シ"ャクフロスト[End]
+//Jack Frost[End]
+J. Frost[End]
+
+
+//POINTER #188 @ $D8DB - STRING #188 @ $DE31
+
+#WRITE(Demons, $D8DB)
+//テ"ィスクナイト[End]
+//Disk Knight[End]
+Disc Kn.[End]
+
+
+//POINTER #189 @ $D8DD - STRING #189 @ $DE3A
+
+#WRITE(Demons, $D8DD)
+//ネコマタ[End]
+//Nekomata[End]
+Neko[End]
+
+
+//POINTER #190 @ $D8DF - STRING #190 @ $DE3F
+
+#WRITE(Demons, $D8DF)
+//ケンタウロス[End]
+Centaur[End]
+
+
+//POINTER #191 @ $D8E1 - STRING #191 @ $DE46
+
+#WRITE(Demons, $D8E1)
+//コワトリクエ[End]
+//Coatlicue[End]
+Coatlic[End]
+
+
+//Good Demons
+//Fusion only
+//Element Race
+//POINTER #192 @ $D8E3 - STRING #192 @ $DE4D
+
+#WRITE(Demons, $D8E3)
+//サラマンタ"-[End]
+//Salamander[End]
+Salamand[End]
+
+
+//POINTER #193 @ $D8E5 - STRING #193 @ $DE55
+
+#WRITE(Demons, $D8E5)
+//ラケ-[End]
+Lakhe[End]
+
+
+//POINTER #194 @ $D8E7 - STRING #194 @ $DE59
+
+#WRITE(Demons, $D8E7)
+//ウ"ェハ°-ル[End]
+Vepar[End]
+
+
+//POINTER #195 @ $D8E9 - STRING #195 @ $DE61
+
+#WRITE(Demons, $D8E9)
+//ウンテ"ィ-ネ[End]
+Undine[End]
+
+
+//POINTER #196 @ $D8EB - STRING #196 @ $DE69
+
+#WRITE(Demons, $D8EB)
+//シルフ[End]
+Sylph[End]
+
+
+//POINTER #197 @ $D8ED - STRING #197 @ $DE6D
+
+#WRITE(Demons, $D8ED)
+//ノ-ム[End]
+Gnome[End]
+
+
+//POINTER #198 @ $D8EF - STRING #198 @ $DE71
+
+#WRITE(Demons, $D8EF)
+//フレイミスライム[End]
+//Flamy Slime[End]
+Flamy[End]
+
+
+//POINTER #199 @ $D8F1 - STRING #199 @ $DE7A
+
+#WRITE(Demons, $D8F1)
+//アクワンスライム[End]
+//Aquan Slime[End]
+Aquan[End]
+
+
+//POINTER #200 @ $D8F3 - STRING #200 @ $DE83
+
+#WRITE(Demons, $D8F3)
+//エアリ-スライム[End]
+//Airy Slime[End]
+Airy[End]
+
+
+//POINTER #201 @ $D8F5 - STRING #201 @ $DE8C
+
+#WRITE(Demons, $D8F5)
+//ア-シ-スライム[End]
+//Earthy Slime[End]
+Earthy[End]
+
+
+//Holy Race
+//POINTER #202 @ $D8F7 - STRING #202 @ $DE95
+
+#WRITE(Demons, $D8F7)
+//フェニックス[End]
+Phoenix[End]
+
+
+//POINTER #203 @ $D8F9 - STRING #203 @ $DE9C
+
+#WRITE(Demons, $D8F9)
+//ラクチャランコ"[End]
+//Raktarango[End]
+Rakta[End]
+
+
+//POINTER #204 @ $D8FB - STRING #204 @ $DEA5
+
+#WRITE(Demons, $D8FB)
+//ハ°ヒ"ルサク"[End]
+Pabilsag[End]
+
+
+//POINTER #205 @ $D8FD - STRING #205 @ $DEAE
+
+#WRITE(Demons, $D8FD)
+//ケツアルカトル[End]
+//Quetzalcoatl[End]
+Quetzal[End]
+
+
+//POINTER #206 @ $D8FF - STRING #206 @ $DEB6
+
+#WRITE(Demons, $D8FF)
+//ケ"ンフ"[End]
+Genbu[End]
+
+
+//POINTER #207 @ $D901 - STRING #207 @ $DEBC
+
+#WRITE(Demons, $D901)
+//ユニコ-ン[End]
+Unicorn[End]
+
+
+//POINTER #208 @ $D903 - STRING #208 @ $DEC2
+
+#WRITE(Demons, $D903)
+//カ"ンタ"ルハ"[End]
+//Gandharva[End]
+Gandarva[End]
+
+
+//POINTER #209 @ $D905 - STRING #209 @ $DECB
+
+#WRITE(Demons, $D905)
+//キリン[End]
+Kirin[End]
+
+
+//"Genma" Race
+//POINTER #210 @ $D907 - STRING #210 @ $DECF
+
+#WRITE(Demons, $D907)
+//ハヌマ-ン[End]
+Hanuman[End]
+
+
+//POINTER #211 @ $D909 - STRING #211 @ $DED5
+
+#WRITE(Demons, $D909)
+//フルカロス[End]
+Focalor[End]
+
+
+//POINTER #212 @ $D90B - STRING #212 @ $DEDB
+
+#WRITE(Demons, $D90B)
+//アカ"レス[End]
+Agares[End]
+
+
+//POINTER #213 @ $D90D - STRING #213 @ $DEE1
+
+#WRITE(Demons, $D90D)
+//キクリヒメ[End]
+//Kikuri-hime[End]
+Kikuri[End]
+
+
+//POINTER #214 @ $D90F - STRING #214 @ $DEE7
+
+#WRITE(Demons, $D90F)
+//ラクシュミ[End]
+Lakshmi[End]
+
+
+//POINTER #215 @ $D911 - STRING #215 @ $DEED
+
+#WRITE(Demons, $D911)
+//ラミア-[End]
+Lamia[End]
+
+
+//POINTER #216 @ $D913 - STRING #216 @ $DEF2
+
+#WRITE(Demons, $D913)
+//タ"ンハ"ラ[End]
+Damballa[End]
+
+
+//POINTER #217 @ $D915 - STRING #217 @ $DEF9
+
+#WRITE(Demons, $D915)
+//ハ"フォメット[End]
+Baphomet[End]
+
+
+//POINTER #218 @ $D917 - STRING #218 @ $DF01
+
+#WRITE(Demons, $D917)
+//ク-フ-リン[End]
+//Cu Chulainn[End]
+Chulainn[End]
+
+
+//POINTER #219 @ $D919 - STRING #219 @ $DF08
+
+#WRITE(Demons, $D919)
+//キンナラ[End]
+Kinnara[End]
+
+
+//POINTER #220 @ $D91B - STRING #220 @ $DF0D
+
+#WRITE(Demons, $D91B)
+//エリコ"-ル[End]
+Eligor[End]
+
+
+//POINTER #221 @ $D91D - STRING #221 @ $DF14
+
+#WRITE(Demons, $D91D)
+//エイワス[End]
+Aiwass[End]
+
+
+//POINTER #222 @ $D91F - STRING #222 @ $DF19
+
+#WRITE(Demons, $D91F)
+//ウコハ"チ[End]
+Ukobach[End]
+
+
+//POINTER #223 @ $D921 - STRING #223 @ $DF1F
+
+#WRITE(Demons, $D921)
+//アルラウネ[End]
+Alraune[End]
+
+
+//POINTER #224 @ $D923 - STRING #224 @ $DF25
+
+//Divine Race
+#WRITE(Demons, $D923)
+//ミカエル[End]
+Michael[End]
+
+
+//POINTER #225 @ $D925 - STRING #225 @ $DF2A
+
+#WRITE(Demons, $D925)
+//カ"フ"リエル[End]
+Gabriel[End]
+
+
+//POINTER #226 @ $D927 - STRING #226 @ $DF32
+
+#WRITE(Demons, $D927)
+//ニケ-[End]
+Nike[End]
+
+
+//POINTER #227 @ $D929 - STRING #227 @ $DF36
+
+#WRITE(Demons, $D929)
+//ケルヒ"ム[End]
+//Cherubim[End]
+Cherub[End]
+
+
+//POINTER #228 @ $D92B - STRING #228 @ $DF3C
+
+#WRITE(Demons, $D92B)
+//ラファエル[End]
+Raphael[End]
+
+
+//POINTER #229 @ $D92D - STRING #229 @ $DF42
+
+#WRITE(Demons, $D92D)
+//ウリエル[End]
+Uriel[End]
+
+
+//POINTER #230 @ $D92F - STRING #230 @ $DF47
+
+//"Kishin" Race
+#WRITE(Demons, $D92F)
+//カ-リ-[End]
+Kali[End]
+
+
+//POINTER #231 @ $D931 - STRING #231 @ $DF4C
+
+#WRITE(Demons, $D931)
+//アモン[End]
+Amon[End]
+
+
+//POINTER #232 @ $D933 - STRING #232 @ $DF50
+
+#WRITE(Demons, $D933)
+//ト-ル[End]
+Thor[End]
+
+
+//POINTER #233 @ $D935 - STRING #233 @ $DF54
+
+#WRITE(Demons, $D935)
+//カ"ネ-シャ[End]
+Ganesha[End]
+
+
+//POINTER #234 @ $D937 - STRING #234 @ $DF5B
+
+#WRITE(Demons, $D937)
+//タモンテン[End]
+//Tamonten[End]
+Tamon[End]
+
+
+//POINTER #235 @ $D939 - STRING #235 @ $DF61
+
+#WRITE(Demons, $D939)
+//スサノオ[End]
+Susanoo[End]
+
+
+//POINTER #236 @ $D93B - STRING #236 @ $DF66
+
+#WRITE(Demons, $D93B)
+//イフリ-ト[End]
+Ifrit[End]
+
+
+//POINTER #237 @ $D93D - STRING #237 @ $DF6C
+
+#WRITE(Demons, $D93D)
+//シ"コクテン[End]
+//Jikokuten[End]
+Jikoku[End]
+
+
+//POINTER #238 @ $D93F - STRING #238 @ $DF73
+
+#WRITE(Demons, $D93F)
+//ラクシャ-サ[End]
+Rakshasa[End]
+
+
+//POINTER #239 @ $D941 - STRING #239 @ $DF7A
+
+#WRITE(Demons, $D941)
+//コウモクテン[End]
+//Koumokuten[End]
+Koumoku[End]
+
+
+//POINTER #240 @ $D943 - STRING #240 @ $DF81
+
+#WRITE(Demons, $D943)
+//ソ"ウチョウテン[End]
+//Zouchouten[End]
+Zouchou[End]
+
+
+//POINTER #241 @ $D945 - STRING #241 @ $DF8A
+
+//Avatar Race
+#WRITE(Demons, $D945)
+//チィンロン[End]
+Qinglong[End]
+
+
+//POINTER #242 @ $D947 - STRING #242 @ $DF90
+
+#WRITE(Demons, $D947)
+//カ"ル-タ"[End]
+Garuda[End]
+
+
+//POINTER #243 @ $D949 - STRING #243 @ $DF97
+
+#WRITE(Demons, $D949)
+//ハ"ロン[End]
+Barong[End]
+
+
+//POINTER #244 @ $D94B - STRING #244 @ $DF9C
+
+#WRITE(Demons, $D94B)
+//スフィンクス[End]
+Sphinx[End]
+
+
+//POINTER #245 @ $D94D - STRING #245 @ $DFA3
+
+#WRITE(Demons, $D94D)
+//ナ-カ"[End]
+Naga[End]
+
+
+//Deity Race
+//POINTER #246 @ $D94F - STRING #246 @ $DFA8
+
+//#WRITE(Demons, $D94F)
+//ルシファ-[End]
+//Lucifer[End]
+//Playable version
+
+
+//POINTER #247 @ $D951 - STRING #247 @ $DFAE
+
+#WRITE(Demons, $D951)
+//シウ"ァ[End]
+Shiva[End]
+
+
+//POINTER #248 @ $D953 - STRING #248 @ $DFB3
+
+#WRITE(Demons, $D953)
+//アフラマス"タ"[End]
+//Ahura Mazda[End]
+Mazda[End]
+
+
+//POINTER #249 @ $D955 - STRING #249 @ $DFBC
+
+#WRITE(Demons, $D955)
+//ハ"アル[End]
+Baal[End]
+
+
+//POINTER #250 @ $D957 - STRING #250 @ $DFC1
+
+#WRITE(Demons, $D957)
+//ウ"ィシュヌ[End]
+Vishnu[End]
+
+
+//POINTER #251 @ $D959 - STRING #251 @ $DFC8
+
+#WRITE(Demons, $D959)
+//オ-テ"ィン[End]
+Odin[End]
+
+
+//POINTER #252 @ $D95B - STRING #252 @ $DFCF
+
+#WRITE(Demons, $D95B)
+//フ"ラフマン[End]
+Brahma[End]
+

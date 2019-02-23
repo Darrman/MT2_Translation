@@ -1,0 +1,220 @@
+﻿//GAME NAME:		Megami Tensei 2 (NES)
+
+#VAR(text, TABLE)
+#ADDTBL("dialogue.tbl", text)
+#ACTIVETBL(text)
+
+//BLOCK #011 NAME:		Demon Race Names
+
+#VAR(Races, CUSTOMPOINTER)
+#CREATEPTR(Races, "LINEAR", $20010, 16)
+
+#JMP($2BB3A, $2BBC2)
+
+//POINTER #0 @ $2BB04 - STRING #0 @ $2BB3A
+
+#WRITE(Races, $2BB04)
+//Dark Hero: no race
+[End]
+
+
+//POINTER #1 @ $2BB06 - STRING #1 @ $2BB3B
+
+#WRITE(Races, $2BB06)
+//ユイイツシン[End]
+//YHVH's race.
+God[End]
+
+
+//POINTER #2 @ $2BB08 - STRING #2 @ $2BB42
+
+#WRITE(Races, $2BB08)
+//マオウ[End]
+//Tyrant
+Tyrnt[End]
+
+
+//POINTER #3 @ $2BB0A - STRING #3 @ $2BB46
+
+#WRITE(Races, $2BB0A)
+//シ"ャシン[End]
+//Vile
+Vile[End]
+
+
+//POINTER #4 @ $2BB0C - STRING #4 @ $2BB4C
+
+#WRITE(Races, $2BB0C)
+//カイシ"ュウ[End]
+//"Kaijuu"
+Kaiju[End]
+
+
+//POINTER #5 @ $2BB0E - STRING #5 @ $2BB53
+
+#WRITE(Races, $2BB0E)
+//キシ"ョ[End]
+//Femme
+Femme[End]
+
+//POINTER #6 @ $2BB10 - STRING #6 @ $2BB58
+
+#WRITE(Races, $2BB10)
+//ヤマ[End]
+//Night
+Night[End]
+
+
+//POINTER #7 @ $2BB12 - STRING #7 @ $2BB5B
+
+#WRITE(Races, $2BB12)
+//ユウキ[End]
+//Haunt
+Haunt[End]
+
+
+//POINTER #8 @ $2BB14 - STRING #8 @ $2BB5F
+
+#WRITE(Races, $2BB14)
+//ヨウシ"ュウ[End]
+//Wilder
+Wild[End]
+
+
+//POINTER #9 @ $2BB16 - STRING #9 @ $2BB66
+
+#WRITE(Races, $2BB16)
+//シ"ャキ[End]
+//"Jaki"
+Jaki[End]
+
+//POINTER #10 @ $2BB18 - STRING #10 @ $2BB6B
+
+#WRITE(Races, $2BB18)
+//マシン[End]
+//Machine
+Cyber[End]
+
+
+//POINTER #11 @ $2BB1A - STRING #11 @ $2BB6F
+
+#WRITE(Races, $2BB1A)
+//アクリョウ[End]
+//Spirit
+Sprt[End]
+
+
+//POINTER #12 @ $2BB1C - STRING #12 @ $2BB75
+
+#WRITE(Races, $2BB1C)
+//キョウシ"ン[End]
+//Madman
+Mad[End]
+
+//POINTER #13 @ $2BB1E - STRING #13 @ $2BB7C
+
+#WRITE(Races, $2BB1E)
+//ケ"ト"ウ[End]
+Foul[End]
+
+
+//POINTER #14 @ $2BB20 - STRING #14 @ $2BB82
+
+#WRITE(Races, $2BB20)
+//ヨウセイ[End]
+//Fairy
+Fairy[End]
+
+
+//POINTER #15 @ $2BB22 - STRING #15 @ $2BB87
+
+#WRITE(Races, $2BB22)
+//チレイ[End]
+//"Jirae"
+Jirae[End]
+
+
+//POINTER #16 @ $2BB24 - STRING #16 @ $2BB8B
+
+#WRITE(Races, $2BB24)
+//ヨウキ[End]
+//Brute
+Brute[End]
+
+//POINTER #17 @ $2BB26 - STRING #17 @ $2BB8F
+
+#WRITE(Races, $2BB26)
+//マシ"ュウ[End]
+//Beast
+Beast[End]
+
+
+//POINTER #18 @ $2BB28 - STRING #18 @ $2BB95
+
+#WRITE(Races, $2BB28)
+//ヨウマ[End]
+//"Yoma"
+Yoma[End]
+
+
+//POINTER #19 @ $2BB2A - STRING #19 @ $2BB99
+
+#WRITE(Races, $2BB2A)
+//セイレイ[End]
+//Element
+Elem[End]
+
+
+//POINTER #20 @ $2BB2C - STRING #20 @ $2BB9E
+
+#WRITE(Races, $2BB2C)
+//セイシ"ュウ[End]
+Holy[End]
+
+
+//POINTER #21 @ $2BB2E - STRING #21 @ $2BBA5
+
+#WRITE(Races, $2BB2E)
+//ケ"ンマ[End]
+//"Genma"
+Genma[End]
+
+
+//POINTER #22 @ $2BB30 - STRING #22 @ $2BBAA
+
+#WRITE(Races, $2BB30)
+//テンシ[End]
+//Divine[End]
+Dvin[End]
+
+
+//POINTER #23 @ $2BB32 - STRING #23 @ $2BBAE
+
+#WRITE(Races, $2BB32)
+//キシ"ン[End]
+//"Kishin"
+Kisn[End]
+
+
+//POINTER #24 @ $2BB34 - STRING #24 @ $2BBB3
+
+#WRITE(Races, $2BB34)
+//シンシ"ュウ[End]
+//Avatar
+Avtr[End]
+
+
+//POINTER #25 @ $2BB36 - STRING #25 @ $2BBBA
+
+#WRITE(Races, $2BB36)
+//マシ"ン[End]
+//Deity
+Deity[End]
+
+
+//POINTER #26 @ $2BB38 - STRING #26 @ $2BBBF
+
+#WRITE(Races, $2BB38)
+//メシア[End]
+//Messiah according to Google. Unused?
+//Dunno if the humans have races visible.

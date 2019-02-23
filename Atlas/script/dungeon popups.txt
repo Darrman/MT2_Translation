@@ -1,0 +1,180 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #009 NAME:		Dungeon Popups
+
+#VAR(text, TABLE)
+#ADDTBL("overworld.tbl", text)
+#ACTIVETBL(text)
+
+#VAR(Signs, CUSTOMPOINTER)
+#CREATEPTR(Signs, "LINEAR", $20010, 16)
+
+
+//POINTER #171 @ $28166 - STRING #171 @ $291E6
+
+#JMP($291E6)
+
+#WRITE(Signs, $28166)
+<$60><$18><$73>
+┏━━━━━━┓
+| POISON ┃
+|  BAR   ┃
+┗______┛
+
+
+//POINTER #172 @ $28168 - STRING #172 @ $29229
+
+#WRITE(Signs, $28168)
+<$60><$18><$73>
+┏━━━━━━┓
+|  BAR   ┃
+| DAMIAN ┃
+┗______┛
+
+
+//POINTER #173 @ $2816A - STRING #173 @ $2926C
+
+#WRITE(Signs, $2816A)
+<$64><$18><$63>
+┏━━━━━┓
+|  BAR  ┃
+| SUNDA ┃
+┗_____┛
+
+
+//POINTER #178 @ $28174 - STRING #178 @ $2935B
+
+#JMP($2935B)
+
+#WRITE(Signs, $28174)
+<$60><$18><$72>
+┏━━━━━━┓
+| ARMORY ┃
+┗______┛
+
+
+//POINTER #179 @ $28176 - STRING #179 @ $2938E
+
+#WRITE(Signs, $28176)
+<$60><$18><$72>
+┏━━━━━━┓
+| CLINIC ┃
+┗______┛
+
+#JMP($29B2E)
+
+//POINTER #229 @ $281DA - STRING #229 @ $29B2E
+
+#WRITE(Signs, $281DA)
+<$60><$18><$63>
+┏━━━━━┓
+|  BAR  ┃
+| LUPIN ┃
+┗_____┛
+
+
+//POINTER #230 @ $281DC - STRING #230 @ $29B69
+
+#WRITE(Signs, $281DC)
+//Reasonably sure this is unused.
+//I'll leave a fallback just in case.
+//<$60><$18><$74>
+<$60><$18><$71>
+//┏━━━━━━┓
+//|  BAR   ┃
+//| BAKA   ┃
+//|   BOND ┃
+//┗______┛
+BAKABOND
+
+//POINTER #231 @ $281DE - STRING #231 @ $29BBC
+
+#WRITE(Signs, $281DE)
+<$68><$18><$52>
+┏━━━━┓
+| SHOP ┃
+┗____┛
+
+
+//POINTER #232 @ $281E0 - STRING #232 @ $29BE3
+
+#WRITE(Signs, $281E0)
+<$68><$18><$53>
+┏━━━━┓
+| RAG  ┃
+| SHOP ┃
+┗____┛
+
+
+//POINTER #233 @ $281E2 - STRING #233 @ $29C16
+
+#WRITE(Signs, $281E2)
+<$60><$18><$73>
+┏━━━━━━┓
+| HOTEL  ┃
+//| フ°リンセス ┃
+PRINCESS
+┗______┛
+
+
+//POINTER #234 @ $281E4 - STRING #234 @ $29C59
+
+#WRITE(Signs, $281E4)
+<$60><$18><$73>
+//May as well fix up the spacing.
+┏━━━━━━┓
+| INTELL ┃
+//|   BLDG ┃
+|  BLDG  ┃
+┗______┛
+
+
+//POINTER #235 @ $281E6 - STRING #235 @ $29C9C
+
+#WRITE(Signs, $281E6)
+//<$64><$18><$63>
+<$64><$18><$73>
+//┏━━━━━┓
+//| ケイヒン  ┃
+//| シエルタ_ ┃
+//┗_____┛
+
+┏━━━━━━┓
+| KEIHIN ┃
+| SHELTER
+┗______┛
+
+//POINTER #236 @ $281E8 - STRING #236 @ $29CD7
+
+#WRITE(Signs, $281E8)
+<$60><$18><$73>
+┏━━━━━━┓
+| SUZUKI ┃
+| CO LTD ┃
+┗______┛
+
+
+//POINTER #237 @ $281EA - STRING #237 @ $29D1A
+
+#WRITE(Signs, $281EA)
+//<$64><$18><$63>
+<$64><$18><$73>
+//┏━━━━━┓
+//| BARAM ┃
+//| HOUSE ┃
+//┗_____┛
+
+┏━━━━━━┓
+| BALAAM ┃
+| HOUSE  ┃
+┗______┛
+
+//POINTER #238 @ $281EC - STRING #238 @ $29D55
+
+#WRITE(Signs, $281EC)
+<$60><$18><$73>
+┏━━━━━━┓
+| CYBER  ┃
+| LABRTY ┃
+┗______┛
+

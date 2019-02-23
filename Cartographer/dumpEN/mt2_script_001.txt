@@ -1,0 +1,1521 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #001 NAME:		Demon Names
+
+//POINTER #0 @ $D763 - STRING #0 @ $D963
+
+#W16($D763)
+タ"-クヒ-ロ-[End]
+
+
+//POINTER #1 @ $D765 - STRING #1 @ $D96C
+
+#W16($D765)
+Y.H.V.H[End]
+
+
+//POINTER #2 @ $D767 - STRING #2 @ $D974
+
+#W16($D767)
+SAT[End]
+
+
+//POINTER #3 @ $D769 - STRING #3 @ $D978
+
+#W16($D769)
+HELEL[End]
+
+
+//POINTER #4 @ $D76B - STRING #4 @ $D97E
+
+#W16($D76B)
+BEELZEBUB[End]
+
+
+//POINTER #5 @ $D76D - STRING #5 @ $D988
+
+#W16($D76D)
+アスタロ-ト[End]
+
+
+//POINTER #6 @ $D76F - STRING #6 @ $D98F
+
+#W16($D76F)
+ミトラ[End]
+
+
+//POINTER #7 @ $D771 - STRING #7 @ $D993
+
+#W16($D771)
+モロク[End]
+
+
+//POINTER #8 @ $D773 - STRING #8 @ $D997
+
+#W16($D773)
+ヘ"リアル[End]
+
+
+//POINTER #9 @ $D775 - STRING #9 @ $D99D
+
+#W16($D775)
+アスモタ"イ[End]
+
+
+//POINTER #10 @ $D777 - STRING #10 @ $D9A4
+
+#W16($D777)
+ハ"エル[End]
+
+
+//POINTER #11 @ $D779 - STRING #11 @ $D9A9
+
+#W16($D779)
+ハ°ス"ス[End]
+
+
+//POINTER #12 @ $D77B - STRING #12 @ $D9AF
+
+#W16($D77B)
+アシュラ[End]
+
+
+//POINTER #13 @ $D77D - STRING #13 @ $D9B4
+
+#W16($D77D)
+ヘ"ルフェコ"-ル[End]
+
+
+//POINTER #14 @ $D77F - STRING #14 @ $D9BE
+
+#W16($D77F)
+ケ"-リュオン[End]
+
+
+//POINTER #15 @ $D781 - STRING #15 @ $D9C6
+
+#W16($D781)
+セト[End]
+
+
+//POINTER #16 @ $D783 - STRING #16 @ $D9C9
+
+#W16($D783)
+ロキ[End]
+
+
+//POINTER #17 @ $D785 - STRING #17 @ $D9CC
+
+#W16($D785)
+クロノス[End]
+
+
+//POINTER #18 @ $D787 - STRING #18 @ $D9D1
+
+#W16($D787)
+エキト"ナ[End]
+
+
+//POINTER #19 @ $D789 - STRING #19 @ $D9D7
+
+#W16($D789)
+マンモン[End]
+
+
+//POINTER #20 @ $D78B - STRING #20 @ $D9DC
+
+#W16($D78B)
+アリオク[End]
+
+
+//POINTER #21 @ $D78D - STRING #21 @ $2428
+
+#W16($D78D)
+カ ユ G U イ ! ア オ チ R U ヌ0A > T キ   オ ア 9 ? オ オ ユ キ ケ オ ア ア 1 ケ 9 A ハ0A A 2 9 > A   9 > H メ ♂ ア オ ! E D A A<$06>ニ[Skip]ニ[Skip]A ? オ D イ   9 ? T J ? D A A>A>?>Q>?>ケ>D>A>E A A EAQ キ ゆ ヌ?メ>モ>テ>? D A>A>A>AA? P ヌ ヨ ♂ D A ?>オ>オ>オ>D>U>J>A>A A コ 9 イ D A A A I イ D イ H イ H A イ ノ > オ チ ツ ハ9Q ヌ A ハ9I Q ヌ ニ[Skip]I A コ ナ<$06>I メ <$06> D イ オ オ オ オ E ユ ♂ D V V A ? U A A V A ? ! 1 D A V E 2 9 イAチ イAア D A ニ[Skip]ニ[Skip]> ア ア ア ! ! ! オ オ E オ オ D A>A>ハ??>ア>E>チ>A>ヨ9B A ハ A イ ム ヌAA>A>?>オ>ユ>F>A>A>? ム F ニ イ D イ D ツイイQチQハPイQアQQQA>A A V9A A イ D A I よ F イ D V A V9A E B T テ A I R ? オ<$06>! ゆ C H ツ<$06>ニ[Skip]F D B チ V9A イ チ<$06>A ヨ キ オ ア ケ ア T テ カ ム ♂ オ オ D A ニ[Skip]? ケ ケ E ケ D ニ[Skip]ニ[Skip]V9A 2 D > D ニ[Skip]A ニ[Skip]ニ[Skip]>  ア  P キ オ オ ケ オ オ ケ ル ヌ A>?>E>ナ>A>ハ A>A>ニ[Skip]U 3 E D 2 D ニ[Skip]A>?>オ>オ>オ>ユ>V>B>ニ[Skip]? チ カ H イ DAニ[Skip]A>>Q QIQ1Q!QDQA>I ? オ D I I イア9 V?ヨ キ T キ オ T ヌ ? オ D カ D ? E D カAオ オ オ D F D ニ[Skip]カアオ ! ! オ T <$06> D ? オ ユ ヌ?E V E カ D ヨ9F U キ オ オ D ニ[Skip]ニ[Skip]V V?カ U ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]? E オ D ニ[Skip]ニ[Skip]A ニ[Skip]ニ[Skip]? ! ! 9 イ オ オ U カ オ U F ナ ?>オ>オ>オ>!>E>T>F>ニ[Skip]ニ[Skip]F オ オ U ニ[Skip]ニ[Skip]?>ユ>ラ?キ>オ>オ>ナイE>ニ[Skip]ニ[Skip]? オAE D ニ[Skip]ニ[Skip]U><$06>QDQV?F>オ>オ>D>よ キ オ オ U F ! D イ ケ オ ケ オ ケ ア チ ハ ハ9ハ イ オ オ ケ チ ニ[Skip]ニ[Skip]メ サ ル ヌ ツAツ カPアPムPヌ イPオPアPノPニ[Skip]イ オ オ ム ラ キ チ イ オ ユ ロ キ チ ヨ?テ ニ[Skip]ニ[Skip]イ オ ユ ヌ ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]メ ヌ9ハ ハ ニ[Skip]ニ[Skip]A ニ[Skip]ニ[Skip]イ ユ テ A A イ ケ オ オ オ オ オ チ ニ[Skip]ニ[Skip]イ!ア ア チ ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]イ ア ア チ!ニ[Skip]ニ[Skip]イ>オ>オ>ア>ナ>ツ>カBチ>ニ[Skip]ニ[Skip]ツアメ ヌ ツアニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]Q W ヨ?W ハ よ ♂ 9 F E E 9 ハ ハ9V A ニ[Skip]ニ[Skip]A R R ハ I I ヨ ♂P PアP9Pハ APV ニ[Skip]A イ ノ ? オ チ I A イ チ V<$06>ツ ? チ A ニ[Skip]カA9 カアユAヌ9ツAニ[Skip]ニ[Skip]ツア? オ EアU ツアニ[Skip]A ニ[Skip]ニ[Skip]A イ D A I A B ム キ ユ ウ チ A ニ[Skip]イ   !  !  チ ニ[Skip]ニ[Skip]イ!   !   !チ!ニ[Skip]A>メ>ヌ?Q>ヌ >>ナ>A>ニ[Skip]イ D A イ ! チ ニ[Skip]ヨ?テ ハ?ツ ハ?ツ ハ?イ チ ハ?ツ ハ?ツ ハ?メ ヌ?Q ヌ イ オ Q ハ > D イ オ チ > Q R イ D ニ[Skip]ニ[Skip]A E Y G I U イP P P!P PAP!PチPニ[Skip]A A よPヒPヨPB Z E?> D ツ E?ツ?A A カ ノ > オ オ オ   ノ イ 1 チ ツ ハ0イ 1 チ A ニ[Skip]ニ[Skip]I A イ ! Q A 2 DAイ チ ? T B ハ > T テ > !!! チ イ      !      チ A>U>ウ>!>チ>U>ウ>D>イ D イ D A ヨ ♂ ノ カ  ♂E  ♂E  ♂E     E  ♂E  ♂E  ♂ナ A ヨ?B ヨ0B れ B ハ1Q ヌ Q ♂ H A A ハ1ニ[Skip]ニ[Skip]Y キ U レ S ツ 2P P9Pハ >P9Pハ APニ[Skip]A A レPろAヌPA<$06>V9イ 9 カ? アナ?A E9A メ Kア9 ニ メ ヌ9A V A V A >!Q A V A A ニ[Skip]ニ[Skip]V A A ハ A A R イ     チ ツ A B P ヌ E A!ハ メ BA>A ! ! !   ! !9ア?>ア>H>ハ?>>オ>P>ヌ U キ D ハ0? ア D R ヨ?B ヨ R ヌ A ヨ ♂ P ヌ A ヨ9R ヌ Q ヌ?Q ヌ ? オ H V > U ? オ D A R A ? U ヨ?キ る ヌ カ9U Q B V >PHPR >P PAP9Pヨ?B Q WPV<$30>ハP2 ノ > ! チ E イ !<$06>オ 9 A V > ナ A イ T ヌ A ハ A 2 D A ハ A A ニ[Skip]ニ[Skip]カ D ? E D A I ?    アD I A >!  ム ヌア> A 9 A >    !!      !9 ハ?A>F>UAQ>ヌ?>>ノ>イアチ コ A ノ E イ H カ  ♂オ  ♂オ  ♂オ     オ  ♂オ  ♂オ  ♂ナ Q ヒ ヨ ヒ V9レ R テ イ ア ア D A > オ ノ ニ[Skip]ニ[Skip]<$A1> キ ユ モ J E カP9PV U <$06>P P PDPニ[Skip]A ? ケ ア E Q R A ハ??<$06>ア D イ チ?A U キ 9 カア9 Aアコ ナ ? A 9 B チ > A D A ニ[Skip]ニ[Skip]ハ イ オ オ チ Q C チ 2 D イ Q A ?   9 ニ >  !D!Eア?!  9 ニ >!    D R>>>ケ>オ>!>オ>D>R>? H Z A!Z イ 9 V ヨ?B ヨ R ヌ9A ヨ ♂ P ヌ9A ヨ R ヌ Q ヌA? E オ E オ E D A 2 1 H イ D A イ Q ニ[Skip]ニ[Skip]A コ ナ I F ナ ハ0>PアPチPヨ ♂PPPヌ ニ[Skip]> チ<$06>V E<$06>ヨ F A<$06>A よ ヌ A ヨ <$06> D A ニ[Skip]ヨ <$06> チ E > U ニ[Skip]ニ[Skip]? 9 > 9 > D ニ[Skip]I<$06>ニ[Skip]ニ[Skip]よ B メ ヌ A A ? H F ユ <$06> H A ニ[Skip]?   ア  !P ヌ ニ[Skip]ニ[Skip]?   ア     D!ニ[Skip]A>E>V0イ>ケ>オ>ケ>D>ニ[Skip]V J   U 2 Dアニ[Skip]カ  ♂ケ  ♂ケ  ♂ケ     ケ  ♂ケ  ♂ケ  ♂ナ ヨ9キ オ オ オ オ オ D V V V U キ D ? D ニ[Skip]ニ[Skip]U G オ E ユ ヌ FP!P!P!PオP!P!PナPニ[Skip]? ! オ オ オ オ D ? オ<$06>オ ! オ オ オ D ニ[Skip]ニ[Skip]ヨ <$06> オ D ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]U <$06> T F ニ[Skip]ニ[Skip]V?ニ[Skip]ニ[Skip]カ D ? オ D ? オ E オ オ オ E D ニ[Skip]ニ[Skip]?!! ! D ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]? !!! D!ニ[Skip]ニ[Skip]?>ユ>キ>D>F ナ F ナ ニ[Skip]ニ[Skip]V!Eアカ U ニ[Skip]ニ[Skip]ヨ?F V?E V?E V?? D V?E V?E V?U ヌ?カ ノ ハ▽ハAハ ハ9コ ナ▽イ ケ<$06>チ ツアイ オ ケ チ コ チ ハ?カ ユ テ イ オ オ オ オ オ オ オ オ チ ニ[Skip]ニ[Skip]ツ ハAイ ナ ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]イ オアア ナ ニ[Skip]ニ[Skip]コ オ オ オ ユ テ ニ[Skip]ニ[Skip]メ テ ハ ハ0カ ノ ツアハ ヨ テ ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ハアニ[Skip]ハ0ニ[Skip]ニ[Skip]ツAニ[Skip]ニ[Skip]ハ0ニ[Skip]ニ[Skip]ハ ニ[Skip]メ キPケPオPオPオPユPモ ヌPニ[Skip]ニ[Skip]ハ0イPオPアPアPアPアPオPチPニ[Skip]ニ[Skip]ニ[Skip]ハ0ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ヨ テPニ[Skip]ニ[Skip]コ オ オ ナAニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]メ ヌ ヨ C E I I E<$06>v ヌ▽A V▽A Q B カ U E R A F オ オ H I カ ア ア オ ア オ オ ユ F ニ[Skip]ツ I R U ウ ナ ニ[Skip]ニ[Skip]ヨ F ツ U ヌ9ツ ニ[Skip]R コ ケ ユ ヌ A ニ[Skip]ニ[Skip]A I J ゆ テ R U S ニ[Skip]I ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]イPUPニ[Skip]Z ニ[Skip]ニ[Skip]A ニ[Skip]ニ[Skip]R<$06>ニ[Skip]ヨ9GPユPB ニ[Skip]V ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]I ニ[Skip]ニ[Skip]ニ[Skip]R APニ[Skip]>P P P9Pニ[Skip]APニ[Skip]イ ア A ア チ ニ[Skip]ニ[Skip]ニ[Skip]2PオPユPW ニ[Skip]ニ[Skip]ニ[Skip]ヨ キ オ ユ ウPユPB ニ[Skip]ヨ▽B イ A A▽チ Q ヌAA メ F A ? チ イ ナアA ? ユ キ オ E E チ > D ヨ9B イ ケ ア ノ コ ! U Q テ A カAチ イ オ オ ! オ オ !アチ A V9J オ ノ A ニ[Skip]ニ[Skip]A F U メ F A ハ A ニ[Skip]F ノ ニ[Skip]コPオPDPニ[Skip]ニ[Skip]R ニ[Skip]ニ[Skip]A ニ[Skip]ニ[Skip]I<$06>ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]I ニ[Skip]ニ[Skip]ニ[Skip]コPオPケPUPニ[Skip]ハ ニ[Skip]A >PオP ム!P!P!PオP9Pニ[Skip]>       9 ニ[Skip]ニ[Skip]ニ[Skip]R ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ヨ キPオPケPDPニ[Skip]E ニ[Skip]ヨ R ♂▽    P▽R ヌ▽A ? ア   チ E A ツ A イ オ オ オ ユ ヌ A I イ オ D A V A V B オ チ A A 2 チ A A カ ア オ オ オ ノ A Q キ U カ Y I ニ[Skip]ニ[Skip]Y キ ノ I ヨ F R A ニ[Skip]ニ[Skip]RPニ[Skip]Z ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]I<$06>ニ[Skip]ニ[Skip]A ニ[Skip]ニ[Skip]Z0コ オAノ ニ[Skip]F ノ ニ[Skip]メPW ニ[Skip]R ニ[Skip]ニ[Skip]JPユPB EPメPFPメPキPオPチPAPヨ ♂    ♂  P ヌ ニ[Skip]メPF ニ[Skip]ニ[Skip]コ オ ユ ヌPメ ヌアニ[Skip]R ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ヨ▽R ♂▽ ▽  P▽R ヌ A ツ >A !  オ D A I A イ オ オ オ オ D R Q キ オ D イ ! ノ A ヨAB A > U A I > ナアA メ キ オ U A Q キ オ ノ F E ユ ヌ?F ノ R R ヨ9テ I A ニ[Skip]イPTPキ E ノ ニ[Skip]ハ ニ[Skip]V0ニ[Skip]ニ[Skip]Eアニ[Skip]ニ[Skip]R<$06>RPニ[Skip]FPチPニ[Skip]FPケPDPニ[Skip]ニ[Skip]Q ラ ウPUPニ[Skip]I イP!PケP!PユPヌPAPIPニ[Skip]>       9 ニ[Skip]ニ[Skip]APニ[Skip]ニ[Skip]ヨ<$30>SPニ[Skip]ニ[Skip]ニ[Skip]A ニ[Skip]ニ[Skip]Y キPオPノPニ[Skip]ヨAB ?▽  ! D Q ヌ EアA ? ! 9 コ オ D V?A U キ オ ム キ オ D > ア オ オ P テ V?? ケ T B A ツ ? U U キ 9 ? ア ナ イ D Q モ ヒ J ユ テ ニ[Skip]ニ[Skip]ハ R U F ツ Q ろ F ヨ FPニ[Skip]ニ[Skip]ニ[Skip]BPオPUPニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]A<$06>APニ[Skip]ニ[Skip]UPテPニ[Skip]V9ニ[Skip]ニ[Skip]メPF ニ[Skip]APニ[Skip]ニ[Skip]RPAPカPAPアPアPアP!PQPニ[Skip]? ! 1 ! D ニ[Skip]ニ[Skip]APニ[Skip]ニ[Skip]ニ[Skip]APニ[Skip]コPノPA ニ[Skip]ヨ SPニ[Skip]ニ[Skip]R ニ[Skip]レ <$06> ユ Z キ ア T ヌ▽メ F ツ ハ9? E ユ テ イ D イ オ ル ♂ ケ オ オ ! 9 イ チ E A ハ ニ[Skip]F チ I A 2 ナ ニ[Skip]ニ[Skip]ヨ9<$06> チ EAイ D ニ[Skip]I I Z V ヨ B ニ[Skip]ニ[Skip]R Q サ ユ V F F ナ ニ[Skip]ニ[Skip]ニ[Skip]コ ユ FPニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]I<$06>UPテ ニ[Skip]ニ[Skip]IPニ[Skip]ニ[Skip]ニ[Skip]コPDPニ[Skip]ニ[Skip]?PケPオPDPAPニ[Skip]>P P v9Pニ[Skip]APニ[Skip]ニ[Skip]ニ[Skip]Z ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]UPサPオPケPDPニ[Skip]VアV?A ハ ニ[Skip]APニ[Skip]ニ[Skip]EAニ[Skip]F ユ ヌAV?ヨ V キ ナ ? オ !アE<$06>オ オ オ D U キ T ヌ9V E V?カ オ ユ F ? T キ ! U ニ[Skip]ニ[Skip]E V?? U ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ヨ <$06> オ D ニ[Skip]ニ[Skip]V V?F オ ユ F ニ[Skip]ニ[Skip]U V G オ オ オ ユ ヌ ニ[Skip]ニ[Skip]ニ[Skip]V?ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]ヨ?キ オ ユ ヌ?ニ[Skip]ニ[Skip]V0ニ[Skip]U キ オ E オ オ オ U ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]よ ヌ ニ[Skip]?PオP!P!P!PDPカPDPニ[Skip]ニ[Skip]ニ[Skip]F オ オ オ ナアニ[Skip]V?ニ[Skip]V ニ[Skip]ニ[Skip]ニ[Skip]ニ[Skip]U GPオPTPヌ ニ[Skip]ニ[Skip]ニ[Skip]・<$B9>・<$B9><$BE><$B9><$C5><$B9>[DrawMoney]<$B9><$D6><$B9>[SetItem]<$B9>[Pause4]<$B9><$EE><$B9>[VarItem]<$B9>[End]
+
+
+//POINTER #22 @ $D78F - STRING #22 @ $D9E1
+
+#W16($D78F)
+ハ"ラム[End]
+
+
+//POINTER #23 @ $D791 - STRING #23 @ $D9E6
+
+#W16($D791)
+サルカ"タナス[End]
+
+
+//POINTER #24 @ $D793 - STRING #24 @ $D9EE
+
+#W16($D793)
+ティアマット[End]
+
+
+//POINTER #25 @ $D795 - STRING #25 @ $D9F5
+
+#W16($D795)
+レウ"ィアサン[End]
+
+
+//POINTER #26 @ $D797 - STRING #26 @ $D9FD
+
+#W16($D797)
+ニトホック"[End]
+
+
+//POINTER #27 @ $D799 - STRING #27 @ $DA04
+
+#W16($D799)
+ウ"リトラ[End]
+
+
+//POINTER #28 @ $D79B - STRING #28 @ $DA0A
+
+#W16($D79B)
+ヒト"ラ[End]
+
+
+//POINTER #29 @ $D79D - STRING #29 @ $DA0F
+
+#W16($D79D)
+フェンリル[End]
+
+
+//POINTER #30 @ $D79F - STRING #30 @ $DA15
+
+#W16($D79F)
+ティホン[End]
+
+
+//POINTER #31 @ $D7A1 - STRING #31 @ $DA1A
+
+#W16($D7A1)
+アホ°リオン[End]
+
+
+//POINTER #32 @ $D7A3 - STRING #32 @ $DA21
+
+#W16($D7A3)
+スキュラ[End]
+
+
+//POINTER #33 @ $D7A5 - STRING #33 @ $DA26
+
+#W16($D7A5)
+ハ"シ"リスク[End]
+
+
+//POINTER #34 @ $D7A7 - STRING #34 @ $DA2E
+
+#W16($D7A7)
+マンティコア[End]
+
+
+//POINTER #35 @ $D7A9 - STRING #35 @ $DA35
+
+#W16($D7A9)
+ワイハ"-ン[End]
+
+
+//POINTER #36 @ $D7AB - STRING #36 @ $DA3C
+
+#W16($D7AB)
+ランタ"[End]
+
+
+//POINTER #37 @ $D7AD - STRING #37 @ $DA41
+
+#W16($D7AD)
+タマモノマエ[End]
+
+
+//POINTER #38 @ $D7AF - STRING #38 @ $DA48
+
+#W16($D7AF)
+ホ"ルホ"[End]
+
+
+//POINTER #39 @ $D7B1 - STRING #39 @ $DA4E
+
+#W16($D7B1)
+メテ"ュ-サ[End]
+
+
+//POINTER #40 @ $D7B3 - STRING #40 @ $DA55
+
+#W16($D7B3)
+ラルン[End]
+
+
+//POINTER #41 @ $D7B5 - STRING #41 @ $DA59
+
+#W16($D7B5)
+ナアス[End]
+
+
+//POINTER #42 @ $D7B7 - STRING #42 @ $DA5D
+
+#W16($D7B7)
+キヨヒメ[End]
+
+
+//POINTER #43 @ $D7B9 - STRING #43 @ $DA62
+
+#W16($D7B9)
+アルケニ-[End]
+
+
+//POINTER #44 @ $D7BB - STRING #44 @ $DA68
+
+#W16($D7BB)
+タ-ラカ"[End]
+
+
+//POINTER #45 @ $D7BD - STRING #45 @ $DA6E
+
+#W16($D7BD)
+セイレ-ン[End]
+
+
+//POINTER #46 @ $D7BF - STRING #46 @ $DA74
+
+#W16($D7BF)
+フリアイ[End]
+
+
+//POINTER #47 @ $D7C1 - STRING #47 @ $DA79
+
+#W16($D7C1)
+SBHAKU[End]
+
+
+//POINTER #48 @ $D7C3 - STRING #48 @ $DA80
+
+#W16($D7C3)
+CELUK[End]
+
+
+//POINTER #49 @ $D7C5 - STRING #49 @ $DA87
+
+#W16($D7C5)
+SUCCUB[End]
+
+
+//POINTER #50 @ $D7C7 - STRING #50 @ $DA8E
+
+#W16($D7C7)
+AMDUSIAS[End]
+
+
+//POINTER #51 @ $D7C9 - STRING #51 @ $DA97
+
+#W16($D7C9)
+PHANT[End]
+
+
+//POINTER #52 @ $D7CB - STRING #52 @ $DA9D
+
+#W16($D7CB)
+LEO[End]
+
+
+//POINTER #53 @ $D7CD - STRING #53 @ $DAA4
+
+#W16($D7CD)
+LARVA[End]
+
+
+//POINTER #54 @ $D7CF - STRING #54 @ $DAAA
+
+#W16($D7CF)
+NEBRO[End]
+
+
+//POINTER #55 @ $D7D1 - STRING #55 @ $DAB0
+
+#W16($D7D1)
+LEMUR[End]
+
+
+//POINTER #56 @ $D7D3 - STRING #56 @ $DAB6
+
+#W16($D7D3)
+GIRIME[End]
+
+
+//POINTER #57 @ $D7D5 - STRING #57 @ $DABD
+
+#W16($D7D5)
+UTUK[End]
+
+
+//POINTER #58 @ $D7D7 - STRING #58 @ $DAC2
+
+#W16($D7D7)
+HAKUMA-BT[End]
+
+
+//POINTER #59 @ $D7D9 - STRING #59 @ $DACC
+
+#W16($D7D9)
+DULLHAN[End]
+
+
+//POINTER #60 @ $D7DB - STRING #60 @ $DAD4
+
+#W16($D7DB)
+VETALA[End]
+
+
+//POINTER #61 @ $D7DD - STRING #61 @ $DADB
+
+#W16($D7DD)
+LCH[End]
+
+
+//POINTER #62 @ $D7DF - STRING #62 @ $DADF
+
+#W16($D7DF)
+BHOSHI[End]
+
+
+//POINTER #63 @ $D7E1 - STRING #63 @ $DAE6
+
+#W16($D7E1)
+MUDMAN[End]
+
+
+//POINTER #64 @ $D7E3 - STRING #64 @ $DAED
+
+#W16($D7E3)
+NFERATU[End]
+
+
+//POINTER #65 @ $D7E5 - STRING #65 @ $DAF5
+
+#W16($D7E5)
+WYT[End]
+
+
+//POINTER #66 @ $D7E7 - STRING #66 @ $DAF9
+
+#W16($D7E7)
+FAFNIR[End]
+
+
+//POINTER #67 @ $D7E9 - STRING #67 @ $DB00
+
+#W16($D7E9)
+WRM[End]
+
+
+//POINTER #68 @ $D7EB - STRING #68 @ $DB04
+
+#W16($D7EB)
+VALAC[End]
+
+
+//POINTER #69 @ $D7ED - STRING #69 @ $DB0A
+
+#W16($D7ED)
+DODONGO[End]
+
+
+//POINTER #70 @ $D7EF - STRING #70 @ $DB13
+
+#W16($D7EF)
+LDON[End]
+
+
+//POINTER #71 @ $D7F1 - STRING #71 @ $DB18
+
+#W16($D7F1)
+NU[End]
+
+
+//POINTER #72 @ $D7F3 - STRING #72 @ $DB1B
+
+#W16($D7F3)
+HUMBAB[End]
+
+
+//POINTER #73 @ $D7F5 - STRING #73 @ $DB22
+
+#W16($D7F5)
+CTRISE[End]
+
+
+//POINTER #74 @ $D7F7 - STRING #74 @ $DB29
+
+#W16($D7F7)
+ORBAS[End]
+
+
+//POINTER #75 @ $D7F9 - STRING #75 @ $DB2F
+
+#W16($D7F9)
+GARM[End]
+
+
+//POINTER #76 @ $D7FB - STRING #76 @ $DB34
+
+#W16($D7FB)
+JABBAWOKI[End]
+
+
+//POINTER #77 @ $D7FD - STRING #77 @ $DB3E
+
+#W16($D7FD)
+WYRM[End]
+
+
+//POINTER #78 @ $D7FF - STRING #78 @ $DB44
+
+#W16($D7FF)
+DEAD PRAWN[End]
+
+
+//POINTER #79 @ $D801 - STRING #79 @ $DB4F
+
+#W16($D801)
+AZAZEL[End]
+
+
+//POINTER #80 @ $D803 - STRING #80 @ $DB56
+
+#W16($D803)
+EDIM[End]
+
+
+//POINTER #81 @ $D805 - STRING #81 @ $DB5B
+
+#W16($D805)
+BRTH[End]
+
+
+//POINTER #82 @ $D807 - STRING #82 @ $DB60
+
+#W16($D807)
+FLERTY[End]
+
+
+//POINTER #83 @ $D809 - STRING #83 @ $DB67
+
+#W16($D809)
+ST GOLEM[End]
+
+
+//POINTER #84 @ $D80B - STRING #84 @ $DB72
+
+#W16($D80B)
+CYCLOPS[End]
+
+
+//POINTER #85 @ $D80D - STRING #85 @ $DB7A
+
+#W16($D80D)
+AIM[End]
+
+
+//POINTER #86 @ $D80F - STRING #86 @ $DB7E
+
+#W16($D80F)
+CL GOLEM[End]
+
+
+//POINTER #87 @ $D811 - STRING #87 @ $DB88
+
+#W16($D811)
+TAURUS[End]
+
+
+//POINTER #88 @ $D813 - STRING #88 @ $DB8F
+
+#W16($D813)
+BUGBEAR[End]
+
+
+//POINTER #89 @ $D815 - STRING #89 @ $DB97
+
+#W16($D815)
+WENDIGO[End]
+
+
+//POINTER #90 @ $D817 - STRING #90 @ $DBA0
+
+#W16($D817)
+ORC[End]
+
+
+//POINTER #91 @ $D819 - STRING #91 @ $DBA4
+
+#W16($D819)
+TAL[End]
+
+
+//POINTER #92 @ $D81B - STRING #92 @ $DBA8
+
+#W16($D81B)
+GDR1000[End]
+
+
+//POINTER #93 @ $D81D - STRING #93 @ $DBB0
+
+#W16($D81D)
+1B-501A[End]
+
+
+//POINTER #94 @ $D81F - STRING #94 @ $DBB8
+
+#W16($D81F)
+SPART[End]
+
+
+//POINTER #95 @ $D821 - STRING #95 @ $DBBE
+
+#W16($D821)
+SPECT[End]
+
+
+//POINTER #96 @ $D823 - STRING #96 @ $DBC5
+
+#W16($D823)
+UPYR[End]
+
+
+//POINTER #97 @ $D825 - STRING #97 @ $DBCB
+
+#W16($D825)
+PISACA[End]
+
+
+//POINTER #98 @ $D827 - STRING #98 @ $DBD3
+
+#W16($D827)
+C-CHON[End]
+
+
+//POINTER #99 @ $D829 - STRING #99 @ $DBDA
+
+#W16($D829)
+SAKUBI[End]
+
+
+//POINTER #100 @ $D82B - STRING #100 @ $DBE1
+
+#W16($D82B)
+B-CONIAN[End]
+
+
+//POINTER #101 @ $D82D - STRING #101 @ $DBEA
+
+#W16($D82D)
+DEATH[End]
+
+
+//POINTER #102 @ $D82F - STRING #102 @ $DBF0
+
+#W16($D82F)
+GHUL[End]
+
+
+//POINTER #103 @ $D831 - STRING #103 @ $DBF5
+
+#W16($D831)
+ZOMBI[End]
+
+
+//POINTER #104 @ $D833 - STRING #104 @ $DBFB
+
+#W16($D833)
+CHRIS I[End]
+
+
+//POINTER #105 @ $D835 - STRING #105 @ $DC03
+
+#W16($D835)
+REDRUM[End]
+
+
+//POINTER #106 @ $D837 - STRING #106 @ $DC0A
+
+#W16($D837)
+MOSH[End]
+
+
+//POINTER #107 @ $D839 - STRING #107 @ $DC0F
+
+#W16($D839)
+DR. BACTA[End]
+
+
+//POINTER #108 @ $D83B - STRING #108 @ $DC19
+
+#W16($D83B)
+JUNKIE[End]
+
+
+//POINTER #109 @ $D83D - STRING #109 @ $DC20
+
+#W16($D83D)
+ASSN[End]
+
+
+//POINTER #110 @ $D83F - STRING #110 @ $DC25
+
+#W16($D83F)
+MUTANT[End]
+
+
+//POINTER #111 @ $D841 - STRING #111 @ $DC2C
+
+#W16($D841)
+FALLEN[End]
+
+
+//POINTER #112 @ $D843 - STRING #112 @ $DC33
+
+#W16($D843)
+FRIDAY[End]
+
+
+//POINTER #113 @ $D845 - STRING #113 @ $DC3A
+
+#W16($D845)
+HIGHSTAR[End]
+
+
+//POINTER #114 @ $D847 - STRING #114 @ $DC43
+
+#W16($D847)
+TIN[End]
+
+
+//POINTER #115 @ $D849 - STRING #115 @ $DC47
+
+#W16($D849)
+KINS HEAD[End]
+
+
+//POINTER #116 @ $D84B - STRING #116 @ $DC51
+
+#W16($D84B)
+PUNK[End]
+
+
+//POINTER #117 @ $D84D - STRING #117 @ $DC57
+
+#W16($D84D)
+HAZE KISS[End]
+
+
+//POINTER #118 @ $D84F - STRING #118 @ $DC61
+
+#W16($D84F)
+PYRO JACK[End]
+
+
+//POINTER #119 @ $D851 - STRING #119 @ $DC6B
+
+#W16($D851)
+BACKBEARD[End]
+
+
+//POINTER #120 @ $D853 - STRING #120 @ $DC76
+
+#W16($D853)
+B GOLEM[End]
+
+
+//POINTER #121 @ $D855 - STRING #121 @ $DC80
+
+#W16($D855)
+GOLD SLIME[End]
+
+
+//POINTER #122 @ $D857 - STRING #122 @ $DC8B
+
+#W16($D857)
+FEEDER[End]
+
+
+//POINTER #123 @ $D859 - STRING #123 @ $DC92
+
+#W16($D859)
+KURABI[End]
+
+
+//POINTER #124 @ $D85B - STRING #124 @ $DC99
+
+#W16($D85B)
+ASCOMID[End]
+
+
+//POINTER #125 @ $D85D - STRING #125 @ $DCA1
+
+#W16($D85D)
+FC SLIME[End]
+
+
+//POINTER #126 @ $D85F - STRING #126 @ $DCAB
+
+#W16($D85F)
+WILLOWISP[End]
+
+
+//POINTER #127 @ $D861 - STRING #127 @ $DCB5
+
+#W16($D861)
+FG SLIME[End]
+
+
+//POINTER #128 @ $D863 - STRING #128 @ $DCBF
+
+#W16($D863)
+OGRE[End]
+
+
+//POINTER #129 @ $D865 - STRING #129 @ $DCC4
+
+#W16($D865)
+LEGBA[End]
+
+
+//POINTER #130 @ $D867 - STRING #130 @ $DCCA
+
+#W16($D867)
+BOGLE[End]
+
+
+//POINTER #131 @ $D869 - STRING #131 @ $DCD1
+
+#W16($D869)
+RUSKA[End]
+
+
+//POINTER #132 @ $D86B - STRING #132 @ $DCD7
+
+#W16($D86B)
+CELA[End]
+
+
+//POINTER #133 @ $D86D - STRING #133 @ $DCDC
+
+#W16($D86D)
+AELO[End]
+
+
+//POINTER #134 @ $D86F - STRING #134 @ $DCE1
+
+#W16($D86F)
+OCYPET[End]
+
+
+//POINTER #135 @ $D871 - STRING #135 @ $DCE8
+
+#W16($D871)
+APSARS[End]
+
+
+//POINTER #136 @ $D873 - STRING #136 @ $DCEF
+
+#W16($D873)
+KELPI[End]
+
+
+//POINTER #137 @ $D875 - STRING #137 @ $DCF5
+
+#W16($D875)
+MRW[End]
+
+
+//POINTER #138 @ $D877 - STRING #138 @ $DCF9
+
+#W16($D877)
+ELF[End]
+
+
+//POINTER #139 @ $D879 - STRING #139 @ $DCFD
+
+#W16($D879)
+GOBLIN[End]
+
+
+//POINTER #140 @ $D87B - STRING #140 @ $DD04
+
+#W16($D87B)
+HARPY[End]
+
+
+//POINTER #141 @ $D87D - STRING #141 @ $DD0A
+
+#W16($D87D)
+PIXIE[End]
+
+
+//POINTER #142 @ $D87F - STRING #142 @ $DD10
+
+#W16($D87F)
+UPELU[End]
+
+
+//POINTER #143 @ $D881 - STRING #143 @ $DD16
+
+#W16($D881)
+GIANT[End]
+
+
+//POINTER #144 @ $D883 - STRING #144 @ $DD1E
+
+#W16($D883)
+SALO[End]
+
+
+//POINTER #145 @ $D885 - STRING #145 @ $DD23
+
+#W16($D885)
+ATLS[End]
+
+
+//POINTER #146 @ $D887 - STRING #146 @ $DD28
+
+#W16($D887)
+TSUCH[End]
+
+
+//POINTER #147 @ $D889 - STRING #147 @ $DD2E
+
+#W16($D889)
+TAN[End]
+
+
+//POINTER #148 @ $D88B - STRING #148 @ $DD32
+
+#W16($D88B)
+BUCCA-B[End]
+
+
+//POINTER #149 @ $D88D - STRING #149 @ $DD3A
+
+#W16($D88D)
+DWARF[End]
+
+
+//POINTER #150 @ $D88F - STRING #150 @ $DD40
+
+#W16($D88F)
+KOBOL[End]
+
+
+//POINTER #151 @ $D891 - STRING #151 @ $DD46
+
+#W16($D891)
+CHORON[End]
+
+
+//POINTER #152 @ $D893 - STRING #152 @ $DD4D
+
+#W16($D893)
+ON[End]
+
+
+//POINTER #153 @ $D895 - STRING #153 @ $DD50
+
+#W16($D895)
+MEPHI[End]
+
+
+//POINTER #154 @ $D897 - STRING #154 @ $DD56
+
+#W16($D897)
+PURUS[End]
+
+
+//POINTER #155 @ $D899 - STRING #155 @ $DD5C
+
+#W16($D899)
+MEZU[End]
+
+
+//POINTER #156 @ $D89B - STRING #156 @ $DD61
+
+#W16($D89B)
+JINN[End]
+
+
+//POINTER #157 @ $D89D - STRING #157 @ $DD66
+
+#W16($D89D)
+GOZU[End]
+
+
+//POINTER #158 @ $D89F - STRING #158 @ $DD6C
+
+#W16($D89F)
+ARAHAB[End]
+
+
+//POINTER #159 @ $D8A1 - STRING #159 @ $DD73
+
+#W16($D8A1)
+SYTR[End]
+
+
+//POINTER #160 @ $D8A3 - STRING #160 @ $DD78
+
+#W16($D8A3)
+MOMU[End]
+
+
+//POINTER #161 @ $D8A5 - STRING #161 @ $DD7D
+
+#W16($D8A5)
+GAAP[End]
+
+
+//POINTER #162 @ $D8A7 - STRING #162 @ $DD83
+
+#W16($D8A7)
+KWAN[End]
+
+
+//POINTER #163 @ $D8A9 - STRING #163 @ $DD89
+
+#W16($D8A9)
+FORNES[End]
+
+
+//POINTER #164 @ $D8AB - STRING #164 @ $DD90
+
+#W16($D8AB)
+KIMA[End]
+
+
+//POINTER #165 @ $D8AD - STRING #165 @ $DD95
+
+#W16($D8AD)
+CARBUNK[End]
+
+
+//POINTER #166 @ $D8AF - STRING #166 @ $DD9D
+
+#W16($D8AF)
+BAI-L[End]
+
+
+//POINTER #167 @ $D8B1 - STRING #167 @ $DDA3
+
+#W16($D8B1)
+CHIM[End]
+
+
+//POINTER #168 @ $D8B3 - STRING #168 @ $DDA8
+
+#W16($D8B3)
+9 TAILS[End]
+
+
+//POINTER #169 @ $D8B5 - STRING #169 @ $DDB1
+
+#W16($D8B5)
+CERBRU[End]
+
+
+//POINTER #170 @ $D8B7 - STRING #170 @ $DDB8
+
+#W16($D8B7)
+GRIFON[End]
+
+
+//POINTER #171 @ $D8B9 - STRING #171 @ $DDBF
+
+#W16($D8B9)
+YATAGA[End]
+
+
+//POINTER #172 @ $D8BB - STRING #172 @ $DDC6
+
+#W16($D8BB)
+TAMM[End]
+
+
+//POINTER #173 @ $D8BD - STRING #173 @ $DDCB
+
+#W16($D8BD)
+STONK[End]
+
+
+//POINTER #174 @ $D8BF - STRING #174 @ $DDD1
+
+#W16($D8BF)
+ORTHU[End]
+
+
+//POINTER #175 @ $D8C1 - STRING #175 @ $DDD7
+
+#W16($D8C1)
+PEGASI[End]
+
+
+//POINTER #176 @ $D8C3 - STRING #176 @ $DDDE
+
+#W16($D8C3)
+ソ-ト"ナイト[End]
+
+
+//POINTER #177 @ $D8C5 - STRING #177 @ $DDE6
+
+#W16($D8C5)
+ワント"ナイト[End]
+
+
+//POINTER #178 @ $D8C7 - STRING #178 @ $DDEE
+
+#W16($D8C7)
+ク"レモリ-[End]
+
+
+//POINTER #179 @ $D8C9 - STRING #179 @ $DDF5
+
+#W16($D8C9)
+ウ"ァルキリ-[End]
+
+
+//POINTER #180 @ $D8CB - STRING #180 @ $DDFD
+
+#W16($D8CB)
+フ-リ-[End]
+
+
+//POINTER #181 @ $D8CD - STRING #181 @ $DE02
+
+#W16($D8CD)
+ハンシ"ャ[End]
+
+
+//POINTER #182 @ $D8CF - STRING #182 @ $DE08
+
+#W16($D8CF)
+アミイ[End]
+
+
+//POINTER #183 @ $D8D1 - STRING #183 @ $DE0C
+
+#W16($D8D1)
+オオナムチ[End]
+
+
+//POINTER #184 @ $D8D3 - STRING #184 @ $DE12
+
+#W16($D8D3)
+カッフ°ナイト[End]
+
+
+//POINTER #185 @ $D8D5 - STRING #185 @ $DE1A
+
+#W16($D8D5)
+モルカ"ン[End]
+
+
+//POINTER #186 @ $D8D7 - STRING #186 @ $DE20
+
+#W16($D8D7)
+クシナタ"ヒメ[End]
+
+
+//POINTER #187 @ $D8D9 - STRING #187 @ $DE28
+
+#W16($D8D9)
+シ"ャクフロスト[End]
+
+
+//POINTER #188 @ $D8DB - STRING #188 @ $DE31
+
+#W16($D8DB)
+テ"ィスクナイト[End]
+
+
+//POINTER #189 @ $D8DD - STRING #189 @ $DE3A
+
+#W16($D8DD)
+ネコマタ[End]
+
+
+//POINTER #190 @ $D8DF - STRING #190 @ $DE3F
+
+#W16($D8DF)
+ケンタウロス[End]
+
+
+//POINTER #191 @ $D8E1 - STRING #191 @ $DE46
+
+#W16($D8E1)
+コワトリクエ[End]
+
+
+//POINTER #192 @ $D8E3 - STRING #192 @ $DE4D
+
+#W16($D8E3)
+SALAMAN[End]
+
+
+//POINTER #193 @ $D8E5 - STRING #193 @ $DE55
+
+#W16($D8E5)
+LAK[End]
+
+
+//POINTER #194 @ $D8E7 - STRING #194 @ $DE59
+
+#W16($D8E7)
+VEPAR[End]
+
+
+//POINTER #195 @ $D8E9 - STRING #195 @ $DE61
+
+#W16($D8E9)
+UNDINE[End]
+
+
+//POINTER #196 @ $D8EB - STRING #196 @ $DE69
+
+#W16($D8EB)
+SYL[End]
+
+
+//POINTER #197 @ $D8ED - STRING #197 @ $DE6D
+
+#W16($D8ED)
+ELF[End]
+
+
+//POINTER #198 @ $D8EF - STRING #198 @ $DE71
+
+#W16($D8EF)
+FLAMEY S[End]
+
+
+//POINTER #199 @ $D8F1 - STRING #199 @ $DE7A
+
+#W16($D8F1)
+AQUAN S[End]
+
+
+//POINTER #200 @ $D8F3 - STRING #200 @ $DE83
+
+#W16($D8F3)
+AIRY S[End]
+
+
+//POINTER #201 @ $D8F5 - STRING #201 @ $DE8C
+
+#W16($D8F5)
+EARTHY S[End]
+
+
+//POINTER #202 @ $D8F7 - STRING #202 @ $DE95
+
+#W16($D8F7)
+FENIX[End]
+
+
+//POINTER #203 @ $D8F9 - STRING #203 @ $DE9C
+
+#W16($D8F9)
+RAKCARGO[End]
+
+
+//POINTER #204 @ $D8FB - STRING #204 @ $DEA5
+
+#W16($D8FB)
+PABILSAG[End]
+
+
+//POINTER #205 @ $D8FD - STRING #205 @ $DEAE
+
+#W16($D8FD)
+QUETZAL[End]
+
+
+//POINTER #206 @ $D8FF - STRING #206 @ $DEB6
+
+#W16($D8FF)
+GENBU[End]
+
+
+//POINTER #207 @ $D901 - STRING #207 @ $DEBC
+
+#W16($D901)
+UNICO[End]
+
+
+//POINTER #208 @ $D903 - STRING #208 @ $DEC2
+
+#W16($D903)
+GANDHARV[End]
+
+
+//POINTER #209 @ $D905 - STRING #209 @ $DECB
+
+#W16($D905)
+QIL[End]
+
+
+//POINTER #210 @ $D907 - STRING #210 @ $DECF
+
+#W16($D907)
+HANU[End]
+
+
+//POINTER #211 @ $D909 - STRING #211 @ $DED5
+
+#W16($D909)
+FOCAL[End]
+
+
+//POINTER #212 @ $D90B - STRING #212 @ $DEDB
+
+#W16($D90B)
+AGARE[End]
+
+
+//POINTER #213 @ $D90D - STRING #213 @ $DEE1
+
+#W16($D90D)
+KHIME[End]
+
+
+//POINTER #214 @ $D90F - STRING #214 @ $DEE7
+
+#W16($D90F)
+LAKSH[End]
+
+
+//POINTER #215 @ $D911 - STRING #215 @ $DEED
+
+#W16($D911)
+LAMI[End]
+
+
+//POINTER #216 @ $D913 - STRING #216 @ $DEF2
+
+#W16($D913)
+DAMBAL[End]
+
+
+//POINTER #217 @ $D915 - STRING #217 @ $DEF9
+
+#W16($D915)
+BAPHO[End]
+
+
+//POINTER #218 @ $D917 - STRING #218 @ $DF01
+
+#W16($D917)
+C-CHUL[End]
+
+
+//POINTER #219 @ $D919 - STRING #219 @ $DF08
+
+#W16($D919)
+KINN[End]
+
+
+//POINTER #220 @ $D91B - STRING #220 @ $DF0D
+
+#W16($D91B)
+ELIGOR[End]
+
+
+//POINTER #221 @ $D91D - STRING #221 @ $DF14
+
+#W16($D91D)
+AIWA[End]
+
+
+//POINTER #222 @ $D91F - STRING #222 @ $DF19
+
+#W16($D91F)
+UKOBA[End]
+
+
+//POINTER #223 @ $D921 - STRING #223 @ $DF1F
+
+#W16($D921)
+ALRAN[End]
+
+
+//POINTER #224 @ $D923 - STRING #224 @ $DF25
+
+#W16($D923)
+MIKE[End]
+
+
+//POINTER #225 @ $D925 - STRING #225 @ $DF2A
+
+#W16($D925)
+GABRIEL[End]
+
+
+//POINTER #226 @ $D927 - STRING #226 @ $DF32
+
+#W16($D927)
+NIG[End]
+
+
+//POINTER #227 @ $D929 - STRING #227 @ $DF36
+
+#W16($D929)
+CHERU[End]
+
+
+//POINTER #228 @ $D92B - STRING #228 @ $DF3C
+
+#W16($D92B)
+RAPH[End]
+
+
+//POINTER #229 @ $D92D - STRING #229 @ $DF42
+
+#W16($D92D)
+URIL[End]
+
+
+//POINTER #230 @ $D92F - STRING #230 @ $DF47
+
+#W16($D92F)
+KALI[End]
+
+
+//POINTER #231 @ $D931 - STRING #231 @ $DF4C
+
+#W16($D931)
+AMO[End]
+
+
+//POINTER #232 @ $D933 - STRING #232 @ $DF50
+
+#W16($D933)
+THO[End]
+
+
+//POINTER #233 @ $D935 - STRING #233 @ $DF54
+
+#W16($D935)
+GANESH[End]
+
+
+//POINTER #234 @ $D937 - STRING #234 @ $DF5B
+
+#W16($D937)
+TAMON[End]
+
+
+//POINTER #235 @ $D939 - STRING #235 @ $DF61
+
+#W16($D939)
+SANO[End]
+
+
+//POINTER #236 @ $D93B - STRING #236 @ $DF66
+
+#W16($D93B)
+IFRIT[End]
+
+
+//POINTER #237 @ $D93D - STRING #237 @ $DF6C
+
+#W16($D93D)
+JIKOKU[End]
+
+
+//POINTER #238 @ $D93F - STRING #238 @ $DF73
+
+#W16($D93F)
+RSHASA[End]
+
+
+//POINTER #239 @ $D941 - STRING #239 @ $DF7A
+
+#W16($D941)
+KOUMO[End]
+
+
+//POINTER #240 @ $D943 - STRING #240 @ $DF81
+
+#W16($D943)
+ZOCHOTEN[End]
+
+
+//POINTER #241 @ $D945 - STRING #241 @ $DF8A
+
+#W16($D945)
+QLONG[End]
+
+
+//POINTER #242 @ $D947 - STRING #242 @ $DF90
+
+#W16($D947)
+GARUDA[End]
+
+
+//POINTER #243 @ $D949 - STRING #243 @ $DF97
+
+#W16($D949)
+BARO[End]
+
+
+//POINTER #244 @ $D94B - STRING #244 @ $DF9C
+
+#W16($D94B)
+SPHINX[End]
+
+
+//POINTER #245 @ $D94D - STRING #245 @ $DFA3
+
+#W16($D94D)
+NAGA[End]
+
+
+//POINTER #246 @ $D94F - STRING #246 @ $DFA8
+
+#W16($D94F)
+HELEL[End]
+
+
+//POINTER #247 @ $D951 - STRING #247 @ $DFAE
+
+#W16($D951)
+SHIV[End]
+
+
+//POINTER #248 @ $D953 - STRING #248 @ $DFB3
+
+#W16($D953)
+AHUMAZDA[End]
+
+
+//POINTER #249 @ $D955 - STRING #249 @ $DFBC
+
+#W16($D955)
+BAAL[End]
+
+
+//POINTER #250 @ $D957 - STRING #250 @ $DFC1
+
+#W16($D957)
+VISHNU[End]
+
+
+//POINTER #251 @ $D959 - STRING #251 @ $DFC8
+
+#W16($D959)
+ODIN[End]
+
+
+//POINTER #252 @ $D95B - STRING #252 @ $DFCF
+
+#W16($D95B)
+BRAHMA[End]
+

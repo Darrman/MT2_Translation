@@ -1,0 +1,432 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+#VAR(text, TABLE)
+#ADDTBL("items.tbl", text)
+#ACTIVETBL(text)
+
+#VAR(Spells, CUSTOMPOINTER)
+#CREATEPTR(Spells, "LINEAR", $A010, 16)
+
+#JMP($15CCA, $15E5B)
+
+
+//BLOCK #004 NAME:		Spell Names
+
+//POINTER #0 @ $15C4C - STRING #0 @ $15CCA
+//For now, let's go old style Final Fantasy.
+//Numbers everywhere! To keep them from getting
+//too out of hand, I'll take a leaf from the
+//SNES version and add Mablah to multi-target
+//attacks. Well, kind of.
+
+#WRITE(Spells, $15C4C)
+//アキ"[End]
+Agi[End]
+
+//POINTER #1 @ $15C4E - STRING #1 @ $15CCE
+
+#WRITE(Spells, $15C4E)
+//アキ"マ[End]
+//Agima
+Agi2[End]
+
+//POINTER #2 @ $15C50 - STRING #2 @ $15CD3
+
+#WRITE(Spells, $15C50)
+//アキ"オン[End]
+//Agion
+Agi3[End]
+
+//POINTER #3 @ $15C52 - STRING #3 @ $15CD9
+
+#WRITE(Spells, $15C52)
+//アキ"ラ[End]
+//Agila
+MaAgi1[End]
+
+//POINTER #4 @ $15C54 - STRING #4 @ $15CDE
+
+#WRITE(Spells, $15C54)
+//アキ"ラマ[End]
+//Agilama
+MaAgi2[End]
+
+//POINTER #5 @ $15C56 - STRING #5 @ $15CE4
+
+#WRITE(Spells, $15C56)
+//アキ"ラオン[End]
+//Agilaon
+MaAgi3[End]
+
+//POINTER #6 @ $15C58 - STRING #6 @ $15CEB
+
+#WRITE(Spells, $15C58)
+//アキ"タ"イン[End]
+//Agidyne[End]
+Agi4[End]
+
+//POINTER #7 @ $15C5A - STRING #7 @ $15CF3
+
+#WRITE(Spells, $15C5A)
+//フ"フ[End]
+Bufu[End]
+
+//POINTER #8 @ $15C5C - STRING #8 @ $15CF7
+
+#WRITE(Spells, $15C5C)
+//フ"フラマ[End]
+//Bufulama[End]
+Bufu2[End]
+
+//POINTER #9 @ $15C5E - STRING #9 @ $15CFD
+
+#WRITE(Spells, $15C5E)
+//フ"フラオン[End]
+//Bufulaon[End]
+Bufu3[End]
+
+//POINTER #10 @ $15C60 - STRING #10 @ $15D04
+
+#WRITE(Spells, $15C60)
+//フ"フタ"イン[End]
+//Bufudyne[End]
+Bufu4[End]
+
+//POINTER #11 @ $15C62 - STRING #11 @ $15D0C
+
+#WRITE(Spells, $15C62)
+//シ"オ[End]
+Zio[End]
+
+//POINTER #12 @ $15C64 - STRING #12 @ $15D10
+
+#WRITE(Spells, $15C64)
+//シ"オマ[End]
+//Zioma[End]
+Zio2[End]
+
+//POINTER #13 @ $15C66 - STRING #13 @ $15D15
+
+#WRITE(Spells, $15C66)
+//シ"オロン[End]
+//Zioron
+Zio3[End]
+
+//POINTER #14 @ $15C68 - STRING #14 @ $15D1B
+
+#WRITE(Spells, $15C68)
+//シ"オラ[End]
+//Ziola[End]
+MaZio1[End]
+
+//POINTER #15 @ $15C6A - STRING #15 @ $15D20
+
+#WRITE(Spells, $15C6A)
+//シ"オラマ[End]
+//Ziolama
+MaZio2[End]
+
+//POINTER #16 @ $15C6C - STRING #16 @ $15D26
+
+#WRITE(Spells, $15C6C)
+//シ"オラオン[End]
+//Ziolaon[End]
+MaZio3[End]
+
+//POINTER #17 @ $15C6E - STRING #17 @ $15D2D
+
+#WRITE(Spells, $15C6E)
+//シ"オタ"イン[End]
+//Ziodyne[End]
+Zio4[End]
+
+//POINTER #18 @ $15C70 - STRING #18 @ $15D35
+
+#WRITE(Spells, $15C70)
+//ハンマ[End]
+Hama[End]
+
+//POINTER #19 @ $15C72 - STRING #19 @ $15D39
+
+#WRITE(Spells, $15C72)
+//ハマオン[End]	
+//Hamaon[End]
+Hama2[End]
+
+//POINTER #20 @ $15C74 - STRING #20 @ $15D3E
+
+#WRITE(Spells, $15C74)
+//ハンマハン[End]
+//Hamahan[End]
+Hama3[End]
+
+//POINTER #21 @ $15C76 - STRING #21 @ $15D44
+
+#WRITE(Spells, $15C76)
+//ハマタ"イン[End]
+//Hamadyne[End]
+Hama4[End]
+
+//POINTER #22 @ $15C78 - STRING #22 @ $15D4B
+
+#WRITE(Spells, $15C78)
+//サ"ン[End]
+Zan[End]
+
+//POINTER #23 @ $15C7A - STRING #23 @ $15D4F
+
+#WRITE(Spells, $15C7A)
+//サ"ンマ[End]
+//Zanma[End]
+Zan2[End]
+
+//POINTER #24 @ $15C7C - STRING #24 @ $15D54
+
+#WRITE(Spells, $15C7C)
+//サ"ンマオン[End]
+//Zanmaon[End]
+Zan3[End]
+
+//POINTER #25 @ $15C7E - STRING #25 @ $15D5B
+
+#WRITE(Spells, $15C7E)
+//サ"ンタ"イン[End]
+//Zandyne[End]
+Zan4[End]
+
+//POINTER #26 @ $15C80 - STRING #26 @ $15D63
+
+#WRITE(Spells, $15C80)
+//ムト"[End]
+Mudo[End]
+
+//POINTER #27 @ $15C82 - STRING #27 @ $15D67
+
+#WRITE(Spells, $15C82)
+//ムト"オン[End]
+//Mudoon[End]
+Mudo2[End]
+
+//POINTER #28 @ $15C84 - STRING #28 @ $15D6D
+
+#WRITE(Spells, $15C84)
+//ムト"ハンマ[End]
+//Mudohama[End]
+Mudo3[End]
+
+//POINTER #29 @ $15C86 - STRING #29 @ $15D74
+
+#WRITE(Spells, $15C86)
+//ト"ルミン[End]
+Dormin[End]
+
+//POINTER #30 @ $15C88 - STRING #30 @ $15D7A
+
+#WRITE(Spells, $15C88)
+//ト"ルミナ-ル[End]
+//Dormina[End]
+Dormin2[End]
+
+//POINTER #31 @ $15C8A - STRING #31 @ $15D82
+
+#WRITE(Spells, $15C8A)
+//シハ"フ"-[End]
+//Shibaboo[End]
+Shibabu[End]
+
+//POINTER #32 @ $15C8C - STRING #32 @ $15D89
+
+#WRITE(Spells, $15C8C)
+//マシハ"フ"-ラ[End]
+//Mashibaboola[End]
+Shibabu2[End]
+
+//POINTER #33 @ $15C8E - STRING #33 @ $15D92
+
+#WRITE(Spells, $15C8E)
+//フ°リンハ°[End]
+Pulinpa[End]
+
+//POINTER #34 @ $15C90 - STRING #34 @ $15D99
+
+#WRITE(Spells, $15C90)
+//ハヒ°ルマ[End]
+Hapilma[End]
+
+//POINTER #35 @ $15C92 - STRING #35 @ $15D9F
+
+#WRITE(Spells, $15C92)
+//マリン カリン[End]
+//Marin Karin[End]
+MarKarin[End]
+
+//POINTER #36 @ $15C94 - STRING #36 @ $15DA7
+
+#WRITE(Spells, $15C94)
+//テンタラフ-[End]
+//Tentarafoo[End]
+Tentarfu[End]
+
+//POINTER #37 @ $15C96 - STRING #37 @ $15DAE
+
+#WRITE(Spells, $15C96)
+//ラクンタ"[End]
+Rakunda[End]
+
+//POINTER #38 @ $15C98 - STRING #38 @ $15DB4
+
+#WRITE(Spells, $15C98)
+//タルカシ"ャ[End]
+Tarukaja[End]
+
+//POINTER #39 @ $15C9A - STRING #39 @ $15DBB
+
+#WRITE(Spells, $15C9A)
+//ラクカシ"ャ[End]
+Rakukaja[End]
+
+//POINTER #40 @ $15C9C - STRING #40 @ $15DC2
+
+#WRITE(Spells, $15C9C)
+//タルンタ"[End]
+Tarunda[End]
+
+//POINTER #41 @ $15C9E - STRING #41 @ $15DC8
+
+#WRITE(Spells, $15C9E)
+//テトラシ"ャ[End]
+Tetraja[End]
+
+//POINTER #42 @ $15CA0 - STRING #42 @ $15DCF
+
+#WRITE(Spells, $15CA0)
+//マカシ"ャマ[End]
+Makajam[End]
+
+//POINTER #43 @ $15CA2 - STRING #43 @ $15DD6
+
+#WRITE(Spells, $15CA2)
+//テ"ィ[End]
+Dia[End]
+
+//POINTER #44 @ $15CA4 - STRING #44 @ $15DDA
+
+#WRITE(Spells, $15CA4)
+//テ"ィアマ[End]
+//Diama[End]
+Dia2[End]
+
+//POINTER #45 @ $15CA6 - STRING #45 @ $15DE0
+
+#WRITE(Spells, $15CA6)
+//テ"ィアハン[End]
+//Diahan[End]
+Dia3[End]
+
+//POINTER #46 @ $15CA8 - STRING #46 @ $15DE7
+
+#WRITE(Spells, $15CA8)
+//テ"ィアラハン[End]
+//Diarahan[End]
+Dia4[End]
+
+//POINTER #47 @ $15CAA - STRING #47 @ $15DEF
+
+#WRITE(Spells, $15CAA)
+//メテ"ィ[End]
+MeDia[End]
+
+//POINTER #48 @ $15CAC - STRING #48 @ $15DF4
+
+#WRITE(Spells, $15CAC)
+//メテ"ィアマ[End]
+//Mediama[End]
+MeDia2[End]
+
+//POINTER #49 @ $15CAE - STRING #49 @ $15DFB
+
+#WRITE(Spells, $15CAE)
+//メテ"ィアハン[End]
+//Mediahan[End]
+MeDia3[End]
+
+//POINTER #50 @ $15CB0 - STRING #50 @ $15E03
+
+#WRITE(Spells, $15CB0)
+//ハ°トラ[End]
+Patra[End]
+
+//POINTER #51 @ $15CB2 - STRING #51 @ $15E08
+
+#WRITE(Spells, $15CB2)
+//ヘ°ンハ°トラ[End]
+//Penpatra[End]
+Patra2[End]
+
+//POINTER #52 @ $15CB4 - STRING #52 @ $15E10
+
+#WRITE(Spells, $15CB4)
+//ホ°ス"ムテ"ィ[End]
+Poisumdi[End]
+
+//POINTER #53 @ $15CB6 - STRING #53 @ $15E19
+
+#WRITE(Spells, $15CB6)
+//ハ°ララテ"ィ[End]
+Paraladi[End]
+
+//POINTER #54 @ $15CB8 - STRING #54 @ $15E21
+
+#WRITE(Spells, $15CB8)
+//ヘ°トラテ"ィ[End]
+Petridi[End]
+
+//POINTER #55 @ $15CBA - STRING #55 @ $15E29
+
+#WRITE(Spells, $15CBA)
+//リカ-ム[End]
+Recarm[End]
+
+//POINTER #56 @ $15CBC - STRING #56 @ $15E2E
+
+#WRITE(Spells, $15CBC)
+//サマリカ-ム[End]
+//Samarecarm[End]
+Recarm2[End]
+
+//POINTER #57 @ $15CBE - STRING #57 @ $15E35
+
+#WRITE(Spells, $15CBE)
+//マカランタ"[End]
+//Makaranda[End]
+Makarand[End]
+
+//POINTER #58 @ $15CC0 - STRING #58 @ $15E3C
+
+#WRITE(Spells, $15CC0)
+//マッハ°ラ-[End]
+Mapper[End]
+
+//POINTER #59 @ $15CC2 - STRING #59 @ $15E43
+
+#WRITE(Spells, $15CC2)
+//トラスタルト[End]
+Trastart[End]
+
+//POINTER #60 @ $15CC4 - STRING #60 @ $15E4A
+
+#WRITE(Spells, $15CC4)
+//トランハ°[End]
+Tranpa[End]
+
+//POINTER #61 @ $15CC6 - STRING #61 @ $15E50
+
+#WRITE(Spells, $15CC6)
+//トラエスト[End]
+Traesto[End]
+
+//POINTER #62 @ $15CC8 - STRING #62 @ $15E56
+
+#WRITE(Spells, $15CC8)
+//サハ"トマ[End]
+Sabbatma[End]

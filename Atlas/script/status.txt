@@ -1,0 +1,50 @@
+#VAR(text, TABLE)
+#ADDTBL("dialogue.tbl", text)
+#ACTIVETBL(text)
+
+#JMP($6408, $64A3)
+//Status ailments and demon alignments
+<$01><$21><$23><$0E>Align     Evil
+<$01><$21><$23><$0E>Align  Neutral
+<$01><$21><$23><$0E>Align     Good
+//All spaces
+<$00><$00><$00><$00><$00><$00>
+Dead  
+Stone 
+Parlyz
+//Paralysed, "Palsy"
+Freeze
+Sleep 
+Bind  
+Panic 
+Happy 
+Mute  
+//"Close", which silences
+Poison
+......
+//Normal
+Cursed
+Cursed
+Cursed
+//Really gotta have three dupes
+Pig   
+LosArm
+//Lost Arm after it gets bitten off
+
+#JMP($64AA)
+//Pointer 1: hero's commands
+Attack
+Summon
+......
+Defend
+//Pointer 2
+Attack
+......
+......
+Defend
+//Pointer 3
+Attack
+......
+Return
+Defend
+Sort  

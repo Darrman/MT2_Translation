@@ -1,0 +1,1785 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+#VAR(text, TABLE)
+#ADDTBL("dialogue.tbl", text)
+#ACTIVETBL(text)
+
+#VAR(Demons, CUSTOMPOINTER)
+#CREATEPTR(Demons, "LINEAR", $2010, 16)
+
+#JMP($D963, $E00F)
+
+
+//BLOCK #001 NAME:		Demon Names
+
+//POINTER #0 @ $D763 - STRING #0 @ $D963
+
+#W16($D763)
+//タ"-クヒ-ロ-[End]
+Dark Hero<end>
+
+
+//POINTER #1 @ $D765 - STRING #1 @ $D96C
+
+#W16($D765)
+//Y.H.V.H[End]
+Y.H.V.H<END>
+
+
+//POINTER #2 @ $D767 - STRING #2 @ $D974
+
+#W16($D767)
+//サタン[End]
+Satan<end>
+
+
+//POINTER #3 @ $D769 - STRING #3 @ $D978
+
+#W16($D769)
+//ルシファ-[End]
+Lucifer<end>
+
+
+//POINTER #4 @ $D76B - STRING #4 @ $D97E
+
+#W16($D76B)
+//ヘ"ルセ"フ"フ"[End]
+Beelzebub<end>
+
+
+//POINTER #5 @ $D76D - STRING #5 @ $D988
+
+#W16($D76D)
+//アスタロ-ト[End]
+Astaroth<end>
+
+
+//POINTER #6 @ $D76F - STRING #6 @ $D98F
+
+#W16($D76F)
+//ミトラ[End]
+Mitra<end>
+
+
+//POINTER #7 @ $D771 - STRING #7 @ $D993
+
+#W16($D771)
+//モロク[End]
+Moloch<end>
+
+
+//POINTER #8 @ $D773 - STRING #8 @ $D997
+
+#W16($D773)
+//ヘ"リアル[End]
+Belial<end>
+
+
+//POINTER #9 @ $D775 - STRING #9 @ $D99D
+
+#W16($D775)
+//アスモタ"イ[End]
+Asmodai<end>
+
+
+//POINTER #10 @ $D777 - STRING #10 @ $D9A4
+
+#W16($D777)
+//ハ"エル[End]
+Bael<end>
+
+
+//POINTER #11 @ $D779 - STRING #11 @ $D9A9
+
+#W16($D779)
+//ハ°ス"ス[End]
+Pazuzu<end>
+
+
+//POINTER #12 @ $D77B - STRING #12 @ $D9AF
+
+#W16($D77B)
+//アシュラ[End]
+Asura<end>
+
+
+//POINTER #13 @ $D77D - STRING #13 @ $D9B4
+
+#W16($D77D)
+//ヘ"ルフェコ"-ル[End]
+Belphegor<end>
+
+
+//POINTER #14 @ $D77F - STRING #14 @ $D9BE
+
+#W16($D77F)
+//ケ"-リュオン[End]
+Geryon<end>
+
+
+//POINTER #15 @ $D781 - STRING #15 @ $D9C6
+
+#W16($D781)
+//セト[End]
+Set<end>
+
+
+//POINTER #16 @ $D783 - STRING #16 @ $D9C9
+
+#W16($D783)
+//ロキ[End]
+Loki<end>
+
+
+//POINTER #17 @ $D785 - STRING #17 @ $D9CC
+
+#W16($D785)
+//クロノス[End]
+Cronus<end>
+
+
+//POINTER #18 @ $D787 - STRING #18 @ $D9D1
+
+#W16($D787)
+//エキト"ナ[End]
+Echidna<end>
+
+
+//POINTER #19 @ $D789 - STRING #19 @ $D9D7
+
+#W16($D789)
+//マンモン[End]
+Mammon<end>
+
+
+//POINTER #20 @ $D78B - STRING #20 @ $D9DC
+
+#W16($D78B)
+//アリオク[End]
+Arioch<end>
+
+
+//POINTER #21 @ $D78D - STRING #21 @ $2428
+
+//#W16($D78D)
+////The hell? Something broke here.
+//TCRF list suggests the heroine's here.
+//And considering she has no fixed name...
+//Whatever the pointer's pointing at
+//is probably somewhere in RAM, so
+//I ain't messing with that.
+
+//POINTER #22 @ $D78F - STRING #22 @ $D9E1
+
+#W16($D78F)
+//ハ"ラム[End]
+Balaam<end>
+
+
+//POINTER #23 @ $D791 - STRING #23 @ $D9E6
+
+#W16($D791)
+//サルカ"タナス[End]
+Sargatanas<end>
+
+
+//POINTER #24 @ $D793 - STRING #24 @ $D9EE
+
+#W16($D793)
+//ティアマット[End]
+Tiamat<end>
+
+
+//POINTER #25 @ $D795 - STRING #25 @ $D9F5
+
+#W16($D795)
+//レウ"ィアサン[End]
+Leviathan<end>
+
+
+//POINTER #26 @ $D797 - STRING #26 @ $D9FD
+
+#W16($D797)
+//ニトホック"[End]
+Nidhogg<end>
+
+
+//POINTER #27 @ $D799 - STRING #27 @ $DA04
+
+#W16($D799)
+//ウ"リトラ[End]
+Vritra<end>
+
+
+//POINTER #28 @ $D79B - STRING #28 @ $DA0A
+
+#W16($D79B)
+//ヒト"ラ[End]
+Hydra<end>
+
+
+//POINTER #29 @ $D79D - STRING #29 @ $DA0F
+
+#W16($D79D)
+//フェンリル[End]
+Fenrir<end>
+
+
+//POINTER #30 @ $D79F - STRING #30 @ $DA15
+
+#W16($D79F)
+//ティホン[End]
+Typhon<end>
+
+
+//POINTER #31 @ $D7A1 - STRING #31 @ $DA1A
+
+#W16($D7A1)
+//アホ°リオン[End]
+Abaddon<end>
+
+
+//POINTER #32 @ $D7A3 - STRING #32 @ $DA21
+
+#W16($D7A3)
+//スキュラ[End]
+Scylla<end>
+
+
+//POINTER #33 @ $D7A5 - STRING #33 @ $DA26
+
+#W16($D7A5)
+//ハ"シ"リスク[End]
+Basilisk<end>
+
+
+//POINTER #34 @ $D7A7 - STRING #34 @ $DA2E
+
+#W16($D7A7)
+//マンティコア[End]
+Manticore<end>
+
+
+//POINTER #35 @ $D7A9 - STRING #35 @ $DA35
+
+#W16($D7A9)
+//ワイハ"-ン[End]
+Wyvern<end>
+
+
+//POINTER #36 @ $D7AB - STRING #36 @ $DA3C
+
+#W16($D7AB)
+//ランタ"[End]
+Rangda<end>
+
+
+//POINTER #37 @ $D7AD - STRING #37 @ $DA41
+
+#W16($D7AD)
+//タマモノマエ[End]
+Tamamo no Mae<end>
+
+
+//POINTER #38 @ $D7AF - STRING #38 @ $DA48
+
+#W16($D7AF)
+//ホ"ルホ"[End]
+Volva<end>
+
+
+//POINTER #39 @ $D7B1 - STRING #39 @ $DA4E
+
+#W16($D7B1)
+//メテ"ュ-サ[End]
+Medusa<end>
+
+
+//POINTER #40 @ $D7B3 - STRING #40 @ $DA55
+
+#W16($D7B3)
+//ラルン[End]
+Rarung<end>
+
+
+//POINTER #41 @ $D7B5 - STRING #41 @ $DA59
+
+#W16($D7B5)
+//ナアス[End]
+Nasu<end>
+
+
+//POINTER #42 @ $D7B7 - STRING #42 @ $DA5D
+
+#W16($D7B7)
+//キヨヒメ[End]
+Kiyo-hime<end>
+
+
+//POINTER #43 @ $D7B9 - STRING #43 @ $DA62
+
+#W16($D7B9)
+//アルケニ-[End]
+Arachne<end>
+
+
+//POINTER #44 @ $D7BB - STRING #44 @ $DA68
+
+#W16($D7BB)
+//タ-ラカ"[End]
+Taraka<end>
+
+
+//POINTER #45 @ $D7BD - STRING #45 @ $DA6E
+
+#W16($D7BD)
+//セイレ-ン[End]
+Siren<end>
+
+
+//POINTER #46 @ $D7BF - STRING #46 @ $DA74
+
+#W16($D7BF)
+//フリアイ[End]
+Furiae<end>
+
+
+//POINTER #47 @ $D7C1 - STRING #47 @ $DA79
+
+#W16($D7C1)
+//サウォハ"ク[End]
+Sawo Bhaku<end>
+
+
+//POINTER #48 @ $D7C3 - STRING #48 @ $DA80
+
+#W16($D7C3)
+//チュルルック[End]
+Celuluk<end>
+
+
+//POINTER #49 @ $D7C5 - STRING #49 @ $DA87
+
+#W16($D7C5)
+//サキュハ"ス[End]
+Succubus<end>
+
+
+//POINTER #50 @ $D7C7 - STRING #50 @ $DA8E
+
+#W16($D7C7)
+//アムト"ウシアス[End]
+Amdusias<end>
+
+
+//POINTER #51 @ $D7C9 - STRING #51 @ $DA97
+
+#W16($D7C9)
+//ファントム[End]
+Phantom<end>
+
+
+//POINTER #52 @ $D7CB - STRING #52 @ $DA9D
+
+#W16($D7CB)
+//レオナルト"[End]
+Leonard<end>
+
+
+//POINTER #53 @ $D7CD - STRING #53 @ $DAA4
+
+#W16($D7CD)
+//ラルウァイ[End]
+Larvae<end>
+
+
+//POINTER #54 @ $D7CF - STRING #54 @ $DAAA
+
+#W16($D7CF)
+//ネヒ"ロス[End]
+Nebiros<end>
+
+
+//POINTER #55 @ $D7D1 - STRING #55 @ $DAB0
+
+#W16($D7D1)
+//レムル-ス[End]
+Lemures<end>
+
+
+//POINTER #56 @ $D7D3 - STRING #56 @ $DAB6
+
+#W16($D7D3)
+//キ"リメカテ[End]
+Girimekhala<end>
+
+
+//POINTER #57 @ $D7D5 - STRING #57 @ $DABD
+
+#W16($D7D5)
+//ウトウク[End]
+Utukku<end>
+
+
+//POINTER #58 @ $D7D7 - STRING #58 @ $DAC2
+
+#W16($D7D7)
+//ハクマ フ" トウ[End]
+Hakuma Bhoot<end>
+
+
+//POINTER #59 @ $D7D9 - STRING #59 @ $DACC
+
+#W16($D7D9)
+//テ"ュラハ-ン[End]
+Dullahan<end>
+
+
+//POINTER #60 @ $D7DB - STRING #60 @ $DAD4
+
+#W16($D7DB)
+//ウ"ェ-タラ[End]
+Vetala<end>
+
+
+//POINTER #61 @ $D7DD - STRING #61 @ $DADB
+
+#W16($D7DD)
+//リッチ[End]
+Lich<end>
+
+
+//POINTER #62 @ $D7DF - STRING #62 @ $DADF
+
+#W16($D7DF)
+//ヒ"ワほうし[End]
+Biwahoushi<end>
+
+
+//POINTER #63 @ $D7E1 - STRING #63 @ $DAE6
+
+#W16($D7E1)
+//マット"マン[End]
+Mudman<end>
+
+
+//POINTER #64 @ $D7E3 - STRING #64 @ $DAED
+
+#W16($D7E3)
+//ノスフェラトウ[End]
+Nosferatu<end>
+
+
+//POINTER #65 @ $D7E5 - STRING #65 @ $DAF5
+
+#W16($D7E5)
+//ワイト[End]
+Wight<end>
+
+
+//POINTER #66 @ $D7E7 - STRING #66 @ $DAF9
+
+#W16($D7E7)
+//ファフニ-ル[End]
+Fafnir<end>
+
+
+//POINTER #67 @ $D7E9 - STRING #67 @ $DB00
+
+#W16($D7E9)
+//ウルム[End]
+Wurm<end>
+
+
+//POINTER #68 @ $D7EB - STRING #68 @ $DB04
+
+#W16($D7EB)
+//ウ"ォラク[End]
+Volac<end>
+
+
+//POINTER #69 @ $D7ED - STRING #69 @ $DB0A
+
+#W16($D7ED)
+//ト"ト"ンコ"-[End]
+Dodongo<end>
+
+
+//POINTER #70 @ $D7EF - STRING #70 @ $DB13
+
+#W16($D7EF)
+//ラト"ン[End]
+Ladon<end>
+
+
+//POINTER #71 @ $D7F1 - STRING #71 @ $DB18
+
+#W16($D7F1)
+//ヌエ[End]
+Nue<end>
+
+
+//POINTER #72 @ $D7F3 - STRING #72 @ $DB1B
+
+#W16($D7F3)
+//ハンハ"ハ"[End]
+Humbaba<end>
+
+
+//POINTER #73 @ $D7F5 - STRING #73 @ $DB22
+
+#W16($D7F5)
+//コカトライス[End]
+Cockatrice<end>
+
+
+//POINTER #74 @ $D7F7 - STRING #74 @ $DB29
+
+#W16($D7F7)
+//オロハ"ス[End]
+Orobas<end>
+
+
+//POINTER #75 @ $D7F9 - STRING #75 @ $DB2F
+
+#W16($D7F9)
+//カ"ルム[End]
+Garm<end>
+
+
+//POINTER #76 @ $D7FB - STRING #76 @ $DB34
+
+#W16($D7FB)
+//シ"ャハ"ウォ-ク[End]
+Jabberwock<end>
+
+
+//POINTER #77 @ $D7FD - STRING #77 @ $DB3E
+
+#W16($D7FD)
+//ワイア-ム[End]
+Wyrm<end>
+
+
+//POINTER #78 @ $D7FF - STRING #78 @ $DB44
+
+#W16($D7FF)
+//テ"ット"ロフ"スタ[End]
+Dead Lobster<end>
+
+
+//POINTER #79 @ $D801 - STRING #79 @ $DB4F
+
+#W16($D801)
+//アセ"サ"ル[End]
+Azazel<end>
+
+
+//POINTER #80 @ $D803 - STRING #80 @ $DB56
+
+#W16($D803)
+//エキンム[End]
+Ekimmu<end>
+
+
+//POINTER #81 @ $D805 - STRING #81 @ $DB5B
+
+#W16($D805)
+//ヘ"リス[End]
+Berith<end>
+
+
+//POINTER #82 @ $D807 - STRING #82 @ $DB60
+
+#W16($D807)
+//フル-レティ[End]
+Fleuretty<end>
+
+
+//POINTER #83 @ $D809 - STRING #83 @ $DB67
+
+#W16($D809)
+//スト-ン コ"-レム[End]
+Stone Golem<end>
+
+
+//POINTER #84 @ $D80B - STRING #84 @ $DB72
+
+#W16($D80B)
+//サイクロフ°ス[End]
+Cyclops<end>
+
+
+//POINTER #85 @ $D80D - STRING #85 @ $DB7A
+
+#W16($D80D)
+//アイン[End]
+Aim<end>
+
+
+//POINTER #86 @ $D80F - STRING #86 @ $DB7E
+
+#W16($D80F)
+//クレイ コ"-レム[End]
+Clay Golem<end>
+
+
+//POINTER #87 @ $D811 - STRING #87 @ $DB88
+
+#W16($D811)
+//ミノタウロス[End]
+Minotaur<end>
+
+
+//POINTER #88 @ $D813 - STRING #88 @ $DB8F
+
+#W16($D813)
+//ハ"ク"ヘ"ア[End]
+Bugbear<end>
+
+
+//POINTER #89 @ $D815 - STRING #89 @ $DB97
+
+#W16($D815)
+//ウェンテ"ィコ"[End]
+Wendigo<end>
+
+
+//POINTER #90 @ $D817 - STRING #90 @ $DBA0
+
+#W16($D817)
+//オ-ク[End]
+Orc<end>
+
+
+//POINTER #91 @ $D819 - STRING #91 @ $DBA4
+
+#W16($D819)
+//タロス[End]
+Talos<end>
+
+
+//POINTER #92 @ $D81B - STRING #92 @ $DBA8
+
+#W16($D81B)
+GDR1000[End]
+
+
+//POINTER #93 @ $D81D - STRING #93 @ $DBB0
+
+#W16($D81D)
+LB-501A[End]
+
+
+//POINTER #94 @ $D81F - STRING #94 @ $DBB8
+
+#W16($D81F)
+//スハ°ルチ[End]
+Spartoi<end>
+
+
+//POINTER #95 @ $D821 - STRING #95 @ $DBBE
+
+#W16($D821)
+//スヘ°クタ-[End]
+Spectre<end>
+
+
+//POINTER #96 @ $D823 - STRING #96 @ $DBC5
+
+#W16($D823)
+//ウィフ°リ[End]
+Upyr<end>
+
+
+//POINTER #97 @ $D825 - STRING #97 @ $DBCB
+
+#W16($D825)
+//ヒ°シャ-チャ[End]
+Pishacha<end>
+
+
+//POINTER #98 @ $D827 - STRING #98 @ $DBD3
+
+#W16($D827)
+//チョンチョン[End]
+Chonchon<end>
+
+
+//POINTER #99 @ $D829 - STRING #99 @ $DBDA
+
+#W16($D829)
+//サカサクヒ"[End]
+Inverted Head<end>
+
+
+//POINTER #100 @ $D82B - STRING #100 @ $DBE1
+
+#W16($D82B)
+//ホ"テ"コニアン[End]
+Body-Conian<end>
+
+
+//POINTER #101 @ $D82D - STRING #101 @ $DBEA
+
+#W16($D82D)
+//コ-フ°ス[End]
+Corpse<end>
+
+
+//POINTER #102 @ $D82F - STRING #102 @ $DBF0
+
+#W16($D82F)
+//ク"-ル[End]
+Ghoul<end>
+
+
+//POINTER #103 @ $D831 - STRING #103 @ $DBF5
+
+#W16($D831)
+//ソ"ンヒ"[End]
+Zombie<end>
+
+
+//POINTER #104 @ $D833 - STRING #104 @ $DBFB
+
+#W16($D833)
+//インテリヘ°リ[End]
+Imtellipperi<end>
+
+
+//POINTER #105 @ $D835 - STRING #105 @ $DC03
+
+#W16($D835)
+//レット"ラム[End]
+Redrum<end>
+
+
+//POINTER #106 @ $D837 - STRING #106 @ $DC0A
+
+#W16($D837)
+//ヒ"-メ[End]
+V Met<end>
+
+
+//POINTER #107 @ $D839 - STRING #107 @ $DC0F
+
+#W16($D839)
+//ト"クタ-ハ"クタ[End]
+Dr. Bakuta<end>
+
+
+//POINTER #108 @ $D83B - STRING #108 @ $DC19
+
+#W16($D83B)
+//シ"ャンキ-[End]
+Junkie<end>
+
+
+//POINTER #109 @ $D83D - STRING #109 @ $DC20
+
+#W16($D83D)
+//アサシン[End]
+Assassin<end>
+
+
+//POINTER #110 @ $D83F - STRING #110 @ $DC25
+
+#W16($D83F)
+//ミュ-タント[End]
+Mutant<end>
+
+
+//POINTER #111 @ $D841 - STRING #111 @ $DC2C
+
+#W16($D841)
+//ハカイ ソウ[End]
+Sinful Priest<end>
+
+
+//POINTER #112 @ $D843 - STRING #112 @ $DC33
+
+#W16($D843)
+//フライテ"イ[End]
+Friday<end>
+
+
+//POINTER #113 @ $D845 - STRING #113 @ $DC3A
+
+#W16($D845)
+//ハイウェイスタ-[End]
+Highway Star<end>
+
+
+//POINTER #114 @ $D847 - STRING #114 @ $DC43
+
+#W16($D847)
+//メタル[End]
+Metal<end>
+
+
+//POINTER #115 @ $D849 - STRING #115 @ $DC47
+
+#W16($D849)
+//キンス" ヘット"[End]
+Kin's Head<end>
+
+
+//POINTER #116 @ $D84B - STRING #116 @ $DC51
+
+#W16($D84B)
+//ハ°ンクス[End]
+Punk<end>
+
+
+//POINTER #117 @ $D84D - STRING #117 @ $DC57
+
+#W16($D84D)
+//ト"リ-ム キッス[End]
+Dream Kiss<end>
+
+
+//POINTER #118 @ $D84F - STRING #118 @ $DC61
+
+#W16($D84F)
+//シ"ャックランタン[End]
+Jack o'Lantern<end>
+
+
+//POINTER #119 @ $D851 - STRING #119 @ $DC6B
+
+#W16($D851)
+//ハ"ックヘ"ア-ト"[End]
+Backbeard<end>
+
+
+//POINTER #120 @ $D853 - STRING #120 @ $DC76
+
+#W16($D853)
+//ホ"-ンコ"-レム[End]
+Bone Golem<end>
+
+
+//POINTER #121 @ $D855 - STRING #121 @ $DC80
+
+#W16($D855)
+//コ"-ルト"スライム[End]
+Gold Slime<end>
+
+
+//POINTER #122 @ $D857 - STRING #122 @ $DC8B
+
+#W16($D857)
+//マンイ-タ-[End]
+Maneater<end>
+
+
+//POINTER #123 @ $D859 - STRING #123 @ $DC92
+
+#W16($D859)
+//クラヘ"ヒ"[End]
+Kurabebi<end>
+
+
+//POINTER #124 @ $D85B - STRING #124 @ $DC99
+
+#W16($D85B)
+//アスコモイト"[End]
+Ascomoid<end>
+
+
+//POINTER #125 @ $D85D - STRING #125 @ $DCA1
+
+#W16($D85D)
+//クラッフ°スライム[End]
+Crap Slime<end>
+
+
+//POINTER #126 @ $D85F - STRING #126 @ $DCAB
+
+#W16($D85F)
+//ウィルオウィスフ°[End]
+Will o'Wisp<end>
+
+
+//POINTER #127 @ $D861 - STRING #127 @ $DCB5
+
+#W16($D861)
+//ク"リ-ンスライム[End]
+Green Slime<end>
+
+
+//POINTER #128 @ $D863 - STRING #128 @ $DCBF
+
+#W16($D863)
+//トロ-ル[End]
+Troll<end>
+
+
+//POINTER #129 @ $D865 - STRING #129 @ $DCC4
+
+#W16($D865)
+//レク"ハ"[End]
+Legba<end>
+
+
+//POINTER #130 @ $D867 - STRING #130 @ $DCCA
+
+#W16($D867)
+//ホ"-ク"ル[End]
+Bogle<end>
+
+
+//POINTER #131 @ $D869 - STRING #131 @ $DCD1
+
+#W16($D869)
+//ルサ-ルカ[End]
+Rusalka<end>
+
+
+//POINTER #132 @ $D86B - STRING #132 @ $DCD7
+
+#W16($D86B)
+//ケライノ[End]
+Celaeno<end>
+
+
+//POINTER #133 @ $D86D - STRING #133 @ $DCDC
+
+#W16($D86D)
+//アエロ-[End]
+Aello<end>
+
+
+//POINTER #134 @ $D86F - STRING #134 @ $DCE1
+
+#W16($D86F)
+//オキュヘ°テ[End]
+Ocypete<end>
+
+
+//POINTER #135 @ $D871 - STRING #135 @ $DCE8
+
+#W16($D871)
+//アフ°サラス[End]
+Apsaras<end>
+
+
+//POINTER #136 @ $D873 - STRING #136 @ $DCEF
+
+#W16($D873)
+//ケルヒ°-[End]
+Kelpie<end>
+
+
+//POINTER #137 @ $D875 - STRING #137 @ $DCF5
+
+#W16($D875)
+//メロウ[End]
+Merrow<end>
+
+
+//POINTER #138 @ $D877 - STRING #138 @ $DCF9
+
+#W16($D877)
+//エルフ[End]
+Elf<end>
+
+
+//POINTER #139 @ $D879 - STRING #139 @ $DCFD
+
+#W16($D879)
+//コ"フ"リン[End]
+Goblin<end>
+
+
+//POINTER #140 @ $D87B - STRING #140 @ $DD04
+
+#W16($D87B)
+//ハ-ヒ°-[End]
+Harpy<end>
+
+
+//POINTER #141 @ $D87D - STRING #141 @ $DD0A
+
+#W16($D87D)
+//ヒ°クシ-[End]
+Pixie<end>
+
+
+//POINTER #142 @ $D87F - STRING #142 @ $DD10
+
+#W16($D87F)
+//ウヘ°ルリ[End]
+Upelluri<end>
+
+
+//POINTER #143 @ $D881 - STRING #143 @ $DD16
+
+#W16($D881)
+//シ"ャイアント[End]
+Giant<end>
+
+
+//POINTER #144 @ $D883 - STRING #144 @ $DD1E
+
+#W16($D883)
+//サレオス[End]
+Saleos<end>
+
+
+//POINTER #145 @ $D885 - STRING #145 @ $DD23
+
+#W16($D885)
+//アトラス[End]
+Atlas<end>
+
+
+//POINTER #146 @ $D887 - STRING #146 @ $DD28
+
+#W16($D887)
+//ツチク"モ[End]
+Tsuchigumo<end>
+
+
+//POINTER #147 @ $D889 - STRING #147 @ $DD2E
+
+#W16($D889)
+//タンキ[End]
+Dan Gui<end>
+
+
+//POINTER #148 @ $D88B - STRING #148 @ $DD32
+
+#W16($D88B)
+//フ"ッカフ"-[End]
+Buccaboo<end>
+
+
+//POINTER #149 @ $D88D - STRING #149 @ $DD3A
+
+#W16($D88D)
+//ト"ワ-フ[End]
+Dwarf<end>
+
+
+//POINTER #150 @ $D88F - STRING #150 @ $DD40
+
+#W16($D88F)
+//コホ"ルト[End]
+Kobold<end>
+
+
+//POINTER #151 @ $D891 - STRING #151 @ $DD46
+
+#W16($D891)
+//コロンソ"ン[End]
+Choronzon<end>
+
+
+//POINTER #152 @ $D893 - STRING #152 @ $DD4D
+
+#W16($D893)
+//オニ[End]
+Oni<end>
+
+
+//POINTER #153 @ $D895 - STRING #153 @ $DD50
+
+#W16($D895)
+//メフィスト[End]
+Mephisto<end>
+
+
+//POINTER #154 @ $D897 - STRING #154 @ $DD56
+
+#W16($D897)
+//フ°ルシキ[End]
+Pulukisi<end>
+
+
+//POINTER #155 @ $D899 - STRING #155 @ $DD5C
+
+#W16($D899)
+//メス"キ[End]
+Mezuki<end>
+
+
+//POINTER #156 @ $D89B - STRING #156 @ $DD61
+
+#W16($D89B)
+//シ"ニ-[End]
+Djinn<end>
+
+
+//POINTER #157 @ $D89D - STRING #157 @ $DD66
+
+#W16($D89D)
+//コ"ス"キ[End]
+Gozuki<end>
+
+
+//POINTER #158 @ $D89F - STRING #158 @ $DD6C
+
+#W16($D89F)
+//アラハハ"キ[End]
+Arahabaki<end>
+
+
+//POINTER #159 @ $D8A1 - STRING #159 @ $DD73
+
+#W16($D8A1)
+//シトリ-[End]
+Sitri<end>
+
+
+//POINTER #160 @ $D8A3 - STRING #160 @ $DD78
+
+#W16($D8A3)
+//モムノフ[End]
+Momunofu<end>
+
+
+//POINTER #161 @ $D8A5 - STRING #161 @ $DD7D
+
+#W16($D8A5)
+//カ"-フ°[End]
+Gaap<end>
+
+
+//POINTER #162 @ $D8A7 - STRING #162 @ $DD83
+
+#W16($D8A7)
+//カワンチャ[End]
+Kwancha<end>
+
+
+//POINTER #163 @ $D8A9 - STRING #163 @ $DD89
+
+#W16($D8A9)
+//フォルネウス[End]
+Forneus<end>
+
+
+//POINTER #164 @ $D8AB - STRING #164 @ $DD90
+
+#W16($D8AB)
+//キマリス[End]
+Kimaris<end>
+
+
+//POINTER #165 @ $D8AD - STRING #165 @ $DD95
+
+#W16($D8AD)
+//カ-ハ"ンクル[End]
+Carbuncle<end>
+
+
+//POINTER #166 @ $D8AF - STRING #166 @ $DD9D
+
+#W16($D8AF)
+//ハ°イロン[End]
+Bailong<end>
+
+
+//POINTER #167 @ $D8B1 - STRING #167 @ $DDA3
+
+#W16($D8B1)
+//キマイラ[End]
+Chimera<end>
+
+
+//POINTER #168 @ $D8B3 - STRING #168 @ $DDA8
+
+#W16($D8B3)
+//9ヒ"ノ キツネ[End]
+9-Tailed Fox<end>
+
+
+//POINTER #169 @ $D8B5 - STRING #169 @ $DDB1
+
+#W16($D8B5)
+//ケルヘ"ロス[End]
+Cerberus<end>
+
+
+//POINTER #170 @ $D8B7 - STRING #170 @ $DDB8
+
+#W16($D8B7)
+//ク"リフォン[End]
+Gryphon<end>
+
+
+//POINTER #171 @ $D8B9 - STRING #171 @ $DDBF
+
+#W16($D8B9)
+//ヤタカ"ラス[End]
+Yatagarasu<end>
+
+
+//POINTER #172 @ $D8BB - STRING #172 @ $DDC6
+
+#W16($D8BB)
+//タムス"[End]
+Tammuz<end>
+
+
+//POINTER #173 @ $D8BD - STRING #173 @ $DDCB
+
+#W16($D8BD)
+//スト-ンカ[End]
+Stanga<end>
+
+
+//POINTER #174 @ $D8BF - STRING #174 @ $DDD1
+
+#W16($D8BF)
+//オルトロス[End]
+Orthrus<end>
+
+
+//POINTER #175 @ $D8C1 - STRING #175 @ $DDD7
+
+#W16($D8C1)
+//ヘ°カ"サス[End]
+Pegasus<end>
+
+
+//POINTER #176 @ $D8C3 - STRING #176 @ $DDDE
+
+#W16($D8C3)
+//ソ-ト"ナイト[End]
+Sword Knight<end>
+
+
+//POINTER #177 @ $D8C5 - STRING #177 @ $DDE6
+
+#W16($D8C5)
+//ワント"ナイト[End]
+Wand Knight<end>
+
+
+//POINTER #178 @ $D8C7 - STRING #178 @ $DDEE
+
+#W16($D8C7)
+//ク"レモリ-[End]
+Gremory<end>
+
+
+//POINTER #179 @ $D8C9 - STRING #179 @ $DDF5
+
+#W16($D8C9)
+//ウ"ァルキリ-[End]
+Valkyrie<end>
+
+
+//POINTER #180 @ $D8CB - STRING #180 @ $DDFD
+
+#W16($D8CB)
+//フ-リ-[End]
+Huris<end>
+
+
+//POINTER #181 @ $D8CD - STRING #181 @ $DE02
+
+#W16($D8CD)
+//ハンシ"ャ[End]
+Hannya<end>
+
+
+//POINTER #182 @ $D8CF - STRING #182 @ $DE08
+
+#W16($D8CF)
+//アミイ[End]
+Amy<end>
+
+
+//POINTER #183 @ $D8D1 - STRING #183 @ $DE0C
+
+#W16($D8D1)
+//オオナムチ[End]
+Oonamuchi<end>
+
+
+//POINTER #184 @ $D8D3 - STRING #184 @ $DE12
+
+#W16($D8D3)
+//カッフ°ナイト[End]
+Cup Knight<end>
+
+
+//POINTER #185 @ $D8D5 - STRING #185 @ $DE1A
+
+#W16($D8D5)
+//モルカ"ン[End]
+Morgan<end>
+
+
+//POINTER #186 @ $D8D7 - STRING #186 @ $DE20
+
+#W16($D8D7)
+//クシナタ"ヒメ[End]
+Kushinada-hime<end>
+
+
+//POINTER #187 @ $D8D9 - STRING #187 @ $DE28
+
+#W16($D8D9)
+//シ"ャクフロスト[End]
+Jack Frost<end>
+
+
+//POINTER #188 @ $D8DB - STRING #188 @ $DE31
+
+#W16($D8DB)
+//テ"ィスクナイト[End]
+Disk Knight<end>
+
+
+//POINTER #189 @ $D8DD - STRING #189 @ $DE3A
+
+#W16($D8DD)
+//ネコマタ[End]
+Nekomata<end>
+
+
+//POINTER #190 @ $D8DF - STRING #190 @ $DE3F
+
+#W16($D8DF)
+//ケンタウロス[End]
+Centaur<end>
+
+
+//POINTER #191 @ $D8E1 - STRING #191 @ $DE46
+
+#W16($D8E1)
+//コワトリクエ[End]
+Coatlicue<end>
+
+
+//POINTER #192 @ $D8E3 - STRING #192 @ $DE4D
+
+#W16($D8E3)
+//サラマンタ"-[End]
+Salamander<end>
+
+
+//POINTER #193 @ $D8E5 - STRING #193 @ $DE55
+
+#W16($D8E5)
+//ラケ-[End]
+Lakhe<end>
+
+
+//POINTER #194 @ $D8E7 - STRING #194 @ $DE59
+
+#W16($D8E7)
+//ウ"ェハ°-ル[End]
+Vepar<end>
+
+
+//POINTER #195 @ $D8E9 - STRING #195 @ $DE61
+
+#W16($D8E9)
+//ウンテ"ィ-ネ[End]
+Undine<end>
+
+
+//POINTER #196 @ $D8EB - STRING #196 @ $DE69
+
+#W16($D8EB)
+//シルフ[End]
+Sylph<end>
+
+
+//POINTER #197 @ $D8ED - STRING #197 @ $DE6D
+
+#W16($D8ED)
+//ノ-ム[End]
+Gnome<end>
+
+
+//POINTER #198 @ $D8EF - STRING #198 @ $DE71
+
+#W16($D8EF)
+//フレイミスライム[End]
+Flamy Slime<end>
+
+
+//POINTER #199 @ $D8F1 - STRING #199 @ $DE7A
+
+#W16($D8F1)
+//アクワンスライム[End]
+Aquan Slime<end>
+
+
+//POINTER #200 @ $D8F3 - STRING #200 @ $DE83
+
+#W16($D8F3)
+//エアリ-スライム[End]
+Airy Slime<end>
+
+
+//POINTER #201 @ $D8F5 - STRING #201 @ $DE8C
+
+#W16($D8F5)
+//ア-シ-スライム[End]
+Earthy Slime<end>
+
+
+//POINTER #202 @ $D8F7 - STRING #202 @ $DE95
+
+#W16($D8F7)
+//フェニックス[End]
+Phoenix<end>
+
+
+//POINTER #203 @ $D8F9 - STRING #203 @ $DE9C
+
+#W16($D8F9)
+//ラクチャランコ"[End]
+Raktarango<end>
+
+
+//POINTER #204 @ $D8FB - STRING #204 @ $DEA5
+
+#W16($D8FB)
+//ハ°ヒ"ルサク"[End]
+Pabilsag<end>
+
+
+//POINTER #205 @ $D8FD - STRING #205 @ $DEAE
+
+#W16($D8FD)
+//ケツアルカトル[End]
+Quetzalcoatl<end>
+
+
+//POINTER #206 @ $D8FF - STRING #206 @ $DEB6
+
+#W16($D8FF)
+//ケ"ンフ"[End]
+Genbu<end>
+
+
+//POINTER #207 @ $D901 - STRING #207 @ $DEBC
+
+#W16($D901)
+//ユニコ-ン[End]
+Unicorn<end>
+
+
+//POINTER #208 @ $D903 - STRING #208 @ $DEC2
+
+#W16($D903)
+//カ"ンタ"ルハ"[End]
+Gandharva<end>
+
+
+//POINTER #209 @ $D905 - STRING #209 @ $DECB
+
+#W16($D905)
+//キリン[End]
+Kirin<end>
+
+
+//POINTER #210 @ $D907 - STRING #210 @ $DECF
+
+#W16($D907)
+//ハヌマ-ン[End]
+Hanuman<end>
+
+
+//POINTER #211 @ $D909 - STRING #211 @ $DED5
+
+#W16($D909)
+//フルカロス[End]
+Focalor<end>
+
+
+//POINTER #212 @ $D90B - STRING #212 @ $DEDB
+
+#W16($D90B)
+//アカ"レス[End]
+Agares<end>
+
+
+//POINTER #213 @ $D90D - STRING #213 @ $DEE1
+
+#W16($D90D)
+//キクリヒメ[End]
+Kikuri-hime<end>
+
+
+//POINTER #214 @ $D90F - STRING #214 @ $DEE7
+
+#W16($D90F)
+//ラクシュミ[End]
+Lakshmi<end>
+
+
+//POINTER #215 @ $D911 - STRING #215 @ $DEED
+
+#W16($D911)
+//ラミア-[End]
+Lamia<end>
+
+
+//POINTER #216 @ $D913 - STRING #216 @ $DEF2
+
+#W16($D913)
+//タ"ンハ"ラ[End]
+Damballa<end>
+
+
+//POINTER #217 @ $D915 - STRING #217 @ $DEF9
+
+#W16($D915)
+//ハ"フォメット[End]
+Baphomet<end>
+
+
+//POINTER #218 @ $D917 - STRING #218 @ $DF01
+
+#W16($D917)
+//ク-フ-リン[End]
+Cu Chulainn<end>
+
+
+//POINTER #219 @ $D919 - STRING #219 @ $DF08
+
+#W16($D919)
+//キンナラ[End]
+Kinnara<end>
+
+
+//POINTER #220 @ $D91B - STRING #220 @ $DF0D
+
+#W16($D91B)
+//エリコ"-ル[End]
+Eligor<end>
+
+
+//POINTER #221 @ $D91D - STRING #221 @ $DF14
+
+#W16($D91D)
+//エイワス[End]
+Aiwass<end>
+
+
+//POINTER #222 @ $D91F - STRING #222 @ $DF19
+
+#W16($D91F)
+//ウコハ"チ[End]
+Ukobach<end>
+
+
+//POINTER #223 @ $D921 - STRING #223 @ $DF1F
+
+#W16($D921)
+//アルラウネ[End]
+Alraune<end>
+
+
+//POINTER #224 @ $D923 - STRING #224 @ $DF25
+
+#W16($D923)
+//ミカエル[End]
+Michael<end>
+
+
+//POINTER #225 @ $D925 - STRING #225 @ $DF2A
+
+#W16($D925)
+//カ"フ"リエル[End]
+Gabriel<end>
+
+
+//POINTER #226 @ $D927 - STRING #226 @ $DF32
+
+#W16($D927)
+//ニケ-[End]
+Nike<end>
+
+
+//POINTER #227 @ $D929 - STRING #227 @ $DF36
+
+#W16($D929)
+//ケルヒ"ム[End]
+Cherubim<end>
+
+
+//POINTER #228 @ $D92B - STRING #228 @ $DF3C
+
+#W16($D92B)
+//ラファエル[End]
+Raphael<end>
+
+
+//POINTER #229 @ $D92D - STRING #229 @ $DF42
+
+#W16($D92D)
+//ウリエル[End]
+Uriel<end>
+
+
+//POINTER #230 @ $D92F - STRING #230 @ $DF47
+
+#W16($D92F)
+//カ-リ-[End]
+Kali<end>
+
+
+//POINTER #231 @ $D931 - STRING #231 @ $DF4C
+
+#W16($D931)
+//アモン[End]
+Amon<end>
+
+
+//POINTER #232 @ $D933 - STRING #232 @ $DF50
+
+#W16($D933)
+//ト-ル[End]
+Thor<end>
+
+
+//POINTER #233 @ $D935 - STRING #233 @ $DF54
+
+#W16($D935)
+//カ"ネ-シャ[End]
+Ganesha<end>
+
+
+//POINTER #234 @ $D937 - STRING #234 @ $DF5B
+
+#W16($D937)
+//タモンテン[End]
+Tamonten<end>
+
+
+//POINTER #235 @ $D939 - STRING #235 @ $DF61
+
+#W16($D939)
+//スサノオ[End]
+Susanoo<end>
+
+
+//POINTER #236 @ $D93B - STRING #236 @ $DF66
+
+#W16($D93B)
+//イフリ-ト[End]
+Ifrit<end>
+
+
+//POINTER #237 @ $D93D - STRING #237 @ $DF6C
+
+#W16($D93D)
+//シ"コクテン[End]
+Jikokuten<end>
+
+
+//POINTER #238 @ $D93F - STRING #238 @ $DF73
+
+#W16($D93F)
+//ラクシャ-サ[End]
+Rakshasa<end>
+
+
+//POINTER #239 @ $D941 - STRING #239 @ $DF7A
+
+#W16($D941)
+//コウモクテン[End]
+Koumokuten<end>
+
+
+//POINTER #240 @ $D943 - STRING #240 @ $DF81
+
+#W16($D943)
+//ソ"ウチョウテン[End]
+Zouchouten<end>
+
+
+//POINTER #241 @ $D945 - STRING #241 @ $DF8A
+
+#W16($D945)
+//チィンロン[End]
+Qinglong<end>
+
+
+//POINTER #242 @ $D947 - STRING #242 @ $DF90
+
+#W16($D947)
+//カ"ル-タ"[End]
+Garuda<end>
+
+
+//POINTER #243 @ $D949 - STRING #243 @ $DF97
+
+#W16($D949)
+//ハ"ロン[End]
+Barong<end>
+
+
+//POINTER #244 @ $D94B - STRING #244 @ $DF9C
+
+#W16($D94B)
+//スフィンクス[End]
+Sphinx<end>
+
+
+//POINTER #245 @ $D94D - STRING #245 @ $DFA3
+
+#W16($D94D)
+//ナ-カ"[End]
+Naga<end>
+
+
+//POINTER #246 @ $D94F - STRING #246 @ $DFA8
+
+#W16($D94F)
+//ルシファ-[End]
+Lucifer<end>
+
+
+//POINTER #247 @ $D951 - STRING #247 @ $DFAE
+
+#W16($D951)
+//シウ"ァ[End]
+Shiva<end>
+
+
+//POINTER #248 @ $D953 - STRING #248 @ $DFB3
+
+#W16($D953)
+//アフラマス"タ"[End]
+Ahura Mazda<end>
+
+
+//POINTER #249 @ $D955 - STRING #249 @ $DFBC
+
+#W16($D955)
+//ハ"アル[End]
+Baal<end>
+
+
+//POINTER #250 @ $D957 - STRING #250 @ $DFC1
+
+#W16($D957)
+//ウ"ィシュヌ[End]
+Vishnu<end>
+
+
+//POINTER #251 @ $D959 - STRING #251 @ $DFC8
+
+#W16($D959)
+//オ-テ"ィン[End]
+Odin<end>
+
+
+//POINTER #252 @ $D95B - STRING #252 @ $DFCF
+
+#W16($D95B)
+//フ"ラフマン[End]
+Brahma<end>
+

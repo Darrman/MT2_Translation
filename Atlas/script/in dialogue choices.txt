@@ -1,0 +1,605 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+#VAR(text, TABLE)
+#ADDTBL("dialogue.tbl", text)
+#ACTIVETBL(text)
+
+//BLOCK #013 NAME:		Dialogue Choices
+
+#VAR(Choices, CUSTOMPOINTER)
+#CREATEPTR(Choices, "LINEAR", $20010, 16)
+
+#JMP($2BCEC, $2C00F)
+
+//POINTER #0 @ $2BC34 - STRING #0 @ $2BCEC
+
+#WRITE(Choices, $2BC34)
+//かう[End]
+Buy[End]
+
+//POINTER #1 @ $2BC36 - STRING #1 @ $2BCEF
+
+#WRITE(Choices, $2BC36)
+//うる[End]
+Sell[End]
+
+//POINTER #2 @ $2BC38 - STRING #2 @ $2BCF2
+
+#WRITE(Choices, $2BC38)
+//ステイタスをみる[End]
+Status[End]
+
+//POINTER #3 @ $2BC3A - STRING #3 @ $2BCFB
+
+#WRITE(Choices, $2BC3A)
+//そとにて"る[End]
+Leave[End]
+
+//POINTER #4 @ $2BC3C - STRING #4 @ $2BD02
+
+#WRITE(Choices, $2BC3C)
+//ス-ツ[End]
+Suit[End]
+
+//POINTER #5 @ $2BC3E - STRING #5 @ $2BD06
+
+#WRITE(Choices, $2BC3E)
+//ヘルメット[End]
+Helmet[End]
+
+//POINTER #6 @ $2BC40 - STRING #6 @ $2BD0C
+
+#WRITE(Choices, $2BC40)
+//ク"ロ-フ"[End]
+Glove[End]
+
+//POINTER #7 @ $2BC42 - STRING #7 @ $2BD13
+
+#WRITE(Choices, $2BC42)
+//フ"-ツ[End]
+Boot[End]
+
+//POINTER #8 @ $2BC44 - STRING #8 @ $2BD18
+
+#WRITE(Choices, $2BC44)
+//ス-ハ°-ミルク  £10[End]
+SuperMilk £10[End]
+
+//POINTER #9 @ $2BC46 - STRING #9 @ $2BD26
+
+#WRITE(Choices, $2BC46)
+//マシ"カルフィス" £32[End]
+MagicFizz £32[End]
+
+//POINTER #10 @ $2BC48 - STRING #10 @ $2BD34
+
+#WRITE(Choices, $2BC48)
+//ミラクルトニック  £40[End]
+MirclTonc £40[End]
+
+//POINTER #11 @ $2BC4A - STRING #11 @ $2BD42
+
+#WRITE(Choices, $2BC4A)
+//おとこのひと[End]
+Man[End]
+
+//POINTER #12 @ $2BC4C - STRING #12 @ $2BD49
+
+#WRITE(Choices, $2BC4C)
+//ロンク"ヘアの おんなのこ[End]
+//Long haired girl, in Google's infinite wisdom
+LH[End]
+
+//POINTER #13 @ $2BC4E - STRING #13 @ $2BD57
+
+#WRITE(Choices, $2BC4E)
+//ショ-トヘアの おんなのこ[End]
+//Short haired girl
+SH[End]
+
+//POINTER #14 @ $2BC50 - STRING #14 @ $2BD65
+
+#WRITE(Choices, $2BC50)
+//みせの おんなのこ[End]
+//Shop girl
+Shop[End]
+
+//POINTER #15 @ $2BC52 - STRING #15 @ $2BD6F
+
+#WRITE(Choices, $2BC52)
+//ようすを みる[End]
+//Look at situation? Sure, Google.
+Look[End]
+
+//POINTER #16 @ $2BC54 - STRING #16 @ $2BD77
+
+#WRITE(Choices, $2BC54)
+//むしする[End]
+//Ignore, apparently.
+Ignore[End]
+
+//POINTER #17 @ $2BC56 - STRING #17 @ $2BD7C
+
+#WRITE(Choices, $2BC56)
+//しらへ"る[End]
+//Investigate
+Check[End]
+
+//POINTER #18 @ $2BC58 - STRING #18 @ $2BD82
+
+#WRITE(Choices, $2BC58)
+//テレホ°-ト[End]
+//Teleport
+Warp[End]
+
+//POINTER #19 @ $2BC5A - STRING #19 @ $2BD89
+
+#WRITE(Choices, $2BC5A)
+//ファイル1[End]
+File 1[End]
+
+
+//POINTER #20 @ $2BC5C - STRING #20 @ $2BD8F
+
+#WRITE(Choices, $2BC5C)
+//ファイル2[End]
+File 2[End]
+
+
+//POINTER #21 @ $2BC5E - STRING #21 @ $2BD95
+
+#WRITE(Choices, $2BC5E)
+//きろくする[End]
+Save[End]
+
+//POINTER #22 @ $2BC60 - STRING #22 @ $2BD9B
+
+#WRITE(Choices, $2BC60)
+//とうき"し"ょうにはいる[End]
+//Register in bad patch. Colusseum?
+Enter[End]
+
+//POINTER #23 @ $2BC62 - STRING #23 @ $2BDA8
+
+#WRITE(Choices, $2BC62)
+//ル-ルをきく[End]
+//Listen to the rules, says Google.
+Rules[End]
+
+//POINTER #24 @ $2BC64 - STRING #24 @ $2BDAF
+
+#WRITE(Choices, $2BC64)
+//やめる[End]
+//Quit a minigame.
+Quit[End]
+
+//POINTER #25 @ $2BC66 - STRING #25 @ $2BDB3
+
+#WRITE(Choices, $2BC66)
+//もういちと"やる[End]
+//Play again.
+Continue[End]
+
+//POINTER #26 @ $2BC68 - STRING #26 @ $2BDBC
+
+#WRITE(Choices, $2BC68)
+//ものをあけ"る[End]
+//Give demon thing.
+Give[End]
+
+//POINTER #27 @ $2BC6A - STRING #27 @ $2BDC4
+
+#WRITE(Choices, $2BC6A)
+//あんしんさせる[End]
+//"Soothe" in patch, "anxious" in Google.
+Unnerve[End]
+
+//POINTER #28 @ $2BC6C - STRING #28 @ $2BDCC
+
+#WRITE(Choices, $2BC6C)
+//せっとくする[End]
+//Oh hey, Google has a nice tick here.
+Persuade[End]
+
+//POINTER #29 @ $2BC6E - STRING #29 @ $2BDD3
+
+#WRITE(Choices, $2BC6E)
+//いあつする[End]
+//Intimidate after the did you mean.
+Scare[End]
+
+//POINTER #30 @ $2BC70 - STRING #30 @ $2BDD9
+
+#WRITE(Choices, $2BC70)
+//ほほえみ かえす[End]
+Smile[End]
+
+//POINTER #31 @ $2BC72 - STRING #31 @ $2BDE2
+
+#WRITE(Choices, $2BC72)
+//ふ"きを おさめる[End]
+//Well, Google's itself. Patch is "lower"-something.
+Bow[End]
+
+//POINTER #32 @ $2BC74 - STRING #32 @ $2BDEC
+
+#WRITE(Choices, $2BC74)
+//ちかつ"く[End]
+//I doubt this means "chicken", Google.
+Touch[End]
+
+//POINTER #33 @ $2BC76 - STRING #33 @ $2BDF2
+
+#WRITE(Choices, $2BC76)
+//Devil Busters shop.
+[Swd]Knife      ♀ £ 100[End]
+
+
+//POINTER #34 @ $2BC78 - STRING #34 @ $2BE06
+
+#WRITE(Choices, $2BC78)
+[Swd]Bronze    ♂  £ 200[End]
+
+
+//POINTER #35 @ $2BC7A - STRING #35 @ $2BE1A
+
+#WRITE(Choices, $2BC7A)
+[Swd]Scimitar  ♂♀ £ 400[End]
+
+
+//POINTER #36 @ $2BC7C - STRING #36 @ $2BE2E
+
+#WRITE(Choices, $2BC7C)
+[Swd]Broad     ♂  £1500[End]
+
+
+//POINTER #37 @ $2BC7E - STRING #37 @ $2BE42
+
+#WRITE(Choices, $2BC7E)
+[Amr]Battle    ♂  £ 200[End]
+
+
+//POINTER #38 @ $2BC80 - STRING #38 @ $2BE56
+
+#WRITE(Choices, $2BC80)
+//ハッヒ°-な おとこ[End]
+//Happy man in patch
+Happy[End]
+
+//POINTER #39 @ $2BC82 - STRING #39 @ $2BE61
+
+#WRITE(Choices, $2BC82)
+//ヘルメットの おとこ[End]
+//Helmet man in patch.
+Helm[End]
+
+
+//POINTER #40 @ $2BC84 - STRING #40 @ $2BE6C
+
+#WRITE(Choices, $2BC84)
+//おんなのこ[End]
+//Just "girl".
+Girl[End]
+
+//POINTER #41 @ $2BC86 - STRING #41 @ $2BE72
+
+#WRITE(Choices, $2BC86)
+//け"んきな おんなのこ[End]
+//But this one's a spry girl!
+Spry[End]
+
+//POINTER #42 @ $2BC88 - STRING #42 @ $2BE7E
+
+#WRITE(Choices, $2BC88)
+//あやしい おとこ[End]
+//Marvellous becomes suspicious.
+Suspicious[End]
+
+
+//POINTER #43 @ $2BC8A - STRING #43 @ $2BE87
+
+#WRITE(Choices, $2BC8A)
+//あなた[End]
+//You ... do what?
+You[End]
+
+//POINTER #44 @ $2BC8C - STRING #44 @ $2BE8B
+
+#WRITE(Choices, $2BC8C)
+//としおいた おとこ[End]
+a[End]
+
+//POINTER #45 @ $2BC8E - STRING #45 @ $2BE95
+
+#WRITE(Choices, $2BC8E)
+//くさった おとこ[End]
+b[End]
+
+//POINTER #46 @ $2BC90 - STRING #46 @ $2BE9E
+
+#WRITE(Choices, $2BC90)
+//はけ"の おとこ[End]
+c[End]
+
+//POINTER #47 @ $2BC92 - STRING #47 @ $2BEA7
+
+#WRITE(Choices, $2BC92)
+//おともた"ち[End]
+d[End]
+
+//POINTER #48 @ $2BC94 - STRING #48 @ $2BEAE
+
+#WRITE(Choices, $2BC94)
+//ホモオの ひと[End]
+e[End]
+
+//POINTER #49 @ $2BC96 - STRING #49 @ $2BEB6
+
+#WRITE(Choices, $2BC96)
+//テ"ヒ"ルハ"スタ-をやめる[End]
+//Quit Devil Busters
+Quit[End]
+
+
+//POINTER #50 @ $2BC98 - STRING #50 @ $2BEC5
+
+#WRITE(Choices, $2BC98)
+//コアシ-ルト"[End]
+//Core Shield. Rag's shop?
+[Pot]Shield[End]
+
+//POINTER #51 @ $2BC9A - STRING #51 @ $2BECD
+
+#WRITE(Choices, $2BC9A)
+//みあれのすす"[End]
+[Pot]Sacred[End]
+
+//POINTER #52 @ $2BC9C - STRING #52 @ $2BED5
+
+#WRITE(Choices, $2BC9C)
+//ソ-マ[End]
+[Pot]Soma[End]
+
+//POINTER #53 @ $2BC9E - STRING #53 @ $2BED9
+
+#WRITE(Choices, $2BC9E)
+//ヘ°トラノン[End]
+[Pot]Petrinon[End]
+
+//POINTER #54 @ $2BCA0 - STRING #54 @ $2BEE0
+
+#WRITE(Choices, $2BCA0)
+//ひし"ょうく"ち[End]
+[Pot]Exit[End]
+
+//POINTER #55 @ $2BCA2 - STRING #55 @ $2BEE9
+
+#WRITE(Choices, $2BCA2)
+//かみなりおこし[End]
+[Stn]Thunder[End]
+
+//POINTER #56 @ $2BCA4 - STRING #56 @ $2BEF1
+
+#WRITE(Choices, $2BCA4)
+//マッスルト"リンコ[End]
+[Pot]Muscle[End]
+
+//POINTER #57 @ $2BCA6 - STRING #57 @ $2BEFB
+
+#WRITE(Choices, $2BCA6)
+//せか"きのれいやく[End]
+[Pot]Solace[End]
+
+//POINTER #58 @ $2BCA8 - STRING #58 @ $2BF05
+
+#WRITE(Choices, $2BCA8)
+//あくまのかんつ"め[End]
+[Pot]Demon[End]
+
+//POINTER #59 @ $2BCAA - STRING #59 @ $2BF0F
+
+#WRITE(Choices, $2BCAA)
+//テ"ヒ"ルハ"スタ-[End]
+//Just says Devil Busters.
+Play[End]
+
+//POINTER #60 @ $2BCAC - STRING #60 @ $2BF1A
+
+#WRITE(Choices, $2BCAC)
+//へやをて"る[End]
+//"Leave the room", says Google.
+Leave[End]
+
+//POINTER #61 @ $2BCAE - STRING #61 @ $2BF21
+
+#WRITE(Choices, $2BCAE)
+//こうと"うをきろくする[End]
+//Record actions, eh?
+Save[End]
+
+//POINTER #62 @ $2BCB0 - STRING #62 @ $2BF2D
+
+#WRITE(Choices, $2BCB0)
+//したか"う[End]
+//Final boss decisions!
+Obey[End]
+
+//POINTER #63 @ $2BCB2 - STRING #63 @ $2BF33
+
+#WRITE(Choices, $2BCB2)
+//たたかう[End]
+Fight[End]
+
+//POINTER #64 @ $2BCB4 - STRING #64 @ $2BF38
+
+#WRITE(Choices, $2BCB4)
+//た"い[End]
+//Magnetite goblin. Choices relate to bag size.
+Big[End]
+
+//POINTER #65 @ $2BCB6 - STRING #65 @ $2BF3C
+
+#WRITE(Choices, $2BCB6)
+//ちゅう[End]
+Medium[End]
+
+//POINTER #66 @ $2BCB8 - STRING #66 @ $2BF40
+
+#WRITE(Choices, $2BCB8)
+//しょう[End]
+Small[End]
+
+//POINTER #67 @ $2BCBA - STRING #67 @ $2BF44
+
+#WRITE(Choices, $2BCBA)
+1[End]
+
+
+//POINTER #68 @ $2BCBC - STRING #68 @ $2BF46
+
+#WRITE(Choices, $2BCBC)
+//ちんみ テ"ィナ-[End]
+//Bistro Angry items.
+[Pot]Exotic[End]
+
+//POINTER #69 @ $2BCBE - STRING #69 @ $2BF50
+
+#WRITE(Choices, $2BCBE)
+//スタミナ ていしょく[End]
+[Pot]Stamina[End]
+
+//POINTER #70 @ $2BCC0 - STRING #70 @ $2BF5B
+
+#WRITE(Choices, $2BCC0)
+//UMA テ"ィナ-[End]
+[Pot]UMA[End]
+
+//POINTER #71 @ $2BCC2 - STRING #71 @ $2BF65
+
+#WRITE(Choices, $2BCC2)
+//ユ-カリスト[End]
+[Pot]Eucharist[End]
+
+//POINTER #72 @ $2BCC4 - STRING #72 @ $2BF6C
+
+#WRITE(Choices, $2BCC4)
+//コ"-シ"ャス セット[End]
+[Pot]Gorgeous[End]
+
+//POINTER #73 @ $2BCC6 - STRING #73 @ $2BF78
+
+#WRITE(Choices, $2BCC6)
+//ホフ"リン[End]
+1[End]
+
+//POINTER #74 @ $2BCC8 - STRING #74 @ $2BF7E
+
+#WRITE(Choices, $2BCC8)
+//カ"-コ"ル[End]
+2[End]
+
+//POINTER #75 @ $2BCCA - STRING #75 @ $2BF85
+
+#WRITE(Choices, $2BCCA)
+//マシュリン[End]
+3[End]
+
+//POINTER #76 @ $2BCCC - STRING #76 @ $2BF8B
+
+#WRITE(Choices, $2BCCC)
+//トフ°カフ°[End]
+4[End]
+
+//POINTER #77 @ $2BCCE - STRING #77 @ $2BF92
+
+#WRITE(Choices, $2BCCE)
+//アメシ"スト[End]
+[Orb]Amethyst[End]
+
+//POINTER #78 @ $2BCD0 - STRING #78 @ $2BF99
+
+#WRITE(Choices, $2BCD0)
+//アクアマリン[End]
+[Orb]Aquamarin[End]
+
+//POINTER #79 @ $2BCD2 - STRING #79 @ $2BFA0
+
+#WRITE(Choices, $2BCD2)
+//エメラルト"[End]
+[Orb]Emerald[End]
+
+//POINTER #80 @ $2BCD4 - STRING #80 @ $2BFA7
+
+#WRITE(Choices, $2BCD4)
+2[End]
+
+
+//POINTER #81 @ $2BCD6 - STRING #81 @ $2BFA9
+
+#WRITE(Choices, $2BCD6)
+3[End]
+
+
+//POINTER #82 @ $2BCD8 - STRING #82 @ $2BFAB
+
+#WRITE(Choices, $2BCD8)
+4[End]
+
+
+//POINTER #83 @ $2BCDA - STRING #83 @ $2BFAD
+
+#WRITE(Choices, $2BCDA)
+5[End]
+
+
+//POINTER #84 @ $2BCDC - STRING #84 @ $2BFAF
+
+#WRITE(Choices, $2BCDC)
+//なかにはいる[End]
+?[End]
+
+//POINTER #85 @ $2BCDE - STRING #85 @ $2BFB6
+
+#WRITE(Choices, $2BCDE)
+//2しんか"ったい[End]
+//Double Fusion
+2x Fusion[End]
+
+//POINTER #86 @ $2BCE0 - STRING #86 @ $2BFBF
+
+#WRITE(Choices, $2BCE0)
+//3しんか"ったい[End]
+//Triple Fusion
+3x Fusion[End]
+
+//POINTER #87 @ $2BCE2 - STRING #87 @ $2BFC8
+
+#WRITE(Choices, $2BCE2)
+//ちりょう[End]
+//"Treatment", says Google.
+Heal[End]
+
+//POINTER #88 @ $2BCE4 - STRING #88 @ $2BFCD
+
+#WRITE(Choices, $2BCE4)
+//のろいをとく[End]
+//"Unravel a curse"? Uh, okay.
+Lift Curse[End]
+
+//POINTER #89 @ $2BCE6 - STRING #89 @ $2BFD4
+
+#WRITE(Choices, $2BCE6)
+[Amr]High Leg   ♀ £ 400[End]
+
+
+//POINTER #90 @ $2BCE8 - STRING #90 @ $2BFE8
+
+#WRITE(Choices, $2BCE8)
+[Amr]Kevlar    ♂  £ 900[End]
+
+
+//POINTER #91 @ $2BCEA - STRING #91 @ $2BFFC
+
+#WRITE(Choices, $2BCEA)
+[Hat]Iron       ♀ £ 600[End]
+

@@ -1,0 +1,52 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #013 NAME:		Menu Commands
+//Block Range: $5F01 - $5FFE
+
+//Overworld menu
+C ま ア ス//Comp
+O ほ イ テ//Magic
+M う テ イ//Items
+P   ム タ//Status
+      ス
+<$34><$34><$34><$34><$34><$34><$34><$31>に<$D8>O<$33><$33><$33><$33><$33><$33><$33>
+//Combat: general command
+た に は A//Fight
+た け な U//Run
+か " す T//Talk
+う る   O//Auto
+       
+<$34><$34><$34><$34><$34><$34><$34><$31>に<$D8>O<$33><$33><$33><$33><$33><$33><$33>
+//Combat: protaganist's command
+こ C ア ま//Attack
+う O イ も//Comp
+け M テ る//Item
+" P ム  //Defend
+き      
+<$34><$34><$34><$34><$34><$34><$34><$31>に<$D8>O<$33><$33><$33><$33><$33><$33><$33>
+//Combat: partner's command
+こ ま ア ま//Attack
+う ほ イ も//Magic
+け う テ る//Item
+"   ム  //Defend
+き      
+<$34><$34><$34><$34><$34><$34><$34><$31>に<$D8>O<$33><$33><$33><$33><$33><$33><$33>
+//Combat: demon's command
+こ ま も ま//Attack
+う ほ と も//Magic
+け う " る//Return
+"   る  //Defend
+き      
+<$34><$34><$34><$34><$34><$34>
+
+#JMP($6147)
+   <$36><$31>
+カ け<$36><$31>//Gun
+" ん<$36><$31>//Sword
+ン  <$36><$31>
+   
+
+//Comp Magic Items Status Fight Run Talk Auto Attack Defend Return
+//CompMagicItesSuF
+//hRnTlkADfdGw
+//Should be more than enough characters.

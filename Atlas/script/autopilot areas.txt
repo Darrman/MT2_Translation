@@ -1,0 +1,282 @@
+﻿//GAME NAME:		Megami Tensei 2 (NES)
+
+#VAR(text, TABLE)
+#ADDTBL("autopilot.tbl", text)
+#ACTIVETBL(text)
+
+#VAR(Autopilot, CUSTOMPOINTER)
+#CREATEPTR(Autopilot, "LINEAR", $-3FF0, 16)
+
+//BLOCK #014 NAME:		Autopilot Dungeon Names
+
+#JMP($65EC, $6735)
+
+//POINTER #0 @ $65AA - STRING #0 @ $65EC
+
+#WRITE(Autopilot, $65AA)
+//シェルタ-     [End]
+Shelter   [End]
+
+//POINTER #1 @ $65AC - STRING #1 @ $65F6
+
+#WRITE(Autopilot, $65AC)
+//しなか"わ     [End]
+Shinagawa [End]
+
+//POINTER #2 @ $65AE - STRING #2 @ $6600
+
+#WRITE(Autopilot, $65AE)
+//とうきょうタワ-  [End]
+TokyoTower[End]
+
+//POINTER #3 @ $65B0 - STRING #3 @ $660A
+
+#WRITE(Autopilot, $65B0)
+//ろっほ°んき"   [End]
+Roppongi  [End]
+
+//POINTER #4 @ $65B2 - STRING #4 @ $6614
+
+#WRITE(Autopilot, $65B2)
+//しふ"や      [End]
+Shibuya   [End]
+
+//POINTER #5 @ $65B4 - STRING #5 @ $661E
+
+#WRITE(Autopilot, $65B4)
+//き"んさ"     [End]
+Ginza     [End]
+
+//POINTER #6 @ $65B6 - STRING #6 @ $6628
+
+#WRITE(Autopilot, $65B6)
+//いけふ"くろ    [End]
+Ikebukuro [End]
+
+//POINTER #7 @ $65B8 - STRING #7 @ $6632
+
+#WRITE(Autopilot, $65B8)
+//しんし"ゅく    [End]
+Shinjuku  [End]
+
+//POINTER #8 @ $65BA - STRING #8 @ $663C
+
+#WRITE(Autopilot, $65BA)
+//なかの       [End]
+Nakano    [End]
+
+//POINTER #9 @ $65BC - STRING #9 @ $6646
+
+#WRITE(Autopilot, $65BC)
+//さは"く      [End]
+//"Judge", says oh wise google.
+Judgement [End]
+
+//POINTER #10 @ $65BE - STRING #10 @ $6650
+
+#WRITE(Autopilot, $65BE)
+//サ"ラタン     [End]
+Zaratan   [End]
+
+//POINTER #11 @ $65C0 - STRING #11 @ $665A
+
+#WRITE(Autopilot, $65C0)
+//ハ"エルし"ょう  [End]
+//Bael's Castle
+Bael's    [End]
+
+//POINTER #12 @ $65C2 - STRING #12 @ $6664
+
+#WRITE(Autopilot, $65C2)
+//テ"ストニ-ラント"[End]
+//Destiny Land - wasn't that in SMT1?
+Destiny   [End]
+
+//POINTER #13 @ $65C4 - STRING #13 @ $666E
+
+#WRITE(Autopilot, $65C4)
+//おうし"ょう    [End]
+//"Jobnet" or "death". One is more likely.
+Death     [End]
+
+//POINTER #14 @ $65C6 - STRING #14 @ $6678
+
+#WRITE(Autopilot, $65C6)
+//なけ"きのたに   [End]
+//Valley of Despair
+Despair   [End]
+
+//POINTER #15 @ $65C8 - STRING #15 @ $6682
+
+#WRITE(Autopilot, $65C8)
+//アスモタ"イのあな [End]
+//Asmodai's Hole
+Asmodai's [End]
+
+//POINTER #16 @ $65CA - STRING #16 @ $668C
+
+#WRITE(Autopilot, $65CA)
+//ヘ"リアルし"ょう [End]
+Belial    [End]
+
+//POINTER #17 @ $65CC - STRING #17 @ $6696
+
+#WRITE(Autopilot, $65CC)
+//いかりのめいきゅう [End]
+//Labyrinth of Anger, says Google.
+Rage Maze [End]
+
+//POINTER #18 @ $65CE - STRING #18 @ $66A0
+
+#WRITE(Autopilot, $65CE)
+//いかりのとう    [End]
+//Google's babbling about anchors.
+//It's probably Belphegor's tower?
+Belphegor [End]
+
+//POINTER #19 @ $65D0 - STRING #19 @ $66AA
+
+#WRITE(Autopilot, $65D0)
+//モロクしんて"ん  [End]
+//Moloch's Temple
+Moloch's  [End]
+
+//POINTER #20 @ $65D2 - STRING #20 @ $66B4
+
+#WRITE(Autopilot, $65D2)
+//すいしょうくつ   [End]
+//I'm assuming this is for the caves
+//in the fourth hell area.
+//Google has "crystal" in an alt.
+//Crystal Cave?
+Crystal   [End]
+
+//POINTER #21 @ $65D4 - STRING #21 @ $66BE
+
+#WRITE(Autopilot, $65D4)
+//ミトラのとう    [End]
+//Mitra's Tower
+Mitra's   [End]
+
+//POINTER #22 @ $65D6 - STRING #22 @ $66C8
+
+#WRITE(Autopilot, $65D6)
+//アスタロトし"ょう [End]
+//Astaroth's Castle
+Astaroth's[End]
+
+//POINTER #23 @ $65D8 - STRING #23 @ $66D2
+
+#WRITE(Autopilot, $65D8)
+//たいないと"う   [End]
+//The first cave in hell part 5.
+//Wikia calls it the Gate of Darkness.
+Dark Gate [End]
+
+//POINTER #24 @ $65DA - STRING #24 @ $66DC
+
+#WRITE(Autopilot, $65DA)
+//はえのあな     [End]
+//Beelzebub's lair, "hole of the fly".
+Fly Hole  [End]
+
+//POINTER #25 @ $65DC - STRING #25 @ $66E6
+
+#WRITE(Autopilot, $65DC)
+//け"んまかい    [End]
+//That one test for a pillar.
+//Transliterates to "genmakai" and Makai is
+//hell... So what's a "gen"? 
+Abyss Test[End]
+
+//POINTER #26 @ $65DE - STRING #26 @ $66F0
+
+#WRITE(Autopilot, $65DE)
+//アホ°リオン    [End]
+Apollyon  [End]
+
+//POINTER #27 @ $65E0 - STRING #27 @ $66FA
+
+#WRITE(Autopilot, $65E0)
+//アト"ンのとう   [End]
+//Adon's Tower... but who's Adon?
+//Belphegor has a tower.
+Adon Tower[End]
+
+//POINTER #28 @ $65E2 - STRING #28 @ $6704
+
+#WRITE(Autopilot, $65E2)
+//アト"ンのしんて"ん[End]
+//Adon's Temple. Does this stuff
+//just go unused?
+AdonTemple[End]
+
+//POINTER #29 @ $65E4 - STRING #29 @ $670E
+
+#WRITE(Autopilot, $65E4)
+//ルシファ-し"ょう [End]
+//Never mind my ravings, this is
+//Lucifer's Castle
+Lucifer's [End]
+
+//POINTER #30 @ $65E6 - STRING #30 @ $6718
+
+#WRITE(Autopilot, $65E6)
+//ハネタ"      [End]
+Haneda    [End]
+
+//POINTER #31 @ $65E8 - STRING #31 @ $6722
+
+#WRITE(Autopilot, $65E8)
+//ウエノ       [End]
+Ueno      [End]
+
+//POINTER #32 @ $65EA - STRING #32 @ $672C
+
+#WRITE(Autopilot, $65EA)
+//チカト"ウ     [End]
+Underpass [End]
+
+#JMP($6736, $6775)
+//I'm not sure where or if there's pointers.
+//Oh well.
+  1F
+  2F
+  3F
+  4F
+  5F
+  6F
+  7F
+  8F
+ 
+ B7F
+ B6F
+ B5F
+ B4F
+ B3F
+ B2F
+ B1F
+
+#JMP($6782, $67B1)
+//BLOCK #015 NAME:		Autopilot Overworld Names
+
+//POINTER #0 @ $6776 - STRING #0 @ $6782
+
+#WRITE(Autopilot, $6776)
+#WRITE(Autopilot, $677E)
+//ちひょう に          [End]
+Earth           [End]
+
+//POINTER #1 @ $6778 - STRING #1 @ $6792
+
+#WRITE(Autopilot, $6778)
+#WRITE(Autopilot, $6780)
+//まかい に           [End]
+Hell            [End]
+
+//POINTER #2 @ $677A - STRING #2 @ $67A2
+
+#WRITE(Autopilot, $677A)
+#WRITE(Autopilot, $677C)
+//テ"ヒ"ル ハ"スタ-に    [End]
+Devil Busters  [End]

@@ -1,0 +1,115 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #008 NAME:		Item Name Dictionary
+//This file's purpose is to shorten the amount of
+//space item names consume. Since Japanese is not
+//the same as English, the original entries are
+//not relevant here. They're just kept for reference.
+// 16 entries are supported with a control code
+//for each. Whether I'd have the space to exploit
+//this, I don't think so.
+
+#VAR(dialogue, TABLE)
+#ADDTBL("dialogue.tbl", dialogue)
+#ACTIVETBL(dialogue)
+
+#VAR(Dictionary, CUSTOMPOINTER)
+#CREATEPTR(Dictionary, "LINEAR", $12010, 16)
+
+#JMP($1DDBC, $1DE0F)
+
+//POINTER #0 @ $1DD9C - STRING #0 @ $1DDBC
+
+#WRITE(Dictionary, $1DD9C)
+//つるき"[End]
+Dragon[End]
+
+//POINTER #1 @ $1DD9E - STRING #1 @ $1DDC1
+
+#WRITE(Dictionary, $1DD9E)
+//けん[End]
+Panzer[End]
+
+//POINTER #2 @ $1DDA0 - STRING #2 @ $1DDC4
+
+#WRITE(Dictionary, $1DDA0)
+//ア-マ-[End]
+Lucifer[End]
+
+//POINTER #3 @ $1DDA2 - STRING #3 @ $1DDC9
+
+#WRITE(Dictionary, $1DDA2)
+//ソ-ト"[End]
+Yakut[End]
+
+//POINTER #4 @ $1DDA4 - STRING #4 @ $1DDCE
+
+#WRITE(Dictionary, $1DDA4)
+//ア-ム[End]
+Iron[End]
+
+//POINTER #5 @ $1DDA6 - STRING #5 @ $1DDD2
+
+#WRITE(Dictionary, $1DDA6)
+//フ"-ツ[End]
+Fire[End]
+
+//POINTER #6 @ $1DDA8 - STRING #6 @ $1DDD7
+
+#WRITE(Dictionary, $1DDA8)
+//ヘルメット[End]
+Demon[End]
+
+//POINTER #7 @ $1DDAA - STRING #7 @ $1DDDD
+
+#WRITE(Dictionary, $1DDAA)
+//スト-ン[End]
+ Kn.[End]
+
+//POINTER #8 @ $1DDAC - STRING #8 @ $1DDE2
+
+#WRITE(Dictionary, $1DDAC)
+//のインセンス[End]
+Slime[End]
+
+//POINTER #9 @ $1DDAE - STRING #9 @ $1DDE9
+
+#WRITE(Dictionary, $1DDAE)
+//のわりふ[End]
+ Golem[End]
+
+//POINTER #10 @ $1DDB0 - STRING #10 @ $1DDEE
+
+#WRITE(Dictionary, $1DDB0)
+//せいのヒ°ラ-[End]
+2[End]
+
+//POINTER #11 @ $1DDB2 - STRING #11 @ $1DDF6
+
+#WRITE(Dictionary, $1DDB2)
+//のたま[End]
+3[End]
+
+//POINTER #12 @ $1DDB4 - STRING #12 @ $1DDFA
+
+#WRITE(Dictionary, $1DDB4)
+//ヘット"[End]
+4[End]
+
+//POINTER #13 @ $1DDB6 - STRING #13 @ $1DDFF
+
+#WRITE(Dictionary, $1DDB6)
+//カ"-ト"[End]
+a[End]
+
+//POINTER #14 @ $1DDB8 - STRING #14 @ $1DE05
+
+#WRITE(Dictionary, $1DDB8)
+//マント[End]
+n[End]
+
+//POINTER #15 @ $1DDBA - STRING #15 @ $1DE09
+
+#WRITE(Dictionary, $1DDBA)
+//のサンタ"ル[End]
+e[End]

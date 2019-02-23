@@ -1,0 +1,381 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #005 NAME:		Spell Names
+
+//POINTER #0 @ $15C4C - STRING #0 @ $15CCA
+
+#W16($15C4C)
+アキ"[End]
+
+
+//POINTER #1 @ $15C4E - STRING #1 @ $15CCE
+
+#W16($15C4E)
+アキ"マ[End]
+
+
+//POINTER #2 @ $15C50 - STRING #2 @ $15CD3
+
+#W16($15C50)
+アキ"オン[End]
+
+
+//POINTER #3 @ $15C52 - STRING #3 @ $15CD9
+
+#W16($15C52)
+アキ"ラ[End]
+
+
+//POINTER #4 @ $15C54 - STRING #4 @ $15CDE
+
+#W16($15C54)
+アキ"ラマ[End]
+
+
+//POINTER #5 @ $15C56 - STRING #5 @ $15CE4
+
+#W16($15C56)
+アキ"ラオン[End]
+
+
+//POINTER #6 @ $15C58 - STRING #6 @ $15CEB
+
+#W16($15C58)
+アキ"タ"イン[End]
+
+
+//POINTER #7 @ $15C5A - STRING #7 @ $15CF3
+
+#W16($15C5A)
+フ"フ[End]
+
+
+//POINTER #8 @ $15C5C - STRING #8 @ $15CF7
+
+#W16($15C5C)
+フ"フラマ[End]
+
+
+//POINTER #9 @ $15C5E - STRING #9 @ $15CFD
+
+#W16($15C5E)
+フ"フラオン[End]
+
+
+//POINTER #10 @ $15C60 - STRING #10 @ $15D04
+
+#W16($15C60)
+フ"フタ"イン[End]
+
+
+//POINTER #11 @ $15C62 - STRING #11 @ $15D0C
+
+#W16($15C62)
+シ"オ[End]
+
+
+//POINTER #12 @ $15C64 - STRING #12 @ $15D10
+
+#W16($15C64)
+シ"オマ[End]
+
+
+//POINTER #13 @ $15C66 - STRING #13 @ $15D15
+
+#W16($15C66)
+シ"オロン[End]
+
+
+//POINTER #14 @ $15C68 - STRING #14 @ $15D1B
+
+#W16($15C68)
+シ"オラ[End]
+
+
+//POINTER #15 @ $15C6A - STRING #15 @ $15D20
+
+#W16($15C6A)
+シ"オラマ[End]
+
+
+//POINTER #16 @ $15C6C - STRING #16 @ $15D26
+
+#W16($15C6C)
+シ"オラオン[End]
+
+
+//POINTER #17 @ $15C6E - STRING #17 @ $15D2D
+
+#W16($15C6E)
+シ"オタ"イン[End]
+
+
+//POINTER #18 @ $15C70 - STRING #18 @ $15D35
+
+#W16($15C70)
+ハンマ[End]
+
+
+//POINTER #19 @ $15C72 - STRING #19 @ $15D39
+
+#W16($15C72)
+ハマオン[End]
+
+
+//POINTER #20 @ $15C74 - STRING #20 @ $15D3E
+
+#W16($15C74)
+ハンマハン[End]
+
+
+//POINTER #21 @ $15C76 - STRING #21 @ $15D44
+
+#W16($15C76)
+ハマタ"イン[End]
+
+
+//POINTER #22 @ $15C78 - STRING #22 @ $15D4B
+
+#W16($15C78)
+サ"ン[End]
+
+
+//POINTER #23 @ $15C7A - STRING #23 @ $15D4F
+
+#W16($15C7A)
+サ"ンマ[End]
+
+
+//POINTER #24 @ $15C7C - STRING #24 @ $15D54
+
+#W16($15C7C)
+サ"ンマオン[End]
+
+
+//POINTER #25 @ $15C7E - STRING #25 @ $15D5B
+
+#W16($15C7E)
+サ"ンタ"イン[End]
+
+
+//POINTER #26 @ $15C80 - STRING #26 @ $15D63
+
+#W16($15C80)
+ムト"[End]
+
+
+//POINTER #27 @ $15C82 - STRING #27 @ $15D67
+
+#W16($15C82)
+ムト"オン[End]
+
+
+//POINTER #28 @ $15C84 - STRING #28 @ $15D6D
+
+#W16($15C84)
+ムト"ハンマ[End]
+
+
+//POINTER #29 @ $15C86 - STRING #29 @ $15D74
+
+#W16($15C86)
+ト"ルミン[End]
+
+
+//POINTER #30 @ $15C88 - STRING #30 @ $15D7A
+
+#W16($15C88)
+ト"ルミナ-ル[End]
+
+
+//POINTER #31 @ $15C8A - STRING #31 @ $15D82
+
+#W16($15C8A)
+シハ"フ"-[End]
+
+
+//POINTER #32 @ $15C8C - STRING #32 @ $15D89
+
+#W16($15C8C)
+マシハ"フ"-ラ[End]
+
+
+//POINTER #33 @ $15C8E - STRING #33 @ $15D92
+
+#W16($15C8E)
+フ°リンハ°[End]
+
+
+//POINTER #34 @ $15C90 - STRING #34 @ $15D99
+
+#W16($15C90)
+ハヒ°ルマ[End]
+
+
+//POINTER #35 @ $15C92 - STRING #35 @ $15D9F
+
+#W16($15C92)
+マリン カリン[End]
+
+
+//POINTER #36 @ $15C94 - STRING #36 @ $15DA7
+
+#W16($15C94)
+テンタラフ-[End]
+
+
+//POINTER #37 @ $15C96 - STRING #37 @ $15DAE
+
+#W16($15C96)
+ラクンタ"[End]
+
+
+//POINTER #38 @ $15C98 - STRING #38 @ $15DB4
+
+#W16($15C98)
+タルカシ"ャ[End]
+
+
+//POINTER #39 @ $15C9A - STRING #39 @ $15DBB
+
+#W16($15C9A)
+ラクカシ"ャ[End]
+
+
+//POINTER #40 @ $15C9C - STRING #40 @ $15DC2
+
+#W16($15C9C)
+タルンタ"[End]
+
+
+//POINTER #41 @ $15C9E - STRING #41 @ $15DC8
+
+#W16($15C9E)
+テトラシ"ャ[End]
+
+
+//POINTER #42 @ $15CA0 - STRING #42 @ $15DCF
+
+#W16($15CA0)
+マカシ"ャマ[End]
+
+
+//POINTER #43 @ $15CA2 - STRING #43 @ $15DD6
+
+#W16($15CA2)
+テ"ィ[End]
+
+
+//POINTER #44 @ $15CA4 - STRING #44 @ $15DDA
+
+#W16($15CA4)
+テ"ィアマ[End]
+
+
+//POINTER #45 @ $15CA6 - STRING #45 @ $15DE0
+
+#W16($15CA6)
+テ"ィアハン[End]
+
+
+//POINTER #46 @ $15CA8 - STRING #46 @ $15DE7
+
+#W16($15CA8)
+テ"ィアラハン[End]
+
+
+//POINTER #47 @ $15CAA - STRING #47 @ $15DEF
+
+#W16($15CAA)
+メテ"ィ[End]
+
+
+//POINTER #48 @ $15CAC - STRING #48 @ $15DF4
+
+#W16($15CAC)
+メテ"ィアマ[End]
+
+
+//POINTER #49 @ $15CAE - STRING #49 @ $15DFB
+
+#W16($15CAE)
+メテ"ィアハン[End]
+
+
+//POINTER #50 @ $15CB0 - STRING #50 @ $15E03
+
+#W16($15CB0)
+ハ°トラ[End]
+
+
+//POINTER #51 @ $15CB2 - STRING #51 @ $15E08
+
+#W16($15CB2)
+ヘ°ンハ°トラ[End]
+
+
+//POINTER #52 @ $15CB4 - STRING #52 @ $15E10
+
+#W16($15CB4)
+ホ°ス"ムテ"ィ[End]
+
+
+//POINTER #53 @ $15CB6 - STRING #53 @ $15E19
+
+#W16($15CB6)
+ハ°ララテ"ィ[End]
+
+
+//POINTER #54 @ $15CB8 - STRING #54 @ $15E21
+
+#W16($15CB8)
+ヘ°トラテ"ィ[End]
+
+
+//POINTER #55 @ $15CBA - STRING #55 @ $15E29
+
+#W16($15CBA)
+リカ-ム[End]
+
+
+//POINTER #56 @ $15CBC - STRING #56 @ $15E2E
+
+#W16($15CBC)
+サマリカ-ム[End]
+
+
+//POINTER #57 @ $15CBE - STRING #57 @ $15E35
+
+#W16($15CBE)
+マカランタ"[End]
+
+
+//POINTER #58 @ $15CC0 - STRING #58 @ $15E3C
+
+#W16($15CC0)
+マッハ°ラ-[End]
+
+
+//POINTER #59 @ $15CC2 - STRING #59 @ $15E43
+
+#W16($15CC2)
+トラスタルト[End]
+
+
+//POINTER #60 @ $15CC4 - STRING #60 @ $15E4A
+
+#W16($15CC4)
+トランハ°[End]
+
+
+//POINTER #61 @ $15CC6 - STRING #61 @ $15E50
+
+#W16($15CC6)
+トラエスト[End]
+
+
+//POINTER #62 @ $15CC8 - STRING #62 @ $15E56
+
+#W16($15CC8)
+サハ"トマ[End]
+

@@ -1,0 +1,321 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+#VAR(text, TABLE)
+#ADDTBL("dialogue.tbl", text)
+#ACTIVETBL(text)
+
+//BLOCK #006 NAME:		Ending
+
+#VAR(Ending, CUSTOMPOINTER)
+#CREATEPTR(Ending, "LINEAR", $A010, 16)
+
+#JMP($16FB3, $171C9)
+
+//POINTER #0 @ $16F4F - STRING #0 @ $16FB3
+
+#WRITE(Ending, $16F4F)
+//ELDER IN MICON[End]
+Micon's Elder[End]
+
+
+//POINTER #1 @ $16F51 - STRING #1 @ $16FC2
+
+#WRITE(Ending, $16F51)
+//MINOTAUROS[End]
+Minotaur[End]
+
+//POINTER #2 @ $16F53 - STRING #2 @ $16FCD
+
+#WRITE(Ending, $16F53)
+//STATUE OF EVIL[End]
+Evil Statue[End]
+
+//POINTER #3 @ $16F55 - STRING #3 @ $16FDC
+
+#WRITE(Ending, $16F55)
+//Pazuzu cutscene doesn't have text here
+[End]
+
+
+//POINTER #4 @ $16F57 - STRING #4 @ $16FDD
+
+#WRITE(Ending, $16F57)
+Computer Room[End]
+
+
+//POINTER #5 @ $16F59 - STRING #5 @ $16FEB
+
+#WRITE(Ending, $16F59)
+Armoury[End]
+
+
+//POINTER #6 @ $16F5B - STRING #6 @ $16FF2
+
+#WRITE(Ending, $16F5B)
+Girlfriend[End]
+
+
+//POINTER #7 @ $16F5D - STRING #7 @ $16FFD
+
+#WRITE(Ending, $16F5D)
+//FERRY BY MOURA[End]
+Mora's Ferry[End]
+
+//POINTER #8 @ $16F5F - STRING #8 @ $1700C
+
+#WRITE(Ending, $16F5F)
+//ORUTOROS[End]
+Orthrus[End]
+
+//POINTER #9 @ $16F61 - STRING #9 @ $17015
+
+#WRITE(Ending, $16F61)
+//Todo: see if naming her's possible
+Partner[End]
+
+
+//POINTER #10 @ $16F63 - STRING #10 @ $1701D
+
+#WRITE(Ending, $16F63)
+//MAN IN SIBUYA[End]
+Man in Shibuya[End]
+
+//POINTER #11 @ $16F65 - STRING #11 @ $1702B
+
+#WRITE(Ending, $16F65)
+//RESEPTION FOR BALAM[End]
+Balaam's Reception[End]
+
+//POINTER #12 @ $16F67 - STRING #12 @ $1703F
+
+#WRITE(Ending, $16F67)
+//BALAM[End]
+Balaam[End]
+
+//POINTER #13 @ $16F69 - STRING #13 @ $17045
+
+#WRITE(Ending, $16F69)
+//What's this meant to be?
+//HATIKOU[End]
+Hatikou[End]
+
+//POINTER #14 @ $16F6B - STRING #14 @ $1704D
+
+#WRITE(Ending, $16F6B)
+Naga[End]
+
+
+//POINTER #15 @ $16F6D - STRING #15 @ $17052
+
+#WRITE(Ending, $16F6D)
+//MR.SAIGOU[End]
+Mr. Saigou[End]
+
+
+//POINTER #16 @ $16F6F - STRING #16 @ $1705C
+
+#WRITE(Ending, $16F6F)
+//NIHIRU BLADE[End]
+Nihil Blade[End]
+
+//POINTER #17 @ $16F71 - STRING #17 @ $17069
+
+#WRITE(Ending, $16F71)
+//DR.BAKUTA[End]
+Dr. Bakuta[End]
+
+//POINTER #18 @ $16F73 - STRING #18 @ $17073
+
+#WRITE(Ending, $16F73)
+//APORION[End]
+Apollyon[End]
+
+//POINTER #19 @ $16F75 - STRING #19 @ $1707B
+
+#WRITE(Ending, $16F75)
+//MOUTH OF DEVIL[End]
+Devil's Mouth[End]
+
+//POINTER #20 @ $16F77 - STRING #20 @ $1708A
+
+#WRITE(Ending, $16F77)
+//CYBARNE LABORATORY[End]
+Cyber Laboratory[End]
+
+//POINTER #21 @ $16F79 - STRING #21 @ $1709D
+
+#WRITE(Ending, $16F79)
+//REONALDS SABBATH[End]
+Leonard's Sabbath[End]
+
+//POINTER #22 @ $16F7B - STRING #22 @ $170AE
+
+#WRITE(Ending, $16F7B)
+//MANMON[End]
+Mammon[End]
+
+//POINTER #23 @ $16F7D - STRING #23 @ $170B5
+
+#WRITE(Ending, $16F7D)
+//PAZUSU[End]
+Pazuzu[End]
+
+//POINTER #24 @ $16F7F - STRING #24 @ $170BC
+
+#WRITE(Ending, $16F7F)
+//KERBEROS[End]
+Cerberus[End]
+
+//POINTER #25 @ $16F81 - STRING #25 @ $170C5
+
+#WRITE(Ending, $16F81)
+//NITOHOG[End]
+Nidhogg[End]
+
+//POINTER #26 @ $16F83 - STRING #26 @ $170CD
+
+#WRITE(Ending, $16F83)
+//I forget what this is meant to be.
+//ORDEAL NISIARAI[End]
+Ordeal of Nisiarai[End]
+
+//POINTER #27 @ $16F85 - STRING #27 @ $170DD
+
+#WRITE(Ending, $16F85)
+//This is all Bael approach stuff.
+//BURITORA[End]
+Buritora[End]
+
+//POINTER #28 @ $16F87 - STRING #28 @ $170E6
+
+#WRITE(Ending, $16F87)
+Inspection[End]
+
+
+//POINTER #29 @ $16F89 - STRING #29 @ $170F1
+
+#WRITE(Ending, $16F89)
+Zaratan Island[End]
+
+
+//POINTER #30 @ $16F8B - STRING #30 @ $17100
+
+#WRITE(Ending, $16F8B)
+//Name him?
+//FRIEND DEAD[End]
+Friend's Death[End]
+
+
+//POINTER #31 @ $16F8D - STRING #31 @ $1710C
+
+#WRITE(Ending, $16F8D)
+//BAERU[End]
+Bael[End]
+
+//POINTER #32 @ $16F8F - STRING #32 @ $17112
+
+#WRITE(Ending, $16F8F)
+Ground Zero[End]
+
+
+//POINTER #33 @ $16F91 - STRING #33 @ $1711E
+
+#WRITE(Ending, $16F91)
+Masakado[End]
+
+
+//POINTER #34 @ $16F93 - STRING #34 @ $17127
+
+#WRITE(Ending, $16F93)
+Underground Lake[End]
+
+
+//POINTER #35 @ $16F95 - STRING #35 @ $17138
+
+#WRITE(Ending, $16F95)
+//ASUMODEUS[End]
+Asmodai[End]
+
+//POINTER #36 @ $16F97 - STRING #36 @ $17142
+
+#WRITE(Ending, $16F97)
+Belial[End]
+
+
+//POINTER #37 @ $16F99 - STRING #37 @ $17149
+
+#WRITE(Ending, $16F99)
+//DESPAIR BRIDGE[End]
+Bridge of Despair[End]
+
+//POINTER #38 @ $16F9B - STRING #38 @ $17158
+
+#WRITE(Ending, $16F9B)
+Moloch[End]
+
+
+//POINTER #39 @ $16F9D - STRING #39 @ $1715F
+
+#WRITE(Ending, $16F9D)
+Belphegor[End]
+
+
+//POINTER #40 @ $16F9F - STRING #40 @ $17169
+
+#WRITE(Ending, $16F9F)
+Izanami[End]
+
+
+//POINTER #41 @ $16FA1 - STRING #41 @ $17171
+
+#WRITE(Ending, $16FA1)
+Sword Knight[End]
+
+
+//POINTER #42 @ $16FA3 - STRING #42 @ $1717E
+
+#WRITE(Ending, $16FA3)
+//ASTARTE[End]
+Astaroth[End]
+
+//POINTER #43 @ $16FA5 - STRING #43 @ $17186
+
+#WRITE(Ending, $16FA5)
+//MITORA[End]
+Mitra[End]
+
+//POINTER #44 @ $16FA7 - STRING #44 @ $1718D
+
+#WRITE(Ending, $16FA7)
+//BERUZEBUBU[End]
+Beelzebub[End]
+
+//POINTER #45 @ $16FA9 - STRING #45 @ $17198
+
+#WRITE(Ending, $16FA9)
+//LUSIFERS SHRINE[End]
+Lucifer's Shrine[End]
+
+//POINTER #46 @ $16FAB - STRING #46 @ $171A8
+
+#WRITE(Ending, $16FAB)
+//LUSIFER[End]
+Lucifer[End]
+
+//POINTER #47 @ $16FAD - STRING #47 @ $171B0
+
+#WRITE(Ending, $16FAD)
+//ASHERAH[End]
+Asura[End]
+
+//POINTER #48 @ $16FAF - STRING #48 @ $171B8
+
+#WRITE(Ending, $16FAF)
+Satan[End]
+
+
+//POINTER #49 @ $16FB1 - STRING #49 @ $171BE
+
+#WRITE(Ending, $16FB1)
+//THE Y.H.V.H[End]
+YHVH[End]

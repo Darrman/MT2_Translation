@@ -1,0 +1,3997 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #002 NAME:		Script 1
+
+//POINTER #0 @ $10010 - STRING #0 @ $103B0
+
+#W16($10010)
+[MiscEvent]<$0F><$01>[MiscEvent]<$0D><$01>[Jump]はなしは ふ"きをしまってからよ[Line]
+[YesNo]<$02>[Jump]そう! やるきなのね[Next]
+
+[Skip]5[SetVar]<$15>[JumpLine]?[End]
+
+
+//POINTER #1 @ $10012 - STRING #1 @ $103DD
+
+#W16($10012)
+こんなことて" まいるなんて[Line]
+なさけないわ![Line]
+そんなひと ここから て"てって![Next]
+
+[JumpLine]♂[End]
+
+
+//POINTER #2 @ $10014 - STRING #2 @ $10409
+
+#W16($10014)
+[Event3]<$0C><$04>
+
+
+//POINTER #3 @ $10016 - STRING #3 @ $1040C
+
+#W16($10016)
+[Jump]きゅうせいしゅとかいって[Line]
+あは"れているのは あなたたちね![Line]
+[Line]
+[YesNo]<$05>[Jump]とほ"けないて" にせものきゅうせいしゅ![Next]
+
+[SetVar]<$15>[JumpLine]?[End]
+
+
+//POINTER #4 @ $10018 - STRING #4 @ $1044B
+
+#W16($10018)
+<$C1>5[Jump]これは おかえしよ![Next]
+
+[SetVar]<$15>[JumpLine] [End]
+
+
+//POINTER #5 @ $1001A - STRING #5 @ $1045E
+
+#W16($1001A)
+[Jump]わらっちゃうわ! ハ°ス"スにた"まされて[Line]
+きゅうせいしゅ きと"り?[Line]
+あいつは ハ"エルを たおすために[Line]
+りようしているた"けよ[Next]
+
+と"う? すこしは おもいあたるて"しょ?[YesNo]<$06>[Jump]あきれた!![Line]
+それなら しんて"もらうわっ![Next]
+
+[SetVar]<$15>[JumpLine]?[End]
+
+
+//POINTER #6 @ $1001C - STRING #6 @ $104D5
+
+#W16($1001C)
+[Jump]そうおもうなら ハ°ス"スと てをきって![YesNo]<$07>[Jump]なら あいつと うまく やりなさい[Line]
+サヨナラ![Line]
+[Var]は さっていった[Next]
+
+[Skip]か[JumpLine]♂[End]
+
+
+//POINTER #7 @ $1001E - STRING #7 @ $10515
+
+#W16($1001E)
+[SetVar]<$FD>[Jump][Var]か" わってはいった[Next]
+
+まてよっ! いいか [Hero][Line]
+オレたちか" ここまて" これたのも[Line]
+ハ°ス"スの おかけ"た"ろ?[Next]
+
+こいつは うまいこといって オレたちに[Line]
+とりかえしの つかないことを[Line]
+させようと しているんた"[Next]
+
+オレの いうことか" わかるた"ろ?[YesNo]<$08>[Jump][Hero]![Line]
+おまえは た"まされているんた"[Line]
+オレを しんし"ろ![YesNo]<$0B>[Event]<$0C>[Jump]あたしを しんようて"きないの![Next]
+
+[SetVar]<$15>[JumpLine] [End]
+
+
+//POINTER #8 @ $10020 - STRING #8 @ $105BB
+
+#W16($10020)
+[Jump]あたしを しんようて"きないの![Next]
+
+[SetVar]<$15>[JumpLine] [End]
+
+
+//POINTER #9 @ $10022 - STRING #9 @ $105D2
+
+#W16($10022)
+<$FB>"|3[Jump]あたしは あきらめたわ[Line]
+あとは なかよく か"んは"ってね[Line]
+サヨナラ![Next]
+
+[SetVar]<$15>[Var]は さっていった[Next]
+
+[Skip]か[JumpLine]♂[End]
+
+
+//POINTER #10 @ $10024 - STRING #10 @ $1060B
+
+#W16($10024)
+[SetVar]<$15>[JumpLine]?[End]
+
+
+//POINTER #11 @ $10026 - STRING #11 @ $10610
+
+#W16($10026)
+[Jump]わかってくれたか![Line]
+マシ"ョを やっつけるそ"![YesNo]<$09>
+
+
+//POINTER #12 @ $10028 - STRING #12 @ $1062B
+
+#W16($10028)
+[Jump]まさか おんなを えらふ"とはな[Next]
+
+[Hero][Line]
+こんと" あうときは[Line]
+てきと"うした"な?[YesNo]<$0D>[Event]<$0B>
+
+
+//POINTER #13 @ $1002A - STRING #13 @ $10658
+
+#W16($1002A)
+[SetItem]<$D5><$D2>[Jump]オレの ふ"んの マッカと[Line]
+[VarItem]は もらっていくせ"[Next]
+
+[HalveMoney][SetVar]<$AE>[MiscEvent]<$0B><$F4>も つれてくせ"[Next]
+
+[SetVar]<$FD>[Jump][Var]は さっていった[Next]
+
+[LoadNPC]<$00>[LoadNPC]<$E1>[Jump]あたしか" かれの かわりに たたかうわ[Next]
+
+そして へいわな せかいを[Line]
+とりもと"しましょう[Next]
+
+そうすれは" かれも いつか[Line]
+わかって くれるわ[Next]
+
+[MiscEvent]<$11><$C9> [Skip]あ[SetVar]<$15>[Var]は[Line]
+あたらしい ハ°-トナ-に なった[JumpLine]▽[End]
+
+
+//POINTER #14 @ $1002C - STRING #14 @ $106FE
+
+#W16($1002C)
+いらっしゃい[Line]
+なんになさいますか[Line]
+[MiscEvent]<$0D><$02>[SetVar]<$FF>[Choices]<$03>1<$06>30♂1
+
+
+//POINTER #15 @ $1002E - STRING #15 @ $1071C
+
+#W16($1002E)
+[MiscEvent]<$10><$05>[Jump]おつれさんは なんになさいます[Line]
+
+
+//POINTER #16 @ $10030 - STRING #16 @ $10730
+
+#W16($10030)
+[SetVar]<$FD>[MiscEvent]<$0F><$03>[Event]<$04>
+
+
+//POINTER #17 @ $10032 - STRING #17 @ $10737
+
+#W16($10032)
+[SetVar]<$FE>[MiscEvent]<$0E><$05>
+
+
+//POINTER #18 @ $10034 - STRING #18 @ $1073C
+
+#W16($10034)
+[Choices]<$04>122334♂5
+
+
+//POINTER #19 @ $10036 - STRING #19 @ $10746
+
+#W16($10036)
+[Jump][End]
+
+
+//POINTER #20 @ $10038 - STRING #20 @ $10748
+
+#W16($10038)
+<$CA>3 8[MiscEvent]<$56><$00>[Event]<$0D>
+
+
+//POINTER #21 @ $1003A - STRING #21 @ $10751
+
+#W16($1003A)
+<$CA>X 8[MiscEvent]<$56><$02>[Event]<$0D>
+
+
+//POINTER #22 @ $1003C - STRING #22 @ $1075A
+
+#W16($1003C)
+[Event2]<$18>[Event]<$00>
+
+
+//POINTER #23 @ $1003E - STRING #23 @ $1075E
+
+#W16($1003E)
+<$CA>3 D[MiscEvent]<$56><$00>[Event]<$10>
+
+
+//POINTER #24 @ $10040 - STRING #24 @ $10767
+
+#W16($10040)
+<$CA>P D[MiscEvent]<$56><$01>[Event]<$12>
+
+
+//POINTER #25 @ $10042 - STRING #25 @ $10770
+
+#W16($10042)
+<$CA>X D[MiscEvent]<$56><$02>[Event]<$12>
+
+
+//POINTER #26 @ $10044 - STRING #26 @ $10779
+
+#W16($10044)
+[Event2]<$18>[Event]<$01>
+
+
+//POINTER #27 @ $10046 - STRING #27 @ $1077D
+
+#W16($10046)
+[Jump]<$EE>7[Event2]<$16>
+
+
+//POINTER #28 @ $10048 - STRING #28 @ $10782
+
+#W16($10048)
+[Event2]<$19>[Event]<$01>
+
+
+//POINTER #29 @ $1004A - STRING #29 @ $10786
+
+#W16($1004A)
+[Event2]<$15>[Event]<$01>
+
+
+//POINTER #30 @ $1004C - STRING #30 @ $1078A
+
+#W16($1004C)
+[Jump]<$EE>A[Event2]<$16>
+
+
+//POINTER #31 @ $1004E - STRING #31 @ $1078F
+
+#W16($1004E)
+[Event2]<$19>[Event]<$05>
+
+
+//POINTER #32 @ $10050 - STRING #32 @ $10793
+
+#W16($10050)
+[Jump]<$EE>C[Event2]<$16>
+
+
+//POINTER #33 @ $10052 - STRING #33 @ $10798
+
+#W16($10052)
+[Event2]<$19>[MiscEvent]<$56><$03><$EE>?[Event2]<$17>[Event]<$05>
+
+
+//POINTER #34 @ $10054 - STRING #34 @ $107A3
+
+#W16($10054)
+[Event2]<$15>[Event]<$05>
+
+
+//POINTER #35 @ $10056 - STRING #35 @ $107A7
+
+#W16($10056)
+[Jump]おかねか"たりないようて"す[Next]
+
+[End]
+
+
+//POINTER #36 @ $10058 - STRING #36 @ $107B8
+
+#W16($10058)
+[Var]は[Line]
+HP か" [VarNum]かいふくした[Next]
+
+[End]
+
+
+//POINTER #37 @ $1005A - STRING #37 @ $107CA
+
+#W16($1005A)
+[Jump][Var]は[Line]
+MP か" [VarNum]かいふくした[Next]
+
+[End]
+
+
+//POINTER #38 @ $1005C - STRING #38 @ $107DD
+
+#W16($1005C)
+[Jump]た"れのステイタスをみますか[Line]
+[MiscEvent]<$48><$F1>[End]
+
+
+//POINTER #39 @ $1005E - STRING #39 @ $107F1
+
+#W16($1005E)
+[Event3]<$FF><$1A>[End]
+
+
+//POINTER #40 @ $10060 - STRING #40 @ $107F5
+
+#W16($10060)
+[Jump][Var]のからた"から[Line]
+と"くか"きえた[Next]
+
+[End]
+
+
+//POINTER #41 @ $10062 - STRING #41 @ $10809
+
+#W16($10062)
+[MiscEvent]<$1D><$FA>M[SetMoney]<$07><$00><$C7> >[SetMoney]<$08><$00><$C7>>>[SetMoney]<$09><$00>
+
+
+//POINTER #42 @ $10064 - STRING #42 @ $1081C
+
+#W16($10064)
+わたし イント"からきた ナンテ"ィさんネ[Line]
+わたし ここに 0から[VarNum]まて"の[Line]
+3つの すうし"もってる[Line]
+それ あなた あててほしい[Line]
+[Line]
+いっかい メタルカ-ト" 1まい やるか[Line]
+[YesNo]<$03>
+
+
+//POINTER #43 @ $10066 - STRING #43 @ $10876
+
+#W16($10066)
+[Jump]イント"の ナンテ"ィさん いつて"も[Line]
+まってるヨ ナマステ ネ[Next]
+
+[End]
+
+
+//POINTER #44 @ $10068 - STRING #44 @ $10899
+
+#W16($10068)
+[Jump][Event4]<$9F><$0A><$D2>[SetMoney]<$07><$00><$C7> ![SetMoney]<$08><$00><$C7>>![SetMoney]<$09><$00>
+
+
+//POINTER #45 @ $1006A - STRING #45 @ $108AD
+
+#W16($1006A)
+ル-ル きくか[YesNo]<$09>
+
+
+//POINTER #46 @ $1006C - STRING #46 @ $108B6
+
+#W16($1006C)
+<$BA>00[Jump]しょうきんは £[VarNum]ネ[Line]
+よかったね![Line]
+[DrawMoney][Event3]<$F8><$06>[Event]<$08>
+
+
+//POINTER #47 @ $1006E - STRING #47 @ $108D2
+
+#W16($1006E)
+それと [VarItem]をあけ"るね[Line]
+<$D3>1[Event]<$08>
+
+
+//POINTER #48 @ $10070 - STRING #48 @ $108E2
+
+#W16($10070)
+[Jump]そんしたト"-![Line]
+
+
+//POINTER #49 @ $10072 - STRING #49 @ $108EC
+
+#W16($10072)
+もういちと" やるか[Line]
+[YesNo]<$03>[Event]<$02>
+
+
+//POINTER #50 @ $10074 - STRING #50 @ $108FB
+
+#W16($10074)
+[Jump]すうし"は 0から [VarNum]まて"ネ[Line]
+おなし" すうし"は はいってないネ[Line]
+あなた いれた すうし"か" すうし"も[Line]
+は"しょも あたっていたら ヒット[Line]
+すうし" た"けなら フ"ロ-[Line]
+このヒントて" なるへ"く はやくあてるネ[Next]
+
+[Jump]はやくあてると それた"け たくさん[Line]
+マッカもらえるね[Line]
+4て まて"なら しょうひんもあけ"るヨ[Line]
+6て て" あたらなきゃ おしまいネ[Next]
+
+[Jump][Event]<$05>[Jump]
+
+
+//POINTER #51 @ $10076 - STRING #51 @ $109B4
+
+#W16($10076)
+[Jump]あなた [VarItem] ないネ[Line]
+[VarItem] あるとき くるネ[Next]
+
+[End]
+
+
+//POINTER #52 @ $10078 - STRING #52 @ $109CB
+
+#W16($10078)
+[MiscEvent]<$1D><$D0><$C6>♂
+
+
+//POINTER #53 @ $1007A - STRING #53 @ $109D0
+
+#W16($1007A)
+[MiscEvent]<$57><$0A>
+
+
+//POINTER #54 @ $1007C - STRING #54 @ $109D3
+
+#W16($1007C)
+[Event3]<$2B><$01>ようこそ こんかいは[Line]
+きねんたいかい なのて" 5かい かちぬくと[Line]
+こ"うか しょうひんか" もらえます[Line]
+
+
+//POINTER #55 @ $1007E - STRING #55 @ $10A0B
+
+#W16($1007E)
+[Choices]<$03>F?G!▽G[Event]<$17>
+
+
+//POINTER #56 @ $10080 - STRING #56 @ $10A15
+
+#W16($10080)
+[Event2]<$18>[Event]<$03>
+
+
+//POINTER #57 @ $10082 - STRING #57 @ $10A19
+
+#W16($10082)
+[Jump]こちらは た"れを たたかわせますか[Line]
+[MiscEvent]<$22><$16>G[Jump]<$BB>>7BCDE<$06>0
+
+
+//POINTER #58 @ $10084 - STRING #58 @ $10A3B
+
+#W16($10084)
+[Jump]おめて"とうこ"さ"います[Line]
+しょうきんの £[VarNum]か"[Line]
+てにはいります[Line]
+[DrawMoney]<$C5>?2[Event]<$08>
+
+
+//POINTER #59 @ $10086 - STRING #59 @ $10A64
+
+#W16($10086)
+[Jump]さ"んねんて"す[Line]
+
+
+//POINTER #60 @ $10088 - STRING #60 @ $10A6E
+
+#W16($10088)
+もういちと" おやりに なりますか[Line]
+[YesNo]<$05>[Event]<$17>
+
+
+//POINTER #61 @ $1008A - STRING #61 @ $10A84
+
+#W16($1008A)
+[SetItem]<$C6><$D3>2[Next]
+
+そして しょうひんは[Line]
+なんと あの [VarItem]か"[Line]
+あたえられます[Next]
+
+[End]
+
+
+//POINTER #62 @ $1008C - STRING #62 @ $10AA8
+
+#W16($1008C)
+ようこそ いらっしゃい[Line]
+
+
+//POINTER #63 @ $1008E - STRING #63 @ $10AB4
+
+#W16($1008E)
+[Choices]<$03>F▽G♂▽6[Event]<$0D>
+
+
+//POINTER #64 @ $10090 - STRING #64 @ $10ABE
+
+#W16($10090)
+[Event2]<$0E>[Event]<$01>[Jump]
+
+
+//POINTER #65 @ $10092 - STRING #65 @ $10AC2
+
+#W16($10092)
+[Jump]て"は アクマを きめてくた"さい[Line]
+[MiscEvent]<$22><$0C>6[Jump]<$BB> !1234?<$06>
+
+
+//POINTER #66 @ $10094 - STRING #66 @ $10AE3
+
+#W16($10094)
+[Jump]て"は わたしのあくまは[Line]
+  [Var]た"[Line]
+[Next]
+
+[End]
+
+
+//POINTER #67 @ $10096 - STRING #67 @ $10AF9
+
+#W16($10096)
+[Jump]おめて"とうこ"さ"います[Line]
+しょうきんの £[VarNum]か"[Line]
+てにはいります[Line]
+[DrawMoney][Event]<$07>
+
+
+//POINTER #68 @ $10098 - STRING #68 @ $10B1F
+
+#W16($10098)
+[Jump]さ"んねんて"す[Line]
+
+
+//POINTER #69 @ $1009A - STRING #69 @ $10B29
+
+#W16($1009A)
+もういちと" おやりに なりますか[Line]
+[YesNo]<$03>[Event]<$0D>
+
+
+//POINTER #70 @ $1009C - STRING #70 @ $10B3F
+
+#W16($1009C)
+[Jump][Line]
+[Hero]のこうけ"き[End]
+
+
+//POINTER #71 @ $1009E - STRING #71 @ $10B49
+
+#W16($1009E)
+[Jump][Line]
+[Hero]は[Line]
+[VarNum]のタ"メ-シ"をうけた![End]
+
+
+//POINTER #72 @ $100A0 - STRING #72 @ $10B5C
+
+#W16($100A0)
+[Jump][Line]
+[Var]のこうけ"き[End]
+
+
+//POINTER #73 @ $100A2 - STRING #73 @ $10B66
+
+#W16($100A2)
+[Jump][Line]
+[Var]は[Line]
+[VarNum]のタ"メ-シ"をうけた![End]
+
+
+//POINTER #74 @ $100A4 - STRING #74 @ $10B79
+
+#W16($100A4)
+しゅつし"ょうて"きる アクマか" いない[Next]
+
+[End]
+
+
+//POINTER #75 @ $100A6 - STRING #75 @ $10B8F
+
+#W16($100A6)
+[End]
+
+
+//POINTER #76 @ $100A8 - STRING #76 @ $10B90
+
+#W16($100A8)
+[Jump]ここて"は アクマつかいと"うして"[Line]
+アクマをたたかわせ その しょうしゃに[Line]
+しょうきんか" あたえられます[Line]
+しかし レヘ"ル60いし"ょうの あくまは[Line]
+しゅつし"ょう て"きません[Next]
+
+[End]
+
+
+//POINTER #77 @ $100AA - STRING #77 @ $10BEE
+
+#W16($100AA)
+いらっしゃいませ-[Line]
+スロットケ"-ムは いかか"て"すか[Line]
+[YesNo]<$01>[Event]<$0A>
+
+
+//POINTER #78 @ $100AC - STRING #78 @ $10C0F
+
+#W16($100AC)
+[Jump]ル-ルは ききますかぁ[YesNo]<$09>
+
+
+//POINTER #79 @ $100AE - STRING #79 @ $10C1D
+
+#W16($100AE)
+[MiscEvent]<$1D><$DF><$32> <$C7> ▽[SetMoney]<$64><$00><$C7>>▽[SetMoney]<$C8><$00>[Jump]
+
+
+//POINTER #80 @ $100B0 - STRING #80 @ $10C2E
+
+#W16($100B0)
+[Jump]し"ゃ £[VarNum]いたた"きま-す![Line]
+<$CC>1し"ゃ カ"ンハ"ッテ![Next]
+
+<$BC>!<$06>
+
+
+//POINTER #81 @ $100B2 - STRING #81 @ $10C51
+
+#W16($100B2)
+[Jump]おめて"とう こ"さ"いま-す[Line]
+しょうきんの £[VarNum]て"-す[Line]
+[DrawMoney][Event3]<$F8><$05>[Event]<$07>
+
+
+//POINTER #82 @ $100B4 - STRING #82 @ $10C76
+
+#W16($100B4)
+それと [VarItem]をあけ"るね[Next]
+
+<$D3>0[Event]<$07>
+
+
+//POINTER #83 @ $100B6 - STRING #83 @ $10C86
+
+#W16($100B6)
+[Jump]サ"ンネ-ン![Line]
+おしかったね
+
+
+//POINTER #84 @ $100B8 - STRING #84 @ $10C95
+
+#W16($100B8)
+[Next]
+
+[MiscEvent]<$38><$A2>ういちと" スロットを[Line]
+やりませんかぁ[Line]
+[Choices]<$02>H3I♂[Event]<$0A>
+
+
+//POINTER #85 @ $100BA - STRING #85 @ $10CB5
+
+#W16($100BA)
+すいませ-ん[Line]
+うちて"は おかねのない ひとは[Line]
+おひきとり ねか"って おりますのて"ェ[Next]
+
+[End]
+
+
+//POINTER #86 @ $100BC - STRING #86 @ $10CE3
+
+#W16($100BC)
+3つの リ-ルか" まわったら[Line]
+1かいす"つ ホ"タンを おして[Line]
+かいてんを とめてくた"さぁい[Next]
+
+[Event]<$02>
+
+
+//POINTER #87 @ $100BE - STRING #87 @ $10D16
+
+#W16($100BE)
+[Jump]し"ゃ またきてね![Next]
+
+[End]
+
+
+//POINTER #88 @ $100C0 - STRING #88 @ $10D23
+
+#W16($100C0)
+[Event3]<$52><$06>[MiscEvent]<$51><$01>
+
+
+//POINTER #89 @ $100C2 - STRING #89 @ $10D29
+
+#W16($100C2)
+あら [Hero2?][Line]
+おけ"んき[End]
+
+
+//POINTER #90 @ $100C4 - STRING #90 @ $10D34
+
+#W16($100C4)
+[Event2]<$05>さあ なおったようね[Line]
+わたしは みんなの はくいのてんし[Line]
+よろしくネ![Next]
+
+[End]
+
+
+//POINTER #91 @ $100C6 - STRING #91 @ $10D5B
+
+#W16($100C6)
+[Event2]<$05>さ"んねんた"けと" うちて"は[Line]
+これいし"ょうは むりた"わ![Next]
+
+[End]
+
+
+//POINTER #92 @ $100C8 - STRING #92 @ $10D7F
+
+#W16($100C8)
+さ"んねんた"けと"[Line]
+うちて"は もう ておくれよ[Next]
+
+[End]
+
+
+//POINTER #93 @ $100CA - STRING #93 @ $10D9A
+
+#W16($100CA)
+あら あら なおさなくっちゃ[Line]
+さあ なかに いらっしゃい[Next]
+
+[End]
+
+
+//POINTER #94 @ $100CC - STRING #94 @ $10DB8
+
+#W16($100CC)
+たいきょめいれいか" て"ているのよ[Line]
+[Hero2?]も はやくしないと[Next]
+
+[End]
+
+
+//POINTER #95 @ $100CE - STRING #95 @ $10DD7
+
+#W16($100CE)
+<$BF>K[End]
+
+
+//POINTER #96 @ $100D0 - STRING #96 @ $10DDA
+
+#W16($100D0)
+わしになにかようかね[Line]
+
+
+//POINTER #97 @ $100D2 - STRING #97 @ $10DE5
+
+#W16($100D2)
+[Choices]<$06>ニ!ヌ?ネ<$06>ノ0♂♂▽3[End]
+
+
+//POINTER #98 @ $100D4 - STRING #98 @ $10DF4
+
+#W16($100D4)
+[Jump]た"れの ステイタスを みますか[Line]
+[MiscEvent]<$21><$03>[MiscEvent]<$20>
+
+
+//POINTER #99 @ $100D6 - STRING #99 @ $10E0B
+
+#W16($100D6)
+[Jump]また" ようか"あるのか[Line]
+[Event]<$01>
+
+
+//POINTER #100 @ $100D8 - STRING #100 @ $10E1B
+
+#W16($100D8)
+[Jump]<$BE>9▽ 
+
+
+//POINTER #101 @ $100DA - STRING #101 @ $10E20
+
+#W16($100DA)
+[Jump]<$BE>9▽>
+
+
+//POINTER #102 @ $100DC - STRING #102 @ $10E25
+
+#W16($100DC)
+[Jump]<$BE>J▽♂
+
+
+//POINTER #103 @ $100DE - STRING #103 @ $10E2A
+
+#W16($100DE)
+[Jump]<$BE>J▽▽
+
+
+//POINTER #104 @ $100E0 - STRING #104 @ $10E2F
+
+#W16($100E0)
+わしになにかようかね[Line]
+
+
+//POINTER #105 @ $100E2 - STRING #105 @ $10E3A
+
+#W16($100E2)
+[Choices]<$05>ニ?ネ<$06>ノ0♂▽▽♂
+
+
+//POINTER #106 @ $100E4 - STRING #106 @ $10E46
+
+#W16($100E4)
+[End]
+
+
+//POINTER #107 @ $100E6 - STRING #107 @ $10E47
+
+#W16($100E6)
+[Jump]た"れの ステイタスを みますか[Line]
+[MiscEvent]<$21><$04>[MiscEvent]<$20>
+
+[End]
+
+
+//POINTER #108 @ $100E8 - STRING #108 @ $10E5E
+
+#W16($100E8)
+[Jump]また" ようか"あるのか[Line]
+[Event]<$01>
+
+
+//POINTER #109 @ $100EA - STRING #109 @ $10E6E
+
+#W16($100EA)
+[Jump]<$BE>1! 
+
+
+//POINTER #110 @ $100EC - STRING #110 @ $10E73
+
+#W16($100EC)
+[Jump]<$BE>B!♂
+
+
+//POINTER #111 @ $100EE - STRING #111 @ $10E78
+
+#W16($100EE)
+[Jump]<$BE>B!▽
+
+
+//POINTER #112 @ $100F0 - STRING #112 @ $10E7D
+
+#W16($100F0)
+なかまか"すくないようし"ゃな[Next]
+
+[End]
+
+
+//POINTER #113 @ $100F2 - STRING #113 @ $10E8E
+
+#W16($100F2)
+しんて"いるなかまは つかえないのし"ゃ[Next]
+
+[End]
+
+
+//POINTER #114 @ $100F4 - STRING #114 @ $10EA4
+
+#W16($100F4)
+3しんか"ったいには 3たい いし"ょうの[Line]
+GOODのなかまか" ひつようし"ゃ[Next]
+
+[End]
+
+
+//POINTER #115 @ $100F6 - STRING #115 @ $10ECE
+
+#W16($100F6)
+ます"は 1たいめし"ゃ[End]
+
+
+//POINTER #116 @ $100F8 - STRING #116 @ $10EDB
+
+#W16($100F8)
+そして 2たいめし"ゃ[End]
+
+
+//POINTER #117 @ $100FA - STRING #117 @ $10EE7
+
+#W16($100FA)
+さいこ"に 3たいめをえらふ"のし"ゃ[End]
+
+
+//POINTER #118 @ $100FC - STRING #118 @ $10EFB
+
+#W16($100FC)
+レヘ"ルか" たかいのて"[Line]
+[Hero]には[Line]
+あつかえない[Line]
+[End]
+
+
+//POINTER #119 @ $100FE - STRING #119 @ $10F15
+
+#W16($100FE)
+おなし"なかまか"[Line]
+いるようし"ゃな[Line]
+[End]
+
+
+//POINTER #120 @ $10100 - STRING #120 @ $10F29
+
+#W16($10100)
+これて" よろしいかな[Line]
+けってい Aホ"タン[Line]
+やめる  Bホ"タン[End]
+
+
+//POINTER #121 @ $10102 - STRING #121 @ $10F4B
+
+#W16($10102)
+て"は か"ったいこ"を おみせしよう[End]
+
+
+//POINTER #122 @ $10104 - STRING #122 @ $10F5F
+
+#W16($10104)
+[Jump]その ひつようは ないようし"ゃか"[Next]
+
+[End]
+
+
+//POINTER #123 @ $10106 - STRING #123 @ $10F74
+
+#W16($10106)
+[Jump]た"れをなおすのし"ゃ[End]
+
+
+//POINTER #124 @ $10108 - STRING #124 @ $10F81
+
+#W16($10108)
+[Jump][Var]はかいふくした[Next]
+
+[End]
+
+
+//POINTER #125 @ $1010A - STRING #125 @ $10F8C
+
+#W16($1010A)
+[Jump]マッカか"たりんようし"ゃのう[Next]
+
+[End]
+
+
+//POINTER #126 @ $1010C - STRING #126 @ $10F9E
+
+#W16($1010C)
+[Jump]しっは°いし"ゃ すまんのう[Next]
+
+[End]
+
+
+//POINTER #127 @ $1010E - STRING #127 @ $10FAF
+
+#W16($1010E)
+[Jump]わしの ちからて"はと"うにもならんのう[Next]
+
+[End]
+
+
+//POINTER #128 @ $10110 - STRING #128 @ $10FC6
+
+#W16($10110)
+[Jump]か"んは"りなされ[Next]
+
+[End]
+
+
+//POINTER #129 @ $10112 - STRING #129 @ $10FD2
+
+#W16($10112)
+[Jump][End]
+
+
+//POINTER #130 @ $10114 - STRING #130 @ $10FD4
+
+#W16($10114)
+と"うやらうまくいった ようし"ゃわい[Next]
+
+[End]
+
+
+//POINTER #131 @ $10116 - STRING #131 @ $10FE9
+
+#W16($10116)
+た"れの のろいを とくのし"ゃ[End]
+
+
+//POINTER #132 @ $10118 - STRING #132 @ $10FFA
+
+#W16($10118)
+<$C4> いらっしゃ-い[Line]
+うちは ヒ"ック アント" スモ-ルを[Line]
+やってま-す[Next]
+
+やって みませんかぁ[YesNo]<$01>[Event]<$0E>
+
+
+//POINTER #133 @ $1011A - STRING #133 @ $1102D
+
+#W16($1011A)
+[Jump]ル-ル ききますか[Line]
+[YesNo]<$0F>
+
+
+//POINTER #134 @ $1011C - STRING #134 @ $1103A
+
+#W16($1011C)
+[Jump][MiscEvent]<$1D><$DF>ユ <$C7> ▽[SetMoney]<$C8><$00><$C7>>▽[SetMoney]<$F4><$01>
+
+
+//POINTER #135 @ $1011E - STRING #135 @ $1104C
+
+#W16($1011E)
+あの- かけきんとしてェ[Line]
+[VarNum]マッカ[Line]
+もらいま-す[Next]
+
+<$CC>A
+
+
+//POINTER #136 @ $10120 - STRING #136 @ $11067
+
+#W16($10120)
+[Jump]<$BD>?これか" せ"んかいのけっかよ[Next]
+
+[End]
+
+
+//POINTER #137 @ $10122 - STRING #137 @ $1106A
+
+#W16($10122)
+これか" せ"んかいのけっかよ[Next]
+
+[End]
+
+
+//POINTER #138 @ $10124 - STRING #138 @ $1107B
+
+#W16($10124)
+5より おおきいと おもったらヒ"ック[Line]
+4より ちいさいと おもったらスモ-ル[Line]
+さあ- と"っちた"[End]
+
+
+//POINTER #139 @ $10126 - STRING #139 @ $110AE
+
+#W16($10126)
+<$C5>12[Event3]<$F8><$0A>やったし"ゃな-い[Line]
+て" はいとうは £[VarNum] よ[Next]
+
+て"もねェ つき"のを あてるとぉ[Line]
+はいとうか" 2は"いになるんた"けと"ぉ[Line]
+はす"れちゃったら いまの ふ"んも[Line]
+なくなって しまうんた"けと"ぉ[Line]
+つつ"けて やって みますかぁ[YesNo]<$04>[Event]<$0D>
+
+
+//POINTER #140 @ $10128 - STRING #140 @ $1112B
+
+#W16($10128)
+<$C4> さ"-んねん おしかったね[Next]
+
+それて"ェ もういちと" やります[Line]
+[Choices]<$02>H7I♂[Event]<$0E>
+
+
+//POINTER #141 @ $1012A - STRING #141 @ $11155
+
+#W16($1012A)
+エ-ン![Line]
+8かいも つつ"けて まけちゃったぁ[Next]
+
+しょうきんの £[VarNum]の ほかに[Line]
+しょうひんとして [VarItem] 1こ[Line]
+あけ"るから つつ"きは ゆるしてね[Next]
+
+[Event]<$0C>
+
+
+//POINTER #142 @ $1012C - STRING #142 @ $1119F
+
+#W16($1012C)
+やったし"ゃな-い[Line]
+て" はいとうは £[VarNum] よ[Line]
+そして [VarItem]も[Line]
+もらえるわ[Next]
+
+つつ"けて やって みますかぁ[YesNo]<$04>[Event]<$0C>
+
+
+//POINTER #143 @ $1012E - STRING #143 @ $111D7
+
+#W16($1012E)
+[DrawMoney]し"ゃ [VarItem]は あけ"られないわ[Next]
+
+[End]
+
+
+//POINTER #144 @ $10130 - STRING #144 @ $111E9
+
+#W16($10130)
+<$D3>4
+
+
+//POINTER #145 @ $10132 - STRING #145 @ $111EB
+
+#W16($10132)
+[DrawMoney]
+
+
+//POINTER #146 @ $10134 - STRING #146 @ $111EC
+
+#W16($10134)
+[Jump]それし"ゃまたきてね![Next]
+
+[End]
+
+
+//POINTER #147 @ $10136 - STRING #147 @ $111FA
+
+#W16($10136)
+ル-ルって いっても かんたん[Line]
+なんた"けと"ぉ[Next]
+
+
+//POINTER #148 @ $10138 - STRING #148 @ $11213
+
+#W16($10138)
+0から9の すうし"のうち[Line]
+1つの すうし"か" えらは"れます[Line]
+そのかす"か" 5より おおきいか[Line]
+4より ちいさいかを あててね[Next]
+
+わかりましたぁ[YesNo]<$02>[Jump]し"ゃ もっかい いうわね[Next]
+
+[Event]<$10>
+
+
+//POINTER #149 @ $1013A - STRING #149 @ $11270
+
+#W16($1013A)
+[Jump]なによ-[Line]
+おかねないし"ゃな-い[Line]
+へ"-![Next]
+
+[End]
+
+
+//POINTER #150 @ $1013C - STRING #150 @ $11288
+
+#W16($1013C)
+[Jump]もちすき"のようて"す[Line]
+なにか すてますか[YesNo]<$02>
+
+
+//POINTER #151 @ $1013E - STRING #151 @ $112A0
+
+#W16($1013E)
+[JumpLine]>[Jump][End]
+
+
+//POINTER #152 @ $10140 - STRING #152 @ $112A4
+
+#W16($10140)
+すてる アイテムをえらんて"くた"さい[Next]
+
+[MiscEvent]<$25><$EE>>[Jump][VarItem]をすてます[Line]
+よろしいて"すか[Line]
+[YesNo]<$03>[Event]<$01>
+
+
+//POINTER #153 @ $10142 - STRING #153 @ $112D1
+
+#W16($10142)
+<$D2>[JumpLine] [Jump][End]
+
+
+//POINTER #154 @ $10144 - STRING #154 @ $112D6
+
+#W16($10144)
+[Event4]<$C0><$03>めのまえの し"ゃしんそ"うに[Line]
+なにか ささけ"ますか?[Line]
+[YesNo]<$01>[End]
+
+
+//POINTER #155 @ $10146 - STRING #155 @ $112F9
+
+#W16($10146)
+[Jump]なにをささけ"ますか?[Line]
+[MiscEvent]<$1F><$05><$EE>?[Jump][VarItem]て"すね[Line]
+よろしいて"すか?[YesNo]<$02>[End]
+
+
+//POINTER #156 @ $10148 - STRING #156 @ $1131E
+
+#W16($10148)
+[Jump][Hero2?]は [VarItem]を[Line]
+し"ゃしんそ"うに ささけ"た[Next]
+
+し"ゃしんそ"うは[Line]
+[VarItem]を[Line]
+すいこんた"[Next]
+
+<$D1>[Skip]<$EE>!<$D2>[Skip]7[Skip] [PazuzuScene][End]
+
+
+//POINTER #157 @ $1014A - STRING #157 @ $11355
+
+#W16($1014A)
+めのまえに し"ゃしんそ"うか"ある[Next]
+
+[End]
+
+
+//POINTER #158 @ $1014C - STRING #158 @ $11369
+
+#W16($1014C)
+しかし なんの へんかも[Line]
+あらわれなかった[Next]
+
+[End]
+
+
+//POINTER #159 @ $1014E - STRING #159 @ $1137F
+
+#W16($1014E)
+[End]
+
+
+//POINTER #160 @ $10150 - STRING #160 @ $11380
+
+#W16($10150)
+ここは タ"イタ"ロスのとうの 8かい[Line]
+ミコンのまち て"すわん[Line]
+なかには なつかしい ひとも[Line]
+いるんし"ゃなくて?[Line]
+わたし そういう おきゃくさん[Line]
+た"いすきよ![Next]
+
+[End]
+
+
+//POINTER #161 @ $10152 - STRING #161 @ $113D4
+
+#W16($10152)
+つきの うつりかわりに よって アクマの[Line]
+のうりょくや はんのうか" かわることか"[Line]
+あるのて"す[Next]
+
+[End]
+
+
+//POINTER #162 @ $10154 - STRING #162 @ $11407
+
+#W16($10154)
+ヨウセイや チレイたちは はなせるて"すよ[Next]
+
+[End]
+
+
+//POINTER #163 @ $10156 - STRING #163 @ $1141E
+
+#W16($10156)
+[Event3]<$0E><$01>[MiscEvent]<$57><$05>
+
+
+//POINTER #164 @ $10158 - STRING #164 @ $11424
+
+#W16($10158)
+おお [Hero2?]か[Line]
+け"んきか?[Next]
+
+[Event3]<$1B><$03>[Skip]Kもし テ"ヒ"ルハ"スタ-を クリアしたら[Line]
+£750 やるせ"[Next]
+
+[Event3]<$36><$02>[End]
+
+
+//POINTER #165 @ $1015A - STRING #165 @ $1145A
+
+#W16($1015A)
+[Event3]<$04><$04>へ- クリアしたんた"[Next]
+
+し"ゃ やくそくの £750た"[SetMoney]<$EE><$02>[DrawMoney][Skip]![Next]
+
+[End]
+
+
+//POINTER #166 @ $1015C - STRING #166 @ $11481
+
+#W16($1015C)
+[Event3]<$36><$02>はやく クリアしてみな[Next]
+
+[End]
+
+
+//POINTER #167 @ $1015E - STRING #167 @ $11491
+
+#W16($1015E)
+[End]
+
+
+//POINTER #168 @ $10160 - STRING #168 @ $11492
+
+#W16($10160)
+[Event3]<$0E><$01>おう [Hero2?][Line]
+ふしき"なんた"か" アクマか"[Line]
+きゅうに いなくなったんた"[Next]
+
+[End]
+
+
+//POINTER #169 @ $10162 - STRING #169 @ $114BA
+
+#W16($10162)
+[End]
+
+
+//POINTER #170 @ $10164 - STRING #170 @ $114BB
+
+#W16($10164)
+[Event3]<$52><$07>[MiscEvent]<$55><$01>
+
+
+//POINTER #171 @ $10166 - STRING #171 @ $114C1
+
+#W16($10166)
+[Event2]<$2D>[Choices]<$03>4♂6▽▽.[End]
+
+
+//POINTER #172 @ $10168 - STRING #172 @ $114CC
+
+#W16($10168)
+[LoadNPC]<$02>[LoadNPC]<$C6>[Jump]そとにも いきのこっている ひとか"[Line]
+いるらしい[Next]
+
+[Event]<$01>
+
+
+//POINTER #173 @ $1016A - STRING #173 @ $114EC
+
+#W16($1016A)
+[LoadNPC]<$05>[LoadNPC]<$CE>[Jump]あら あたしに おこ"ってくれるの?[Line]
+ミホねェ ス-ハ°-ミルクか" のみたい[YesNo]<$05>
+
+
+//POINTER #174 @ $1016C - STRING #174 @ $1151A
+
+#W16($1016C)
+[Jump]しみったれね[Next]
+
+[Event]<$01>
+
+
+//POINTER #175 @ $1016E - STRING #175 @ $11524
+
+#W16($1016E)
+[SetMoney]<$0A><$00><$CC>!
+
+
+//POINTER #176 @ $10170 - STRING #176 @ $11529
+
+#W16($10170)
+[SetVar]<$57>[Jump]カンハ°-イ!![Next]
+
+ねェ テ"ヒ"ルハ"スタ-て" [Var][Line]
+たおしたあと こうりゃくほ"んにも[Line]
+[SetVar]<$0B>のってない [Var]に やられちゃったの[Line]
+と"うしたら かてるか しらない?[Next]
+
+[Event]<$01>
+
+
+//POINTER #177 @ $10172 - STRING #177 @ $11581
+
+#W16($10172)
+かたつ"けの し"ゃまた"よ[Next]
+
+[End]
+
+
+//POINTER #178 @ $10174 - STRING #178 @ $11591
+
+#W16($10174)
+[MiscEvent]<$55><$01>
+
+
+//POINTER #179 @ $10176 - STRING #179 @ $11594
+
+#W16($10176)
+[Event2]<$25>[Choices]<$04>V♂5▽W!▽T[End]
+
+
+//POINTER #180 @ $10178 - STRING #180 @ $115A1
+
+#W16($10178)
+[LoadNPC]<$07>[LoadNPC]<$C9>[Jump]トウキョウタワ-には マシ"ョか"いてよ[Line]
+そいつか" ス-ハ°- かわイイんた"よ[Next]
+
+アクマに やられたとき マホウ[Line]
+つかって なおして くれたんた"[Next]
+
+[Event]<$01>
+
+
+//POINTER #181 @ $1017A - STRING #181 @ $115F3
+
+#W16($1017A)
+[LoadNPC]<$5A>[LoadNPC]<$DB>[Jump]わたし メシアきょう きらいよ[Line]
+きゅうせいしゅか" くる くるって[Line]
+それは"っか そんなの いやしないわ[Next]
+
+[Event]<$01>
+
+
+//POINTER #182 @ $1017C - STRING #182 @ $1162F
+
+#W16($1017C)
+[LoadNPC]<$09>[LoadNPC]<$CB>[Jump]あんた し"ょうほう あつめてんた"ろ?[Line]
+いっは°い おこ"ってくれたら[Line]
+おしえてやるせ"[Line]
+もち ミラクルトニックね[YesNo]<$06>[Jump]
+
+
+//POINTER #183 @ $1017E - STRING #183 @ $11670
+
+#W16($1017E)
+[Jump]シケてんの[Next]
+
+[Event]<$01>
+
+
+//POINTER #184 @ $10180 - STRING #184 @ $11679
+
+#W16($10180)
+[SetMoney]<$28><$00><$CC>?
+
+
+//POINTER #185 @ $10182 - STRING #185 @ $1167E
+
+#W16($10182)
+[Jump]マオウ ハ"エルの しはいか"[Line]
+けっていてきた"ったか" ハ°ス"スの[Line]
+ふっかつて" と"うなるか わからなく[Line]
+なったわけた"[Next]
+
+へへっ オレは アクマの し"し"ょうつう[Line]
+て"ね[Next]
+
+[Event]<$01>
+
+
+//POINTER #186 @ $10184 - STRING #186 @ $116DB
+
+#W16($10184)
+[MiscEvent]<$55><$01>
+
+
+//POINTER #187 @ $10186 - STRING #187 @ $116DE
+
+#W16($10186)
+[Event2]<$1D>[Choices]<$03>Y♂Z▽▽L[End]
+
+
+//POINTER #188 @ $10188 - STRING #188 @ $116E9
+
+#W16($10188)
+[LoadNPC]<$06>[LoadNPC]<$CF>[Jump]シンシ"ュクと ウエノは アクマを[Line]
+あか"める テ"ィ-ウ"ァきょうとて"[Line]
+いっは°いよ しんし"ゃになれは" いのち[Line]
+た"けは たすかるって と"んと"ん ふえて[Line]
+いるわ さいきんは すく"となりの[Line]
+シフ"ヤまて" きてるのよ[Next]
+
+[Event]<$01>
+
+
+//POINTER #189 @ $1018A - STRING #189 @ $11763
+
+#W16($1018A)
+[LoadNPC]<$08>[LoadNPC]<$CA>[Jump]わか"はいは もくせいからの ししゃた"[Line]
+とくへ"つに めんかいを ゆるすそ"...[Line]
+ヒック![Pause5][Line]
+マシ"カルフィス"を[Line]
+もってまいれ![YesNo]<$05>
+
+
+//POINTER #190 @ $1018C - STRING #190 @ $117AD
+
+#W16($1018C)
+[Jump]これいし"ょう わか"はいに[Line]
+はなしかけるて"ない![Next]
+
+[Event]<$01>
+
+
+//POINTER #191 @ $1018E - STRING #191 @ $117CB
+
+#W16($1018E)
+[SetMoney]<$20><$00><$CC>!
+
+
+//POINTER #192 @ $10190 - STRING #192 @ $117D0
+
+#W16($10190)
+[Jump]ヒ°ラ-を しっておるか?[Next]
+
+7つのちいさな ハシラた"[Line]
+これに 7つの ホシの ちからか"[Line]
+こめられておって このちからは[Line]
+うしなわれた おうし"ょうを よひ"もと"す[Line]
+ことか"て"きる わかるか?[Next]
+
+ヒック![Next]
+
+[Event]<$01>
+
+
+//POINTER #193 @ $10192 - STRING #193 @ $1183C
+
+#W16($10192)
+[MiscEvent]<$55><$01>
+
+
+//POINTER #194 @ $10194 - STRING #194 @ $1183F
+
+#W16($10194)
+[Event2]<$16>[Choices]<$03>#♂7<$06>▽E[End]
+
+
+//POINTER #195 @ $10196 - STRING #195 @ $1184A
+
+#W16($10196)
+[LoadNPC]<$91>[Jump]た"んな- のまして くた"さいよ-[Line]
+マシ"カルフィス"て" いいて"すよ-[Line]
+サケのめは" からた"か" くさるのか"[Line]
+とまるんて"すよ[YesNo]<$04>
+
+
+//POINTER #196 @ $10198 - STRING #196 @ $11893
+
+#W16($10198)
+[Jump]ちェ![Next]
+
+[Event]<$01>
+
+
+//POINTER #197 @ $1019A - STRING #197 @ $1189A
+
+#W16($1019A)
+[SetMoney]<$20><$00><$CC>▽
+
+
+//POINTER #198 @ $1019C - STRING #198 @ $1189F
+
+#W16($1019C)
+[Jump]いや- あんたら いいひとた"[Line]
+3へ"ん ひた"りに まわって ワン![Line]
+ハチコウと いっしょに やってみよ![Line]
+ほれ まわって ワン![Next]
+
+ヒャッ ヒャッ ヒャッ![Next]
+
+[Event]<$01>
+
+
+//POINTER #199 @ $1019E - STRING #199 @ $118F2
+
+#W16($1019E)
+[LoadNPC]<$05>[LoadNPC]<$CE>[Jump]この ちかくの インテリシ"ェントヒ"ルに[Line]
+ちかつ"いちゃた"めよ[Line]
+メインの ホストコンヒ°ュ-タ-の AIか"[Line]
+ほ"うそうして ほ"うき"ょシステムか"[Line]
+むさへ"つ こうけ"きしてくるの[Next]
+
+[Event]<$01>
+
+
+//POINTER #200 @ $101A0 - STRING #200 @ $11958
+
+#W16($101A0)
+[MiscEvent]<$55><$01>
+
+
+//POINTER #201 @ $101A2 - STRING #201 @ $1195B
+
+#W16($101A2)
+[Event2]<$0F>[Choices]<$03>/♂.▽▽7[End]
+
+
+//POINTER #202 @ $101A4 - STRING #202 @ $11966
+
+#W16($101A4)
+[LoadNPC]<$04>[LoadNPC]<$C8>[SetVar]<$03>[Jump]なんて"も このキ"ンサ"の ちかふかく[Line]
+マオウ [Var]か" こおりつ"けに[Line]
+されて ねむってるらしいせ"[Next]
+
+むかし ナカシ"マと ユミコ という[Line]
+わかいのか" やっつけたとか いうけと"[Line]
+まゆつは"た"よな[Next]
+
+[Event]<$01>
+
+
+//POINTER #203 @ $101A6 - STRING #203 @ $119D5
+
+#W16($101A6)
+[LoadNPC]<$23>[LoadNPC]<$D4>[Jump]オシ"サンは テ"ィ-ウ"ァきょうとた"か"[Line]
+あくにんし"ゃないよ[Next]
+
+て"も おかねを アクマに[Line]
+みついて" ひ"んほ"うた"[Next]
+
+ひとつ ミラクルトニックを[Line]
+おこ"って くれないもんかな?[YesNo]<$05>
+
+
+//POINTER #204 @ $101A8 - STRING #204 @ $11A38
+
+#W16($101A8)
+[Jump]ああ ひ"んほ"うは いやた"[Next]
+
+[Event]<$01>
+
+
+//POINTER #205 @ $101AA - STRING #205 @ $11A4B
+
+#W16($101AA)
+[SetMoney]<$28><$00><$CC>!
+
+
+//POINTER #206 @ $101AC - STRING #206 @ $11A50
+
+#W16($101AC)
+[Jump]いや- すまんのう[Line]
+まんけ"つの よる ウエノの こうえんて"は[Line]
+マシ"ョたちの サハ"トか" ひらかれる[Line]
+ありゃあ エッチて" たのしいそ"い[Next]
+
+[Event]<$01>
+
+
+//POINTER #207 @ $101AE - STRING #207 @ $11A9C
+
+#W16($101AE)
+[MiscEvent]<$55><$01>
+
+
+//POINTER #208 @ $101B0 - STRING #208 @ $11A9F
+
+#W16($101B0)
+[Event2]<$08>[Choices]<$03><$30>♂/▽▽0[End]
+
+
+//POINTER #209 @ $101B2 - STRING #209 @ $11AAA
+
+#W16($101B2)
+[LoadNPC]<$93>[Jump]ハ°ス"スを たおしたのは あなたたちね[Line]
+マオウ ハ"エルか" なんにも きにせす"[Line]
+すきほうた"い やりはし"めるわ![Next]
+
+アクマと"うして" あらそわせておけは"[Line]
+よかったのよ![Next]
+
+[Event]<$01>
+
+
+//POINTER #210 @ $101B4 - STRING #210 @ $11B09
+
+#W16($101B4)
+[LoadNPC]<$04>[LoadNPC]<$C8>[Jump]とうきょうから きたは さは"くに[Line]
+なっちまった[Line]
+ヒック![Pause5][Line]
+なに? ミラクルトニックを おこ"って[Line]
+くれるって?[YesNo]<$05>
+
+
+//POINTER #211 @ $101B6 - STRING #211 @ $11B49
+
+#W16($101B6)
+[Jump]おいらの ききちか"いか[Next]
+
+[Event]<$01>
+
+
+//POINTER #212 @ $101B8 - STRING #212 @ $11B59
+
+#W16($101B8)
+[SetMoney]<$28><$00><$CC>!
+
+
+//POINTER #213 @ $101BA - STRING #213 @ $11B5E
+
+#W16($101BA)
+[Jump]そのさは"くを こえ すみた"か"わの[Line]
+ひか"しへ ゆくとさ こんと"は と"くの[Line]
+ぬまは"かり にんけ"んと いえは"[Line]
+たいしと"うに いるた"け[Next]
+
+アクマも おそれる ちからを[Line]
+もってるんた"とさ[Next]
+
+[Event]<$01>
+
+
+//POINTER #214 @ $101BC - STRING #214 @ $11BC5
+
+#W16($101BC)
+[End]
+
+
+//POINTER #215 @ $101BE - STRING #215 @ $11BC6
+
+#W16($101BE)
+[LoadNPC]<$00>[Jump]た"れに はなしかけますか?[Line]
+[End]
+
+
+//POINTER #216 @ $101C0 - STRING #216 @ $11BD9
+
+#W16($101C0)
+[LoadEnemySprite]<$5D>[Event3]<$8B><$01>[Event2]<$03>[Line]
+IDコ-ト"ヲ シラナイ モノハ[Line]
+コレイシ"ョウ ススメナイ![Next]
+
+[End]
+
+
+//POINTER #217 @ $101C2 - STRING #217 @ $11C03
+
+#W16($101C2)
+[Jump]IDコ-ト"ヲ ニュウリョク[Line]
+シテクタ"サイ[Next]
+
+コ-ト"[Pause4] カクニン[Line]
+ト"ウソ" オトオリ クタ"サイ[Next]
+
+[Teleport]<$2B><$07>!![End]
+
+
+//POINTER #218 @ $101C4 - STRING #218 @ $11C3E
+
+#W16($101C4)
+[Event2]<$01>[Line]
+フホウ シンニュウシャ ハッケン![Line]
+コウケ"キ カイシ[Next]
+
+[MiscEvent]<$5C><$44>[LoadNPC]<$36>[MiscEvent]<$1A><$FA>ヘU[End]
+
+
+//POINTER #219 @ $101C6 - STRING #219 @ $11C68
+
+#W16($101C6)
+ケイコク!![Pause3] ケイコク!![Pause4][End]
+
+
+//POINTER #220 @ $101C8 - STRING #220 @ $11C78
+
+#W16($101C8)
+この シェルタ-から て"るなんて[Line]
+かんか"えられん[Next]
+
+ちし"ょうは おそろしい アクマて"[Line]
+いっは°いた"そ"[Next]
+
+[End]
+
+
+//POINTER #221 @ $101CA - STRING #221 @ $11CB1
+
+#W16($101CA)
+[SetVar]<$36>おお! [Hero2?]か![Line]
+このさきに [Var]か" いるのた"[Line]
+たいて" のこったのは オレた"けた"[Next]
+
+おい いっちゃいかんそ"お!![Next]
+
+[End]
+
+
+//POINTER #222 @ $101CC - STRING #222 @ $11CF0
+
+#W16($101CC)
+[SetVar]<$AE>フ°リンセス ホテルには ちかつ"くなよ[Line]
+[Var]っていう マシ"ュウか"[Line]
+にけ"こんて"いるんた"[Next]
+
+え? [Var]を てなす"けるって?[Next]
+
+クレイシ"-た"せ"![Next]
+
+[End]
+
+
+//POINTER #223 @ $101CE - STRING #223 @ $11D3F
+
+#W16($101CE)
+[SetVar]<$AE>トウキョウタワ-には とんて"もない[Line]
+マシ"ョか" いるらしい[Line]
+マシ"ュウ [Var]を タワ-に しは"り[Line]
+つけて ヘ°ットに していたそうた"[Next]
+
+[End]
+
+
+//POINTER #224 @ $101D0 - STRING #224 @ $11D88
+
+#W16($101D0)
+[SetVar]<$AE>[Var]か" トウキョウタワ-から[Line]
+せめてきたの みんなて" たたかったけと"[Line]
+おおせ"い きす"ついたわ[Next]
+
+きっと マシ"ョか" けしかけたのよ[Next]
+
+[End]
+
+
+//POINTER #225 @ $101D2 - STRING #225 @ $11DD1
+
+#W16($101D2)
+まんけ"つには マッハ°ラ-の[Line]
+こうりょくか" なくなるの[Next]
+
+レイソ"クたちは け"んきになるし[Line]
+あんまり うろつきたくは ないわよね[Next]
+
+[End]
+
+
+//POINTER #226 @ $101D4 - STRING #226 @ $11E15
+
+#W16($101D4)
+ケンは アクマを たおして[Line]
+てにいれるのね[Next]
+
+[End]
+
+
+//POINTER #227 @ $101D6 - STRING #227 @ $11E2C
+
+#W16($101D6)
+カ"ンは た"け"きりょくはあるか"[Line]
+し"ったいの うすい アクマには ケンの[Line]
+ほうか" ゆうこうな ことか"ある[Next]
+
+[End]
+
+
+//POINTER #228 @ $101D8 - STRING #228 @ $11E67
+
+#W16($101D8)
+あるアクマには ききめの たかい まほうも[Line]
+へ"つの アクマには きかない こともある[Next]
+
+[End]
+
+
+//POINTER #229 @ $101DA - STRING #229 @ $11E94
+
+#W16($101DA)
+このまちは ハ"ラムさまに まもられて[Line]
+います[Next]
+
+アクマと ひととの ちょうわを あなたは[Line]
+ここて" みいた"すて"しょう[Next]
+
+[End]
+
+
+//POINTER #230 @ $101DC - STRING #230 @ $11ED2
+
+#W16($101DC)
+あなたも ハ"ラムさまの おはなしを[Line]
+おききに なりました?[Line]
+ほんと すは"らしいのよ[Next]
+
+[End]
+
+
+//POINTER #231 @ $101DE - STRING #231 @ $11EFF
+
+#W16($101DE)
+ハ"ラムさまを たおすつもり?[YesNo]<$01>[Jump]そんな きか"したた"けよ[Next]
+
+[End]
+
+
+//POINTER #232 @ $101E0 - STRING #232 @ $11F20
+
+#W16($101E0)
+[Jump]サイコロを ふってみなさい そして[Line]
+て"ためと うらになっためを たしなさい[Next]
+
+そのかす"より あなたの ちりょくか"[Line]
+おおきくないと かてないわ[Next]
+
+[End]
+
+
+//POINTER #233 @ $101E2 - STRING #233 @ $11F6B
+
+#W16($101E2)
+このまちて" たたかうな![Next]
+
+[End]
+
+
+//POINTER #234 @ $101E4 - STRING #234 @ $11F7A
+
+#W16($101E4)
+みりょくという めにみえない ハ°ワ-を[Line]
+ふたりは もっている[Next]
+
+ナカマを ふやすときや アイテムを[Line]
+うるとき えいきょうするのた"[Next]
+
+[End]
+
+
+//POINTER #235 @ $101E6 - STRING #235 @ $11FBD
+
+#W16($101E6)
+トウキョウタワ-の マシ"ョを[Line]
+やるんた"ろ?[Next]
+
+やつは タワ-の まほうし"んの なかて"は[Line]
+ハ°ワ-か" なんは"いにも なるそうた"[Next]
+
+[End]
+
+
+//POINTER #236 @ $101E8 - STRING #236 @ $12003
+
+#W16($101E8)
+まもなく メシアさまか" あらわれるそ"よ![Line]
+なに?[Line]
+メシアさまを しらんとな!?[Next]
+
+きゅうせいしゅの ことし"ゃ[Line]
+このは"かものめ![Next]
+
+[End]
+
+
+//POINTER #237 @ $101EA - STRING #237 @ $12047
+
+#W16($101EA)
+おお あなたか" メシアさまて"[Line]
+あらせられるのて"すね?[YesNo]<$01>[Jump]そうて"すか[Line]
+わたしは もう 20ねんも[Line]
+さか"して いるのて"す[Next]
+
+[End]
+
+
+//POINTER #238 @ $101EC - STRING #238 @ $1208A
+
+#W16($101EC)
+[Jump]おお![Pause1]おお![Pause1]おお![Pause1]おおお-![Pause3][Line]
+つ ついに...[Next]
+
+ク"ラッチェ![Next]
+
+[End]
+
+
+//POINTER #239 @ $101EE - STRING #239 @ $120B0
+
+#W16($101EE)
+[Event3]<$80><$02>[Event3]<$85><$01>[Jump]ひめさまに きす"をなおして[Line]
+もらいなさい[Next]
+
+<$C1>か[End]
+
+
+//POINTER #240 @ $101F0 - STRING #240 @ $120D0
+
+#W16($101F0)
+[Jump]ひめさまは るすし"ゃ[Line]
+また きなされ[Next]
+
+[End]
+
+
+//POINTER #241 @ $101F2 - STRING #241 @ $120E6
+
+#W16($101F2)
+[Event3]<$3E><$04>[Jump]ひめさま いったい[Line]
+と"うなされたのて"すか?[Next]
+
+[End]
+
+
+//POINTER #242 @ $101F4 - STRING #242 @ $120E9
+
+#W16($101F4)
+[Jump]ひめさま いったい[Line]
+と"うなされたのて"すか?[Next]
+
+[End]
+
+
+//POINTER #243 @ $101F6 - STRING #243 @ $12103
+
+#W16($101F6)
+[Event3]<$3F><$03>[Jump]ひめさまは いったい[Line]
+と"うなされたのて"すか?[Next]
+
+[End]
+
+
+//POINTER #244 @ $101F8 - STRING #244 @ $12121
+
+#W16($101F8)
+[Event3]<$80><$03>
+
+
+//POINTER #245 @ $101FA - STRING #245 @ $12124
+
+#W16($101FA)
+<$C1>か[Jump]あんたらか" きゅうせいしゅかい?[YesNo]<$02>[Jump]なら ひめさまに きす"を[Line]
+なおして もらいなさい[Next]
+
+[End]
+
+
+//POINTER #246 @ $101FC - STRING #246 @ $12156
+
+#W16($101FC)
+[Jump]あんたらか!ひめさま ねらってるのは![Line]
+そうは させんそ"! きえうせ-い![Next]
+
+[End]
+
+
+//POINTER #247 @ $101FE - STRING #247 @ $1217F
+
+#W16($101FE)
+[Jump]ひめさまに イサ"ナミさまの[Line]
+こ"かこ"の あらんことを![Next]
+
+[End]
+
+
+//POINTER #248 @ $10200 - STRING #248 @ $1219F
+
+#W16($10200)
+[SetVar]<$09>マオウ [Var]は[Line]
+みなみにある と"うくつに[Line]
+すんて"いるらしい[Next]
+
+[End]
+
+
+//POINTER #249 @ $10202 - STRING #249 @ $121C1
+
+#W16($10202)
+[SetVar]<$09>イサ"ナキ"と イサ"ナミという[Line]
+かみさまか" [Var]に[Line]
+つれさられて いったそ"[Next]
+
+[End]
+
+
+//POINTER #250 @ $10204 - STRING #250 @ $121EC
+
+#W16($10204)
+ここから きらの ひろにいる[Line]
+アフタロロは れえこくれ[Line]
+らんにんなんら[Next]
+
+あんらも きをるれな[Next]
+
+[End]
+
+
+//POINTER #251 @ $10206 - STRING #251 @ $1221C
+
+#W16($10206)
+この おくか" あおし"ろく ひかってる[Next]
+
+[End]
+
+
+//POINTER #252 @ $10208 - STRING #252 @ $12232
+
+#W16($10208)
+この おくて" なにかの[Line]
+さけひ"こ"えか" きこえる[Next]
+
+[End]
+
+
+//POINTER #253 @ $1020A - STRING #253 @ $1224F
+
+#W16($1020A)
+つよい ねんを かんし"る[Line]
+この さきに なにか ありそうた"[Next]
+
+[End]
+
+
+//POINTER #254 @ $1020C - STRING #254 @ $12270
+
+#W16($1020C)
+この かおりは![Line]
+たからの においた"![Next]
+
+[End]
+
+
+//POINTER #255 @ $1020E - STRING #255 @ $12286
+
+#W16($1020E)
+[Event3]<$0E><$01>ちし"ょうか" あんせ"んに なったから[Line]
+みんな て"ていったわ[Next]
+
+[End]
+
+
+//POINTER #256 @ $10210 - STRING #256 @ $122AA
+
+#W16($10210)
+[End]
+
+
+//POINTER #257 @ $10212 - STRING #257 @ $122AB
+
+#W16($10212)
+<$C1>#[Event]<$02>[Skip]#とてつもなく つよい き をかんし"る[Next]
+
+[End]
+
+
+//POINTER #258 @ $10214 - STRING #258 @ $122AF
+
+#W16($10214)
+[Skip]#とてつもなく つよい き をかんし"る[Next]
+
+[End]
+
+
+//POINTER #259 @ $10216 - STRING #259 @ $122B1
+
+#W16($10216)
+とてつもなく つよい き をかんし"る[Next]
+
+[End]
+
+
+//POINTER #260 @ $10218 - STRING #260 @ $122C6
+
+#W16($10218)
+[Event3]<$60><$0D>[Event3]<$98><$03>[Event3]<$86><$0D>
+
+
+//POINTER #261 @ $1021A - STRING #261 @ $122CF
+
+#W16($1021A)
+[LoadNPC]<$6E>たからは"こた"![Next]
+
+あけますか?[YesNo]<$02>[End]
+
+
+//POINTER #262 @ $1021C - STRING #262 @ $122E4
+
+#W16($1021C)
+[Skip]き[SetMoney]<$E8><$03>[DrawMoney][SetItem]<$80><$D3>6[LoadNPC]<$00>[LoadNPC]<$81>[Jump]£[VarNum]と [VarItem] 1こを[Line]
+てにいれた[Next]
+
+[End]
+
+
+//POINTER #263 @ $1021E - STRING #263 @ $12304
+
+#W16($1021E)
+[Skip]ム[Event]<$01>
+
+
+//POINTER #264 @ $10220 - STRING #264 @ $12308
+
+#W16($10220)
+[Event4]<$A0><$01>[Event2]<$0A>[End]
+
+
+//POINTER #265 @ $10222 - STRING #265 @ $1230E
+
+#W16($10222)
+[LoadNPC]<$25>[VarItem]か" あります[Line]
+とりますか?[YesNo]<$02>[End]
+
+
+//POINTER #266 @ $10224 - STRING #266 @ $12322
+
+#W16($10224)
+<$D3>2[Jump][Hero2?]は [VarItem]をえた[Next]
+
+[End]
+
+
+//POINTER #267 @ $10226 - STRING #267 @ $1232E
+
+#W16($10226)
+[Event4]<$A2><$01>[Event2]<$07>[End]
+
+
+//POINTER #268 @ $10228 - STRING #268 @ $12334
+
+#W16($10228)
+[LoadNPC]<$27>[VarItem]か" あります[Line]
+とりますか?[YesNo]<$02>[End]
+
+
+//POINTER #269 @ $1022A - STRING #269 @ $12348
+
+#W16($1022A)
+<$D3><$06>[Jump][Hero2?]は [VarItem]をえた[Next]
+
+[End]
+
+
+//POINTER #270 @ $1022C - STRING #270 @ $12354
+
+#W16($1022C)
+[Event4]<$A1><$01>[Event2]<$04>[End]
+
+
+//POINTER #271 @ $1022E - STRING #271 @ $1235A
+
+#W16($1022E)
+[LoadNPC]<$26>[VarItem]か" あります[Line]
+とりますか?[YesNo]<$02>[End]
+
+
+//POINTER #272 @ $10230 - STRING #272 @ $1236E
+
+#W16($10230)
+<$D3>▽[Jump][Hero2?]は [VarItem]をえた[Next]
+
+[End]
+
+
+//POINTER #273 @ $10232 - STRING #273 @ $1237A
+
+#W16($10232)
+[End]
+
+
+//POINTER #274 @ $10234 - STRING #274 @ $1237B
+
+#W16($10234)
+[VarItem]は ない[Next]
+
+[End]
+
+
+//POINTER #275 @ $10236 - STRING #275 @ $12382
+
+#W16($10236)
+[Event4]<$CC><$01>[End]
+
+
+//POINTER #276 @ $10238 - STRING #276 @ $12386
+
+#W16($10238)
+カ"イコツの わきに[Line]
+[VarItem]か" おちている[Next]
+
+ひろいますか?[YesNo]<$02>[End]
+
+
+//POINTER #277 @ $1023A - STRING #277 @ $123A5
+
+#W16($1023A)
+<$D3>>[Skip]U[Jump][Hero2?]は [VarItem]を[Line]
+てにいれた[Next]
+
+[End]
+
+
+//POINTER #278 @ $1023C - STRING #278 @ $123B7
+
+#W16($1023C)
+[Event3]<$32><$03>[Event4]<$D9><$01>[End]
+
+
+//POINTER #279 @ $1023E - STRING #279 @ $123BE
+
+#W16($1023E)
+[Event2]<$07>[YesNo]<$02>[End]
+
+
+//POINTER #280 @ $10240 - STRING #280 @ $123C3
+
+#W16($10240)
+[LoadNPC]<$00>[LoadNPC]<$81>[SetItem]<$D9><$D3>>[Jump][Hero2?]は [VarItem]を[Line]
+てにいれた[Next]
+
+[End]
+
+
+//POINTER #281 @ $10242 - STRING #281 @ $123D9
+
+#W16($10242)
+[End]
+
+
+//POINTER #282 @ $10244 - STRING #282 @ $123DA
+
+#W16($10244)
+[Event3]<$B0><$02>[Event2]<$03>[YesNo]<$01>[End]
+
+
+//POINTER #283 @ $10246 - STRING #283 @ $123E2
+
+#W16($10246)
+[LoadNPC]<$00>[LoadNPC]<$01>[SetItem]<$10><$D3>♂[SetVar]<$02>[Jump][Var]か" ゆいいつしんから[Line]
+ゆす"りうけた [VarItem]をえた[Next]
+
+[Skip]ぁ[End]
+
+
+//POINTER #284 @ $10248 - STRING #284 @ $12409
+
+#W16($10248)
+[End]
+
+
+//POINTER #285 @ $1024A - STRING #285 @ $1240A
+
+#W16($1024A)
+[LoadNPC]<$6E>たからは"こか" あります[Line]
+あけますか?[End]
+
+
+//POINTER #286 @ $1024C - STRING #286 @ $12421
+
+#W16($1024C)
+ナカマは レヘ"ル アッフ°は しないのよ[Line]
+し"ゃきょうのやかたて" か"ったいさせて[Line]
+ハ°ワ-アッフ° させていくの[Next]
+
+4け"んその スライムたちは か"ったいて"[Line]
+あいての アクマの クラスを 1た"んかい[Line]
+アッフ°させられるわ[Next]
+
+[End]
+
+
+//POINTER #287 @ $1024E - STRING #287 @ $12496
+
+#W16($1024E)
+マク"ネタイトは アクマの エネルキ"-の[Line]
+みなもとた"[Line]
+ナカマか" マク"ネタイトを くいつくすと[Line]
+ナカマの HPか" へっていくから[Line]
+ちゅういしろよ[Next]
+
+[End]
+
+
+//POINTER #288 @ $10250 - STRING #288 @ $124E4
+
+#W16($10250)
+[SetVar]<$57>[Var]を たおすのか"[Line]
+きみの しめいた"[Next]
+
+[Event3]<$84><$01>[End]
+
+
+//POINTER #289 @ $10252 - STRING #289 @ $124FE
+
+#W16($10252)
+え? もうたおしたの?[Next]
+
+[End]
+
+
+//POINTER #290 @ $10254 - STRING #290 @ $1250B
+
+#W16($10254)
+ナカマは し"ふ"んの とくき"を[Line]
+もってるけと" つかうか と"うかは[Line]
+そのとき した"いた"とさ[Next]
+
+[End]
+
+
+//POINTER #291 @ $10256 - STRING #291 @ $1253F
+
+#W16($10256)
+[Event2]<$07>ちりょく すく"れたるもの[Line]
+まほうの ちからに たえる ものなり[Line]
+うんの すく"れたるもの[Line]
+かみの ちからに まもられしもの[Line]
+さまさ"まな くなんに みえさ"るての[Line]
+たすくる ものなり[Next]
+
+[End]
+
+
+//POINTER #292 @ $10258 - STRING #292 @ $1259F
+
+#W16($10258)
+[Event2]<$06>[SetVar]<$57>しす"たまは [Var]の うちに[Line]
+やと"れり[Next]
+
+[End]
+
+
+//POINTER #293 @ $1025A - STRING #293 @ $125B8
+
+#W16($1025A)
+[Event2]<$05>し"ゃしんそ"うに ささけ"よ[Line]
+しす"たまの あおき ひかりを![Line]
+きけ! もとめる ものたちよ[Line]
+ふかき ねむりの ふちより[Line]
+めさ"める あらしの おとを![Next]
+
+[End]
+
+
+//POINTER #294 @ $1025C - STRING #294 @ $12609
+
+#W16($1025C)
+ハ°-ティ-の まえに いるやつは つらい![Line]
+てきは まえの ほうから ねらってくるせ"[Next]
+
+[End]
+
+
+//POINTER #295 @ $1025E - STRING #295 @ $12637
+
+#W16($1025E)
+[Event2]<$03>セイレイ ノ-ム あらは"[Line]
+いかりのもんは ひらかれん[Next]
+
+[End]
+
+
+//POINTER #296 @ $10260 - STRING #296 @ $12656
+
+#W16($10260)
+[SetItem]<$AD>[Event2]<$02>しせる かみ さえ[Line]
+よみか"えらせる はんこ"んこう[Next]
+
+それ モロクのしんて"んに あり[Next]
+
+[End]
+
+
+//POINTER #297 @ $10262 - STRING #297 @ $12687
+
+#W16($10262)
+[Event2]<$01>[SetVar]<$09>イサ"ナキ"と イサ"ナミは あす"かった[Line]
+たすけた"したくは" さは"くの[Line]
+た"いふ"つまて" くることた"[Line]
+[Line]
+[Line]
+           マオウ [Var][Next]
+
+[End]
+
+
+//POINTER #298 @ $10264 - STRING #298 @ $126D7
+
+#W16($10264)
+かへ"に なにか かいてある...[Next]
+
+[End]
+
+
+//POINTER #299 @ $10266 - STRING #299 @ $126EA
+
+#W16($10266)
+[Event4]<$C0><$01>[Event]<$06>
+
+
+//POINTER #300 @ $10268 - STRING #300 @ $126EF
+
+#W16($10268)
+[Event3]<$84><$06>[LoadEnemySprite]<$57>まっておったそ" こわっは°め![Next]
+
+
+//POINTER #301 @ $1026A - STRING #301 @ $12706
+
+#W16($1026A)
+[Fight]<$01>♂[SetItem]<$C0><$D3>♂
+
+
+//POINTER #302 @ $1026C - STRING #302 @ $1270E
+
+#W16($1026C)
+[Jump][VarItem]を てにいれた[Next]
+
+[Skip]お[Skip]<$36>[End]
+
+
+//POINTER #303 @ $1026E - STRING #303 @ $1271D
+
+#W16($1026E)
+[Event3]<$03><$02>[LoadEnemySprite]<$36>わかくて いきのいい からた"か" 2つも[Line]
+やってきたわい[Next]
+
+さっそく ソ"ンヒ"に してやろう![Next]
+
+
+//POINTER #304 @ $10270 - STRING #304 @ $12754
+
+#W16($10270)
+[Fight]<$01>>[Skip]▽[End]
+
+
+//POINTER #305 @ $10272 - STRING #305 @ $1275B
+
+#W16($10272)
+へやのなかは しす"けさ た"けた"[Next]
+
+[End]
+
+
+//POINTER #306 @ $10274 - STRING #306 @ $1276F
+
+#W16($10274)
+[Event3]<$1F><$03>いきなりハ°ス"スか"[Line]
+ハント"ヘルト"コンヒ°ュ-タから[Line]
+はなしかけてきた[Next]
+
+[Event3]<$80><$02>[Event3]<$02><$01>フ°リンセスホテルに わか" しもへ"[Line]
+[SetVar]<$AE>[Var]か" おります[Next]
+
+おナカマに してやれは"[Line]
+きっと おやくに たつて"しょう[Next]
+
+[End]
+
+
+//POINTER #307 @ $10276 - STRING #307 @ $127DD
+
+#W16($10276)
+トウキョウタワ-に マシ"ョか" います[Next]
+
+いかしておいては[Line]
+キケンな そんさ"いて"す[Line]
+はやく たおしましょう[Next]
+
+[End]
+
+
+//POINTER #308 @ $10278 - STRING #308 @ $12816
+
+#W16($10278)
+はやく そのマシ"ョを みすてなさい[Line]
+あなたの ためにいって いるのて"すよ[Next]
+
+シンシ"ュクて" おまちします[Next]
+
+[End]
+
+
+//POINTER #309 @ $1027A - STRING #309 @ $1284E
+
+#W16($1027A)
+[Next]
+
+[End]
+
+
+//POINTER #310 @ $1027C - STRING #310 @ $12850
+
+#W16($1027C)
+[Event3]<$41><$01>[Event3]<$5A><$01>[Event3]<$2C><$15>[SetVar]<$09>[MiscEvent]<$11><$FA>A[MiscEvent]<$13><$FA>Cと"こからか やさしけ"な こえか"[Line]
+きこえてくる[Next]
+
+わたしは イサ"ナミ...[Next]
+
+あなたたちに [Var]を[Line]
+たおすことは また" て"きません[Next]
+
+マカイに くるのも[Line]
+また" はやすき"ます[Next]
+
+トウキョウへ おもと"りなさい...[Pause5][Jump][MiscEvent]<$2E><$95>ヒ  B[End]
+
+
+//POINTER #311 @ $1027E - STRING #311 @ $128D9
+
+#W16($1027E)
+[Event4]<$D7><$02>[VarItem]か" きゅうに[Line]
+かか"やきた"した[Next]
+
+[Event3]<$B2><$03>[LoadNPC]<$5C>[Event]<$04>[End]
+
+
+//POINTER #312 @ $10280 - STRING #312 @ $128F6
+
+#W16($10280)
+[End]
+
+
+//POINTER #313 @ $10282 - STRING #313 @ $128F7
+
+#W16($10282)
+[LoadNPC]<$5D>
+
+
+//POINTER #314 @ $10284 - STRING #314 @ $128F9
+
+#W16($10284)
+いまこそ うちなる ちからに[Line]
+したか"うときて"す[YesNo]<$05>[Jump]と"うしたのて"す[Line]
+おくしたのて"すか[Next]
+
+[End]
+
+
+//POINTER #315 @ $10286 - STRING #315 @ $1292A
+
+#W16($10286)
+[MiscEvent]<$2E><$29>2> 9[End]
+
+
+//POINTER #316 @ $10288 - STRING #316 @ $12932
+
+#W16($10288)
+[Event3]<$5B><$02>[LoadEnemySprite]<$4C>[Fight]<$01>>
+
+
+//POINTER #317 @ $1028A - STRING #317 @ $1293C
+
+#W16($1028A)
+[Skip]フ[LoadNPC]<$00>[LoadNPC]<$19>[LoadNPC]<$B1>[Jump]わたしは メシアきょうの もの[Next]
+
+あなたか"た こそ[Line]
+しんの きゅうせいしゅて"す[Next]
+
+その しるしとして これを あたえます[Next]
+
+[LoadNPC]<$00>[SetItem]<$D5><$D3>8[Skip]H[MiscEvent]<$11><$F3>は [VarItem]を[Line]
+てにいれた[Next]
+
+[End]
+
+
+//POINTER #318 @ $1028C - STRING #318 @ $12999
+
+#W16($1028C)
+あの ゆひ"わは たいせつに[Next]
+
+[LoadNPC]<$00>[End]
+
+
+//POINTER #319 @ $1028E - STRING #319 @ $129AB
+
+#W16($1028E)
+[Event3]<$07><$0C>[LoadEnemySprite]<$21>[Fight]<$01>5[Skip]0[End]
+
+
+//POINTER #320 @ $10290 - STRING #320 @ $129B8
+
+#W16($10290)
+[LoadEnemySprite]<$79>[Fight]<$05>4[End]
+
+
+//POINTER #321 @ $10292 - STRING #321 @ $129C0
+
+#W16($10292)
+[LoadEnemySprite]<$5B>[Fight]<$01>3[End]
+
+
+//POINTER #322 @ $10294 - STRING #322 @ $129C8
+
+#W16($10294)
+[LoadEnemySprite]<$18>[Fight]<$01>2[Skip]ホ[End]
+
+
+//POINTER #323 @ $10296 - STRING #323 @ $129D2
+
+#W16($10296)
+[LoadEnemySprite]<$91>[Event3]<$01><$05>[Event3]<$0D><$05>[Var]か" いしになっている[Line]
+たすけますか?[YesNo]<$04>[Event3]<$17><$03>[Event3]<$16><$02>
+
+
+//POINTER #324 @ $10298 - STRING #324 @ $129F7
+
+#W16($10298)
+[Skip]F[LoadNPC]<$00>[End]
+
+
+//POINTER #325 @ $1029A - STRING #325 @ $129FC
+
+#W16($1029A)
+[Skip]G[Event]<$01>
+
+
+//POINTER #326 @ $1029C - STRING #326 @ $12A00
+
+#W16($1029C)
+[Skip]W[Event]<$01>
+
+
+//POINTER #327 @ $1029E - STRING #327 @ $12A04
+
+#W16($1029E)
+[Event4]<$83><$09><$D2>[Jump][Hero2?]は[Line]
+[VarItem]をつかった[Next]
+
+[MiscEvent]<$5C><$2F>ありか"とう[Next]
+
+[SetVar]<$21>[Var]に いしに されたときは[Line]
+と"うなるかと おもったせ"[Next]
+
+おれいに いっしょに[Line]
+たたかって やるけと" と"うする?[Next]
+
+
+//POINTER #328 @ $102A0 - STRING #328 @ $12A5A
+
+#W16($102A0)
+[SetVar]<$91>[Var]を ナカマに くわえますか?[YesNo]<$06>[Skip]6[LoadNPC]<$00>[End]
+
+
+//POINTER #329 @ $102A2 - STRING #329 @ $12A72
+
+#W16($102A2)
+[MiscEvent]<$08><$07>[Skip]>[Jump]ナカマか" おおいのて" あきらめた[Next]
+
+[LoadNPC]<$00>[End]
+
+
+//POINTER #330 @ $102A4 - STRING #330 @ $12A8E
+
+#W16($102A4)
+[Skip]W[Jump][Var]は ナカマに なった[Next]
+
+[MiscEvent]<$4A><$91>[LoadNPC]<$00>[End]
+
+
+//POINTER #331 @ $102A6 - STRING #331 @ $12AA2
+
+#W16($102A6)
+[End]
+
+
+//POINTER #332 @ $102A8 - STRING #332 @ $12AA3
+
+#W16($102A8)
+しかし てこ"ろな アイテムを[Line]
+もっていなかった[Next]
+
+[LoadNPC]<$00>[End]
+
+
+//POINTER #333 @ $102AA - STRING #333 @ $12ABF
+
+#W16($102AA)
+[Skip]<$AF>かみに あた"なすものよ ひきかえせ[Line]
+なんし"らの たましいは いまた"[Line]
+けか"れては おらぬ![Next]
+
+[End]
+
+
+//POINTER #334 @ $102AC - STRING #334 @ $12AF3
+
+#W16($102AC)
+つちくれよりの うまれたるものよ[Line]
+わたしの ほろひ"のときは[Line]
+このよの ほろひ"の ときとしれ[Next]
+
+[End]
+
+
+//POINTER #335 @ $102AE - STRING #335 @ $12B24
+
+#W16($102AE)
+[Event3]<$AF><$01>ルシファ-の こえか"ひひ"く[Next]
+
+はやく ゆいいつしんの ところへ![Next]
+
+[End]
+
+
+//POINTER #336 @ $102B0 - STRING #336 @ $12B4A
+
+#W16($102B0)
+<$C1><$AF>かみに あた"なすものよ そのまま[Line]
+ひきかえすか"よい[Next]
+
+なんし"らの ためにいって おるのた"[Next]
+
+[End]
+
+
+//POINTER #337 @ $102B2 - STRING #337 @ $12B7D
+
+#W16($102B2)
+[LoadEnemySprite]<$00>ひさしふ"りた"な [Hero2?][Line]
+[SetVar]<$FD>[Var]た" わすれてないた"ろな[Next]
+
+せかいを すくうには[Line]
+おまえて"は やくふ"そくた"[Next]
+
+[SetVar]<$AE>ゆけ! [Var]! ヤツらをしまつしろ![Next]
+
+[LoadNPC]<$00>[LoadEnemySprite]<$AE>ニセきゅうせいしゅ![Line]
+かくこ"しろ![Next]
+
+[Fight]<$01>♂
+
+
+//POINTER #338 @ $102B4 - STRING #338 @ $12BE8
+
+#W16($102B4)
+[LoadEnemySprite]<$00>[SetVar]<$AE>[Jump]ちッ [Var]め にけ"たか[Next]
+
+た"か" つき"は こうは いかないせ"![Next]
+
+[LoadNPC]<$00>[Skip]L[End]
+
+
+//POINTER #339 @ $102B6 - STRING #339 @ $12C14
+
+#W16($102B6)
+[End]
+
+
+//POINTER #340 @ $102B8 - STRING #340 @ $12C15
+
+#W16($102B8)
+[LoadEnemySprite]<$00>[MiscEvent]<$0D><$01>[Hero] まっていたせ"[Line]
+と"うしても いっておきたい[Line]
+ことか"ある...[Next]
+
+まちか"った みちを すすんて"いたのは[Line]
+オレのほうかも しれない[Next]
+
+た"か" [Pause4]こうかいはしない[Next]
+
+
+//POINTER #341 @ $102BA - STRING #341 @ $12C6F
+
+#W16($102BA)
+[Skip]Mここからは オレのは"んた"[Line]
+ハ"エルは オレに まかせてくれ![Next]
+
+いて"よ アクマたち![Line]
+こいつらを さきにすすませるなっ![Next]
+
+
+//POINTER #342 @ $102BC - STRING #342 @ $12CB0
+
+#W16($102BC)
+[LoadEnemySprite]<$52>[MiscEvent]<$23><$01>▽
+
+
+//POINTER #343 @ $102BE - STRING #343 @ $12CB7
+
+#W16($102BE)
+[LoadEnemySprite]<$5E>[MiscEvent]<$23><$01>!
+
+
+//POINTER #344 @ $102C0 - STRING #344 @ $12CBE
+
+#W16($102C0)
+[LoadEnemySprite]<$3A>[Fight]<$01>?
+
+
+//POINTER #345 @ $102C2 - STRING #345 @ $12CC5
+
+#W16($102C2)
+[Jump]おくのへやから[Line]
+すさまし"い ものおとか" ひひ"く[Line]
+[Pause3].[Pause3].[Pause3].[Next]
+
+おとか" とた"えた[Next]
+
+[End]
+
+
+//POINTER #346 @ $102C4 - STRING #346 @ $12CF4
+
+#W16($102C4)
+[LoadEnemySprite]<$00>[SetVar]<$FD>よくきたな[Next]
+
+[Line]
+おと"ろいて こえも て"ないようた"な[Next]
+
+[SetVar]<$02>オレは [Var]さまに[Line]
+いきかえらせて もらったのさ![Next]
+
+と"うやら [Var]さまを[Line]
+たおしに きたみたいた"か"[Next]
+
+そうはさせん![Next]
+
+いて"よ アクマたち![Next]
+
+[LoadEnemySprite]<$00>
+
+
+//POINTER #347 @ $102C6 - STRING #347 @ $12D61
+
+#W16($102C6)
+[LoadEnemySprite]<$4F>[MiscEvent]<$23><$01>♂
+
+
+//POINTER #348 @ $102C8 - STRING #348 @ $12D68
+
+#W16($102C8)
+[LoadEnemySprite]<$18>[MiscEvent]<$23><$01>▽
+
+
+//POINTER #349 @ $102CA - STRING #349 @ $12D6F
+
+#W16($102CA)
+[LoadEnemySprite]<$0D>[MiscEvent]<$23><$01>!
+
+
+//POINTER #350 @ $102CC - STRING #350 @ $12D76
+
+#W16($102CC)
+[Jump]こんと"は オレか" あいてた"![Next]
+
+
+//POINTER #351 @ $102CE - STRING #351 @ $12D89
+
+#W16($102CE)
+[LoadEnemySprite]<$00>[Fight]<$01>?[Skip]N[Jump]あ..ああ...[Line]
+[Var]は チリとなってきえた[Next]
+
+[End]
+
+
+//POINTER #352 @ $102D0 - STRING #352 @ $12DAA
+
+#W16($102D0)
+<$C4> [Event3]<$09><$1A>[LoadNPC]<$07>[LoadNPC]<$C9>[MiscEvent]<$0C><$08>♂ここは テ"ィ-ハ"きょうの せいちた"[Next]
+
+そなたたちは テ"ィ-ハ"きょうの[Line]
+しんし"ゃなのか?[YesNo]<$03>
+
+
+//POINTER #353 @ $102D2 - STRING #353 @ $12DE9
+
+#W16($102D2)
+[Jump]きさまら メシアきょうなのか?![Next]
+
+ならは" きえうせろ![Next]
+
+[End]
+
+
+//POINTER #354 @ $102D4 - STRING #354 @ $12E08
+
+#W16($102D4)
+[SetVar]<$34>きょうは つこ"うか"わるい[Next]
+
+まんけ"つのよる またきてほしい[Line]
+[Var]さまの サハ"トは そのとき[Line]
+ひらかれる[Next]
+
+[End]
+
+
+//POINTER #355 @ $102D6 - STRING #355 @ $12E41
+
+#W16($102D6)
+[Event3]<$5F><$06>[SetItem]<$B4>[Jump]それならは" あかしの[Line]
+[VarItem]を みせてみよ![YesNo]<$05>
+
+
+//POINTER #356 @ $102D8 - STRING #356 @ $12E5E
+
+#W16($102D8)
+[Jump]なせ" もっていないのた"ッ![Next]
+
+[Event]<$01>
+
+
+//POINTER #357 @ $102DA - STRING #357 @ $12E71
+
+#W16($102DA)
+[Event4]<$B4><$04><$D2>[Jump]うむ!まちか"いなく [VarItem][Line]
+もっているな[Next]
+
+
+//POINTER #358 @ $102DC - STRING #358 @ $12E8A
+
+#W16($102DC)
+[Jump]さあ もうすく" サハ"トか" はし"まる[Line]
+こちらに きなさい[Next]
+
+[Skip]ミ[LoadNPC]<$00>[LoadBackground]<$1B>[LoadEnemySprite]<$34>クッ[Pause2] クッ[Pause2] クッ[Pause2].[Pause1].[Pause1].[Next]
+
+よ--こそ[Pause2] らいほうしゃ![Next]
+
+まっていましたよ[Next]
+
+さあ--て やくしゃは そろったな[Line]
+たのしい サハ"トの はし"まりた"![Next]
+
+
+//POINTER #359 @ $102DE - STRING #359 @ $12F04
+
+#W16($102DE)
+[Fight]<$01>J<$EE>2
+
+
+//POINTER #360 @ $102E0 - STRING #360 @ $12F0A
+
+#W16($102E0)
+[Skip]2[SetVar]<$34>[Jump]しんし"ゃも いす"こへと にけ"ていった[Next]
+
+[SetItem]<$CB><$D3>1[VarItem]を てにいれた[Next]
+
+[End]
+
+
+//POINTER #361 @ $102E2 - STRING #361 @ $12F33
+
+#W16($102E2)
+<$C4>[End]
+
+
+//POINTER #362 @ $102E4 - STRING #362 @ $12F46
+
+#W16($102E4)
+[LoadEnemySprite]<$17>[MiscEvent]<$23><$01>4
+
+
+//POINTER #363 @ $102E6 - STRING #363 @ $12F4D
+
+#W16($102E6)
+[LoadEnemySprite]<$35>[MiscEvent]<$23><$01>5
+
+
+//POINTER #364 @ $102E8 - STRING #364 @ $12F54
+
+#W16($102E8)
+[LoadEnemySprite]<$49>[MiscEvent]<$23><$01>6
+
+
+//POINTER #365 @ $102EA - STRING #365 @ $12F5B
+
+#W16($102EA)
+[LoadEnemySprite]<$34>[Event]<$07>
+
+
+//POINTER #366 @ $102EC - STRING #366 @ $12F60
+
+#W16($102EC)
+[LoadEnemySprite]<$2D>[MiscEvent]<$23><$01>8
+
+
+//POINTER #367 @ $102EE - STRING #367 @ $12F67
+
+#W16($102EE)
+[LoadEnemySprite]<$3E>[MiscEvent]<$23><$01>9
+
+
+//POINTER #368 @ $102F0 - STRING #368 @ $12F6E
+
+#W16($102F0)
+[LoadEnemySprite]<$4A>[MiscEvent]<$23><$01>A
+
+
+//POINTER #369 @ $102F2 - STRING #369 @ $12F75
+
+#W16($102F2)
+[LoadEnemySprite]<$34>[Event]<$07>
+
+
+//POINTER #370 @ $102F4 - STRING #370 @ $12F7A
+
+#W16($102F4)
+[LoadEnemySprite]<$60>[MiscEvent]<$23><$01>C
+
+
+//POINTER #371 @ $102F6 - STRING #371 @ $12F81
+
+#W16($102F6)
+[LoadEnemySprite]<$6C>[MiscEvent]<$23><$01>D
+
+
+//POINTER #372 @ $102F8 - STRING #372 @ $12F88
+
+#W16($102F8)
+[LoadEnemySprite]<$35>[MiscEvent]<$23><$01>E
+
+
+//POINTER #373 @ $102FA - STRING #373 @ $12F8F
+
+#W16($102FA)
+[LoadEnemySprite]<$34>[Event]<$07>
+
+
+//POINTER #374 @ $102FC - STRING #374 @ $12F94
+
+#W16($102FC)
+[LoadEnemySprite]<$2D>[MiscEvent]<$23><$01>G
+
+
+//POINTER #375 @ $102FE - STRING #375 @ $12F9B
+
+#W16($102FE)
+[LoadEnemySprite]<$17>[MiscEvent]<$23><$01>H
+
+
+//POINTER #376 @ $10300 - STRING #376 @ $12FA2
+
+#W16($10300)
+[LoadEnemySprite]<$49>[Fight]<$01>I
+
+
+//POINTER #377 @ $10302 - STRING #377 @ $12FA9
+
+#W16($10302)
+[SetVar]<$34>[Jump][Var]は にけ"ていった[Next]
+
+[End]
+
+
+//POINTER #378 @ $10304 - STRING #378 @ $12FB7
+
+#W16($10304)
+[End]
+
+
+//POINTER #379 @ $10306 - STRING #379 @ $12FB8
+
+#W16($10306)
+[Event3]<$29><$01>[Event3]<$7F><$02>と"うもありか"とう[Next]
+
+
+//POINTER #380 @ $10308 - STRING #380 @ $12FC9
+
+#W16($10308)
+わたしは イサ"ナキ"[Line]
+[Event3]<$29><$02>さ"んねんなか"ら イサ"ナミは[Line]
+マオウ ヘ"リアルに さらわれて しまった[Next]
+
+と"うか イサ"ナミも たすけてやって[Line]
+くた"さい おねか"いします[Next]
+
+
+//POINTER #381 @ $1030A - STRING #381 @ $13022
+
+#W16($1030A)
+[Skip]"|[Event2]<$0C>[Next]
+
+[LoadNPC]<$00>[End]
+
+
+//POINTER #382 @ $1030C - STRING #382 @ $1302A
+
+#W16($1030C)
+[Event3]<$B2><$06>[Event4]<$D9><$01>[Event3]<$7B><$04>
+
+
+//POINTER #383 @ $1030E - STRING #383 @ $13033
+
+#W16($1030E)
+[SetVar]<$15>[Jump][Hero2?]の あたまの なかに[Line]
+イサ"ナミの こえか" はいってきた[Next]
+
+
+//POINTER #384 @ $10310 - STRING #384 @ $13055
+
+#W16($10310)
+[Event3]<$3E><$0A>
+
+
+//POINTER #385 @ $10312 - STRING #385 @ $13058
+
+#W16($10312)
+おお...[Line]
+[Hero] [Var][Line]
+わたし... イサ"ナミて"す[Line]
+よくここまて" こられました...[Next]
+
+て"も ここから ひきかえしなさい[Line]
+もう ておくれて"す...[Next]
+
+わたしは... しんた"のて"す[Line]
+からた"も くちはて...[Line]
+もう まほうも むた"[Line]
+おねか"い こんな すか"た みないて"[Next]
+
+[Skip]10
+
+
+//POINTER #386 @ $10314 - STRING #386 @ $130E6
+
+#W16($10314)
+[Event4]<$D9><$06>[VarItem]を たきますか[YesNo]<$05>[End]
+
+
+//POINTER #387 @ $10316 - STRING #387 @ $130F4
+
+#W16($10316)
+[Event3]<$B4><$07>[Skip]ゃ[Skip]Y<$D2>[Jump][Hero2?]か" こうをたくと[Line]
+けむりか" へやのなかへ たた"よい[Line]
+イサ"ナミの にくたいと たましいか"[Line]
+ふっかつした...[Next]
+
+[SetVar]<$15>[LoadNPC]<$5D>[Hero] [Var][Line]
+ありか"とう[Next]
+
+この おれいに わたしたちの[Line]
+かこ"を あたえます[Line]
+[Event2]<$09>[Event2]<$08>[Event2]<$08>[Event2]<$08>[Event2]<$08>[Next]
+
+[End]
+
+
+//POINTER #388 @ $10318 - STRING #388 @ $1316D
+
+#W16($10318)
+[End]
+
+
+//POINTER #389 @ $1031A - STRING #389 @ $1316E
+
+#W16($1031A)
+[SetItem]<$D9>[Jump][VarItem]を もってしても イサ"ナミを[Line]
+いきかえらせることか" て"きなかった[Next]
+
+[Skip]10<$D2>[End]
+
+
+//POINTER #390 @ $1031C - STRING #390 @ $1319A
+
+#W16($1031C)
+[MiscEvent]<$11><$FA>A[MiscEvent]<$11><$FA>A[MiscEvent]<$13><$FA>C[MiscEvent]<$13><$FA>C[End]
+
+
+//POINTER #391 @ $1031E - STRING #391 @ $131AB
+
+#W16($1031E)
+これからは あなたたちを[Line]
+ちかくて" みまもっています[End]
+
+
+//POINTER #392 @ $10320 - STRING #392 @ $131C7
+
+#W16($10320)
+[Event3]<$3F><$03>いまは [Var]を たすけるほうか"[Line]
+さきの はす"て"す[Next]
+
+さあ おゆきなさい[Next]
+
+[End]
+
+
+//POINTER #393 @ $10322 - STRING #393 @ $131F0
+
+#W16($10322)
+シェルタ- ふうさ くかく[Line]
+エアロックの かいほう きんし[Next]
+
+そとに て"ますか?[YesNo]<$01>[End]
+
+
+//POINTER #394 @ $10324 - STRING #394 @ $1321B
+
+#W16($10324)
+[Skip]<$36>[Event3]<$52><$02>[MiscEvent]<$2E><$09>に  ♂[End]
+
+
+//POINTER #395 @ $10326 - STRING #395 @ $13228
+
+#W16($10326)
+[MiscEvent]<$5D><$01>[End]
+
+
+//POINTER #396 @ $10328 - STRING #396 @ $1322C
+
+#W16($10328)
+シェルタ-に はいりますか?[YesNo]<$01>[End]
+
+
+//POINTER #397 @ $1032A - STRING #397 @ $1323D
+
+#W16($1032A)
+[Teleport]<$49><$30>  [End]
+
+
+//POINTER #398 @ $1032C - STRING #398 @ $13244
+
+#W16($1032C)
+[Skip]ルたすけにきて くれたんた"ね?[Line]
+[MiscEvent]<$10><$01>おにいちゃん おねえちゃん ありか"とう[Next]
+
+
+//POINTER #399 @ $1032E - STRING #399 @ $1326E
+
+#W16($1032E)
+し"ゃあ さきに かえるからね[Next]
+
+[LoadNPC]<$00>ようせいの こと"もたちを たすけた[Next]
+
+[End]
+
+
+//POINTER #400 @ $10330 - STRING #400 @ $13294
+
+#W16($10330)
+[Event3]<$42><$03>[Event3]<$45><$03>[Event3]<$30><$02>[Event4]<$C6><$01>[Event4]<$C7><$01>[Event4]<$C8><$01>[Event4]<$C9><$01>[Event4]<$CA><$01>[Event4]<$CB><$01>[Event4]<$CC><$01>[Skip]<$30>このさきへ いくか"よい[Next]
+
+[MiscEvent]<$2E><$2E>ュ  M[End]
+
+
+//POINTER #401 @ $10332 - STRING #401 @ $132C9
+
+#W16($10332)
+これより さきへ いくには[Line]
+また" はやいの[Next]
+
+うしなわれた おうし"ょうを[Line]
+ふし"ょうさせる ならは"な[Next]
+
+[End]
+
+
+//POINTER #402 @ $10334 - STRING #402 @ $132FF
+
+#W16($10334)
+[Jump]いくか"よい わかものよ[Next]
+
+[MiscEvent]<$2E><$2E>ュ  M[End]
+
+
+//POINTER #403 @ $10336 - STRING #403 @ $13315
+
+#W16($10336)
+このさきは もうようか" ないはす"た"か"[Line]
+それて"も いくのか[YesNo]<$02>[End]
+
+
+//POINTER #404 @ $10338 - STRING #404 @ $13339
+
+#W16($10338)
+[SetVar]<$1F>ヒロコって こか" テ"ィ-ハ"きょうの[Line]
+てさきに イケフ"クロのほうへ[Line]
+つれてかれたよ[Next]
+
+シェルタ-なんて とこて" ぬくぬくと[Line]
+やってるから そんなめに あうのよ[Next]
+
+[End]
+
+
+//POINTER #405 @ $1033A - STRING #405 @ $1338F
+
+#W16($1033A)
+[Event3]<$00><$01>[LoadNPC]<$3C>[LoadNPC]<$D5>この エレヘ"-タ-か" つかいたいなら[Line]
+もっと つよくなってから くることた"な[Next]
+
+[End]
+
+
+//POINTER #406 @ $1033C - STRING #406 @ $133C1
+
+#W16($1033C)
+アナタノ コ"リヨウニナル カイソウヲ[Line]
+コ"シテイクタ"サイ[Line]
+[MiscEvent]<$34><$EE>♂[End]
+
+
+//POINTER #407 @ $1033E - STRING #407 @ $133E4
+
+#W16($1033E)
+[End]
+
+
+//POINTER #408 @ $10340 - STRING #408 @ $133E5
+
+#W16($10340)
+[Event3]<$7E><$02>[LoadBackground]<$20>けっかいか" はられている[Next]
+
+[Event4]<$C5><$03><$D2>[VarItem]か" すいこまれ[Line]
+けっかいは きえた[Next]
+
+[Skip]*[Teleport]<$6E><$04>▽0[End]
+
+
+//POINTER #409 @ $10342 - STRING #409 @ $13413
+
+#W16($10342)
+[Teleport]<$6E><$04>▽0[End]
+
+
+//POINTER #410 @ $10344 - STRING #410 @ $1341A
+
+#W16($10344)
+[LoadBackground]<$13>[SetVar]<$0B>[Var]の けっかいの あとた"[Next]
+
+シンシ"ュク ほうめんに すすみますか?[YesNo]<$01>[End]
+
+
+//POINTER #411 @ $10346 - STRING #411 @ $13443
+
+#W16($10346)
+[End]
+
+
+//POINTER #412 @ $10348 - STRING #412 @ $13444
+
+#W16($10348)
+[LoadNPC]<$3B>[MiscEvent]<$2E><$0B>2> 9[End]
+
+
+//POINTER #413 @ $1034A - STRING #413 @ $1344E
+
+#W16($1034A)
+ちし"ょうのせかいは ケ"-ムのように[Line]
+うまくは いかないそ"[Next]
+
+[End]
+
+
+//POINTER #414 @ $1034C - STRING #414 @ $1346F
+
+#W16($1034C)
+[Event4]<$AB><$01>めいしを つかっちまったら またきな[Line]
+そのとき もう1まい やるよ[Next]
+
+[LoadNPC]<$00>[End]
+
+
+//POINTER #415 @ $1034E - STRING #415 @ $13497
+
+#W16($1034E)
+[Event3]<$5C><$04>[Jump]おい しってるか? いまた"に[Line]
+このキ"ンサ"て" かいしゃを やってる[Line]
+へんな おやし"を![Next]
+
+おれ すす"きって いうんた"けと"さ[Line]
+しゃちょうも おんなし" なまえなんた"[Line]
+めいしをやるから あいにいってみな[Next]
+
+[LoadNPC]<$00>[SetItem]<$AB><$D3>▽[Skip]ヘ[VarItem]を てにいれた[Next]
+
+[End]
+
+
+//POINTER #416 @ $10350 - STRING #416 @ $13506
+
+#W16($10350)
+[LoadNPC]<$00>[SetItem]<$AB><$D3>▽[Skip]ヘ[VarItem]を てにいれた[Next]
+
+[End]
+
+
+//POINTER #417 @ $10352 - STRING #417 @ $13518
+
+#W16($10352)
+[End]
+
+
+//POINTER #418 @ $10354 - STRING #418 @ $13519
+
+#W16($10354)
+また きたか[Line]
+ほら もう 1まいやるよ[Next]
+
+[Event]<$02>
+
+
+//POINTER #419 @ $10356 - STRING #419 @ $1352F
+
+#W16($10356)
+[Event3]<$44><$10>[LoadNPC]<$1A>カ"-ト"マンか" いる[Line]
+はなしかけて みますか?[YesNo]<$01>[Jump]ふたりは にらみあった...[Pause4][Line]
+カ"-ト"マンは なかに[Line]
+ひっこんて"しまった[Next]
+
+[LoadNPC]<$00>[End]
+
+
+//POINTER #420 @ $10358 - STRING #420 @ $1357B
+
+#W16($10358)
+[Jump]おまえたち なにものた"?[Line]
+ここか" と"なたの へやか しってるのか?[YesNo]<$02>[Jump]まったく カ"キは むこうにいきな![Next]
+
+[End]
+
+
+//POINTER #421 @ $1035A - STRING #421 @ $135B7
+
+#W16($1035A)
+[Event3]<$99><$04>[Event4]<$AB><$03><$D2>[Jump][VarItem]を てわたした[Next]
+
+ふ-む ちょっとまってろ[Next]
+
+[LoadNPC]<$00>[Pause8][LoadNPC]<$9A>しゃちょうか" あうとさ![Next]
+
+[LoadNPC]<$00>[Event]<$09>[Jump]そこて" まっていろ![Next]
+
+[LoadNPC]<$00>[Pause8][Jump]いくらまっても もと"ってこなかった[Next]
+
+[End]
+
+
+//POINTER #422 @ $1035C - STRING #422 @ $135EC
+
+#W16($1035C)
+[Jump]そこて" まっていろ![Next]
+
+[LoadNPC]<$00>[Pause8][Jump]いくらまっても もと"ってこなかった[Next]
+
+[End]
+
+
+//POINTER #423 @ $1035E - STRING #423 @ $13611
+
+#W16($1035E)
+[Event3]<$75><$06>[Jump]し"ゃ こっちにきな[Next]
+
+[Skip]ッ[Teleport]<$33><$05>>?[End]
+
+
+//POINTER #424 @ $10360 - STRING #424 @ $13614
+
+#W16($10360)
+[Jump]し"ゃ こっちにきな[Next]
+
+[Skip]ッ[Teleport]<$33><$05>>?[End]
+
+
+//POINTER #425 @ $10362 - STRING #425 @ $13629
+
+#W16($10362)
+[Event3]<$F7><$07>[Event]<$05>
+
+
+//POINTER #426 @ $10364 - STRING #426 @ $1362E
+
+#W16($10364)
+[Event3]<$26><$08>[Event3]<$46><$08>[Event3]<$53><$08>[Event]<$05>
+
+
+//POINTER #427 @ $10366 - STRING #427 @ $13639
+
+#W16($10366)
+[Jump]そうか! ならは" しかたない![Line]
+とおすわけに いかぬ![Next]
+
+[LoadNPC]<$00>[LoadEnemySprite]<$0D>[MiscEvent]<$23><$01>1[Jump]サ サタンさまァ....[Next]
+
+[Event]<$0B>
+
+
+//POINTER #428 @ $10368 - STRING #428 @ $13670
+
+#W16($10368)
+[LoadBackground]<$0D>[LoadNPC]<$2D>[SetVar]<$F6>[Jump]よく いらっしゃいましたな![Next]
+
+あなたか"たか" きゅうせいしゅとして[Line]
+せけんを さわか"せているのは[Line]
+しっていますよ![Next]
+
+[Event3]<$1F><$0A>[Jump]この とうきょうは にしに ハ°ス"ス[Line]
+ひか"しに ハ"エルか" し"んと"って[Line]
+せいりょくを にふ"んしています[Next]
+
+しかし キ"ンサ"の ちかふかくねむる[Line]
+[Var]か" めさ"めたら かれらも[Line]
+あらそうと"ころし"ゃ なくなりますな[Next]
+
+[End]
+
+
+//POINTER #429 @ $1036A - STRING #429 @ $1372B
+
+#W16($1036A)
+[Jump]いやはや [Var]か" めさ"めて[Line]
+しまいましたわい[Next]
+
+あんたの おともた"ちか" やったんて"すよ[Line]
+まったく ひと"いし"ゃないて"すか[Next]
+
+[End]
+
+
+//POINTER #430 @ $1036C - STRING #430 @ $1376F
+
+#W16($1036C)
+[LoadBackground]<$0D>[MiscEvent]<$5C><$19>[LoadNPC]<$2D>[Jump]ようこそ みなさん[Line]
+うちの カ"-ト"マンか" てあらな[Line]
+まねをして もうしわけなかった[Next]
+
+おわひ"に いっは°い いかか"かな?[YesNo]<$0C>[Event]<$0E>
+
+
+//POINTER #431 @ $1036E - STRING #431 @ $137BC
+
+#W16($1036E)
+[Jump]しゃちょうと なかよく かんは°いした![Next]
+
+おおう いいのみっふ°りた"![Line]
+もういっは°いと"うた"?[YesNo]<$0D>[SetVar]<$F6>[MiscEvent]<$09><$0E>[Jump]ほう もういらないのか![Next]
+
+[Event]<$0F>
+
+
+//POINTER #432 @ $10370 - STRING #432 @ $13806
+
+#W16($10370)
+[Jump]しまった![Line]
+こんと"は くすりか" はいっていた![Next]
+
+まいった! まひした![Next]
+
+[MiscEvent]<$1B><$F1>はっはっは![Line]
+また" また" あおいな![Next]
+
+[Event]<$0F>
+
+
+//POINTER #433 @ $10372 - STRING #433 @ $13847
+
+#W16($10372)
+[Jump]そうか さ"んねんた" わたした"けて"[Line]
+のむとしよう[Next]
+
+みなさんの みらいに かんは°いッ![Next]
+
+サタンは ク"ラスを あけると[Line]
+うしろの かへ"に なけ"つけた![Next]
+
+
+//POINTER #434 @ $10374 - STRING #434 @ $13899
+
+#W16($10374)
+[SetVar]<$F6>[MiscEvent]<$09><$11>[Jump][Var]か" わってはいった[Next]
+
+サタンよ[Line]
+ちゃは"んは そのへんに しておけ[Line]
+わたしの イヌた"った おまえか"[Line]
+す"いふ"んと しゅっせしたものた"な[Next]
+
+おや た"れかと おもえは"[Line]
+[Var]へいか![Next]
+
+また す"いふ"んと ちいさくみえて[Line]
+みすこ"していました! おゆるしを![Next]
+
+それにしても おちるとこまて"[Line]
+おちましたな![Next]
+
+にんけ"んの と"れいとは![Line]
+ハッハッハッ![Next]
+
+サタンよ...[Next]
+
+へらす"く"ちは そのへんにしておけ[Line]
+て"ないと おまえのために ならんそ"[Next]
+
+クックックッ...[Next]
+
+もう あなたは きょうふを[Line]
+わたしに あたえる ことは[Line]
+て"きない....[Next]
+
+これからは わたしか" あなたに[Line]
+きょうふを あたえてあけ"よう![Next]
+
+そして きゅうせいしゅ て"んせつは[Line]
+ここて" まくをとし"るのた"ッ![Next]
+
+[LoadBackground]<$2F>[LoadNPC]<$6A>[LoadNPC]<$EB>[SetVar]<$02>[Fight]<$01>A[Skip]オ[Jump]おおおおおおッ[Line]
+しゅよ![Line]
+このものたちに しんは"つを![Next]
+
+のろわれよ ひとのこよ[Line]
+かみに あた"なすものよ![Next]
+
+
+//POINTER #435 @ $10376 - STRING #435 @ $13A3F
+
+#W16($10376)
+[Teleport]<$30><$05>>?[End]
+
+
+//POINTER #436 @ $10378 - STRING #436 @ $13A46
+
+#W16($10378)
+[Jump]さあて これから あなたたちに[Line]
+ほんとうの きょうふと いうものを[Line]
+たいけんして いたた"こう...[Next]
+
+かくこ"はいいかな![Line]
+て"は ショウの はし"まりた"ッ![Next]
+
+[MiscEvent]<$5C><$16>[LoadBackground]<$2F>[LoadNPC]<$6A>[LoadNPC]<$EB>[SetVar]<$02>[Fight]<$01>8[Jump]く"おおおおお![Line]
+わか" ほろひ"のときか...![Next]
+
+しかし ひとのこらよ[Line]
+アクマは きえさることはない[Next]
+
+いつしか よみか"えり なんし"らの[Line]
+しそんに あた"を なすて"あろう...![Next]
+
+[MiscEvent]<$5D><$00>[End]
+
+
+//POINTER #437 @ $1037A - STRING #437 @ $13B0A
+
+#W16($1037A)
+[Event3]<$63><$07>[Event3]<$26><$07>[LoadEnemySprite]<$0C>ここは わたしの しんせい ふ"とうし"ょう[Line]
+とおりたくは" わか"やいは"を[Line]
+くく"って ゆくのた"な![Next]
+
+[Event3]<$45><$01>[Fight]<$01><$06>[Skip]キ[LoadNPC]<$00>[End]
+
+
+//POINTER #438 @ $1037C - STRING #438 @ $13B55
+
+#W16($1037C)
+[Event3]<$53><$07>[SetVar]<$F6>[Var]か" わって はいった[Next]
+
+[SetVar]<$0C>[Var]おうよ きこうの ほんらいの[Line]
+すか"たを あらわしたまえ![Next]
+
+[LoadNPC]<$00>[LoadEnemySprite]<$F8>[SetVar]<$F6>おお ひかりの きみ [Var]よ[Line]
+わたしは なにもかも おもいた"した![Next]
+
+[Skip]ト
+
+
+//POINTER #439 @ $1037E - STRING #439 @ $13BB3
+
+#W16($1037E)
+[Hero2?]よ わたしも[Line]
+なかまに いれてくれるかな?[YesNo]<$04>
+
+
+//POINTER #440 @ $10380 - STRING #440 @ $13BCB
+
+#W16($10380)
+[Jump]て"は ここて" まっていよう[Next]
+
+[Skip]V[LoadNPC]<$00>[End]
+
+
+//POINTER #441 @ $10382 - STRING #441 @ $13BE1
+
+#W16($10382)
+[MiscEvent]<$08><$05>[Skip]ヤ[Jump]ナカマか" いっは°いの ようた"[Next]
+
+[Event]<$03>
+
+
+//POINTER #442 @ $10384 - STRING #442 @ $13BFB
+
+#W16($10384)
+[MiscEvent]<$4A><$F8>[Skip]キマシ"ン [Var]は[Line]
+ナカマに くわわった[Next]
+
+[LoadNPC]<$00>[End]
+
+
+//POINTER #443 @ $10386 - STRING #443 @ $13C15
+
+#W16($10386)
+[End]
+
+
+//POINTER #444 @ $10388 - STRING #444 @ $13C16
+
+#W16($10388)
+[LoadNPC]<$00>[LoadEnemySprite]<$F8>[Event]<$02>
+
+
+//POINTER #445 @ $1038A - STRING #445 @ $13C1D
+
+#W16($1038A)
+マ-[Pause1]ク"ネ-[Pause2]タイト-[Pause1][Line]
+え- マク"ネタイトは いらんかねェ-[Next]
+
+と"-た"い ひとつ かってみるかい?[YesNo]<$01>[End]
+
+
+//POINTER #446 @ $1038C - STRING #446 @ $13C55
+
+#W16($1038C)
+[Jump]おまけして おねた"んは...[Line]
+£[VarNum]た"[Next]
+
+<$CC><$06>それし"ゃ この3つの フクロから[Line]
+すきなの ひとつ もっていきな![Next]
+
+[Choices]<$03>ア♂イ▽ウ![Event]<$07>
+
+
+//POINTER #447 @ $1038E - STRING #447 @ $13C9A
+
+#W16($1038E)
+[MiscEvent]<$59><$00>[Jump]おおきけりゃ いいってもんし"ゃないか"[Line]
+[Next]
+
+[Event]<$05>[MiscEvent]
+
+
+//POINTER #448 @ $10390 - STRING #448 @ $13CB6
+
+#W16($10390)
+[MiscEvent]<$59><$01>[Jump]そうかい なんて"も ほと"ほと"か"いい[Line]
+[Next]
+
+[Event]<$05>
+
+
+//POINTER #449 @ $10392 - STRING #449 @ $13CD3
+
+#W16($10392)
+[MiscEvent]<$59><$02>[Jump]ほう ひかえめた"ね[Line]
+その けんきょさ わすれちゃいけねえ[Line]
+[Next]
+
+
+//POINTER #450 @ $10394 - STRING #450 @ $13CF6
+
+#W16($10394)
+それから うちは つき"の[Line]
+はんけ"つか" くるまて" やってないよ[Line]
+し"ゃあな[Next]
+
+[LoadNPC]<$00>その フクロのなかには[Line]
+[VarNum]MAGの マク"ネタイトか"[Line]
+はいっていた[Next]
+
+<$CE>[End]
+
+
+//POINTER #451 @ $10396 - STRING #451 @ $13D46
+
+#W16($10396)
+かねか" たりないのに うってくれとは[Line]
+いいと"きょうしとるなァ![Next]
+
+[LoadNPC]<$00>[End]
+
+
+//POINTER #452 @ $10398 - STRING #452 @ $13D6A
+
+#W16($10398)
+[End]
+
+
+//POINTER #453 @ $1039A - STRING #453 @ $13D6B
+
+#W16($1039A)
+[Event3]<$0E><$01>[MiscEvent]<$57><$05>
+
+
+//POINTER #454 @ $1039C - STRING #454 @ $13D71
+
+#W16($1039C)
+[Event3]<$B6><$03>[Event3]<$00><$02>いま このせかいは アクマのために[Line]
+ほろひ"つつある[Line]
+ここには たくさんの ふ"きか"[Line]
+かくほされている[Line]
+いさ"というときは きてくれ[Next]
+
+[End]
+
+
+//POINTER #455 @ $1039E - STRING #455 @ $13DBC
+
+#W16($1039E)
+[Event4]<$01><$04>ふ"きこは からっほ°た"[Next]
+
+[End]
+
+
+//POINTER #456 @ $103A0 - STRING #456 @ $13DBF
+
+#W16($103A0)
+ふ"きこは からっほ°た"[Next]
+
+[End]
+
+
+//POINTER #457 @ $103A2 - STRING #457 @ $13DCE
+
+#W16($103A2)
+ふ"きを とりにきたのた"な[Line]
+もう これしかないか" つかってくれ[Line]
+[SetItem]<$01><$D3><$06><$D3><$06>[Skip]・[SetVar]<$FD>[Hero2?]は [VarItem]を[Line]
+2ちょう てにいれた[Next]
+
+[End]
+
+
+//POINTER #458 @ $103A4 - STRING #458 @ $13E0C
+
+#W16($103A4)
+[Event3]<$0E><$01>なにしてるんた" おまえたち[Line]
+ここは へいさするんた"から[Line]
+とっとと シェルタ-から て"ろ![Next]
+
+[End]
+
+
+//POINTER #459 @ $103A6 - STRING #459 @ $13E3F
+
+#W16($103A6)
+[End]
+
+
+//POINTER #460 @ $103A8 - STRING #460 @ $13E40
+
+#W16($103A8)
+むすこらよ ついに きてしまったのか[Line]
+アクマに そそのかされた いきさつは[Line]
+よくわかっている[Next]
+
+それも しかたのないこと[Next]
+
+むすこらよ なんし"らに さいこ"の[Line]
+きかいを あたえよう[Next]
+
+その のろわれし ものたちと てをきり[Line]
+わか" しもへ"として さかえるか[Next]
+
+さもなくは" ここて" わか" いかつ"ちに[Line]
+うたれ し"こ"くに おちるか[Next]
+
+わたしは そのせんたくに したか"おう[Line]
+[Choices]<$02><$3E>♂(cursor)>
+
+//POINTER #461 @ $103AA - STRING #461 @ $13F01
+
+#W16($103AA)
+[SetVar]<$15>[Jump]のろわれよ [Hero][Line]
+そして [Var][Next]
+
+し"こ"くにて[Line]
+せかいの おわりの ときまて"[Line]
+えいえんの こ"うかに やかれるのた"![Next]
+
+[MiscEvent]<$5C><$10>[SetVar]<$01>[Fight]<$01>▽[Skip]テ[MiscEvent]<$5D><$00>[Teleport]<$05><$05>  <$C1>7[End]
+
+
+//POINTER #462 @ $103AC - STRING #462 @ $13F56
+
+#W16($103AC)
+[SetVar]<$03>[Jump]のろわれ し"こ"くに おちよ アクマたち![Line]
+せかいの おわりの ときまて" あんこくの[Line]
+ほのうの は"んにんたれ![Next]
+
+[Var]たちは[Line]
+ほのおとなって きえた[Next]
+
+[MiscEvent]<$5D><$00>[End]
+
+
+//POINTER #463 @ $103AE - STRING #463 @ $13FA8
+
+#W16($103AE)
+[End]
+

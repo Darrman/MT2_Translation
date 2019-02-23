@@ -1,0 +1,91 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #015 NAME:		Title Screen 
+//Block Range: $7EBC6 - $7ECA1
+
+#VAR(text, TABLE)
+#ADDTBL("title.tbl", text)
+#ACTIVETBL(text)
+
+#JMP($7EBC6, $7ECA1)
+//Logo proper
+[Space]<$46>
+DIGITAL DEVIL STORY[Space]<$0C>
+<$22><$23>[Space]<$02><$26><$27> <$29><$2A>[Space]<$07><$67><$21><$24>[Space]<$01><$2B><$2C><$2D><$2C><$25>[Space]<$05>
+<$30><$31><$32><$33><$34><$35><$36><$37><$38><$39><$3A><$3B>[Space]<$05><$71><$72><$73><$86><$87><$2E><$2F><$2E><$2F>[Space]<$07>
+<$41><$42><$43>[Space]<$01><$45><$46><$47><$48><$49><$4A><$4B><$4C><$4D><$4E><$4F><$80><$81><$2E><$2F>[Space]<$02><$3C><$3D><$3C><$3D>[Space]<$06>
+<$50><$51><$52><$53><$54><$55><$56><$57><$58><$59><$5A><$5B><$5C><$5D>[Space]<$01><$5F><$90><$91><$92><$93><$85>[Space]<$01><$3E>[Space]<$01><$3E>[Space]<$07>
+<$60><$61><$62><$63><$64><$65><$66>[Space]<$01><$68><$69><$6A><$6B><$6C><$6D><$6E><$6F>[Space]<$02><$3E>[Space]<$02><$2E><$3F><$2E><$3F>[Space]<$06>
+<$2B><$70>[Space]<$03><$74><$75>[Space]<$02><$78>[Space]<$01><$7A><$7B><$7C><$7D><$7E><$7F><$76><$88><$77><$88><$84><$44><$5E><$44><$5E>[Space]<$09>
+MEGAMI[Space]<$01><$89><$8A><$8B><$8C><$8D><$8E><$8F>[Space]<$02>TENSEI[Space]<$12>
+<$82><$83><$40>[Space]<$02><$9F>
+[Space][Space][Space]
+
+#JMP($3A3B9)
+
+//Namco logo
+<$00><$00><$00><$00><$00><$00><$96><$97><$98><$99><$9A><$9B><$9C><$9D><$00><$00><$00><$00><$00><$00><$00><$00>
+//<$96><$97><$98><$99><$9A><$9B><$9C><$9D><$00>MOVE IT NAMCO
+//The logo can be shoved around a bit.
+//Best not shove it though. If more fan translation
+//credit is needed, this line is usable. NAMCOT
+//can be moved in place of NAMCO LTD.
+<$01><$06><$20><$16>
+//Copyright info
+//<$9E> 1987 1990 NAMCO LTD.
+<$9E> 1990-2019 NAMCO LTD.
+//It's 2019 now. Game came out in 1990, so '87 gets the boot.
+<$01><$26><$20><$16>
+// ALL RIGHTS RESERVED  
+//Too bad, I'm translating it.
+TRANSLATION BY DARRMAN
+
+#JMP($3AC28)
+//New/Continue
+
+NEW GAME
+<$01><$0E><$23><$08>
+CONTINUE
+
+//To keep the amount of files down, the intro can go here.
+#JMP($3A1A0)
+<$78><$79><$03><$7A>
+//Load bank 3 instead of bank 2; lowercase instead of hiragana.
+//Uppercase requirements can overwrite the little kanji strip.
+
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #017 NAME:		Intro Sequence
+//Block Range: $7F483 - $7F6D2
+#JMP($7F483, $7F6D2)
+
+#VAR(intro, TABLE)
+#ADDTBL("intro.tbl", intro)
+#ACTIVETBL(intro)
+
+//[Space]<$62>199X<$F2>[Space]<$01><$F3><$F4>の<$F5><$F6>は<$F7>った<$F8>[Space]<$4E>
+[Space]<$62>199X:[Space]<$01>The end of[Space]<$4E>
+//There's kanji in the F* bytes.
+//KMT: 199X - The end of the era of Mankind
+//	And time flows on...
+//That isn't going to fit without wiping out some of the graphic.
+<$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A>
+<$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A>
+<$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A>
+<$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$C0><$C1><$C2><$C3><$C4><$C5><$C6><$C7><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A>
+<$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$D0><$D1><$D2><$D3><$D4><$D5><$D6><$D7><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A>
+<$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$E0><$E1><$E2><$E3><$E4><$E5><$E6><$E7><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A>
+<$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$79><$7A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A>
+<$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$7C><$7D><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A>
+<$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$C8><$C9><$CA><$CB><$CC><$CD><$CE><$CF><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A>
+<$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$D8><$D9><$DA><$DB><$DC><$DD><$DE><$DF><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A><$4A>
+<$4E><$4E><$4E><$4E><$4E><$4E><$4E><$4E><$4E><$4E><$4E><$4E><$4E><$4E><$4E><$59><$5A><$4E><$4E><$4D><$4E><$4F><$4E><$4E><$4E><$4E><$4E><$4E><$4E><$4E><$4E><$4E>
+<$6B><$6B><$6B><$6B><$6B><$6B><$6B><$6B><$6B><$6B><$6B><$6B><$6B><$6B><$6B><$E8><$E9><$6B><$5C><$5D><$5E><$5F><$6B><$6B><$6B><$6B><$6B><$6B><$6B><$6B><$6B><$6B>
+<$4E><$4E><$4E><$4D><$4E><$4F><$4E><$4E><$4E><$4E><$4E><$4D><$4E><$4E><$4E><$EA><$EB><$4E><$6C><$6D><$6E><$6F><$4E><$4E><$4E><$4E><$4E><$4D><$4E><$4F><$4E><$4E>
+<$6B><$6B><$6B><$5D><$5E><$5F><$6B><$6B><$6B><$6B><$5E><$5D><$6B><$6B><$6B><$EC><$ED><$6B>[Space]<$04><$6B><$6B><$6B><$6B><$5C><$5D><$5E><$5F><$6B><$6B>
+<$48><$49><$6C><$6D><$6E><$6F><$6A><$4B><$48><$49><$6C><$6D><$68><$69><$6A><$EE><$EF><$49>[Space]<$04><$6F><$4B><$48><$49><$6C><$6D><$6E><$6F><$6A><$4B>
+<$58>[Space]<$06><$7B><$58>[Space]<$03><$78>[Space]<$0A><$7B><$58>[Space]<$06><$7B>
+<$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C><$4C>
+<$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40><$40>
+//[Space]<$52>そして<$F9>は<$FA>れて....[Space]<$62>
+[Space]<$52>Man. Time... [Space]<$62>

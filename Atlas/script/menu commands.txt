@@ -1,0 +1,164 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+#VAR(text, TABLE)
+#ADDTBL("commands.tbl", text)
+#ACTIVETBL(text)
+
+#JMP($5EB0, $6038)
+
+//BLOCK #013 NAME:		Menu Commands
+//Block Range: $5F01 - $5FFE
+
+//Overworld menu
+
+C<$33><$33><$33><$33><$33><$33><$33><$33><$35>
+o<$00><$00><$00><$00><$00><$00><$00><$00><$36>
+m<$00><$00><$00><$00><$00><$00><$00><$00><$36>
+m<$00><$00><$00><$00><$00><$00><$00><$00><$36>
+a<$00><$00><$00><$00><$00><$00><$00><$00><$36>
+n<$00><$00><$00><$00><$00><$00><$00><$00><$36>
+d<$34><$34><$34><$34><$34><$34><$34><$34><$37><$31>
+<$20><$D8><$07><$33><$33><$33><$33><$33><$33><$33>
+
+//Comp
+//Magic
+//Items
+//Status
+C M I S
+o a t t
+m g e a
+p i m t
+  c s u
+<$34><$34><$34><$34><$34><$34>s<$31>
+<$20><$D8><$07><$33><$33><$33><$33><$33><$33><$33>
+//Combat: general command
+//Fight
+//Run
+//Talk
+//Auto
+
+F R T A
+i u a u
+g n l t
+h   k o
+t      
+<$34><$34><$34><$34><$34><$34><$34><$31>
+<$20><$D8><$07><$33><$33><$33><$33><$33><$33><$33>
+//Combat: protaganist's command
+//Attack
+//Comp
+//Item
+//Defend
+
+A C I D
+t o t e
+t m e f
+a p m e
+c   s n
+k<$34><$34><$34><$34><$34>d<$31>
+<$20><$D8><$07><$33><$33><$33><$33><$33><$33><$33>
+//Combat: partner's command
+//Attack
+//Magic
+//Item
+//Defend
+A M I D
+t a t e
+t g e f
+a i m e
+c c s n
+k<$34><$34><$34><$34><$34>d<$31>
+<$20><$D8><$07><$33><$33><$33><$33><$33><$33><$33>
+//Combat: demon's command
+//Attack
+//Magic
+//Return
+//Defend
+A M R D
+t a e e
+t g t f
+a i u e
+c c r n
+k<$34><$34><$34>n<$34>d<$36>
+//Money window
+<$20><$C1><$06>
+<$30><$33><$33><$33><$33><$35>
+M<$00><$2F><$00><$3B><$36>
+o<$00><$00><$00><$3C><$36>
+n<$00><$00><$00><$3D><$36>
+e<$00><$00><$00><$00><$36>
+y<$00><$00><$00><$00><$36>
+<$31><$00><$00><$00><$00><$36>
+<$31><$00><$00><$00><$00><$36>
+<$32><$34><$34><$34><$34><$37>
+
+
+#JMP($612A)
+//Game over screen
+//Yes
+//No
+YN<$36><$31>
+eo<$36><$31>
+s 
+
+#JMP($6147)
+//Weapon selection
+//Gun
+//Sword
+
+G S<$36><$31>
+u w<$36><$31>
+n o<$36><$31>
+  r<$36><$31>
+  d
+
+//Comp Magic Items Status Fight Run Talk Auto Attack Defend Return
+//CompMagicItesSuF
+//hRnTlkADfdGw
+//Should be more than enough characters.
+#JMP($177E1)
+#VAR(dialogue, TABLE)
+#ADDTBL("dialogue.tbl", dialogue)
+#ACTIVETBL(dialogue)
+//Shop window.
+<$30><$31>Makka<$31><$33>
+#JMP($5DF7)
+//And now to knock off all the screaming in the status bar.
+<$2D> Name     Hit-Pts MP Status
+#JMP($2C717)
+Name     Hit-Pts MP Stat
+#JMP($7E966)
+<$2D> <$01>Name <$05>Hit-Pts <$01>MP <$01>Status
+#JMP($7EB40)
+<$2D> <$01>Name <$05>Hit-Pts <$01>MP <$01>Status
+
+#JMP($60C8)
+//Because Mapper makes things weird
+<$FB><$4E><$5E><$F0><$F3>S      
+<$FC><$4F><$5F><$F1><$F4>t      
+<$FA><$DA><$EA><$F2><$F5>a      
+<$FB><$30><$22><$3B><$0C><$DB><$EB><$F0><$F3>t      
+<$FC><$DC><$EC><$F1><$F4>u      
+<$FA><$DD><$ED><$F2><$F5>s      
+
+#JMP($E502)
+//May as well stick it here
+//The world's most irritating Yes/No prompt
+YesNo
+#JMP($E476)
+//And fixing the assembly
+<$F2><$A0><$03>
+//F2 is pointer, 03 is length of Yes
+#JMP($E48C)
+<$F5><$A0><$02>
+//F5 is pointer, 02 is length of No
+
+#JMP($E9CA)
+//Big/Small, but Small won't fit
+HighLow  History 
+
+#JMP($2D12A)
+//Another Y/N, seen on stat select.
+<$31>YN<$36>
+<$31>eo<$36>
+<$31>s <$36>

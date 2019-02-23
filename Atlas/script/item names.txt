@@ -1,0 +1,1588 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+#VAR(item, TABLE)
+#ADDTBL("items.tbl", item)
+#ACTIVETBL(item)
+
+#VAR(Items, CUSTOMPOINTER)
+#CREATEPTR(Items, "LINEAR", $-7FF0, 16)
+
+
+#JMP($39C6, $3FAF)
+
+
+//BLOCK #000 NAME:		Item Names
+
+//POINTER #0 @ $3810 - STRING #0 @ $39C6
+
+#WRITE(Items, $3810)
+#WRITE(Items, $3812)
+//ワルサ-PPK[End]
+//Walther PPK<end>
+[Gun]Walther[End]
+
+
+//POINTER #2 @ $3814 - STRING #2 @ $39CE
+
+#WRITE(Items, $3814)
+//カハ"メント[End]
+//Gov't. Issue<end>
+[Gun]Goverment[End]
+
+
+//POINTER #3 @ $3816 - STRING #3 @ $39D5
+
+#WRITE(Items, $3816)
+//ウ-シ"-[End]
+//Uzi<end>
+[Gun]Uzi[End]
+
+
+//POINTER #4 @ $3818 - STRING #4 @ $39DB
+
+#WRITE(Items, $3818)
+//テ"サ"トイ-ク"ル[End]
+//Desert Eagle<end>
+[Gun]Eagle[End]
+
+
+//POINTER #5 @ $381A - STRING #5 @ $39E6
+
+#WRITE(Items, $381A)
+//ショットカ"ン[End]
+//Shotgun<end>
+[Gun]Shotgun[End]
+
+
+//POINTER #6 @ $381C - STRING #6 @ $39EE
+
+#WRITE(Items, $381C)
+//レイカ"ン[End]
+//Ray Gun<end>
+[Gun]Ray[End]
+
+
+//POINTER #7 @ $381E - STRING #7 @ $39F4
+
+#WRITE(Items, $381E)
+//M60マシンカ"ン[End]
+//M60 Machine Gun<end>
+[Gun]M60[End]
+
+
+//POINTER #8 @ $3820 - STRING #8 @ $39FE
+
+#WRITE(Items, $3820)
+//レ-ルカ"ン[End]
+//Railgun<end>
+[Gun]Rail[End]
+
+
+//POINTER #9 @ $3822 - STRING #9 @ $3A05
+
+#WRITE(Items, $3822)
+//ト"ラコ"ンATM[End]
+//Dragon ATM<end>
+[Gun]Dragon[End]
+
+//POINTER #10 @ $3824 - STRING #10 @ $3A0F
+
+#WRITE(Items, $3824)
+//サフ"ハ"ルカン[End]
+//Subvulcan<end>
+[Gun]Vulcan[End]
+
+
+//POINTER #11 @ $3826 - STRING #11 @ $3A18
+
+#WRITE(Items, $3826)
+//ヒ"-ムライフル[End]
+//Beam Rifle<end>
+[Gun]Beam[End]
+
+
+//POINTER #12 @ $3828 - STRING #12 @ $3A21
+
+#WRITE(Items, $3828)
+//スハ°イラルカッタ-[End]
+//Spiral Cutter<end>
+[Gun]Spiral[End]
+
+
+//POINTER #13 @ $382A - STRING #13 @ $3A2C
+
+#WRITE(Items, $382A)
+//おうこ"んし"ゅう[End]
+//Golden Gun<end>
+[Gun]Golden[End]
+
+
+//POINTER #14 @ $382C - STRING #14 @ $3A36
+
+#WRITE(Items, $382C)
+//フ°ラス"マライフル[End]
+//Plasma Rifle<end>
+[Gun]Plasma[End]
+
+
+//POINTER #15 @ $382E - STRING #15 @ $3A41
+
+#WRITE(Items, $382E)
+//キ"カ"スマッシャ-[End]
+//Giga Smasher<end>
+[Gun]Smasher[End]
+
+
+//POINTER #16 @ $3830 - STRING #16 @ $3A4C
+
+#WRITE(Items, $3830)
+//メキ"ト"ファイヤ-[End]
+//Megiddo Fire<end>
+[Gun]Megido[End]
+
+
+//POINTER #17 @ $3832 - STRING #17 @ $3A57
+
+#WRITE(Items, $3832)
+//シ"ャックナイフ[End]
+//Jackknife<end>
+[Swd]Knife[End]
+
+
+//POINTER #18 @ $3834 - STRING #18 @ $3A60
+
+#WRITE(Items, $3834)
+//せいと"うのつるき"
+//Bronze Sword<end>
+[Swd]Bronze[End]
+
+
+//POINTER #19 @ $3836 - STRING #19 @ $3A67
+
+#WRITE(Items, $3836)
+//さんせつこん[End]
+//Nunchaku<end>
+[Swd]Nunchaku[End]
+
+
+//POINTER #20 @ $3838 - STRING #20 @ $3A6E
+
+#WRITE(Items, $3838)
+//モ-ニンク"スタ-[End]
+//Morningstar<end>
+[Swd]M. Star[End]
+
+
+//POINTER #21 @ $383A - STRING #21 @ $3A78
+
+#WRITE(Items, $383A)
+//シミタ-[End]
+//Scimitar<end>
+[Swd]Scimitar[End]
+
+
+//POINTER #22 @ $383C - STRING #22 @ $3A7D
+
+#WRITE(Items, $383C)
+//ろくしゃくほ"う[End]
+//Shoulder Pole<end>
+[Swd]Pole[End]
+
+
+//POINTER #23 @ $383E - STRING #23 @ $3A86
+
+#WRITE(Items, $383E)
+//サソリムチ[End]
+//Scorpion Whip<end>
+[Swd]Scorpion[End]
+
+
+//POINTER #24 @ $3840 - STRING #24 @ $3A8C
+
+#WRITE(Items, $3840)
+//ク"ラテ"ィウス[End]
+//Gladius<end>
+[Swd]Gladius[End]
+
+
+//POINTER #25 @ $3842 - STRING #25 @ $3A95
+
+#WRITE(Items, $3842)
+//フ"ロ-ト"ソ-ト"
+//Broadsword<end>
+[Swd]Broad[End]
+
+
+//POINTER #26 @ $3844 - STRING #26 @ $3A9C
+
+#WRITE(Items, $3844)
+//やこうけん
+//Luminous Sword<end>
+[Swd]Luminous[End]
+
+
+//POINTER #27 @ $3846 - STRING #27 @ $3AA0
+
+#WRITE(Items, $3846)
+//イクシオソ-ト"
+//Ixion Sword<end>
+[Swd]Ixion[End]
+
+
+//POINTER #28 @ $3848 - STRING #28 @ $3AA5
+
+#WRITE(Items, $3848)
+//クチナワのけん
+//Kuchinawa Sword<end>
+[Swd]Serpent[End]
+
+
+//POINTER #29 @ $384A - STRING #29 @ $3AAB
+
+#WRITE(Items, $384A)
+//こてつフ"レ-ト"[End]
+//Kotetsu Blade<end>
+[Swd]Kotetsu[End]
+
+//POINTER #30 @ $384C - STRING #30 @ $3AB5
+
+#WRITE(Items, $384C)
+//クリスタルソ-ト"
+//Crystal Sword<end>
+[Swd]Crystal[End]
+
+//POINTER #31 @ $384E - STRING #31 @ $3ABB
+
+#WRITE(Items, $384E)
+//ト"ラコ"ンメイス[End]
+//Dragon Mace<end>
+[Swd]Dragon[End]
+
+//POINTER #32 @ $3850 - STRING #32 @ $3AC5
+
+#WRITE(Items, $3850)
+//ヒ-トソ-ト"
+//Heat Sword<end>
+[Swd]Heat[End]
+
+//POINTER #33 @ $3852 - STRING #33 @ $3AC9
+
+#WRITE(Items, $3852)
+//ハンマハンマ-[End]
+//Hanma Hammer<end>
+[Swd]Hama[End]
+
+//POINTER #34 @ $3854 - STRING #34 @ $3AD1
+
+#WRITE(Items, $3854)
+//ひっさつオニコ"ロシ[End]
+//Oni Killer<end>
+[Swd]Oni[End]
+
+//POINTER #35 @ $3856 - STRING #35 @ $3ADC
+
+#WRITE(Items, $3856)
+//ようとうニヒル[End]
+//Nihil Blade<end>
+[Swd]Nihil[End]
+
+//POINTER #36 @ $3858 - STRING #36 @ $3AE4
+
+#WRITE(Items, $3858)
+//ヘカトンアックス[End]
+//Hekaton Axe<end>
+[Swd]Hecaton[End]
+
+//POINTER #37 @ $385A - STRING #37 @ $3AED
+
+#WRITE(Items, $385A)
+//ふうし"んけん
+//Fuujin Sword<end>
+[Swd]Fuujin[End]
+
+//POINTER #38 @ $385C - STRING #38 @ $3AF3
+
+#WRITE(Items, $385C)
+//テ"-モンスレイヤ-[End]
+//Demonslayer<end>
+[Swd]Demon[End]
+
+//POINTER #39 @ $385E - STRING #39 @ $3AFE
+
+#WRITE(Items, $385E)
+//テ"スフ"レイト"[End]
+//Death Blade<end>
+[Swd]Death[End]
+
+//POINTER #40 @ $3860 - STRING #40 @ $3B08
+
+#WRITE(Items, $3860)
+//メカ"トンアックス[End]
+//Megaton Axe<end>
+[Swd]Megaton[End]
+
+//POINTER #41 @ $3862 - STRING #41 @ $3B12
+
+#WRITE(Items, $3862)
+//クサナキ"のつるき"
+//Kusanagi<end>
+[Swd]Kusanagi[End]
+
+//POINTER #42 @ $3864 - STRING #42 @ $3B19
+
+#WRITE(Items, $3864)
+//まけんムラマサ[End]
+//Muramasa<end>
+[Swd]Muramasa[End]
+
+//POINTER #43 @ $3866 - STRING #43 @ $3B21
+
+#WRITE(Items, $3866)
+//らいし"んけん
+//Raijin Sword<end>
+[Swd]Raijin[End]
+
+//POINTER #44 @ $3868 - STRING #44 @ $3B27
+
+#WRITE(Items, $3868)
+//ソロモンのおうけん
+//Solomon's Sword<end>
+[Swd]Solomon[End]
+
+//POINTER #45 @ $386A - STRING #45 @ $3B2F
+
+#WRITE(Items, $386A)
+//エクスカリハ"-[End]
+//Excalibur<end>
+[Swd]Excalibur[End]
+
+//POINTER #46 @ $386C - STRING #46 @ $3B38
+
+#WRITE(Items, $386C)
+//ウ"ァシ"ュラ[End]
+//Vajra<end>
+[Swd]Vajra[End]
+
+//POINTER #47 @ $386E - STRING #47 @ $3B40
+
+#WRITE(Items, $386E)
+//ヒノカク"ツチのけん
+//Hinokagutsuchi<end>
+[Swd]Kagusuchi[End]
+
+//POINTER #48 @ $3870 - STRING #48 @ $3B49
+
+#WRITE(Items, $3870)
+//ルシファ-のつるき"
+//Lucifer's Sword<end>
+[Swd]Lucifer[End]
+
+//POINTER #49 @ $3872 - STRING #49 @ $3B50
+
+#WRITE(Items, $3872)
+//ハ"トルス-ツ[End]
+//Battle Suit<end>
+[Amr]Battle[End]
+
+
+//POINTER #50 @ $3874 - STRING #50 @ $3B58
+
+#WRITE(Items, $3874)
+//ハイレク"ア-マ-
+//High Leg Armor<end>
+[Amr]High Leg[End]
+
+
+//POINTER #51 @ $3876 - STRING #51 @ $3B5E
+
+#WRITE(Items, $3876)
+//ホ"テ"コンメイル[End]
+//Body-Con Mail<end>
+[Amr]Body-Con[End]
+
+
+//POINTER #52 @ $3878 - STRING #52 @ $3B68
+
+#WRITE(Items, $3878)
+//ケフ"ラ-ヘ"スト[End]
+//Kevlar Vest<end>
+[Amr]Kevlar[End]
+
+
+//POINTER #53 @ $387A - STRING #53 @ $3B72
+
+#WRITE(Items, $387A)
+//コンサハ"メイル[End]
+//Conserva-Mail<end>
+[Amr]Conserve[End]
+
+
+//POINTER #54 @ $387C - STRING #54 @ $3B7B
+
+#WRITE(Items, $387C)
+//ライトメタルシ"ャケ[End]
+//Light Metal Suit<end>
+[Amr]Light[End]
+
+
+//POINTER #55 @ $387E - STRING #55 @ $3B86
+
+#WRITE(Items, $387E)
+//アイアンマッスル[End]
+//Iron Muscle<end>
+[Amr]Iron[End]
+
+
+//POINTER #56 @ $3880 - STRING #56 @ $3B8F
+
+#WRITE(Items, $3880)
+//すけ-るア-マ-
+//Scale Armor<end>
+[Amr]Scale[End]
+
+
+//POINTER #57 @ $3882 - STRING #57 @ $3B94
+
+#WRITE(Items, $3882)
+//ハ°ワ-ト"ス-ツ[End]
+//Powered Suit<end>
+[Amr]Power[End]
+
+
+//POINTER #58 @ $3884 - STRING #58 @ $3B9E
+
+#WRITE(Items, $3884)
+//サンタ"-カ"-ト"
+//Thunder Guard<end>
+[Amr]Thunder[End]
+
+
+//POINTER #59 @ $3886 - STRING #59 @ $3BA4
+
+#WRITE(Items, $3886)
+//ヘヒ"メタルシ"ャケ[End]
+//Heavy Metal Suit<end>
+[Amr]Heavy[End]
+
+
+//POINTER #60 @ $3888 - STRING #60 @ $3BAF
+
+#WRITE(Items, $3888)
+//ファイヤ-カ"-ト"
+//Fire Guard<end>
+[Amr]Fire[End]
+
+
+//POINTER #61 @ $388A - STRING #61 @ $3BB5
+
+#WRITE(Items, $388A)
+//フリ-ス"カ"-ト"
+//Freeze Guard<end>
+[Amr]Freeze[End]
+
+
+//POINTER #62 @ $388C - STRING #62 @ $3BBB
+
+#WRITE(Items, $388C)
+//ハイハ°-セイラ-[End]
+//Hyper Sailor<end>
+[Amr]Sailor[End]
+
+
+//POINTER #63 @ $388E - STRING #63 @ $3BC5
+
+#WRITE(Items, $388E)
+//ト"ラコ"ンメイル[End]
+//Dragon Mail<end>
+[Amr]Dragon[End]
+
+
+//POINTER #64 @ $3890 - STRING #64 @ $3BCF
+
+#WRITE(Items, $3890)
+//テトラシ"ャア-マ-
+//Tetrajammer<end>
+[Amr]Jammer[End]
+
+
+//POINTER #65 @ $3892 - STRING #65 @ $3BD6
+
+#WRITE(Items, $3892)
+//ハ°ンツァ-ア-マ-
+//Panzer Armor<end>
+[Amr]Panzer[End]
+
+
+//POINTER #66 @ $3894 - STRING #66 @ $3BDD
+
+#WRITE(Items, $3894)
+//ヤク-トア-マ-
+//Yakut Armor<end>
+[Amr]Yakut[End]
+
+
+//POINTER #67 @ $3896 - STRING #67 @ $3BE2
+
+#WRITE(Items, $3896)
+//ルシファ-ア-マ-
+//Lucifer's Armor<end>
+[Amr]Lucifer[End]
+
+
+//POINTER #68 @ $3898 - STRING #68 @ $3BE8
+
+#WRITE(Items, $3898)
+//シ"ャンクヘルメット
+//Junk Helmet<end>
+[Hat]Junk[End]
+
+
+//POINTER #69 @ $389A - STRING #69 @ $3BEE
+
+#WRITE(Items, $389A)
+//スタ-リンク"[End]
+//Sterling Hairpin<end>
+[Hat]Sterling[End]
+
+
+//POINTER #70 @ $389C - STRING #70 @ $3BF6
+
+#WRITE(Items, $389C)
+//アイアンヘット"
+//Iron Headband<end>
+[Hat]Iron[End]
+
+
+//POINTER #71 @ $389E - STRING #71 @ $3BFB
+
+#WRITE(Items, $389E)
+//フィリッツヘルメット
+//Fritz Helmet<end>
+[Hat]Fritz[End]
+
+
+//POINTER #72 @ $38A0 - STRING #72 @ $3C01
+
+#WRITE(Items, $38A0)
+//フ"レインカ"-ト"
+//Brain Guard<end>
+[Hat]Brain[End]
+
+
+//POINTER #73 @ $38A2 - STRING #73 @ $3C07
+
+#WRITE(Items, $38A2)
+//さんかくほ"うし[End]
+//Tricorne<end>
+[Hat]Tricorne[End]
+
+
+//POINTER #74 @ $38A4 - STRING #74 @ $3C10
+
+#WRITE(Items, $38A4)
+//メタルクラウン[End]
+//Metal Crown<end>
+[Hat]Metal[End]
+
+
+//POINTER #75 @ $38A6 - STRING #75 @ $3C18
+
+#WRITE(Items, $38A6)
+//タ"ミ-ス"ヘット"
+//Dummy Head<end>
+[Hat]Dummy[End]
+
+
+//POINTER #76 @ $38A8 - STRING #76 @ $3C1F
+
+#WRITE(Items, $38A8)
+//テ"ュラハ-ンヘルム[End]
+//Dullahan Helm<end>
+[Hat]Dullahan[End]
+
+
+//POINTER #77 @ $38AA - STRING #77 @ $3C2A
+
+#WRITE(Items, $38AA)
+//レット"キャッフ°[End]
+//Red Cap<end>
+[Hat]Red[End]
+
+
+//POINTER #78 @ $38AC - STRING #78 @ $3C34
+
+#WRITE(Items, $38AC)
+//テ"ヒ"ルヘット"
+//Devil Head<end>
+[Hat]Devil[End]
+
+
+//POINTER #79 @ $38AE - STRING #79 @ $3C3A
+
+#WRITE(Items, $38AE)
+//サイコヘルメット
+//Psycho Helmet<end>
+[Hat]Psycho[End]
+
+
+//POINTER #80 @ $38B0 - STRING #80 @ $3C3E
+
+#WRITE(Items, $38B0)
+//ししか"しら[End]
+//Lion Head<end>
+[Hat]Lion[End]
+
+
+//POINTER #81 @ $38B2 - STRING #81 @ $3C45
+
+#WRITE(Items, $38B2)
+//ト"ラコ"ンヘルム[End]
+//Dragon Helm<end>
+[Hat]Dragon[End]
+
+
+//POINTER #82 @ $38B4 - STRING #82 @ $3C4F
+
+#WRITE(Items, $38B4)
+//ハ°ンツァ-ヘルム[End]
+//Panzer Helm<end>
+[Hat]Panzer[End]
+
+
+//POINTER #83 @ $38B6 - STRING #83 @ $3C59
+
+#WRITE(Items, $38B6)
+//ヤク-トヘルム[End]
+//Yakut Helm<end>
+[Hat]Yakut[End]
+
+
+//POINTER #84 @ $38B8 - STRING #84 @ $3C61
+
+#WRITE(Items, $38B8)
+//マサカト"のかふ"と[End]
+//Masakado's Helm<end>
+[Hat]Masakado[End]
+
+
+//POINTER #85 @ $38BA - STRING #85 @ $3C6C
+
+#WRITE(Items, $38BA)
+//リヘ"ットナックル[End]
+//Rivet Knuckle<end>
+[Glv]Rivet[End]
+
+
+//POINTER #86 @ $38BC - STRING #86 @ $3C76
+
+#WRITE(Items, $38BC)
+//カイサ"-ナックル[End]
+//Kaiser Knuckle<end>
+[Glv]Kaiser[End]
+
+
+//POINTER #87 @ $38BE - STRING #87 @ $3C80
+
+#WRITE(Items, $38BE)
+//メタルク"ロ-フ"[End]
+//Metal Glove<end>
+[Glv]Metal[End]
+
+
+//POINTER #88 @ $38C0 - STRING #88 @ $3C8A
+
+#WRITE(Items, $38C0)
+//ク-ルミトン[End]
+//Cool Mitten<end>
+[Glv]Mitten[End]
+
+
+//POINTER #89 @ $38C2 - STRING #89 @ $3C91
+
+#WRITE(Items, $38C2)
+//アイアンクロ-[End]
+//Iron Claw<end>
+[Glv]Iron[End]
+
+
+//POINTER #90 @ $38C4 - STRING #90 @ $3C99
+
+#WRITE(Items, $38C4)
+//タ"イヤモンフィスト[End]
+//Diamond Arm<end>
+[Glv]Diamond[End]
+
+
+//POINTER #91 @ $38C6 - STRING #91 @ $3CA4
+
+#WRITE(Items, $38C6)
+//ア-ムハ"ルカン[End]
+//Arm Vulcan<end>
+[Glv]Vulcan[End]
+
+
+//POINTER #92 @ $38C8 - STRING #92 @ $3CAD
+
+#WRITE(Items, $38C8)
+//クラッシャ-ハント"[End]
+//Crusher Hand<end>
+[Glv]Crusher[End]
+
+
+//POINTER #93 @ $38CA - STRING #93 @ $3CB8
+
+#WRITE(Items, $38CA)
+//サイハ"-ア-ム
+//Cyber Arm<end>
+[Glv]Cyber[End]
+
+
+//POINTER #94 @ $38CC - STRING #94 @ $3CBE
+
+#WRITE(Items, $38CC)
+//ファイヤ-ア-ム
+//Fire Arm<end>
+[Glv]Fire[End]
+
+
+//POINTER #95 @ $38CE - STRING #95 @ $3CC4
+
+#WRITE(Items, $38CE)
+//ト"ラコ"ンクロ-[End]
+//Dragon Claw<end>
+[Glv]Dragon[End]
+
+
+//POINTER #96 @ $38D0 - STRING #96 @ $3CCE
+
+#WRITE(Items, $38D0)
+//テ"ヒ"ルハント"[End]
+//Devil Hand<end>
+[Glv]Devil[End]
+
+
+//POINTER #97 @ $38D2 - STRING #97 @ $3CD8
+
+#WRITE(Items, $38D2)
+//ハ°ンツァ-ア-ム
+//Panzer Arm<end>
+[Glv]Panzer[End]
+
+
+//POINTER #98 @ $38D4 - STRING #98 @ $3CDF
+
+#WRITE(Items, $38D4)
+//ヤク-トア-ム
+//Yakut Arm<end>
+[Glv]Yakut[End]
+
+
+//POINTER #99 @ $38D6 - STRING #99 @ $3CE4
+
+#WRITE(Items, $38D6)
+//コ"ット"ハント"[End]
+//God Hand<end>
+[Glv]God[End]
+
+
+//POINTER #100 @ $38D8 - STRING #100 @ $3CEE
+
+#WRITE(Items, $38D8)
+//ルシファ-ス"クロ-[End]
+//Lucifer's Claw<end>
+[Glv]Lucifer[End]
+
+
+//POINTER #101 @ $38DA - STRING #101 @ $3CF9
+
+#WRITE(Items, $38DA)
+//ラハ"-ソウル[End]
+//Rubber Soles<end>
+[Sho]Rubber[End]
+
+
+//POINTER #102 @ $38DC - STRING #102 @ $3D01
+
+#WRITE(Items, $38DC)
+//ウエスタンフ"-ツ
+//Western Boots<end>
+[Sho]Western[End]
+
+
+//POINTER #103 @ $38DE - STRING #103 @ $3D07
+
+#WRITE(Items, $38DE)
+//ロント"ンフ"-ツ
+//London Boots<end>
+[Sho]London[End]
+
+
+//POINTER #104 @ $38E0 - STRING #104 @ $3D0D
+
+#WRITE(Items, $38E0)
+//フラワ-フ"-ツ
+//Flower Boots<end>
+[Sho]Flower[End]
+
+
+//POINTER #105 @ $38E2 - STRING #105 @ $3D12
+
+#WRITE(Items, $38E2)
+//ツウキンカイソク[End]
+//Commuter Shoes<end>
+[Sho]Commuter[End]
+
+
+//POINTER #106 @ $38E4 - STRING #106 @ $3D1B
+
+#WRITE(Items, $38E4)
+//アクマのハ°ンフ°ス[End]
+//Demon Pumps<end>
+[Sho]Demon[End]
+
+
+//POINTER #107 @ $38E6 - STRING #107 @ $3D26
+
+#WRITE(Items, $38E6)
+//ヒ"ックフット[End]
+//Bigfoot<end>
+[Sho]Bigfoot[End]
+
+//POINTER #108 @ $38E8 - STRING #108 @ $3D2E
+
+#WRITE(Items, $38E8)
+//ヒミコのサンタ"ル
+//Himiko's Sandals<end>
+[Sho]Himiko[End]
+
+
+//POINTER #109 @ $38EA - STRING #109 @ $3D32
+
+#WRITE(Items, $38EA)
+//シ"ェットフ"-ツ
+//Jet Boots<end>
+[Sho]Jet[End]
+
+
+//POINTER #110 @ $38EC - STRING #110 @ $3D38
+
+#WRITE(Items, $38EC)
+//スカイフ"-ツ
+//Sky Boots<end>
+[Sho]Jet[End]
+
+
+//POINTER #111 @ $38EE - STRING #111 @ $3D3C
+
+#WRITE(Items, $38EE)
+//ヘヒ"メタルフ"-ツ
+//HeavyMetalBoots<end>
+[Sho]Heavy[End]
+
+
+//POINTER #112 @ $38F0 - STRING #112 @ $3D43
+
+#WRITE(Items, $38F0)
+//ハイハ°-フ"-ツ
+//Hyper Boots<end>
+[Sho]Hyper[End]
+
+
+//POINTER #113 @ $38F2 - STRING #113 @ $3D49
+
+#WRITE(Items, $38F2)
+//ト"ラコ"ンフ"-ツ
+//Dragon Boots<end>
+[Sho]Dragon[End]
+
+
+//POINTER #114 @ $38F4 - STRING #114 @ $3D50
+
+#WRITE(Items, $38F4)
+//ヘルメスのサンタ"ル
+//Hermes' Sandals<end>
+[Sho]Hermes[End]
+
+
+//POINTER #115 @ $38F6 - STRING #115 @ $3D55
+
+#WRITE(Items, $38F6)
+//ハ°ンツァ-レック"[End]
+//Panzer Leg<end>
+[Sho]Panzer[End]
+
+
+//POINTER #116 @ $38F8 - STRING #116 @ $3D60
+
+#WRITE(Items, $38F8)
+//ヤク-トレック"[End]
+//Yakut Leg<end>
+[Sho]Yakut[End]
+
+
+//POINTER #117 @ $38FA - STRING #117 @ $3D69
+
+#WRITE(Items, $38FA)
+//ファルコンアイス"[End]
+//Falcon Eyes<end>
+[Gls]Falcon[End]
+
+
+//POINTER #118 @ $38FC - STRING #118 @ $3D73
+
+#WRITE(Items, $38FC)
+//ヘ"ヒ"-フェイス[End]
+//Baby Face<end>
+[Gls]Baby[End]
+
+
+//POINTER #119 @ $38FE - STRING #119 @ $3D7D
+
+#WRITE(Items, $38FE)
+//ミラ-マスク[End]
+//Mirror Mask<end>
+[Gls]Mirror[End]
+
+
+//POINTER #120 @ $3900 - STRING #120 @ $3D84
+
+#WRITE(Items, $3900)
+//フライテ"-マスク[End]
+//Hockey Mask<end>
+[Gls]Hockey[End]
+
+
+//POINTER #121 @ $3902 - STRING #121 @ $3D8E
+
+#WRITE(Items, $3902)
+//カ"スマスク[End]
+//Gas Mask<end>
+[Gls]Gas[End]
+
+
+//POINTER #122 @ $3904 - STRING #122 @ $3D95
+
+#WRITE(Items, $3904)
+//ウルトラアイス"[End]
+//Ultra Eyes<end>
+[Gls]Ultra[End]
+
+
+//POINTER #123 @ $3906 - STRING #123 @ $3D9E
+
+#WRITE(Items, $3906)
+//カ-ハ°マント
+//Hooded Cloak<end>
+[Cpe]Hooded[End]
+
+
+//POINTER #124 @ $3908 - STRING #124 @ $3DA3
+
+#WRITE(Items, $3908)
+//アケ"ハマント
+//Butterfly Cloak<end>
+[Cpe]Butterfly[End]
+
+
+//POINTER #125 @ $390A - STRING #125 @ $3DA8
+
+#WRITE(Items, $390A)
+//ファントムマント
+//Phantom Cloak<end>
+[Cpe]Phantom[End]
+
+
+//POINTER #126 @ $390C - STRING #126 @ $3DAE
+
+#WRITE(Items, $390C)
+//ハ"-ルのマント
+//Baal's Cloak<end>
+[Cpe]Baal[End]
+
+
+//POINTER #127 @ $390E - STRING #127 @ $3DB4
+
+#WRITE(Items, $390E)
+//た"てんしのつは"さ[End]
+//Fallen Angel Wing<end>
+[Cpe]Lucifer[End]
+
+
+//POINTER #128 @ $3910 - STRING #128 @ $3DBF
+
+#WRITE(Items, $3910)
+//ほうき"ょく[End]
+//Jewel<end>
+[Pot]Jewel[End]
+
+
+//POINTER #129 @ $3912 - STRING #129 @ $3DC6
+
+#WRITE(Items, $3912)
+//ホ°イス"ノン[End]
+//Poiso-Non<end>
+[Pot]Poisnon[End]
+
+
+//POINTER #130 @ $3914 - STRING #130 @ $3DCE
+
+#WRITE(Items, $3914)
+//ハ°ララノン[End]
+//Paral-Non<end>
+[Pot]Paralnon[End]
+
+
+//POINTER #131 @ $3916 - STRING #131 @ $3DD5
+
+#WRITE(Items, $3916)
+//ヘ°トラノン[End]
+//Petri-Non<end>
+[Pot]Petrinon[End]
+
+
+//POINTER #132 @ $3918 - STRING #132 @ $3DDC
+
+#WRITE(Items, $3918)
+//アキ"オンスト-ン
+//Agirama Stone<end>
+[Stn]Agilama[End]
+
+
+//POINTER #133 @ $391A - STRING #133 @ $3DE2
+
+#WRITE(Items, $391A)
+//シ"オロンスト-ン
+//Jioma Stone<end>
+[Stn]Zioma[End]
+
+
+//POINTER #134 @ $391C - STRING #134 @ $3DE8
+
+#WRITE(Items, $391C)
+//フ"フラオスト-ン
+//Bufurama Stone<end>
+[Stn]Bufulama[End]
+
+
+//POINTER #135 @ $391E - STRING #135 @ $3DEE
+
+#WRITE(Items, $391E)
+//アキ"タ"イスト-ン
+//Maharagima Stn.<end>
+[Stn]Maragima[End]
+
+
+//POINTER #136 @ $3920 - STRING #136 @ $3DF5
+
+#WRITE(Items, $3920)
+//シ"オタ"イスト-ン
+//Mahajioma Stone<end>
+[Stn]Mazioma[End]
+
+
+//POINTER #137 @ $3922 - STRING #137 @ $3DFC
+
+#WRITE(Items, $3922)
+//てなけ"た"ん[End]
+//Hand Grenade<end>
+[Stn]Grenade[End]
+
+
+//POINTER #138 @ $3924 - STRING #138 @ $3E04
+
+#WRITE(Items, $3924)
+//ミサイルランチャ-[End]
+//Missile Launcher<end>
+[Stn]Missile[End]
+
+
+//POINTER #139 @ $3926 - STRING #139 @ $3E0E
+
+#WRITE(Items, $3926)
+//ハンマンチャ-ム[End]
+//Hanman Charm<end>
+[Stn]Hama[End]
+
+
+//POINTER #140 @ $3928 - STRING #140 @ $3E17
+
+#WRITE(Items, $3928)
+//あふ"ないくすり[End]
+//Dangerous Drugs<end>
+[Stn]Drugs[End]
+
+
+//POINTER #141 @ $392A - STRING #141 @ $3E20
+
+#WRITE(Items, $392A)
+//うしみつにんき"ょう[End]
+//Midnight Doll<end>
+[Stn]Midnight[End]
+
+
+//POINTER #142 @ $392C - STRING #142 @ $3E2B
+
+#WRITE(Items, $392C)
+//みあれのすす"[End]
+//Spirit Bell<end>
+[Pot]Sacred[End]
+
+
+//POINTER #143 @ $392E - STRING #143 @ $3E33
+
+#WRITE(Items, $392E)
+//ホ°イス"ンタ"-ト[End]
+//Poison Dart<end>
+[Stn]Poison[End]
+
+
+//POINTER #144 @ $3930 - STRING #144 @ $3E3E
+
+#WRITE(Items, $3930)
+//ワキ"ャナイサ"-[End]
+//"Wagoniser"?
+[Stn]Wagoniser[End]
+
+
+//POINTER #145 @ $3932 - STRING #145 @ $3E48
+
+#WRITE(Items, $3932)
+//ひし"ょうく"ち[End]
+//Emergency Exit<end>
+[Pot]Em. Exit[End]
+
+
+//POINTER #146 @ $3934 - STRING #146 @ $3E51
+
+#WRITE(Items, $3934)
+//かみなりおこし[End]
+//Lightning Bolt<end>
+[Stn]Thunder[End]
+
+
+//POINTER #147 @ $3936 - STRING #147 @ $3E59
+
+#WRITE(Items, $3936)
+//あくまのかんつ"め[End]
+//Canned Demon<end>
+[Pot]Can Demon[End]
+
+
+//POINTER #148 @ $3938 - STRING #148 @ $3E63
+
+#WRITE(Items, $3938)
+//コアシ-ルト"[End]
+//Core Shield<end>
+[Pot]Shield[End]
+
+
+//POINTER #149 @ $393A - STRING #149 @ $3E6B
+
+#WRITE(Items, $393A)
+//せか"きのれいやく[End]
+//Solace Herb<end>
+[Pot]Solace[End]
+
+
+//POINTER #150 @ $393C - STRING #150 @ $3E75
+
+#WRITE(Items, $393C)
+//マッスルト"リンコ[End]
+//Muscle Drink<end>
+[Pot]Muscle[End]
+
+
+//POINTER #151 @ $393E - STRING #151 @ $3E7F
+
+#WRITE(Items, $393E)
+//まりょくのもと[End]
+//Magic Stone<end>
+[Pot]Source[End]
+
+
+//POINTER #152 @ $3940 - STRING #152 @ $3E87
+
+#WRITE(Items, $3940)
+//ソ-マ[End]
+//Soma<end>
+[Pot]Soma[End]
+
+
+//POINTER #153 @ $3942 - STRING #153 @ $3E8B
+
+#WRITE(Items, $3942)
+//ちからのインセンス
+//Vitality Incense<end>
+[Inc]Vitality[End]
+
+
+//POINTER #154 @ $3944 - STRING #154 @ $3E8F
+
+#WRITE(Items, $3944)
+//ちえのインセンス
+//Intellect Incense<end>
+[Inc]Intellect[End]
+
+
+//POINTER #155 @ $3946 - STRING #155 @ $3E92
+
+#WRITE(Items, $3946)
+//つよさのインセンス
+//StrengthIncense<end>
+[Inc]Strength[End]
+
+
+//POINTER #156 @ $3948 - STRING #156 @ $3E96
+
+#WRITE(Items, $3948)
+//はやさのインセンス
+//Speed Incense<end>
+[Inc]Speed[End]
+
+
+//POINTER #157 @ $394A - STRING #157 @ $3E9A
+
+#WRITE(Items, $394A)
+//こううんのインセンス
+//Luck Incense<end>
+[Inc]Luck[End]
+
+
+//POINTER #159 @ $394E - STRING #159 @ $3E9F
+
+#WRITE(Items, $394C)
+#WRITE(Items, $394E)
+//メタルカ-ト"[End]
+//Metal Card<end>
+[Crd]Metal[End]
+
+
+//POINTER #160 @ $3950 - STRING #160 @ $3EA7
+
+#WRITE(Items, $3950)
+//アメシ"スト[End]
+//Amethyst<end>
+[Orb]Amethyst[End]
+
+
+//POINTER #161 @ $3952 - STRING #161 @ $3EAE
+
+#WRITE(Items, $3952)
+//アクアマリン[End]
+//Aquamarine<end>
+[Orb]Aquamarin[End]
+
+
+//POINTER #162 @ $3954 - STRING #162 @ $3EB5
+
+#WRITE(Items, $3954)
+//エメラルト"[End]
+//Emerald<end>
+[Orb]Emerald[End]
+
+
+//POINTER #164 @ $3958 - STRING #164 @ $3EC6
+
+#WRITE(Items, $3958)
+//ハ°ス"スのくひ"[End]
+//Pazuzu's Head<end>
+[Hat]Pazuzu[End]
+
+
+//POINTER #169 @ $3962 - STRING #169 @ $3ED0
+
+#WRITE(Items, $395A)
+#WRITE(Items, $395C)
+#WRITE(Items, $395E)
+#WRITE(Items, $3960)
+#WRITE(Items, $3962)
+//アナミラン[End]
+//Anamiran<end>
+ Anamiran[End]
+
+
+//POINTER #171 @ $3966 - STRING #171 @ $3ED6
+
+#WRITE(Items, $3964)
+#WRITE(Items, $3966)
+//すす"きのめいし[End]
+//Suzuki's Card<end>
+[Crd]Suzuki[End]
+
+
+//POINTER #175 @ $396E - STRING #175 @ $3EDF
+#WRITE(Items, $3968)
+#WRITE(Items, $396A)
+#WRITE(Items, $396C)
+#WRITE(Items, $396E)
+//ちんみ テ"ィナ-[End]
+//Exotic Dinner<end>
+[Pot]Exotic[End]
+
+
+//POINTER #176 @ $3970 - STRING #176 @ $3EE9
+
+#WRITE(Items, $3970)
+//スタミナ ていしょく[End]
+//Stamina Special<end>
+[Pot]Stamina[End]
+
+
+//POINTER #177 @ $3972 - STRING #177 @ $3EF4
+
+#WRITE(Items, $3972)
+//UMA テ"ィナ-[End]
+//UMA Dinner<end>
+[Pot]UMA[End]
+
+
+//POINTER #178 @ $3974 - STRING #178 @ $3EFE
+
+#WRITE(Items, $3974)
+//ユ-カリスト[End]
+//Eucharist<end>
+[Pot]Eucharist[End]
+
+
+//POINTER #179 @ $3976 - STRING #179 @ $3F05
+
+#WRITE(Items, $3976)
+//コ"-シ"ャスセット[End]
+//Gorgeous Set<end>
+[Pot]Gorgeous[End]
+
+
+//POINTER #180 @ $3978 - STRING #180 @ $3F10
+
+#WRITE(Items, $3978)
+//さかさし"ゅうし"[End]
+//Inverted Cross<end>
+[Crd]Inv.Cross[End]
+
+
+//POINTER #192 @ $3990 - STRING #192 @ $3F1A
+
+#WRITE(Items, $397A)
+#WRITE(Items, $397C)
+#WRITE(Items, $397E)
+#WRITE(Items, $3980)
+#WRITE(Items, $3982)
+#WRITE(Items, $3984)
+#WRITE(Items, $3986)
+#WRITE(Items, $3988)
+#WRITE(Items, $398A)
+#WRITE(Items, $398C)
+#WRITE(Items, $398E)
+#WRITE(Items, $3990)
+//しす"たま[End]
+//Orb of Silence<end>
+[Orb]Silence[End]
+
+
+//POINTER #193 @ $3992 - STRING #193 @ $3F20
+
+#WRITE(Items, $3992)
+//ほのおのわりふ
+//Fire Seal<end>
+[Orb]Fire[End]
+
+
+//POINTER #194 @ $3994 - STRING #194 @ $3F24
+
+#WRITE(Items, $3994)
+//みす"のわりふ
+//Water Seal<end>
+[Orb]Water[End]
+
+
+//POINTER #195 @ $3996 - STRING #195 @ $3F28
+
+#WRITE(Items, $3996)
+//かせ"のわりふ
+//Wind Seal<end>
+[Orb]Wind[End]
+
+
+//POINTER #196 @ $3998 - STRING #196 @ $3F2C
+
+#WRITE(Items, $3998)
+//つちのわりふ
+//Earth Seal<end>
+[Orb]Earth[End]
+
+
+//POINTER #197 @ $399A - STRING #197 @ $3F2F
+
+#WRITE(Items, $399A)
+//ハ"エルのつめ[End]
+//Bael's Claw<end>
+[Crd]Bael Claw[End]
+
+
+//POINTER #198 @ $399C - STRING #198 @ $3F37
+
+#WRITE(Items, $399C)
+//たいようのヒ°ラ-[End]
+//Sun Pillar<end>
+[Pil]Sun[End]
+
+
+//POINTER #199 @ $399E - STRING #199 @ $3F41
+
+#WRITE(Items, $399E)
+//つきのヒ°ラ-[End]
+//Moon Pillar<end>
+[Pil]Moon[End]
+
+
+//POINTER #200 @ $39A0 - STRING #200 @ $3F49
+
+#WRITE(Items, $39A0)
+//すいせいのヒ°ラ-
+//Mercury Pillar<end>
+[Pil]Mercury[End]
+
+
+//POINTER #201 @ $39A2 - STRING #201 @ $3F4C
+
+#WRITE(Items, $39A2)
+//きんせいのヒ°ラ-
+//Venus Pillar<end>
+[Pil]Venus[End]
+
+
+//POINTER #202 @ $39A4 - STRING #202 @ $3F4F
+
+#WRITE(Items, $39A4)
+//かせいのヒ°ラ-
+//Mars Pillar<end>
+[Pil]Mars[End]
+
+
+//POINTER #203 @ $39A6 - STRING #203 @ $3F51
+
+#WRITE(Items, $39A6)
+//もくせいのヒ°ラ-
+//Jupiter Pillar<end>
+[Pil]Jupiter[End]
+
+
+//POINTER #204 @ $39A8 - STRING #204 @ $3F54
+
+#WRITE(Items, $39A8)
+//と"せいのヒ°ラ-
+//Saturn Pillar<end>
+[Pil]Saturn[End]
+
+
+//POINTER #205 @ $39AA - STRING #205 @ $3F57
+
+#WRITE(Items, $39AA)
+//あみた"りき[End]
+//Amitabha's Might<end>
+ Amitabha[End]
+
+//POINTER #206 @ $39AC - STRING #206 @ $3F5E
+
+#WRITE(Items, $39AC)
+//なけ"きのたま
+//Orb of Grief<end>
+[Orb]Grief[End]
+
+
+//POINTER #207 @ $39AE - STRING #207 @ $3F63
+
+#WRITE(Items, $39AE)
+//くるいのたま
+//Orb of Madness<end>
+[Orb]Madness[End]
+
+
+//POINTER #208 @ $39B0 - STRING #208 @ $3F67
+
+#WRITE(Items, $39B0)
+//いかりのたま
+//Orb of Anger<end>
+[Orb]Anger[End]
+
+
+//POINTER #209 @ $39B2 - STRING #209 @ $3F6B
+
+#WRITE(Items, $39B2)
+//まよいのたま
+//Orb of Doubt<end>
+[Orb]Doubt[End]
+
+
+//POINTER #210 @ $39B4 - STRING #210 @ $3F6F
+
+#WRITE(Items, $39B4)
+//おそれのたま
+//Orb of Fear<end>
+[Orb]Fear[End]
+
+
+//POINTER #211 @ $39B6 - STRING #211 @ $3F73
+
+#WRITE(Items, $39B6)
+//た"さいのたま
+//Tarnished Orb<end>
+[Orb]Dull[End]
+
+
+//POINTER #212 @ $39B8 - STRING #212 @ $3F78
+
+#WRITE(Items, $39B8)
+//きほ"うのたま
+//Orb of Hope<end>
+[Orb]Hope[End]
+
+
+//POINTER #213 @ $39BA - STRING #213 @ $3F7D
+
+#WRITE(Items, $39BA)
+//ソロモンのゆひ"わ[End]
+//Solomon's Ring<end>
+ Solomon[End]
+
+
+//POINTER #214 @ $39BC - STRING #214 @ $3F87
+
+#WRITE(Items, $39BC)
+//とうのカキ"[End]
+//Tower Key<end>
+[Crd]Tower Key[End]
+
+
+//POINTER #215 @ $39BE - STRING #215 @ $3F8E
+
+#WRITE(Items, $3956)
+#WRITE(Items, $39BE)
+//みあらかのゆひ"わ[End]
+//Lord's Ring<end>
+ Lord Ring[End]
+
+
+//POINTER #216 @ $39C0 - STRING #216 @ $3F98
+
+#WRITE(Items, $39C0)
+//みあらかのいし[End]
+//Lord's Stone<end>
+[Stn]Lord's[End]
+
+
+//POINTER #217 @ $39C2 - STRING #217 @ $3FA0
+
+#WRITE(Items, $39C2)
+//はんこ"んこう[End]
+//Revival Incense
+[Inc]Revival[End]
+
+
+//POINTER #218 @ $39C4 - STRING #218 @ $3FA8
+
+#WRITE(Items, $39C4)
+//しおみつた"ま[End]
+//Gem of High Tides
+[Orb]Flood[End]
+

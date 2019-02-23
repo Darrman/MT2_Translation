@@ -1,0 +1,99 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #010 NAME:		Item Name Dictionary
+
+//POINTER #0 @ $1DD9C - STRING #0 @ $1DDBC
+
+#W16($1DD9C)
+ AXE[End]
+
+
+//POINTER #1 @ $1DD9E - STRING #1 @ $1DDC1
+
+#W16($1DD9E)
+Iん[End]
+
+
+//POINTER #2 @ $1DDA0 - STRING #2 @ $1DDC4
+
+#W16($1DDA0)
+MAIL[End]
+
+
+//POINTER #3 @ $1DDA2 - STRING #3 @ $1DDC9
+
+#W16($1DDA2)
+EDGE[End]
+
+
+//POINTER #4 @ $1DDA4 - STRING #4 @ $1DDCE
+
+#W16($1DDA4)
+ア-ム[End]
+
+
+//POINTER #5 @ $1DDA6 - STRING #5 @ $1DDD2
+
+#W16($1DDA6)
+フ"-ツ[End]
+
+
+//POINTER #6 @ $1DDA8 - STRING #6 @ $1DDD7
+
+#W16($1DDA8)
+HELM[End]
+
+
+//POINTER #7 @ $1DDAA - STRING #7 @ $1DDDD
+
+#W16($1DDAA)
+スト-ン[End]
+
+
+//POINTER #8 @ $1DDAC - STRING #8 @ $1DDE2
+
+#W16($1DDAC)
+ BOOST[End]
+
+
+//POINTER #9 @ $1DDAE - STRING #9 @ $1DDE9
+
+#W16($1DDAE)
+SEAL[End]
+
+
+//POINTER #10 @ $1DDB0 - STRING #10 @ $1DDEE
+
+#W16($1DDB0)
+NBYヒ°ラ-[End]
+
+
+//POINTER #11 @ $1DDB2 - STRING #11 @ $1DDF6
+
+#W16($1DDB2)
+YP-[End]
+
+
+//POINTER #12 @ $1DDB4 - STRING #12 @ $1DDFA
+
+#W16($1DDB4)
+HEAD[End]
+
+
+//POINTER #13 @ $1DDB6 - STRING #13 @ $1DDFF
+
+#W16($1DDB6)
+カ"-ト"[End]
+
+
+//POINTER #14 @ $1DDB8 - STRING #14 @ $1DE05
+
+#W16($1DDB8)
+ CP[End]
+
+
+//POINTER #15 @ $1DDBA - STRING #15 @ $1DE09
+
+#W16($1DDBA)
+Yサンタ"ル[End]
+

@@ -1,0 +1,201 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #014 NAME:		Autopilot Dungeon Names
+
+//POINTER #0 @ $65AA - STRING #0 @ $65EC
+
+#W16($65AA)
+シェルタ-     [End]
+
+
+//POINTER #1 @ $65AC - STRING #1 @ $65F6
+
+#W16($65AC)
+しなか"わ     [End]
+
+
+//POINTER #2 @ $65AE - STRING #2 @ $6600
+
+#W16($65AE)
+とうきょうタワ-  [End]
+
+
+//POINTER #3 @ $65B0 - STRING #3 @ $660A
+
+#W16($65B0)
+ろっほ°んき"   [End]
+
+
+//POINTER #4 @ $65B2 - STRING #4 @ $6614
+
+#W16($65B2)
+しふ"や      [End]
+
+
+//POINTER #5 @ $65B4 - STRING #5 @ $661E
+
+#W16($65B4)
+き"んさ"     [End]
+
+
+//POINTER #6 @ $65B6 - STRING #6 @ $6628
+
+#W16($65B6)
+いけふ"くろ    [End]
+
+
+//POINTER #7 @ $65B8 - STRING #7 @ $6632
+
+#W16($65B8)
+しんし"ゅく    [End]
+
+
+//POINTER #8 @ $65BA - STRING #8 @ $663C
+
+#W16($65BA)
+なかの       [End]
+
+
+//POINTER #9 @ $65BC - STRING #9 @ $6646
+
+#W16($65BC)
+さは"く      [End]
+
+
+//POINTER #10 @ $65BE - STRING #10 @ $6650
+
+#W16($65BE)
+サ"ラタン     [End]
+
+
+//POINTER #11 @ $65C0 - STRING #11 @ $665A
+
+#W16($65C0)
+ハ"エルし"ょう  [End]
+
+
+//POINTER #12 @ $65C2 - STRING #12 @ $6664
+
+#W16($65C2)
+テ"ストニ-ラント"[End]
+
+
+//POINTER #13 @ $65C4 - STRING #13 @ $666E
+
+#W16($65C4)
+おうし"ょう    [End]
+
+
+//POINTER #14 @ $65C6 - STRING #14 @ $6678
+
+#W16($65C6)
+なけ"きのたに   [End]
+
+
+//POINTER #15 @ $65C8 - STRING #15 @ $6682
+
+#W16($65C8)
+アスモタ"イのあな [End]
+
+
+//POINTER #16 @ $65CA - STRING #16 @ $668C
+
+#W16($65CA)
+ヘ"リアルし"ょう [End]
+
+
+//POINTER #17 @ $65CC - STRING #17 @ $6696
+
+#W16($65CC)
+いかりのめいきゅう [End]
+
+
+//POINTER #18 @ $65CE - STRING #18 @ $66A0
+
+#W16($65CE)
+いかりのとう    [End]
+
+
+//POINTER #19 @ $65D0 - STRING #19 @ $66AA
+
+#W16($65D0)
+モロクしんて"ん  [End]
+
+
+//POINTER #20 @ $65D2 - STRING #20 @ $66B4
+
+#W16($65D2)
+すいしょうくつ   [End]
+
+
+//POINTER #21 @ $65D4 - STRING #21 @ $66BE
+
+#W16($65D4)
+ミトラのとう    [End]
+
+
+//POINTER #22 @ $65D6 - STRING #22 @ $66C8
+
+#W16($65D6)
+アスタロトし"ょう [End]
+
+
+//POINTER #23 @ $65D8 - STRING #23 @ $66D2
+
+#W16($65D8)
+たいないと"う   [End]
+
+
+//POINTER #24 @ $65DA - STRING #24 @ $66DC
+
+#W16($65DA)
+はえのあな     [End]
+
+
+//POINTER #25 @ $65DC - STRING #25 @ $66E6
+
+#W16($65DC)
+け"んまかい    [End]
+
+
+//POINTER #26 @ $65DE - STRING #26 @ $66F0
+
+#W16($65DE)
+アホ°リオン    [End]
+
+
+//POINTER #27 @ $65E0 - STRING #27 @ $66FA
+
+#W16($65E0)
+アト"ンのとう   [End]
+
+
+//POINTER #28 @ $65E2 - STRING #28 @ $6704
+
+#W16($65E2)
+アト"ンのしんて"ん[End]
+
+
+//POINTER #29 @ $65E4 - STRING #29 @ $670E
+
+#W16($65E4)
+ルシファ-し"ょう [End]
+
+
+//POINTER #30 @ $65E6 - STRING #30 @ $6718
+
+#W16($65E6)
+ハネタ"      [End]
+
+
+//POINTER #31 @ $65E8 - STRING #31 @ $6722
+
+#W16($65E8)
+ウエノ       [End]
+
+
+//POINTER #32 @ $65EA - STRING #32 @ $672C
+
+#W16($65EA)
+チカト"ウ     [End]
+

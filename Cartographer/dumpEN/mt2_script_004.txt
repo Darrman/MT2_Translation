@@ -1,0 +1,2035 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #004 NAME:		Combat Messages
+
+//POINTER #0 @ $14010 - STRING #0 @ $14254
+
+#W16($14010)
+[Jump][End]
+
+
+//POINTER #1 @ $14012 - STRING #1 @ $14256
+
+#W16($14012)
+                      [End]
+
+
+//POINTER #2 @ $14014 - STRING #2 @ $1426D
+
+#W16($14014)
+          [End]
+
+
+//POINTER #3 @ $14016 - STRING #3 @ $14278
+
+#W16($14016)
+SELECT COMMAND[Line]
+[Line]
+  CALL[Line]
+  STORE[Line]
+  LET GO[Line]
+  SORT[Line]
+  BATTLE MSG[End]
+
+
+//POINTER #4 @ $14018 - STRING #4 @ $142B4
+
+#W16($14018)
+SUMMON WHO?         £[End]
+
+
+//POINTER #5 @ $1401A - STRING #5 @ $142CA
+
+#W16($1401A)
+STORE AWAY WHO?[End]
+
+
+//POINTER #6 @ $1401C - STRING #6 @ $142DC
+
+#W16($1401C)
+THROW AWAY WHO?[End]
+
+
+//POINTER #7 @ $1401E - STRING #7 @ $142EE
+
+#W16($1401E)
+CHOOSE ORDER  [End]
+
+
+//POINTER #8 @ $14020 - STRING #8 @ $142FD
+
+#W16($14020)
+SELECT SPEED OF[Line]
+[Line]
+BATTLE MESSAGES[Line]
+[Line]
+  MAX[Line]
+  FAST[Line]
+  NORMAL[Line]
+  SLOW[End]
+
+
+//POINTER #9 @ $14022 - STRING #9 @ $1433C
+
+#W16($14022)
+UNABLE TO USE NOW.[Line]
+[Next]
+
+[End]
+
+
+//POINTER #10 @ $14024 - STRING #10 @ $14351
+
+#W16($14024)
+JJS"Z コンヒ°ュ-タ-Z RFDUB[Next]
+
+[End]
+
+
+//POINTER #11 @ $14026 - STRING #11 @ $14368
+
+#W16($14026)
+NO DEMON TO LET GO.[Next]
+
+[End]
+
+
+//POINTER #12 @ $14028 - STRING #12 @ $1437D
+
+#W16($14028)
+WHO SHOULD CAST? [Line]
+[End]
+
+
+//POINTER #13 @ $1402A - STRING #13 @ $14390
+
+#W16($1402A)
+[Jump]WHICH SPELL?     MP[End]
+
+
+//POINTER #14 @ $1402C - STRING #14 @ $143A5
+
+#W16($1402C)
+[Hero] CASTS[Line]
+[VarSpell].[End]
+
+
+//POINTER #15 @ $1402E - STRING #15 @ $143B0
+
+#W16($1402E)
+NO ONE CAN CAST. [End]
+
+
+//POINTER #16 @ $14030 - STRING #16 @ $143C2
+
+#W16($14030)
+JJS"Z -.CZ RFDUB [End]
+
+
+//POINTER #17 @ $14032 - STRING #17 @ $143D4
+
+#W16($14032)
+[Jump]INSUFFICIENT MP. [End]
+
+
+//POINTER #18 @ $14034 - STRING #18 @ $143E7
+
+#W16($14034)
+WHICH OPTION? [Line]
+[Line]
+  ITEM[Line]
+  EQUIP[Line]
+  THROW[End]
+
+
+//POINTER #19 @ $14036 - STRING #19 @ $1440E
+
+#W16($14036)
+NO ITEMS.   [End]
+
+
+//POINTER #20 @ $14038 - STRING #20 @ $1441B
+
+#W16($14038)
+[Jump]USE WHICH ITEM?  [End]
+
+
+//POINTER #21 @ $1403A - STRING #21 @ $1442E
+
+#W16($1403A)
+WILL YOU USE[Line]
+[Line]
+[VarItem]?   [Line]
+[Line]
+  YES[Line]
+  NO[End]
+
+
+//POINTER #22 @ $1403C - STRING #22 @ $1444E
+
+#W16($1403C)
+[Hero] USED[Line]
+[VarItem]..[Pause4][End]
+
+
+//POINTER #23 @ $1403E - STRING #23 @ $1445A
+
+#W16($1403E)
+EQUIP WHO?     [Line]
+[End]
+
+
+//POINTER #24 @ $14040 - STRING #24 @ $1446B
+
+#W16($14040)
+[Jump]DISCARD WHAT?   [Line]
+[End]
+
+
+//POINTER #25 @ $14042 - STRING #25 @ $1447E
+
+#W16($14042)
+[Jump]DISCARD [VarItem][Line]
+[Line]
+FOREVER? [Line]
+[Line]
+  YES[Line]
+  NO[End]
+
+
+//POINTER #26 @ $14044 - STRING #26 @ $144A0
+
+#W16($14044)
+SEE INFO ON WHO? [End]
+
+
+//POINTER #27 @ $14046 - STRING #27 @ $144B2
+
+#W16($14046)
+  [Hero][End]
+
+
+//POINTER #28 @ $14048 - STRING #28 @ $144B6
+
+#W16($14048)
+NOT FOR[Line]
+[Hero].   [Pause9][End]
+
+
+//POINTER #29 @ $1404A - STRING #29 @ $144C5
+
+#W16($1404A)
+  [VarItem][End]
+
+
+//POINTER #30 @ $1404C - STRING #30 @ $144C9
+
+#W16($1404C)
+[Hero] [Line]
+SPEND  [Line]
+  ->PTS[Line]
+          [End]
+
+
+//POINTER #31 @ $1404E - STRING #31 @ $144E7
+
+#W16($1404E)
+[Jump]CONFIRM[Line]
+    [End]
+
+
+//POINTER #32 @ $14050 - STRING #32 @ $144F5
+
+#W16($14050)
+ [VarItem][End]
+
+
+//POINTER #33 @ $14052 - STRING #33 @ $144F8
+
+#W16($14052)
+[VarSpell][End]
+
+
+//POINTER #34 @ $14054 - STRING #34 @ $144FA
+
+#W16($14054)
+.CG"ょH   [VarNum][End]
+
+
+//POINTER #35 @ $14056 - STRING #35 @ $14505
+
+#W16($14056)
+NO ITEMS TO USE. [End]
+
+
+//POINTER #36 @ $14058 - STRING #36 @ $14517
+
+#W16($14058)
+NOTHING TO EQUIP.    [End]
+
+
+//POINTER #37 @ $1405A - STRING #37 @ $1452D
+
+#W16($1405A)
+NO DISCARDABLES.  [End]
+
+
+//POINTER #38 @ $1405C - STRING #38 @ $14540
+
+#W16($1405C)
+[VarItem][End]
+
+
+//POINTER #39 @ $1405E - STRING #39 @ $14542
+
+#W16($1405E)
+VACANT    [End]
+
+
+//POINTER #40 @ $14060 - STRING #40 @ $1454D
+
+#W16($14060)
+[VarItem][Line]
+EQUIPPED. [Pause9][End]
+
+
+//POINTER #41 @ $14062 - STRING #41 @ $1455B
+
+#W16($14062)
+USE THE STAIRS?[Line]
+  YES[Line]
+  NO  [End]
+
+
+//POINTER #42 @ $14064 - STRING #42 @ $14578
+
+#W16($14064)
+UNLOCK THIS?[Line]
+  YES[Line]
+  NO [End]
+
+
+//POINTER #43 @ $14066 - STRING #43 @ $14591
+
+#W16($14066)
+[Jump][Hero] OPENS IT.[Pause4][End]
+
+
+//POINTER #44 @ $14068 - STRING #44 @ $1459F
+
+#W16($14068)
+GOT[Line]
+-[VarItem] [Pause4][End]
+
+
+//POINTER #45 @ $1406A - STRING #45 @ $145A8
+
+#W16($1406A)
+ゆ-"を ZKんP"[Pause4][End]
+
+
+//POINTER #46 @ $1406C - STRING #46 @ $145B4
+
+#W16($1406C)
+[Jump]TOSS [Hero][Line]
+IN THE[Line]
+TRASH?[Line]
+[Line]
+  YES[Line]
+  NO[End]
+
+
+//POINTER #47 @ $1406E - STRING #47 @ $145D6
+
+#W16($1406E)
+[Jump][Hero2?]Z[Line]
+'DUBQFらV -<$A2>られP[Pause8][End]
+
+
+//POINTER #48 @ $14070 - STRING #48 @ $145EA
+
+#W16($14070)
+[End]
+
+
+//POINTER #49 @ $14072 - STRING #49 @ $145EB
+
+#W16($14072)
+[End]
+
+
+//POINTER #50 @ $14074 - STRING #50 @ $145EC
+
+#W16($14074)
+[End]
+
+
+//POINTER #51 @ $14076 - STRING #51 @ $145ED
+
+#W16($14076)
+[End]
+
+
+//POINTER #52 @ $14078 - STRING #52 @ $145EE
+
+#W16($14078)
+[End]
+
+
+//POINTER #53 @ $1407A - STRING #53 @ $145EF
+
+#W16($1407A)
+[Jump][Hero]Z[Line]
+[VarNum]ホ°イントY タ"メ-シ"を CIP[Pause4][End]
+
+
+//POINTER #54 @ $1407C - STRING #54 @ $14608
+
+#W16($1407C)
+BやU よFんF"Mる[Pause8][End]
+
+
+//POINTER #55 @ $1407E - STRING #55 @ $14615
+
+#W16($1407E)
+A BIG FIND!!![End]
+
+
+//POINTER #56 @ $14080 - STRING #56 @ $14623
+
+#W16($14080)
+[Jump]ALL SLOTS FULL.   [Line]
+[Next]
+
+[End]
+
+
+//POINTER #57 @ $14082 - STRING #57 @ $14639
+
+#W16($14082)
+NO DEMON TO SUMMON.[Next]
+
+[End]
+
+
+//POINTER #58 @ $14084 - STRING #58 @ $1464E
+
+#W16($14084)
+NO DEMON TO STORE.[Next]
+
+[End]
+
+
+//POINTER #59 @ $14086 - STRING #59 @ $14662
+
+#W16($14086)
+[Jump]CAN'T SORT. [Next]
+
+[End]
+
+
+//POINTER #60 @ $14088 - STRING #60 @ $14671
+
+#W16($14088)
+[Jump]NO SPELLS.        [End]
+
+
+//POINTER #61 @ $1408A - STRING #61 @ $14685
+
+#W16($1408A)
+  AUTO-PILOT[End]
+
+
+//POINTER #62 @ $1408C - STRING #62 @ $14692
+
+#W16($1408C)
+[Jump]USE ON WHO? [End]
+
+
+//POINTER #63 @ $1408E - STRING #63 @ $146A0
+
+#W16($1408E)
+[Jump]WHICH COMMAND[Line]
+[Line]
+  CALL[Line]
+  SORT [End]
+
+
+//POINTER #64 @ $14090 - STRING #64 @ $146BF
+
+#W16($14090)
+[Jump]マッカF" PりUB[End]
+
+
+//POINTER #65 @ $14092 - STRING #65 @ $146CB
+
+#W16($14092)
+マク"ネタイトF" UHUっSL-っP[Pause10][End]
+
+
+//POINTER #66 @ $14094 - STRING #66 @ $146E0
+
+#W16($14094)
+[Jump][Hero] DIED.   [End]
+
+
+//POINTER #67 @ $14096 - STRING #67 @ $146EC
+
+#W16($14096)
+NEW[Line]
+ABILITY!  [End]
+
+
+//POINTER #68 @ $14098 - STRING #68 @ $146FB
+
+#W16($14098)
+[Jump]OらFら TRN"んY カミナリEJL[Pause8][End]
+
+
+//POINTER #69 @ $1409A - STRING #69 @ $14711
+
+#W16($1409A)
+[Hero2?]Z[Line]
+'DUBシ-ルト"V RR-れP[Pause8][End]
+
+
+//POINTER #70 @ $1409C - STRING #70 @ $14726
+
+#W16($1409C)
+[VarItem]Z B- RFDUB[End]
+
+
+//POINTER #71 @ $1409E - STRING #71 @ $14732
+
+#W16($1409E)
+[Hero]VZ RFDUB[Pause8][End]
+
+
+//POINTER #72 @ $140A0 - STRING #72 @ $1473D
+
+#W16($140A0)
+[Var] X[VarNum] EMERGED![End]
+
+
+//POINTER #73 @ $140A2 - STRING #73 @ $1474B
+
+#W16($140A2)
+CHOICE? [End]
+
+
+//POINTER #74 @ $140A4 - STRING #74 @ $14754
+
+#W16($140A4)
+[Hero]'S ACTION?[End]
+
+
+//POINTER #75 @ $140A6 - STRING #75 @ $14760
+
+#W16($140A6)
+IS THIS CORRECT?[End]
+
+
+//POINTER #76 @ $140A8 - STRING #76 @ $14771
+
+#W16($140A8)
+[Var] X[VarNum] EMERGED![End]
+
+
+//POINTER #77 @ $140AA - STRING #77 @ $1477F
+
+#W16($140AA)
+[Hero] ESCAPING[Line]
+ [Pause4][End]
+
+
+//POINTER #78 @ $140AC - STRING #78 @ $1478D
+
+#W16($140AC)
+・[Pause3]・[Pause3]・[Pause2]・[Pause2]・[Pause1]・[Pause1] FLED!  [Pause4][End]
+
+
+//POINTER #79 @ $140AE - STRING #79 @ $147A3
+
+#W16($140AE)
+・[Pause3]・[Pause3]・[Pause2]・[Pause2]・[Pause1]・[Pause1] FAIL![Pause4][End]
+
+
+//POINTER #80 @ $140B0 - STRING #80 @ $147B7
+
+#W16($140B0)
+[Hero] CONVERSES..[Pause8]  [Pause4][End]
+
+
+//POINTER #81 @ $140B2 - STRING #81 @ $147C9
+
+#W16($140B2)
+IT'S AN ALL OUT[Line]
+DEATH BATTLE!   [End]
+
+
+//POINTER #82 @ $140B4 - STRING #82 @ $147EA
+
+#W16($140B4)
+[Hero]Z UF-を よんP"[End]
+
+
+//POINTER #83 @ $140B6 - STRING #83 @ $147F7
+
+#W16($140B6)
+[Var] SUFFERS A[Line]
+LOSS OF [VarNum] HP!      [End]
+
+
+//POINTER #84 @ $140B8 - STRING #84 @ $14817
+
+#W16($140B8)
+[Hero] SUFFERS A[Line]
+LOSS OF [VarNum] HP!      [End]
+
+
+//POINTER #85 @ $140BA - STRING #85 @ $14837
+
+#W16($140BA)
+[Var]'S RUSH[End]
+
+
+//POINTER #86 @ $140BC - STRING #86 @ $14840
+
+#W16($140BC)
+<$F9>Y カ"ンF" -を!BP[End]
+
+
+//POINTER #87 @ $140BE - STRING #87 @ $1484F
+
+#W16($140BE)
+[Var]'S RUSH      [End]
+
+
+//POINTER #88 @ $140C0 - STRING #88 @ $1485E
+
+#W16($140C0)
+<$F9>Y .CI"GP"[End]
+
+
+//POINTER #89 @ $140C2 - STRING #89 @ $14869
+
+#W16($140C2)
+[Var] ATTACKS! [End]
+
+
+//POINTER #90 @ $140C4 - STRING #90 @ $14875
+
+#W16($140C4)
+[Var]'S RUSH[End]
+
+
+//POINTER #91 @ $140C6 - STRING #91 @ $1487E
+
+#W16($140C6)
+[Var] ATTACKS[Line]
+[Hero]!  [End]
+
+
+//POINTER #92 @ $140C8 - STRING #92 @ $1488D
+
+#W16($140C8)
+<$F9>Y Lっ.°YBQI"G[End]
+
+
+//POINTER #93 @ $140CA - STRING #93 @ $1489B
+
+#W16($140CA)
+[Var]'S RUSH [End]
+
+
+//POINTER #94 @ $140CC - STRING #94 @ $148A5
+
+#W16($140CC)
+LFL CLろF"F?"S" VI"られUB[Pause4][End]
+
+
+//POINTER #95 @ $140CE - STRING #95 @ $148BD
+
+#W16($140CE)
+EQUIP[Line]
+THIS?  [End]
+
+
+//POINTER #96 @ $140D0 - STRING #96 @ $148CB
+
+#W16($140D0)
+[Hero] USES A [VarItem].[End]
+
+
+//POINTER #97 @ $140D2 - STRING #97 @ $148D7
+
+#W16($140D2)
+NO TREASURE[End]
+
+
+//POINTER #98 @ $140D4 - STRING #98 @ $148E3
+
+#W16($140D4)
+ハ°-ティZ[Line]
+ZI"LB LょCI"Gを CIP[Pause4][End]
+
+
+//POINTER #99 @ $140D6 - STRING #99 @ $148FD
+
+#W16($140D6)
+FUNCTION LOCKED. [Pause4][End]
+
+
+//POINTER #100 @ $140D8 - STRING #100 @ $14910
+
+#W16($140D8)
+<$F9>VZ ZULF" RCL"UB[Pause4][End]
+
+
+//POINTER #101 @ $140DA - STRING #101 @ $14922
+
+#W16($140DA)
+[Hero2?]Z[Line]
+<$F9>V !BをRFれP[Pause4][End]
+
+
+//POINTER #102 @ $140DC - STRING #102 @ $14931
+
+#W16($140DC)
+<$F9>Y !BをRBP[Pause4][End]
+
+
+//POINTER #103 @ $140DE - STRING #103 @ $1493C
+
+#W16($140DE)
+[Hero] DODGED!  [End]
+
+
+//POINTER #104 @ $140E0 - STRING #104 @ $14948
+
+#W16($140E0)
+[Var] DODGED! [End]
+
+
+//POINTER #105 @ $140E2 - STRING #105 @ $14953
+
+#W16($140E2)
+[Hero] HAS BEEN[Line]
+BRUTALLY MURDERED!   v[End]
+
+
+//POINTER #106 @ $140E4 - STRING #106 @ $14975
+
+#W16($140E4)
+[Var] HAS BEEN[Line]
+BRUTALLY MURDERED![End]
+
+
+//POINTER #107 @ $140E6 - STRING #107 @ $1499C
+
+#W16($140E6)
+-っFFっPU[End]
+
+
+//POINTER #108 @ $140E8 - STRING #108 @ $149A4
+
+#W16($140E8)
+[Jump]-VICTORY[End]
+
+
+//POINTER #109 @ $140EA - STRING #109 @ $149AE
+
+#W16($140EA)
+-[VarNum] EXP POINTS WON[End]
+
+
+//POINTER #110 @ $140EC - STRING #110 @ $149C0
+
+#W16($140EC)
+-£[VarNum] ACQUIRED  [End]
+
+
+//POINTER #111 @ $140EE - STRING #111 @ $149CF
+
+#W16($140EE)
+UVFF" EっJQSるO"[End]
+
+
+//POINTER #112 @ $140F0 - STRING #112 @ $149DE
+
+#W16($140F0)
+-[VarNum] MAG OBTAINED  [End]
+
+
+//POINTER #113 @ $140F2 - STRING #113 @ $149F0
+
+#W16($140F2)
+-GOT [VarNum] JEWEL    [End]
+
+
+//POINTER #114 @ $140F4 - STRING #114 @ $14A01
+
+#W16($140F4)
+GOT A [VarItem].[End]
+
+
+//POINTER #115 @ $140F6 - STRING #115 @ $14A0A
+
+#W16($140F6)
+フ"ヒ- フ"ヒ-[End]
+
+
+//POINTER #116 @ $140F8 - STRING #116 @ $14A14
+
+#W16($140F8)
+[End]
+
+
+//POINTER #117 @ $140FA - STRING #117 @ $14A15
+
+#W16($140FA)
+[End]
+
+
+//POINTER #118 @ $140FC - STRING #118 @ $14A16
+
+#W16($140FC)
+[Var] CASTS[Line]
+[VarSpell]![End]
+
+
+//POINTER #119 @ $140FE - STRING #119 @ $14A21
+
+#W16($140FE)
+THERE WAS NO EFFECT! [End]
+
+
+//POINTER #120 @ $14100 - STRING #120 @ $14A37
+
+#W16($14100)
+[Hero] NOT AFFECTED[End]
+
+
+//POINTER #121 @ $14102 - STRING #121 @ $14A46
+
+#W16($14102)
+[Hero]Z BQF"Dを LL"LP[End]
+
+
+//POINTER #122 @ $14104 - STRING #122 @ $14A56
+
+#W16($14104)
+[Hero] RETURNED.[Line]
+  [End]
+
+
+//POINTER #123 @ $14106 - STRING #123 @ $14A65
+
+#W16($14106)
+IT DIDN'T HIT![End]
+
+
+//POINTER #124 @ $14108 - STRING #124 @ $14A74
+
+#W16($14108)
+[Hero]Z[Line]
+    -っPH ?BGP"[End]
+
+
+//POINTER #125 @ $1410A - STRING #125 @ $14A86
+
+#W16($1410A)
+[Var] CALLS A[Line]
+[Var].[End]
+
+
+//POINTER #126 @ $1410C - STRING #126 @ $14A93
+
+#W16($1410C)
+[Hero]Y L"ゅ<$A2>んZ[Line]
+       !CL"られSBる[End]
+
+
+//POINTER #127 @ $1410E - STRING #127 @ $14AAE
+
+#W16($1410E)
+<$F9>Z JDをFISGP[End]
+
+
+//POINTER #128 @ $14110 - STRING #128 @ $14ABA
+
+#W16($14110)
+A CRITICAL HIT!!![End]
+
+
+//POINTER #129 @ $14112 - STRING #129 @ $14ACC
+
+#W16($14112)
+やられP! FBLんY BQI"G[End]
+
+
+//POINTER #130 @ $14114 - STRING #130 @ $14ADE
+
+#W16($14114)
+G<$A1>られP! -っKRY BQI"G[End]
+
+
+//POINTER #131 @ $14116 - STRING #131 @ $14AF1
+
+#W16($14116)
+A CRITICAL HIT!![End]
+
+
+//POINTER #132 @ $14118 - STRING #132 @ $14B02
+
+#W16($14118)
+やっP! FBLんY BQI"G[End]
+
+
+//POINTER #133 @ $1411A - STRING #133 @ $14B13
+
+#W16($1411A)
+G-っP! -っKRY BQI"G[End]
+
+
+//POINTER #134 @ $1411C - STRING #134 @ $14B25
+
+#W16($1411C)
+TE<$A2>っPら ZM"LP[End]
+
+
+//POINTER #135 @ $1411E - STRING #135 @ $14B32
+
+#W16($1411E)
+LFL MんS"YTJろS" FわLP[End]
+
+
+//POINTER #136 @ $14120 - STRING #136 @ $14B46
+
+#W16($14120)
+[Hero]'S RUSH[End]
+
+
+//POINTER #137 @ $14122 - STRING #137 @ $14B4F
+
+#W16($14122)
+[Hero]Y カ"ンF" -を!BP[End]
+
+
+//POINTER #138 @ $14124 - STRING #138 @ $14B5E
+
+#W16($14124)
+[Hero]Z カ"ンを CQ-HっP[End]
+
+
+//POINTER #139 @ $14126 - STRING #139 @ $14B6D
+
+#W16($14126)
+[Hero]Y .CI"GP"[End]
+
+
+//POINTER #140 @ $14128 - STRING #140 @ $14B78
+
+#W16($14128)
+[Hero]'S RUSH   [End]
+
+
+//POINTER #141 @ $1412A - STRING #141 @ $14B84
+
+#W16($1412A)
+[Hero]'S RUSH[End]
+
+
+//POINTER #142 @ $1412C - STRING #142 @ $14B8D
+
+#W16($1412C)
+[Hero]Y !"G'U JCI"G[End]
+
+
+//POINTER #143 @ $1412E - STRING #143 @ $14B9C
+
+#W16($1412E)
+[Hero]Y Lっ.°YBQI"G[End]
+
+
+//POINTER #144 @ $14130 - STRING #144 @ $14BAA
+
+#W16($14130)
+[Hero]Z GりFFっP[End]
+
+
+//POINTER #145 @ $14132 - STRING #145 @ $14BB4
+
+#W16($14132)
+[Jump][Hero]Z[Line]
+PBりょHF" 1ホ°イントAF"っP[Pause4][End]
+
+
+//POINTER #146 @ $14134 - STRING #146 @ $14BCD
+
+#W16($14134)
+[Jump][Hero]Z[Line]
+QりょHF" 1ホ°イントAF"っP[Pause4][End]
+
+
+//POINTER #147 @ $14136 - STRING #147 @ $14BE5
+
+#W16($14136)
+[Jump][Hero] GOT A 1 [Line]
+POINT BOOST.[End]
+
+
+//POINTER #148 @ $14138 - STRING #148 @ $14BFE
+
+#W16($14138)
+[Jump][Hero]Z[Line]
+G-"んKF" 1ホ°イントAF"っP[Pause4][End]
+
+
+//POINTER #149 @ $1413A - STRING #149 @ $14C17
+
+#W16($1413A)
+[Jump][Hero]Z[Line]
+CんF" 1ホ°イントAF"っP[Pause4][End]
+
+
+//POINTER #150 @ $1413C - STRING #150 @ $14C2D
+
+#W16($1413C)
+USE ON WHO? [Line]
+[End]
+
+
+//POINTER #151 @ $1413E - STRING #151 @ $14C3B
+
+#W16($1413E)
+[Jump][Hero] FELT POWER[Line]
+WELLING UP INSIDE![Line]
+ [Pause8][End]
+
+
+//POINTER #152 @ $14140 - STRING #152 @ $14C5F
+
+#W16($14140)
+<$F9>Z .YEを ZGFIP[End]
+
+
+//POINTER #153 @ $14142 - STRING #153 @ $14C6D
+
+#W16($14142)
+<$F9>Z MK-L"B れBGを !GFIP[End]
+
+
+//POINTER #154 @ $14144 - STRING #154 @ $14C82
+
+#W16($14144)
+<$F9>Z HKBカ"スを !BP[End]
+
+
+//POINTER #155 @ $14146 - STRING #155 @ $14C91
+
+#W16($14146)
+<$F9>Y T"HZ"り JCI"G[End]
+
+
+//POINTER #156 @ $14148 - STRING #156 @ $14CA1
+
+#W16($14148)
+<$F9>Y <$A1>F" -FっP[End]
+
+
+//POINTER #157 @ $1414A - STRING #157 @ $14CAD
+
+#W16($1414A)
+<$F9>Z ?んU JLRGS" ET"っP[End]
+
+
+//POINTER #158 @ $1414C - STRING #158 @ $14CC1
+
+#W16($1414C)
+<$F9>Y MK-L"B .DJ"D[End]
+
+
+//POINTER #159 @ $1414E - STRING #159 @ $14CD1
+
+#W16($1414E)
+<$F9>Z BOOY YろBをFIP[End]
+
+
+//POINTER #160 @ $14150 - STRING #160 @ $14CE1
+
+#W16($14150)
+<$F9>Z DEATHY YろBをFIP[End]
+
+
+//POINTER #161 @ $14152 - STRING #161 @ $14CF3
+
+#W16($14152)
+[Var] SINGS A SONG.[End]
+
+
+//POINTER #162 @ $14154 - STRING #162 @ $14D03
+
+#W16($14154)
+<$F9>Z HるっPよCV CPっP[End]
+
+
+//POINTER #163 @ $14156 - STRING #163 @ $14D13
+
+#W16($14156)
+[Var]'S POISON FANG![End]
+
+
+//POINTER #164 @ $14158 - STRING #164 @ $14D24
+
+#W16($14158)
+<$F9>Y R<$A1>PB SF" !れSGP[End]
+
+
+//POINTER #165 @ $1415A - STRING #165 @ $14D36
+
+#W16($1415A)
+<$F9>Z R<$A1>S" EOBFFっP[End]
+
+
+//POINTER #166 @ $1415C - STRING #166 @ $14D46
+
+#W16($1415C)
+<$F9>Z TRN"ん Z"HZRLP[End]
+
+
+//POINTER #167 @ $1415E - STRING #167 @ $14D57
+
+#W16($1415E)
+<$F9>Z ニヤリT わらっP[End]
+
+
+//POINTER #168 @ $14160 - STRING #168 @ $14D64
+
+#W16($14160)
+[Hero]Z[Line]
+    .YEを ZGFIP[End]
+
+
+//POINTER #169 @ $14162 - STRING #169 @ $14D76
+
+#W16($14162)
+[Hero]Z[Line]
+    MK-L"B れBGを !GFIP[End]
+
+
+//POINTER #170 @ $14164 - STRING #170 @ $14D8F
+
+#W16($14164)
+[Hero]Z[Line]
+    HKBカ"スを !BP[End]
+
+
+//POINTER #171 @ $14166 - STRING #171 @ $14DA2
+
+#W16($14166)
+[Hero]Y[Line]
+    T"HZ"り JCI"G[End]
+
+
+//POINTER #172 @ $14168 - STRING #172 @ $14DB6
+
+#W16($14168)
+[Hero] LEVELED UP!  [Pause4][End]
+
+
+//POINTER #173 @ $1416A - STRING #173 @ $14DC7
+
+#W16($1416A)
+[Hero]Z[Line]
+    ?んU JLRGS" ET"っP[End]
+
+
+//POINTER #174 @ $1416C - STRING #174 @ $14DDF
+
+#W16($1416C)
+[Hero]Y[Line]
+    MK-L"B .DJ"D[End]
+
+
+//POINTER #175 @ $1416E - STRING #175 @ $14DF3
+
+#W16($1416E)
+[Var] GUARDS.   [End]
+
+
+//POINTER #176 @ $14170 - STRING #176 @ $14E00
+
+#W16($14170)
+-BっP ゆるLSHれ[End]
+
+
+//POINTER #177 @ $14172 - STRING #177 @ $14E0C
+
+#W16($14172)
+[Hero]Z[Line]
+    TろIるよCV CPっP[End]
+
+
+//POINTER #178 @ $14174 - STRING #178 @ $14E20
+
+#W16($14174)
+NOBODY CAME!  [End]
+
+
+//POINTER #179 @ $14176 - STRING #179 @ $14E2F
+
+#W16($14176)
+[Hero]Z[Line]
+    GZ"S" EOBFFっP[End]
+
+
+//POINTER #180 @ $14178 - STRING #180 @ $14E44
+
+#W16($14178)
+[Jump]P"れ<$A2> わるHUB[End]
+
+
+//POINTER #181 @ $1417A - STRING #181 @ $14E50
+
+#W16($1417A)
+[Hero]Z[Line]
+    R<$A1>S" EOBFFっP[End]
+
+
+//POINTER #182 @ $1417C - STRING #182 @ $14E64
+
+#W16($1417C)
+[Var] ESCAPES![End]
+
+
+//POINTER #183 @ $1417E - STRING #183 @ $14E6F
+
+#W16($1417E)
+<$F9>Z ZULFISGP[End]
+
+
+//POINTER #184 @ $14180 - STRING #184 @ $14E7B
+
+#W16($14180)
+<$F9>を YろBJろLP[End]
+
+
+//POINTER #185 @ $14182 - STRING #185 @ $14E86
+
+#W16($14182)
+<$F9>Z BLV UっSL-っP[End]
+
+
+//POINTER #186 @ $14184 - STRING #186 @ $14E95
+
+#W16($14184)
+<$F9>を --KNP[End]
+
+
+//POINTER #187 @ $14186 - STRING #187 @ $14E9E
+
+#W16($14186)
+<$F9>を BっLゅん JEりRFNP[End]
+
+
+//POINTER #188 @ $14188 - STRING #188 @ $14EAF
+
+#W16($14188)
+[Var] SLEEPS[End]
+
+
+//POINTER #189 @ $1418A - STRING #189 @ $14EB8
+
+#W16($1418A)
+<$F9>を FULZ"りVLP[End]
+
+
+//POINTER #190 @ $1418C - STRING #190 @ $14EC5
+
+#W16($1418C)
+<$F9>を HるわNP[End]
+
+
+//POINTER #191 @ $1418E - STRING #191 @ $14ECE
+
+#W16($1418E)
+<$F9>を シアワセS" RRんP"[End]
+
+
+//POINTER #192 @ $14190 - STRING #192 @ $14EDE
+
+#W16($14190)
+<$F9>Y -.Cを !CL"P[End]
+
+
+//POINTER #193 @ $14192 - STRING #193 @ $14EEC
+
+#W16($14192)
+<$F9>を T"HS" よわらNP[End]
+
+
+//POINTER #194 @ $14194 - STRING #194 @ $14EFB
+
+#W16($14194)
+[Hero]Z YろBJろKれP[End]
+
+
+//POINTER #195 @ $14196 - STRING #195 @ $14F07
+
+#W16($14196)
+[Hero]Z BLV UっSL-っP[End]
+
+
+//POINTER #196 @ $14198 - STRING #196 @ $14F16
+
+#W16($14198)
+[Hero]Z FらP"F" --LP[End]
+
+
+//POINTER #197 @ $1419A - STRING #197 @ $14F25
+
+#W16($1419A)
+[Hero]Z BっLゅん JEりRBP[End]
+
+
+//POINTER #198 @ $1419C - STRING #198 @ $14F35
+
+#W16($1419C)
+[Hero] SLEEPS   [End]
+
+
+//POINTER #199 @ $1419E - STRING #199 @ $14F41
+
+#W16($1419E)
+[Hero]Z FULZ"りVUっP[End]
+
+
+//POINTER #200 @ $141A0 - STRING #200 @ $14F4F
+
+#W16($141A0)
+[Hero] IS PANICKING[End]
+
+
+//POINTER #201 @ $141A2 - STRING #201 @ $14F5F
+
+#W16($141A2)
+[Hero]Z シアワセV RR-れP[End]
+
+
+//POINTER #202 @ $141A4 - STRING #202 @ $14F6E
+
+#W16($141A4)
+[Hero]Z -.Cを !CL"られP[End]
+
+
+//POINTER #203 @ $141A6 - STRING #203 @ $14F7E
+
+#W16($141A6)
+[Hero]Z T"HV EFKれP[End]
+
+
+//POINTER #204 @ $141A8 - STRING #204 @ $14F8C
+
+#W16($141A8)
+[Hero]Z[Line]
+    DEATHV TりRFれP[End]
+
+
+//POINTER #205 @ $141AA - STRING #205 @ $14FA1
+
+#W16($141AA)
+[Hero]Z QFらF" WISBっP[Line]
+レヘ"ルF" KF"っP![End]
+
+
+//POINTER #206 @ $141AC - STRING #206 @ $14FBF
+
+#W16($141AC)
+[Hero]Z [VarNum] ホ°イントを[Line]
+MBTられP[End]
+
+
+//POINTER #207 @ $141AE - STRING #207 @ $14FD2
+
+#W16($141AE)
+'んUY ."CG"ょりょHF" KF"っP[End]
+
+
+//POINTER #208 @ $141B0 - STRING #208 @ $14FE9
+
+#W16($141B0)
+<$F9>Y JCI"GりょHF" AF"っP[End]
+
+
+//POINTER #209 @ $141B2 - STRING #209 @ $14FFD
+
+#W16($141B2)
+<$F9>Y ."CG"ょりょHF" AF"っP[End]
+
+
+//POINTER #210 @ $141B4 - STRING #210 @ $15012
+
+#W16($141B4)
+'んUY JCI"GりょHF" KF"っP[End]
+
+
+//POINTER #211 @ $141B6 - STRING #211 @ $15028
+
+#W16($141B6)
+<$F9>Y ."CG"ょりょHを KI"P[End]
+
+
+//POINTER #212 @ $141B8 - STRING #212 @ $1503B
+
+#W16($141B8)
+'んUY JCI"GりょHを AI"P[End]
+
+
+//POINTER #213 @ $141BA - STRING #213 @ $1504F
+
+#W16($141BA)
+'んUY ."CG"ょりょHを AI"P[End]
+
+
+//POINTER #214 @ $141BC - STRING #214 @ $15064
+
+#W16($141BC)
+<$F9>Y JCI"GりょHを KI"P[End]
+
+
+//POINTER #215 @ $141BE - STRING #215 @ $15076
+
+#W16($141BE)
+ラクンタ"Y -.CZ[Line]
+     <$A2>C JCFF"UB[End]
+
+
+//POINTER #216 @ $141C0 - STRING #216 @ $15092
+
+#W16($141C0)
+タルカシ"ャY -.CZ[Line]
+      <$A2>C JCFF"UB[End]
+
+
+//POINTER #217 @ $141C2 - STRING #217 @ $150B0
+
+#W16($141C2)
+ラクカシ"ャY -.CZ[Line]
+      <$A2>C JCFF"UB[End]
+
+
+//POINTER #218 @ $141C4 - STRING #218 @ $150CE
+
+#W16($141C4)
+タルンタ"Y -.CZ[Line]
+     <$A2>C JCFF"UB[End]
+
+
+//POINTER #219 @ $141C6 - STRING #219 @ $150EA
+
+#W16($141C6)
+テトラシ"ャY IっFBを ZっP[End]
+
+
+//POINTER #220 @ $141C8 - STRING #220 @ $150FC
+
+#W16($141C8)
+LっZ°BLSL-っP![Line]
+[Hero]Z LょC<$A1>RLP[End]
+
+
+//POINTER #221 @ $141CA - STRING #221 @ $15114
+
+#W16($141CA)
+[Hero]Z [VarNum] ホ°イントY[Line]
+-りょHを MBTられP[End]
+
+
+//POINTER #222 @ $141CC - STRING #222 @ $1512D
+
+#W16($141CC)
+<$F9>Y -りょHを [Line]
+    [VarNum] ホ°イント MBTっP[End]
+
+
+//POINTER #223 @ $141CE - STRING #223 @ $15149
+
+#W16($141CE)
+<$F9>Z PBりょHF" FB!HLP[End]
+
+
+//POINTER #224 @ $141D0 - STRING #224 @ $1515B
+
+#W16($141D0)
+<$F9>Z われV FDっP[End]
+
+
+//POINTER #225 @ $141D2 - STRING #225 @ $15167
+
+#W16($141D2)
+[Hero] HAS HEALED[Line]
+FOR [VarNum] HEALTH.   [End]
+
+
+//POINTER #226 @ $141D4 - STRING #226 @ $15185
+
+#W16($141D4)
+[Hero]Z BGを !GFDLP[End]
+
+
+//POINTER #227 @ $141D6 - STRING #227 @ $15193
+
+#W16($141D6)
+[Hero] HEALED![End]
+
+
+//POINTER #228 @ $141D8 - STRING #228 @ $1519D
+
+#W16($141D8)
+[Hero]Fら L-"れF" GDP[End]
+
+
+//POINTER #229 @ $141DA - STRING #229 @ $151AC
+
+#W16($141DA)
+[Hero]Z われV FDっP[End]
+
+
+//POINTER #230 @ $141DC - STRING #230 @ $151B8
+
+#W16($141DC)
+[Hero] GOT CURED! [End]
+
+
+//POINTER #231 @ $141DE - STRING #231 @ $151C6
+
+#W16($141DE)
+[Hero]Z フ"タV FDられP[Line]
+フ"ヒ- フ"ヒ-[End]
+
+
+//POINTER #232 @ $141E0 - STRING #232 @ $151DE
+
+#W16($141E0)
+[Hero]'S JOLLY.[End]
+
+
+//POINTER #233 @ $141E2 - STRING #233 @ $151E9
+
+#W16($141E2)
+[Jump]LFL アイテムZ BっZ°BS"M[Line]
+[Line]
+FわりV UVFMS-MF?[Line]
+[Line]
+  YES[Line]
+  NO[End]
+
+
+//POINTER #234 @ $141E4 - STRING #234 @ $15219
+
+#W16($141E4)
+[Jump][Hero2?]Z[Line]
+[VarItem]を AGら<$A1>P[Pause4][End]
+
+
+//POINTER #235 @ $141E6 - STRING #235 @ $15227
+
+#W16($141E6)
+IT'S EMPTY..        [Pause4][End]
+
+
+//POINTER #236 @ $141E8 - STRING #236 @ $1523D
+
+#W16($141E8)
+LんY ゆCLゃTZ[Line]
+QりょH<$A2> MH"れS[Line]
+BUHSZ UらUB[End]
+
+
+//POINTER #237 @ $141EA - STRING #237 @ $1525F
+
+#W16($141EA)
+[Hero]Y[Line]
+PBりょHS"Z[Line]
+JらDGれUB[End]
+
+
+//POINTER #238 @ $141EC - STRING #238 @ $15273
+
+#W16($141EC)
+YろBF" FFっSBS[Line]
+ZM"れUB[End]
+
+
+//POINTER #239 @ $141EE - STRING #239 @ $15287
+
+#W16($141EE)
+I AM CHARON. I CAN[Line]
+RESTORE YOUR LIFE FOR[Line]
+AN OFFERING.[Line]
+CONTEMPLATE IT.[End]
+
+
+//POINTER #240 @ $141F0 - STRING #240 @ $152CD
+
+#W16($141F0)
+       GAME OVER[Line]
+THE WORLD WILL PERISH![Line]
+[Next]
+
+[End]
+
+
+//POINTER #241 @ $141F2 - STRING #241 @ $152F7
+
+#W16($141F2)
+  テ"ヒ"ル アナライス"[End]
+
+
+//POINTER #242 @ $141F4 - STRING #242 @ $15306
+
+#W16($141F4)
+T"YAH-を '-MF?[Line]
+[End]
+
+
+//POINTER #243 @ $141F6 - STRING #243 @ $15315
+
+#W16($141F6)
+NOT USABLE NOW. [Next]
+
+[End]
+
+
+//POINTER #244 @ $141F8 - STRING #244 @ $15327
+
+#W16($141F8)
+テ"-タF" 'RFり-Nん[Next]
+
+[End]
+
+
+//POINTER #245 @ $141FA - STRING #245 @ $15337
+
+#W16($141FA)
+[Jump]T"JY チェックマンS"MF?[Line]
+[MiscEvent]<$3C><$FF>[MiscEvent]<$4E><$FF>マッハ°ラ-Y JCりょHF" UHUっP[Pause4][End]
+
+
+//POINTER #246 @ $141FC - STRING #246 @ $1534C
+
+#W16($141FC)
+[MiscEvent]<$4E><$FF>マッハ°ラ-Y JCりょHF" UHUっP[Pause4][End]
+
+
+//POINTER #247 @ $141FE - STRING #247 @ $1534F
+
+#W16($141FE)
+マッハ°ラ-Y JCりょHF" UHUっP[Pause4][End]
+
+
+//POINTER #248 @ $14200 - STRING #248 @ $15366
+
+#W16($14200)
+[Jump]OY UF-Z ZM"NUB[Next]
+
+[End]
+
+
+//POINTER #249 @ $14202 - STRING #249 @ $15377
+
+#W16($14202)
+[Hero2?]Z ETLAUV EQP[Pause4][End]
+
+
+//POINTER #250 @ $14204 - STRING #250 @ $15386
+
+#W16($14204)
+NO USE!   [Pause4][End]
+
+
+//POINTER #251 @ $14206 - STRING #251 @ $15392
+
+#W16($14206)
+[Jump][Var]Z KっSBっP[Next]
+
+[End]
+
+
+//POINTER #252 @ $14208 - STRING #252 @ $1539E
+
+#W16($14208)
+L-っP ZXFDKれP[End]
+
+
+//POINTER #253 @ $1420A - STRING #253 @ $153AB
+
+#W16($1420A)
+[Hero]Z ZXFDLP[End]
+
+
+//POINTER #254 @ $1420C - STRING #254 @ $153B5
+
+#W16($1420C)
+ZERO SPELLS [End]
+
+
+//POINTER #255 @ $1420E - STRING #255 @ $153C3
+
+#W16($1420E)
+S"<$A2> やっZ°り UF-VUるYZ や<$A1>P[Next]
+
+[End]
+
+
+//POINTER #256 @ $14210 - STRING #256 @ $153DB
+
+#W16($14210)
+[Jump]オ-ト ハ°イロットを セットL-MF?[Line]
+[Line]
+  Aを セットMる[Line]
+  セットLUB[End]
+
+
+//POINTER #257 @ $14212 - STRING #257 @ $15406
+
+#W16($14212)
+[Jump]オ-ト ハ°イロット[Line]
+[Line]
+  セットY L"ょCPB[Line]
+  A? BT"C[Line]
+  BY セット[Line]
+  AY FBLゅC[End]
+
+
+//POINTER #258 @ $14214 - STRING #258 @ $1543F
+
+#W16($14214)
+[Jump]オ-ト ハ°イロット[Line]
+[Line]
+  セットY L"ょCPB[Line]
+  サ-チ[Line]
+  A BY FBLゅC[End]
+
+
+//POINTER #259 @ $14216 - STRING #259 @ $1546D
+
+#W16($14216)
+[Jump]オ-ト ハ°イロット サ-チ[Pause4] NBJC!![Pause4][Line]
+[Line]
+  A? BT"C[Line]
+  B? BT"C[End]
+
+
+//POINTER #260 @ $14218 - STRING #260 @ $1549B
+
+#W16($14218)
+[Jump]オ-ト ハ°イロット サ-チ[Pause4] LっZ°B[Pause4][End]
+
+
+//POINTER #261 @ $1421A - STRING #261 @ $154B3
+
+#W16($1421A)
+[Jump]GEHZ FBL"ょKれ-M[Line]
+[Line]
+よろLBS"MF?[Line]
+  YES[Line]
+  NOD[End]
+
+
+//POINTER #262 @ $1421C - STRING #262 @ $154DA
+
+#W16($1421C)
+オ-ト ハ°イロット メモリ- オ-ハ"-![Line]
+[Line]
+  セットY L"ょCPB[Line]
+  A? BT"C[Line]
+  BY セット[Line]
+  AY FBLゅC[End]
+
+
+//POINTER #263 @ $1421E - STRING #263 @ $1551E
+
+#W16($1421E)
+オ-ト ハ°イロット AY セットBQS"M[Line]
+[Line]
+  セットY L"ょCPB[Line]
+  A? BT"C[Line]
+  AY FBLゅC[End]
+
+
+//POINTER #264 @ $14220 - STRING #264 @ $15559
+
+#W16($14220)
+オ-ト ハ°イロット AY セットBQS"M[Line]
+[Line]
+  セットY L"ょCPB[Line]
+  B? BT"C[Line]
+  ABY FBLゅC[End]
+
+
+//POINTER #265 @ $14222 - STRING #265 @ $15595
+
+#W16($14222)
+オ-ト ハ°イロット BY セットBQS"M[Line]
+[Line]
+  セットY L"ょCPB[Line]
+  A? BT"C[Line]
+  BY FBLゅC[Line]
+  ABY FBLゅC[End]
+
+
+//POINTER #266 @ $14224 - STRING #266 @ $155DC
+
+#W16($14224)
+オ-ト ハ°イロット[Line]
+[Line]
+ B- <$A2>T"れUBト"アを RCFL-LP[Line]
+[Line]
+ オ-ト ハ°イロット LよC !FYC!![End]
+
+
+//POINTER #267 @ $14226 - STRING #267 @ $15617
+
+#W16($14226)
+オ-ト ハ°イロット[Line]
+ B- ETLAUV EQ-LP[Line]
+ オ-ト ハ°イロット LよC !FYC!![End]
+
+
+//POINTER #268 @ $14228 - STRING #268 @ $1564A
+
+#W16($14228)
+[Jump]オ-ト ハ°イロット セット[Line]
+[Line]
+ Aを セットL-LP[Line]
+ メモリ-を FBLL-M[End]
+
+
+//POINTER #269 @ $1422A - STRING #269 @ $15675
+
+#W16($1422A)
+[Jump]オ-ト ハ°イロット L"ょCPB[Line]
+ A[Line]
+ B[End]
+
+
+//POINTER #270 @ $1422C - STRING #270 @ $1568E
+
+#W16($1422C)
+ B セットLSB-Nん[End]
+
+
+//POINTER #271 @ $1422E - STRING #271 @ $1569B
+
+#W16($1422E)
+ I"んK"B [VarNum] ホ°イント[End]
+
+
+//POINTER #272 @ $14230 - STRING #272 @ $156AB
+
+#W16($14230)
+ YJり [VarNum] ホ°イント[End]
+
+
+//POINTER #273 @ $14232 - STRING #273 @ $156B8
+
+#W16($14232)
+[Jump]オ-ト ハ°イロット セット[Line]
+[Line]
+ Bを セットL-LP[End]
+
+
+//POINTER #274 @ $14234 - STRING #274 @ $156D5
+
+#W16($14234)
+オ-ト ハ°イロット BT"C[Line]
+[Line]
+  QゅCLMる[Line]
+  QゅCLLUB[End]
+
+
+//POINTER #275 @ $14236 - STRING #275 @ $156F9
+
+#W16($14236)
+[Jump]オ-ト ハ°イロット[Line]
+ FBLゅCL-M[Pause9][Line]
+ FBLゅCL-LP[Pause4][End]
+
+
+//POINTER #276 @ $14238 - STRING #276 @ $1571C
+
+#W16($14238)
+[Jump]オ-ト ハ°イロット AY セットBQS"M[Line]
+[Line]
+  セットY L"ょCPB[Line]
+  メモリ-Y FBL[Line]
+  AY FBLゅC[End]
+
+
+//POINTER #277 @ $1423A - STRING #277 @ $1575A
+
+#W16($1423A)
+[Jump]オ-ト ハ°イロット[Line]
+  メモリ-を RR"I-M[Pause9][End]
+
+
+//POINTER #278 @ $1423C - STRING #278 @ $15776
+
+#W16($1423C)
+[Jump]オ-ト ハ°イロット セット!FYCソ"-ン[Line]
+[Line]
+ JJVZ セットS"G-Nん[End]
+
+
+//POINTER #279 @ $1423E - STRING #279 @ $1579F
+
+#W16($1423E)
+オ-ト ハ°イロット[Line]
+ GT"C!YCエリア RCF!![Line]
+ オ-ト ハ°イロット LよC !FYC!![End]
+
+
+//POINTER #280 @ $14240 - STRING #280 @ $157D3
+
+#W16($14240)
+オ-ト ハ°イロット GT"C !FYC!![Line]
+[Line]
+  QゅCLMる[Line]
+  QゅCLLUB[End]
+
+
+//POINTER #281 @ $14242 - STRING #281 @ $157FE
+
+#W16($14242)
+YOU ARE A DEVIL BUSTER [Line]
+NOW. DEFEAT THE EVIL[Line]
+DEMONS AND RESTORE[Line]
+PEACE TO THE WORLD. THE[Line]
+GAME WILL FEEL REAL SO[Line]
+YOU MUST TREAD LIGHTLY.[Next]
+
+YOU WILL MATURE AS YOU[Line]
+OVERCOME OBSTACLES. YOU[Line]
+ARE WEAK THOUGH SO PROCEED[Line]
+WITH CAUTION. MY GUIDANCE   [Line]
+HAS BEEN ESTABLISHED.[Line]
+LET THE GAME BEGIN.[Next]
+
+[End]
+
+
+//POINTER #282 @ $14244 - STRING #282 @ $15925
+
+#W16($14244)
+[Jump]YOUR CHARACTER IS[Line]
+THE YOUNG HERO.[Line]
+NAME HIM.[End]
+
+
+//POINTER #283 @ $14246 - STRING #283 @ $15956
+
+#W16($14246)
+[Jump]NAME YOUR[Line]
+GIRLFRIEND.[End]
+
+
+//POINTER #284 @ $14248 - STRING #284 @ $15981
+
+#W16($14248)
+[Jump]GIVE A NAME FOR[Line]
+YOUR BEST FRIEND.[End]
+
+
+//POINTER #285 @ $1424A - STRING #285 @ $159C2
+
+#W16($1424A)
+われ ゆCGゅCYTGをJD-Pれり[Line]
+われJO Z"ん!"RYLんりPる[Line]
+OCO"CLゅS"Aる[Next]
+
+われZ AんJHV C-れL<$A2>Yを RFB[Line]
+UんL"らより Dら-" OLS .ろ."LP[Next]
+
+EEHY AHBYUFVS PPFBWBPる[Line]
+[Hero]よ[Line]
+UんL"らZ DらZ"れP[Next]
+
+KA -BろC[Line]
+EEHYP'より Dら-"L<$A2>YTT<$A2>V[Line]
+われF"RHるDBDんYL!HYNFB[Line]
+NんXんECJH?[Next]
+
+[End]
+
+
+//POINTER #286 @ $1424C - STRING #286 @ $15A85
+
+#W16($1424C)
+UんTBCJTP"[Line]
+'M"FらRHりL RQHれV[Line]
+.ろ."KれるTZ[Next]
+
+LFL JれS"よFっPYF<$A2>LれW[Line]
+JれF" UんL"らYNんPHUら・・・[Next]
+
+KBJ"V BっSEJC[Line]
+わPLZ vI"んYCQゅCをTCFRMる[Line]
+BLGPBY J"HBQ!"S"LFUB[Next]
+
+JYCQゅCVZ よりGょCP"BU[Line]
+BLGY LゅCJ"CPBF"Bる[Next]
+
+BBF JれS"EわっPわIS"ZUB[Line]
+UんL"らZ よりHるLB'Qを[Line]
+DらんS"L-っPYP"・・・[Next]
+
+[End]
+
+
+//POINTER #287 @ $1424E - STRING #287 @ $15B64
+
+#W16($1424E)
+AHBY Z-"JるNFBZ GDKっP[Line]
+."HPQZ F'VUるYF・・・[Pause8][End]
+
+
+//POINTER #288 @ $14250 - STRING #288 @ $15B8C
+
+#W16($14250)
+PPFBZ EわっP[Line]
+'んU APらLBALPVvFっS[Line]
+F"んZ"っSBる[Pause8][End]
+
+
+//POINTER #289 @ $14252 - STRING #289 @ $15BB4
+
+#W16($14252)
+-P APらLBAHBF" T"JFS"[Line]
+<$A1>Z"DるP"ろC[Line]
+OLS -P PPFBF"EJるP"ろC[Pause8][Jump]LFL L"!"んPQY QFらS"[Line]
+JH!HLS BFUIれZ" UらUB[Line]
+-TF" -TTLS BGるP<$A1>V・・・[Pause8][End]
+
+
+//POINTER #290 @ $14254 - STRING #290 @ $1A001
+
+#W16($14254)
+! ハ°ス"スを PELPF[Line]
+KA ZやH [VarItem]を[Line]
+わPLSHれ![YesNo]<$0C>[Jump]LゃらHKB ヤツ<$A1>[Line]
+UらZ" PPFC-S"よ[Next]
+
+[Event]<$0D>[Jump]vv H-"Z T"CLP?[Line]
+わMれるTZ ゆるNん![Next]
+
+[Event]<$0D>[Event4]<$A4><$0B><$D2>[Jump]JれF" [VarItem]F[Line]
+JC'るT AわれよY[Next]
+
+TVFH れBY -TR<$A2>[Line]
+やらXZ" Uる-BU[Line]
+.れ CITるF" よB![Next]
+
+[SetVar]<$13>[Fight]<$01>9[Skip]S[Teleport]<$18><$1F>?2[End]
+

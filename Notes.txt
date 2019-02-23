@@ -1,0 +1,454 @@
+﻿0xe502 = yes/no text with squished 	yes
+0xe9ca = big/small choice in big/small
+0xe9d2 = number history text
+0x19500 = mora "want to go?"
+0x3ac28 = title screen "START"
+0x1581e = Caution for Devil Busters
+0x3a8fe = naming screen data
+0x7ee82 = naming screen tiles
+0x7ebc6 = title screen tiles
+0x7eca4 = status screen tilemap
+0x7F483 = 199X opening tilemap
+0x3A1A0 = banks for opening?
+
+0x880c = tiles used for the open ocean
+0x8898 = completely sandy tiles
+
+map areas:
+tokyo:
+x: 00-4f, y: 50-9f
+hell:
+x: 00-4f, y: 00-4f
+towns:
+x: 00-7f, y: a0-e7
+x: 50-60, y: ~50~90
+devil busters:
+x: 50-7f. y: 00-7f
+bridge:
+x: 50-7f y: 90-a0
+
+f0=new line
+fe=next input
+ff=end text?
+
+0x3a9c7 = hero's default name
+other names follow immediately after
+if name's shorter than 8 characters,
+a termination of the name will work correctly
+
+0x2d88a = those labels on item lists
+four characters a piece, unfortunately
+
+0x5f01 = "COMP", dungeon menu
+note tiles go vertically for some weird reason
+(rhdn threads save the day!)
+0x38567 = "HANEDA", other town names around there
+0x291E6 = "POISON BAR", header 60 18 73
+pointer location: 0x28166
+60 = X location
+18 = Y location
+73 = 7 columns, 3 rows
+
+38562 = tilemap for walking right
+
+demon data: my savestate has alraune in it,
+so that's the guinea pig
+(by some strange coincidence, demon data has 16 bytes)
+(so i just pasted pixie data instead
+02 05 06 05 05 05 03 00 01 22 7C FF 09 15 00 01 - pixie
+lv vt in st sp lk df ?? ??  magic!  ?? ?? ?? cp
+01 05 05 05 05 05 01 00 61 7D FF FF 04 13 00 00 - slime
+6E 23 23 23 19 14 14 0A 88 11 0A 3E 09 21 00 00 - unused dark hero
+
+33bec: level
+ed: vitality
+ee: intelligence
+ef: strength
+f0: speed
+f1: luck
+f2: likely defence
+f5: spell 1
+f6: spell 2
+f7: spell 3
+fb: cost points
+
+
+C0 = skip to here
+C2 00 XX = one of those event summoning codes
+C8 XX = list of selections, XX amount of choices
+C9 XX = load character sprite
+CB = draws money
+
+D0 XX YY = a common enough event summon thing
+DD XX = set demon name variable to XX
+DE XX = set item name variable to XX
+DF XX YY = set money variable
+XX lower byte, YY upper byte
+
+E0 = pause text
+E1 - EA = varying lengths of pauses
+EB XX = load XX event
+EC XX = the above, but keep displaying text
+
+F0 = new line
+F1 = jump here on "no"
+F3 = loads the hero's name with some extra gibberish
+F4 = print variable set with DD
+F5 = print item name variable
+F6 = print money variable
+F7 = print the hero's name
+F8 = print the spell name variable
+F9 = print three specific characters
+pointer at 2bbc3, text after
+FA 00 XX = shop list
+FA 01 = loads equipped weapons
+FA 02 = loads equipped armour
+FA 03 = loads weapons, armour, inventory
+FA 05 XX = loads enemy sprite
+FA 06 XX = get into combat, XX is amount of enemies
+combine the two to fight a specific demon
+FA 07 XX = load XX dialogue instead
+FA 08 XX = load XX dialogue from somewhere else
+FA 09 XX = load XX dialogue, or something
+FA 0A XX = there's definitely something i'm missing
+FA 1E XX = 00 inflicts LostArm, otherwise heals HP
+FA 1F = loads consumable and key items
+FA 20 = brings up a demon stat screen
+FA 21 = brings up party selection menu
+FA 22 = the above, but specifically demons
+FA 23 = oh hey, another combat event
+FA 24 = pops up a glitchy item list
+FA 28 = halves makka! it loads your halved wallet as well
+FA 29 = turn around and the tileset changes
+FA 2F = another teleportation
+FA 30 XX YY = teleport event
+FA 31 XX = loads a background
+FA 32 = shelter computer save menu
+teleports there if game is saved
+FA 33 = demons unsummoned and warped outside computer, all money lost
+FA 34 = summons a lift menu
+FA 36 = tokyo tower scene
+FA 37 = pazuzu's revival scene
+FA 38 = replaces normal sprite with a specific one
+FA 39 = loads terminal totem pole	
+FA 3C = loads menu with one japanese choice
+FA 48 = select human party member, view status
+FA 4B XX = loads XX demon with a pale palette
+FA 51 XX = loads XX text, and heals as well
+FA 52 = pub menu
+FA 61 = last valid entry
+
+FC XX = yes/no box, XX is text for yes
+FD = skip to next newline
+FE = push button to continue
+FF = end text
+
+0x3810 - 39c5 = item name pointer table
+0xd763 - d95c = demon name pointer table
+0x10010 - 103af = script pointer table 1
+0x14010 - 14255 = battle message pointer table
+0x15c4c - 15cc9 = spell name pointer table
+0x15e5c - 15e8d = healing menu pointers?
+0x16f4f - 16fb2 = ending pointers
+0x18010 - 183e7 = script pointer table 2
+0x1dd9c - 1ddbb = table for something???
+0x2a010 - 2a1a7 = script pointer table 3
+0x2bb04 - 2bb39 = demon race pointer table
+0x2bbc9 - 2bbee = lift choice pointers
+0x2bc34 - 2bceb = dialogue choice pointers
+0x30010 - 302cf = unknown pointer table
+0x38010 - 382cf = pointers???
+
+table:
+
+latin:
+00= 
+01=>
+02=♂
+03=v
+04=!
+05=?
+06=(???)
+07=0
+08=1
+09=2
+0A=3
+0B=4
+0C=5
+0D=6
+0E=7
+0F=8
+10=9
+11=A
+12=B
+13=C
+14=D
+15=E
+16=F
+17=G
+18=H
+19=I
+1A=J
+1B=K
+1C=L
+1D=M
+1E=N
+1F=O
+20=P
+21=Q
+22=R
+23=S
+24=T
+25=U
+26=V
+27=W
+28=X
+29=Y
+2A=Z
+2B=-
+2C=.
+2D=#
+2E=/
+2F=£
+38=ま
+39=ほ
+3A=う
+3B3C3D3E=ステイタス
+3F=(cursor)
+
+katakana:
+40=ア
+41=イ
+42=ウ
+43=エ
+44=オ
+45=カ
+46=キ
+47=ク
+48=ケ
+49=コ
+4A=サ
+4B=シ
+4C=ス
+4D=セ
+4E=ソ
+4F=タ
+50=チ
+51=ツ
+52=テ
+53=ト
+54=ナ
+55=ニ
+56=ヌ
+57=ネ
+58=ノ
+59=ハ
+5A=ヒ
+5B=フ
+5C=ヘ
+5D=ホ
+5E=マ
+5F=ミ
+60=ム
+61=メ
+62=モ
+63=ヤ
+64=ユ
+65=ヨ
+66=ラ
+67=リ
+68=ル
+69=レ
+6A=ロ
+6B=ワ
+6C=ヲ
+6D=ン
+6E=ァ
+6F=ィ
+70=ェ
+71=ォ
+72=ャ
+73=ュ
+74=ョ
+75=ッ
+76="
+77=°
+78=(circle)
+79=♀
+7A=ぅ
+7B=10
+7C=11
+7D=12
+7E=*
+7F=(border dakuten)
+
+hiragana:
+80=あ
+81=い
+82=う
+83=え
+84=お
+85=か
+86=き
+87=く
+88=け
+89=こ
+8A=さ
+8B=し
+8C=す
+8D=せ
+8E=そ
+8F=た
+90=ち
+91=つ
+92=て
+93=と
+94=な
+95=に
+96=ぬ
+97=ね
+98=の
+99=は
+9A=ひ
+9B=ふ
+9C=へ
+9D=ほ
+9E=ま
+9F=み
+A0=む
+A1=め
+A2=も
+A3=や
+A4=ゆ
+A5=よ
+A6=ら
+A7=り
+A8=る
+A9=れ
+AA=ろ
+AB=わ
+AC=を
+AD=ん
+AEAF=Pts.
+B0=ぁ
+B1=ぉ
+B2=ゃ
+B3=ゅ
+B4=ょ
+B5=っ
+
+menus:
+00= 
+01=C
+02=カ
+03=M
+04=P
+05=A
+06=U
+07=O
+07=0
+08=1
+09=2
+0A=3
+0B=4
+0C=5
+0D=6
+0E=7
+0F=8
+10=9
+11=T
+12=ト
+13=レ
+14=シ
+15=ャ
+16=-
+17=コ
+18=マ
+19=ン
+1A=ア
+1B=イ
+1C=テ
+1D=ム
+1E=ス
+1F=タ
+20=に
+21=た
+22=か
+23=こ
+24=け
+25="
+26=き
+27=は
+28=い
+29=え
+2A=な
+2B=す
+2C=も
+2D=と
+2E=る
+2F=£
+38=ま
+39=ほ
+3A=う
+3B3C3D=MAG
+3E=ん
+3F=(cursor)
+
+EXP: OR A BIG MESS
+what, having an actual set exp value? *nah*
+exp, makka, hp all seem to relate to level
+taking a single pixie in standard circumstances:
+lv0: 1 exp, $0
+lv1: 1 exp, £4
+lv2, 2 exp, £10, not much hp (the norm)
+lv3: 3 exp, £14
+lv4: 5 exp, €20 (harpies also give this)
+lv5: 8 exp, $24
+let's jump forward a bit
+lv10: 50 exp, $50
+lv15: 150 exp, $74
+lv99: 7920 exp, £1976
+lv255: 20400 exp, $10192
+
+but wait -  killing a kobold gives...
+lv3: 1 exp, $48
+does demon race influence these values?
+orcs give...
+lv4: 2 exp, $64
+carbunkle:
+lv4: 3 exp, $40
+zombie:
+lv2: 1 exp, $6
+ghoul:
+lv4: 2 exp, £12
+punk:
+lv3: 1 exp, £18
+slime:
+lv1: 2 exp, £10, 4 mag
+
+
+ITEMS:
+item icons are a thing in rpgs
+i should probably figure out what i need:
+equipment: (or the easy part)
+gun
+sword
+armour
+helmet
+gloves
+boots
+glasses
+capes
+other items: (or the hard part)
+potion?
+stone?
+orb?
+incense?
+blank spaces?
+pillars?
+
+TCRF STUFF:
+I should probably note down extra things to add into the page.
+I don't think "BAR BAKA BOND" or "BARAM HOUSE" get use at any point.
+Ariake bar and Balaam's lair are what I'm assuming they're for.
+Overworld type 04 is an Earth town. Type 05 is a hell town.

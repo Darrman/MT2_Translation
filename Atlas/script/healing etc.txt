@@ -1,0 +1,166 @@
+﻿//GAME NAME:		Megami Tensei 2 (NES)
+
+#VAR(text, TABLE)
+#ADDTBL("dialogue.tbl", text)
+#ACTIVETBL(text)
+
+//BLOCK #005 NAME:		Healing Menu, etc?
+
+#VAR(Healing, CUSTOMPOINTER)
+#CREATEPTR(Healing, "LINEAR", $A010, 16)
+
+#JMP($15E8E, $1600F)
+
+//POINTER #0 @ $15E5C - STRING #0 @ $15E8E
+
+#WRITE(Healing, $15E5C)
+//ファイル1[End]
+File 1[End]
+
+//POINTER #1 @ $15E5E - STRING #1 @ $15E94
+
+#WRITE(Healing, $15E5E)
+//ファイル2[End]
+File 2[End]
+
+//POINTER #2 @ $15E60 - STRING #2 @ $15E9A
+
+#WRITE(Healing, $15E60)
+//すうし" あててね  かいめネ  [End]
+//Code Breaker
+Attempt  # -[End]
+
+//POINTER #3 @ $15E62 - STRING #3 @ $15EAC
+
+#WRITE(Healing, $15E62)
+//さあ やるか"よい  かいめし"ゃ [End]
+Come on, solve it.[End]
+
+//POINTER #4 @ $15E64 - STRING #4 @ $15EBF
+
+#WRITE(Healing, $15E64)
+//それは  ヒット  フ"ロ-た" [End]
+     Hit  Blow[End]
+
+//POINTER #5 @ $15E66 - STRING #5 @ $15ED1
+
+#WRITE(Healing, $15E66)
+//ウオ-ッ あたり- おめて"と ネ[End]
+Congratulations![End]
+
+//POINTER #6 @ $15E68 - STRING #6 @ $15EE3
+
+#WRITE(Healing, $15E68)
+//アチャ- あたった ようた"な  [End]
+Looks like a hit.[End]
+
+//POINTER #7 @ $15E6A - STRING #7 @ $15EF5
+
+#WRITE(Healing, $15E6A)
+//フ"ッ フ"-  こたえは    なのネ[End]
+Too bad. Ans-   .[End]
+
+//POINTER #8 @ $15E6C - STRING #8 @ $15F0A
+
+#WRITE(Healing, $15E6C)
+//フッ フッ フッ こたえは     し"ゃ[End]
+Ha ha.   Ans-   .[End]
+
+//POINTER #9 @ $15E6E - STRING #9 @ $15F20
+
+#WRITE(Healing, $15E6E)
+//# NAME    HIT-PTS MP ちりょうひ[End]
+//2D = #. Atlas crashes if it's at start of line.
+<$2D> Name    Hit-Pts MP Price[End]
+
+//POINTER #10 @ $15E70 - STRING #10 @ $15F3B
+
+#WRITE(Healing, $15E70)
+//# CLASS  NAME    12345678910[End]
+<$2D> Class  Name    123456789<$7B>[End]
+
+//POINTER #11 @ $15E72 - STRING #11 @ $15F57
+
+#WRITE(Healing, $15E72)
+Dead    ..[End]
+
+
+//POINTER #12 @ $15E74 - STRING #12 @ $15F62
+
+#WRITE(Healing, $15E74)
+Stone   ..[End]
+
+
+//POINTER #13 @ $15E76 - STRING #13 @ $15F6D
+
+#WRITE(Healing, $15E76)
+//PALSY   ..[End]
+Paralyse..[End]
+
+//POINTER #14 @ $15E78 - STRING #14 @ $15F78
+
+#WRITE(Healing, $15E78)
+Poison  ..[End]
+
+
+//POINTER #15 @ $15E7A - STRING #15 @ $15F83
+
+#WRITE(Healing, $15E7A)
+Sleep   ..[End]
+
+
+//POINTER #16 @ $15E7C - STRING #16 @ $15F8E
+
+#WRITE(Healing, $15E7C)
+ Full [End]
+
+
+//POINTER #17 @ $15E7E - STRING #17 @ $15F95
+
+#WRITE(Healing, $15E7E)
+ ....[End]
+
+
+//POINTER #18 @ $15E80 - STRING #18 @ $15F9B
+
+#WRITE(Healing, $15E80)
+ ..[End]
+
+
+//POINTER #19 @ $15E82 - STRING #19 @ $15F9F
+
+#WRITE(Healing, $15E82)
+1st Select[End]
+
+
+//POINTER #20 @ $15E84 - STRING #20 @ $15FAA
+
+#WRITE(Healing, $15E84)
+// NAME     STATUS    ちりょうひ[End]
+ Name     Status    Price[End]
+
+//POINTER #21 @ $15E86 - STRING #21 @ $15FC4
+
+#WRITE(Healing, $15E86)
+//  テ"スフ"レイト" £ 1000[End]
+//Death Blade's curse, £1000 to cure.
+  [Swd]Death    £ 1000[End]
+
+//POINTER #22 @ $15E88 - STRING #22 @ $15FD7
+
+#WRITE(Healing, $15E88)
+//  ようとうニヒル   £  500[End]
+// Nihil Sword
+  [Swd]Nihil    £  500[End]
+
+//POINTER #23 @ $15E8A - STRING #23 @ $15FEA
+
+#WRITE(Healing, $15E8A)
+  Death     £  600[End]
+
+
+//POINTER #24 @ $15E8C - STRING #24 @ $15FFD
+
+#WRITE(Healing, $15E8C)
+  Pig       £  300[End]
+

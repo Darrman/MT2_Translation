@@ -1,0 +1,126 @@
+﻿//GAME NAME:		Megami Tensei 2 (NES)
+
+#VAR(text, TABLE)
+#ADDTBL("dialogue.tbl", text)
+#ACTIVETBL(text)
+
+//BLOCK #012 NAME:		Elevator Choices
+
+#VAR(Lift, CUSTOMPOINTER)
+#CREATEPTR(Lift, "LINEAR", $20010, 16)
+
+#JMP($2BBEF, $2BC33)
+
+//POINTER #0 @ $2BBC9 - STRING #0 @ $2BBEF
+
+#WRITE(Lift, $2BBC9)
+//ちし"ょう[End]
+GF[End]
+
+//POINTER #1 @ $2BBCB - STRING #1 @ $2BBF5
+
+#WRITE(Lift, $2BBCB)
+1F[End]
+
+
+//POINTER #2 @ $2BBCD - STRING #2 @ $2BBF8
+
+#WRITE(Lift, $2BBCD)
+2F[End]
+
+
+//POINTER #3 @ $2BBCF - STRING #3 @ $2BBFB
+
+#WRITE(Lift, $2BBCF)
+3F[End]
+
+
+//POINTER #4 @ $2BBD1 - STRING #4 @ $2BBFE
+
+#WRITE(Lift, $2BBD1)
+4F[End]
+
+
+//POINTER #5 @ $2BBD3 - STRING #5 @ $2BC01
+
+#WRITE(Lift, $2BBD3)
+5F[End]
+
+
+//POINTER #6 @ $2BBD5 - STRING #6 @ $2BC04
+
+#WRITE(Lift, $2BBD5)
+6F[End]
+
+
+//POINTER #7 @ $2BBD7 - STRING #7 @ $2BC07
+
+#WRITE(Lift, $2BBD7)
+7F[End]
+
+
+//POINTER #8 @ $2BBD9 - STRING #8 @ $2BC0A
+
+#WRITE(Lift, $2BBD9)
+8F[End]
+
+
+//POINTER #9 @ $2BBDB - STRING #9 @ $2BC0D
+
+#WRITE(Lift, $2BBDB)
+B8[End]
+
+
+//POINTER #10 @ $2BBDD - STRING #10 @ $2BC10
+
+#WRITE(Lift, $2BBDD)
+B7[End]
+
+
+//POINTER #11 @ $2BBDF - STRING #11 @ $2BC13
+
+#WRITE(Lift, $2BBDF)
+B6[End]
+
+
+//POINTER #12 @ $2BBE1 - STRING #12 @ $2BC16
+
+#WRITE(Lift, $2BBE1)
+B5[End]
+
+
+//POINTER #13 @ $2BBE3 - STRING #13 @ $2BC19
+
+#WRITE(Lift, $2BBE3)
+B4[End]
+
+
+//POINTER #14 @ $2BBE5 - STRING #14 @ $2BC1C
+
+#WRITE(Lift, $2BBE5)
+B3[End]
+
+
+//POINTER #15 @ $2BBE7 - STRING #15 @ $2BC1F
+
+#WRITE(Lift, $2BBE7)
+B2[End]
+
+
+//POINTER #16 @ $2BBE9 - STRING #16 @ $2BC22
+
+#WRITE(Lift, $2BBE9)
+B1[End]
+
+
+//POINTER #17 @ $2BBEB - STRING #17 @ $2BC25
+
+#WRITE(Lift, $2BBEB)
+//そとへて"る[End]
+Leave[End]
+
+//POINTER #18 @ $2BBED - STRING #18 @ $2BC2C
+
+#WRITE(Lift, $2BBED)
+//みつかりません[End]
+Not found.[End]
