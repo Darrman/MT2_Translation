@@ -1,0 +1,215 @@
+//GAME NAME:		Megami Tensei 2 (NES)
+
+//BLOCK #019 NAME:		Script 3 Raw
+//Block Range: $2A1A8 - $2BAE6
+
+[Event3]<$70><$01>[LoadEnemySprite]<$6B>だれだ? ワシは いま せかい[Line]
+せいふくに むけて わやひめの かいはつに[Line]
+いそがしいのぢゃ![Next]
+
+ぬぬっ! おまえたちは![Line]
+よくも わがぐんだんの へいしを[Line]
+やっつけて くれたな![Next]
+
+わたしが あいてを してやろう[Line]
+かかって きなさい![YesNo]<$02>[Jump]くぉ-の こしぬけめっ![Line]
+これでも くらえ![Next]
+
+
+[MiscEvent]<$19><$FF>[LoadEnemySprite]<$6B>[SetItem]<$83>まだ [VarItem]が ほしいのかい?[Next]
+
+それでは...[Next]
+
+[Event]<$03>[Skip]<$70>[Jump]ワシを おそれぬとは アッパレなやつ![Line]
+その ゆうきをたたえ[Line]
+[SetItem]<$83>[VarItem]を つくってやろう![Next]
+
+[Event]<$04>[Event4]<$A9><$05><$D2>[SetItem]<$83><$D3><$06>[Jump]よしっ! ちょっとまっとれよ...[Next]
+
+ホ-ラ できあがりぢゃ![Line]
+もっていきなさい[Next]
+
+[End]
+
+じゅばくから ときはなたれた![Next]
+
+[LoadNPC]<$00>すると シルフは てれながら[Line]
+いった...[Next]
+
+おねがいです![Next]
+
+[Var]と わたしを[Line]
+じゃきょうのやかたで[Line]
+いっしょにして ください...[Next]
+
+[LoadEnemySprite]<$B0>わたしは [Var][Next]
+
+シルフのひめ ありがとうございます[Line]
+アスタロトに さからったため[Line]
+ふういんされたときは もうダメだと[Line]
+おもいましたよ![Next]
+
+ところで わたしを ナカマにして[Line]
+くれませんか?[Line]
+シルフのひめ ともども[Line]
+おやくに たちたいのです[YesNo]<$03>[Jump]そうですか...[Line]
+では ここで おまちしております[Next]
+
+[End]
+
+や それいじょう ナカマはつくれませんね[Line]
+では またのきかいに...[Next]
+
+[Skip]<$6A>[End]
+
+まいもんは ないもんかの[Next]
+
+[End]
+
+あ メニュ-を どうぞ![Next]
+
+[Choices]<$05>オ<$02>カ<$03>キ!ク?ケ<$06>[Jump]メニュ-が きにいらない[Line]
+ようですね...ざんねんです[Next]
+
+[End]
+
+£3500[Next]
+
+[Skip]<$FA><$C1>[VarSpell]<$C1><$F9><$C1><$FB><$C1>[YesNo]<$EB>0[Jump]パンと ブドウしゅ[Line]
+おねだん £3000[Next]
+
+[Skip]<$FB><$C1>[VarSpell]<$C1><$F9><$C1>
+[MiscEvent]<$C1><$FC>[Event]<$07>[Jump]フナムシの おどりぐい[Line]
+ウジピラフ[Line]
+カマドウマの カラあげ[Line]
+ねったいぎょの にぎりずし[Line]
+おねだん £2500[Next]
+
+[Skip]<$FC><$C1>[VarSpell]<$C1><$F9><$C1>
+[MiscEvent]<$C1><$FB>[Event]<$07>[Jump]それで よろしいですか?[YesNo]<$09>[Jump]おきに めしませんか?[Line]
+では もういちど メニュ-を[Line]
+ごらんください![Next]
+
+[Event]<$01>[Event3]<$F8><$0A>[Event3]<$F9><$0B>[Event3]<$FA><$0C>[Event3]<$FB><$0D>[Event]<$0E>[Jump]では しょうひぜいプラスで[Line]
+£2060 いただきます[Next]
+
+[SetMoney]<$0C><$08><$CC>9[SetItem]<$AF>[Event]<$0F>[Jump]え-と しょうひぜいを[Line]
+くわえて...[Next]
+
+£1545 いただきます[Next]
+
+[SetMoney]<$09><$06><$CC>9[SetItem]<$B0>[Event]<$0F>[Jump]しょうひぜい こみで[Line]
+£3605 いただきます[Next]
+
+[SetMoney]<$15><$0E><$CC>9[SetItem]<$B1>[Event]<$0F>[Jump]べつに しょうひぜいを[Line]
+いただいて...[Next]
+
+£3090 いただきます[Next]
+
+[SetMoney]<$06><$04><$CC>9[SetItem]<$B2>[Event]<$0F>[Jump]すいません しょうひぜいを[Line]
+べつに いただいて...[Next]
+
+£2575 いただきます[Next]
+
+[SetMoney]<$0F><$0A><$CC>9[SetItem]<$B3>[Event]<$0F>[Skip]<$59>[Jump]では すぐに テイクアウトの[Line]
+したくを しますので しばらく[Line]
+<$D3>Aおまちください[Pause6][Next]
+
+おまたせしました! またどうぞ![Next]
+
+[End]
+
+ねがたりない?[Next]
+
+まさか...むせんいんしょく...?[Next]
+
+[End]
+
+っと ちからがあれば[Line]
+この つるぎを ぬいて[Line]
+もらえるのに...[Next]
+
+[End]
+
+...[Next]
+
+[Event]<$04>[LoadNPC]<$42>[Jump]ふういんを とけるのは キミしかいない[Line]
+たのむ![Line]
+わたしを ここから かいほうしてくれ[YesNo]<$08>[End]
+
+ずれ きかいが あったら[Line]
+ナカマになろう[Next]
+
+[End]
+
+が ひとりでぬくしかない[Line]
+だれが ぬきますか?
+[MiscEvent]<$5F><$EE>4<$C5> <$06><$C5><$02>0[End]
+
+しずかに めを とじなさい[YesNo]<$01>[LoadNPC]<$00>[End]
+
+...[Line]
+あいつは アヤシイよ![Next]
+
+[End]
+
+゛きものさ![Next]
+
+[End]
+
+ざされている[Next]
+
+[Event]<$03>[LoadBackground]<$FF>[Event3]<$14><$03>
+[MiscEvent]<$5C><$1D>[LoadEnemySprite]<$1A>ようこそ わかものよ![Line]
+さあ あいてを してあげよう![Next]
+
+[Fight]<$01><$03>
+[MiscEvent]<$33><$DD>J[Jump]ホストコンピュ-タ-との アクセスが[Line]
+かのうになり デビルアナライズが[Line]
+できるようになった[Next]
+
+[Teleport]<$2A><$0E>!![Skip]<$67>[Skip]<$14>
+[MiscEvent]<$5C><$1B>[End]
+
+ ハラへったな グルメのオレの[Line]
+くちに あうようなものを くわしてくれよ![Next]
+
+[End]
+
+゛くもの[Next]
+
+[Event4]<$D7><$02>[End]
+
+[LoadNPC]<$3B>[Teleport]<$4F><$37>26[End]
+
+は きえた[Next]
+
+[End]
+
+゛ましょう[Next]
+
+<$D3>?[SetVar]<$0D>これで [Var]の すむ[Line]
+とうに はいれるのじゃ[Next]
+
+たいそうな おたからが[Line]
+あるとか[Next]
+
+[End]
+
+<$06>3[End]
+
+ とれるのは[Line]
+みずの せいれい[Line]
+[Var] だけじゃ[Next]
+
+[End]
+
+ぜ[Next]
+
+[End]
+
+を ひらくと[Line]
+とびらが おともたてずに ひらいた[Next]
+
+[LoadNPC]<$3B>[Teleport]<$18><$20><$06>A[End]
+

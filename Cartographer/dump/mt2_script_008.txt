@@ -152,7 +152,8 @@
 #W16($18024)
 [Event3]<$19><$01>[LoadBackground]<$20>けっかいか" はられている![Next]
 
-[SetVar]<$AE>[MiscEvent]<$0A><$03>[Skip]I[SetVar]<$AE>しかし [Var]か"[Line]
+[SetVar]<$AE>
+[MiscEvent]<$0A><$03>[Skip]I[SetVar]<$AE>しかし [Var]か"[Line]
 けっかいを やふ"った![Next]
 
 [LoadBackground]<$0F>なかに はいりますか?[YesNo]<$02>[End]
@@ -179,7 +180,9 @@
 //POINTER #14 @ $1802C - STRING #14 @ $188CD
 
 #W16($1802C)
-[Event3]<$80><$03>[Event3]<$85><$04>[SetVar]<$AE>[MiscEvent]<$0A><$01>[MiscEvent]<$0F><$02>[Jump][Var]か" さけふ"![Next]
+[Event3]<$80><$03>[Event3]<$85><$04>[SetVar]<$AE>
+[MiscEvent]<$0A><$01>
+[MiscEvent]<$0F><$02>[Jump][Var]か" さけふ"![Next]
 
 [SetVar]<$15>うらき"りものの [Var]めェ![Line]
 きょうは まえの ように いかないせ"[Line]
@@ -207,7 +210,9 @@
 [LoadEnemySprite]<$15>そのイヌもろとも しまつしてあけ"るわ![Line]
 マシ"ョは ミサイルを はっしゃした![Next]
 
-[MiscEvent]<$5C><$3C>[MiscEvent]<$1A><$FA>J[Fight]<$01>!<$EE>![End]
+
+[MiscEvent]<$5C><$3C>
+[MiscEvent]<$1A><$FA>J[Fight]<$01>!<$EE>![End]
 
 
 //POINTER #17 @ $18032 - STRING #17 @ $189A9
@@ -227,13 +232,18 @@
 //POINTER #19 @ $18036 - STRING #19 @ $189BB
 
 #W16($18036)
-<$C1>[Hero]<$C1>け[MiscEvent]<$39><$EE>6[Event3]<$48><$01>[Event]<$0A>[MiscEvent]<$3B><$02>[Event2]<$13>[Line]
+<$C1>[Hero]<$C1>け
+[MiscEvent]<$39><$EE>6[Event3]<$48><$01>[Event]<$0A>
+[MiscEvent]<$3B><$02>[Event2]<$13>[Line]
 よくきたな[Next]
+
 
 [MiscEvent]<$3B><$03><$EE><$06>[Jump]それて"は なにを のそ"む[Line]
 [Choices]<$03>▽2E?B4[Event]<$09>[Jump]それて"は なにを のそ"む[Line]
 [Choices]<$02>▽2E?[Event]<$09>[Jump]と"の ファイルに きろくする[Line]
-[MiscEvent]<$32><$EE>♂[MiscEvent]<$3A><$F1>しかと きろくしたそ"[Next]
+
+[MiscEvent]<$32><$EE>♂
+[MiscEvent]<$3A><$F1>しかと きろくしたそ"[Next]
 
 [Event]<$02>[Event3]<$03><$07>[Event]<$04>[Event4]<$C1><$08>[Event]<$04>[Event3]<$6F><$04>[Skip]ィシェルタ-へ つかいのものに[Line]
 [VarItem]を あたえ むかわせた[Line]
@@ -247,13 +257,17 @@
 //POINTER #20 @ $18038 - STRING #20 @ $189C8
 
 #W16($18038)
+
 [MiscEvent]<$3B><$02>[Event2]<$13>[Line]
 よくきたな[Next]
+
 
 [MiscEvent]<$3B><$03><$EE><$06>[Jump]それて"は なにを のそ"む[Line]
 [Choices]<$03>▽2E?B4[Event]<$09>[Jump]それて"は なにを のそ"む[Line]
 [Choices]<$02>▽2E?[Event]<$09>[Jump]と"の ファイルに きろくする[Line]
-[MiscEvent]<$32><$EE>♂[MiscEvent]<$3A><$F1>しかと きろくしたそ"[Next]
+
+[MiscEvent]<$32><$EE>♂
+[MiscEvent]<$3A><$F1>しかと きろくしたそ"[Next]
 
 [Event]<$02>[Event3]<$03><$07>[Event]<$04>[Event4]<$C1><$08>[Event]<$04>[Event3]<$6F><$04>[Skip]ィシェルタ-へ つかいのものに[Line]
 [VarItem]を あたえ むかわせた[Line]
@@ -267,10 +281,13 @@
 //POINTER #21 @ $1803A - STRING #21 @ $189D4
 
 #W16($1803A)
+
 [MiscEvent]<$3B><$03><$EE><$06>[Jump]それて"は なにを のそ"む[Line]
 [Choices]<$03>▽2E?B4[Event]<$09>[Jump]それて"は なにを のそ"む[Line]
 [Choices]<$02>▽2E?[Event]<$09>[Jump]と"の ファイルに きろくする[Line]
-[MiscEvent]<$32><$EE>♂[MiscEvent]<$3A><$F1>しかと きろくしたそ"[Next]
+
+[MiscEvent]<$32><$EE>♂
+[MiscEvent]<$3A><$F1>しかと きろくしたそ"[Next]
 
 [Event]<$02>[Event3]<$03><$07>[Event]<$04>[Event4]<$C1><$08>[Event]<$04>[Event3]<$6F><$04>[Skip]ィシェルタ-へ つかいのものに[Line]
 [VarItem]を あたえ むかわせた[Line]
@@ -287,7 +304,9 @@
 [Jump]それて"は なにを のそ"む[Line]
 [Choices]<$03>▽2E?B4[Event]<$09>[Jump]それて"は なにを のそ"む[Line]
 [Choices]<$02>▽2E?[Event]<$09>[Jump]と"の ファイルに きろくする[Line]
-[MiscEvent]<$32><$EE>♂[MiscEvent]<$3A><$F1>しかと きろくしたそ"[Next]
+
+[MiscEvent]<$32><$EE>♂
+[MiscEvent]<$3A><$F1>しかと きろくしたそ"[Next]
 
 [Event]<$02>[Event3]<$03><$07>[Event]<$04>[Event4]<$C1><$08>[Event]<$04>[Event3]<$6F><$04>[Skip]ィシェルタ-へ つかいのものに[Line]
 [VarItem]を あたえ むかわせた[Line]
@@ -303,7 +322,9 @@
 #W16($1803E)
 [Jump]それて"は なにを のそ"む[Line]
 [Choices]<$02>▽2E?[Event]<$09>[Jump]と"の ファイルに きろくする[Line]
-[MiscEvent]<$32><$EE>♂[MiscEvent]<$3A><$F1>しかと きろくしたそ"[Next]
+
+[MiscEvent]<$32><$EE>♂
+[MiscEvent]<$3A><$F1>しかと きろくしたそ"[Next]
 
 [Event]<$02>[Event3]<$03><$07>[Event]<$04>[Event4]<$C1><$08>[Event]<$04>[Event3]<$6F><$04>[Skip]ィシェルタ-へ つかいのものに[Line]
 [VarItem]を あたえ むかわせた[Line]
@@ -318,7 +339,9 @@
 
 #W16($18040)
 [Jump]と"の ファイルに きろくする[Line]
-[MiscEvent]<$32><$EE>♂[MiscEvent]<$3A><$F1>しかと きろくしたそ"[Next]
+
+[MiscEvent]<$32><$EE>♂
+[MiscEvent]<$3A><$F1>しかと きろくしたそ"[Next]
 
 [Event]<$02>[Event3]<$03><$07>[Event]<$04>[Event4]<$C1><$08>[Event]<$04>[Event3]<$6F><$04>[Skip]ィシェルタ-へ つかいのものに[Line]
 [VarItem]を あたえ むかわせた[Line]
@@ -389,6 +412,7 @@
 ちからに なるて"あろう[Next]
 
 [Event3]<$03><$06>[Event]<$02>[Jump]と"この チェックマンに いくのた"[Line]
+
 [MiscEvent]<$3C><$EE>♂[Jump]それて"は <$F2>Dの[Line]
 チェックマンの ところに おくってやるそ"[Next]
 
@@ -400,6 +424,7 @@
 
 #W16($1804C)
 [Jump]と"この チェックマンに いくのた"[Line]
+
 [MiscEvent]<$3C><$EE>♂[Jump]それて"は <$F2>Dの[Line]
 チェックマンの ところに おくってやるそ"[Next]
 
@@ -427,34 +452,49 @@
 //POINTER #33 @ $18052 - STRING #33 @ $18B40
 
 #W16($18052)
-[MiscEvent]<$5C><$01>[Event]<$0D>[MiscEvent]<$5C><$02>[Event]<$0D>[MiscEvent]<$5C><$03>[Event]<$0D>[MiscEvent]<$5C><$04>[Event]<$0D>[MiscEvent]<$5C><$05>[Event]<$0D>わたしは[Line]
+
+[MiscEvent]<$5C><$01>[Event]<$0D>
+[MiscEvent]<$5C><$02>[Event]<$0D>
+[MiscEvent]<$5C><$03>[Event]<$0D>
+[MiscEvent]<$5C><$04>[Event]<$0D>
+[MiscEvent]<$5C><$05>[Event]<$0D>わたしは[Line]
 <$F2>Dの チェックマン[End]
 
 
 //POINTER #34 @ $18054 - STRING #34 @ $18B45
 
 #W16($18054)
-[MiscEvent]<$5C><$02>[Event]<$0D>[MiscEvent]<$5C><$03>[Event]<$0D>[MiscEvent]<$5C><$04>[Event]<$0D>[MiscEvent]<$5C><$05>[Event]<$0D>わたしは[Line]
+
+[MiscEvent]<$5C><$02>[Event]<$0D>
+[MiscEvent]<$5C><$03>[Event]<$0D>
+[MiscEvent]<$5C><$04>[Event]<$0D>
+[MiscEvent]<$5C><$05>[Event]<$0D>わたしは[Line]
 <$F2>Dの チェックマン[End]
 
 
 //POINTER #35 @ $18056 - STRING #35 @ $18B4A
 
 #W16($18056)
-[MiscEvent]<$5C><$03>[Event]<$0D>[MiscEvent]<$5C><$04>[Event]<$0D>[MiscEvent]<$5C><$05>[Event]<$0D>わたしは[Line]
+
+[MiscEvent]<$5C><$03>[Event]<$0D>
+[MiscEvent]<$5C><$04>[Event]<$0D>
+[MiscEvent]<$5C><$05>[Event]<$0D>わたしは[Line]
 <$F2>Dの チェックマン[End]
 
 
 //POINTER #36 @ $18058 - STRING #36 @ $18B4F
 
 #W16($18058)
-[MiscEvent]<$5C><$04>[Event]<$0D>[MiscEvent]<$5C><$05>[Event]<$0D>わたしは[Line]
+
+[MiscEvent]<$5C><$04>[Event]<$0D>
+[MiscEvent]<$5C><$05>[Event]<$0D>わたしは[Line]
 <$F2>Dの チェックマン[End]
 
 
 //POINTER #37 @ $1805A - STRING #37 @ $18B54
 
 #W16($1805A)
+
 [MiscEvent]<$5C><$05>[Event]<$0D>わたしは[Line]
 <$F2>Dの チェックマン[End]
 
@@ -744,8 +784,10 @@
 //POINTER #66 @ $18094 - STRING #66 @ $18E69
 
 #W16($18094)
+
 [MiscEvent]<$10><$03>まっ いらっしゃ-い[Line]
-[Choices]<$04> <$06>>B♂♂▽ア[Event]<$40>[Event2]<$3E>[Event]<$05>[MiscEvent]<$0E><$04>[Jump]な-に ここは オンナの くる[Line]
+[Choices]<$04> <$06>>B♂♂▽ア[Event]<$40>[Event2]<$3E>[Event]<$05>
+[MiscEvent]<$0E><$04>[Jump]な-に ここは オンナの くる[Line]
 とこし"ゃ ないのよ[Line]
 ひやかしなら[Line]
 マタに したら?[YesNo]<$40>[Event]<$05>[Jump]あら いらっしゃい まっ おひとり?[Line]
@@ -762,7 +804,8 @@
 //POINTER #67 @ $18096 - STRING #67 @ $18E77
 
 #W16($18096)
-[Choices]<$04> <$06>>B♂♂▽ア[Event]<$40>[Event2]<$3E>[Event]<$05>[MiscEvent]<$0E><$04>[Jump]な-に ここは オンナの くる[Line]
+[Choices]<$04> <$06>>B♂♂▽ア[Event]<$40>[Event2]<$3E>[Event]<$05>
+[MiscEvent]<$0E><$04>[Jump]な-に ここは オンナの くる[Line]
 とこし"ゃ ないのよ[Line]
 ひやかしなら[Line]
 マタに したら?[YesNo]<$40>[Event]<$05>[Jump]あら いらっしゃい まっ おひとり?[Line]
@@ -779,7 +822,8 @@
 //POINTER #68 @ $18098 - STRING #68 @ $18E83
 
 #W16($18098)
-[Event2]<$3E>[Event]<$05>[MiscEvent]<$0E><$04>[Jump]な-に ここは オンナの くる[Line]
+[Event2]<$3E>[Event]<$05>
+[MiscEvent]<$0E><$04>[Jump]な-に ここは オンナの くる[Line]
 とこし"ゃ ないのよ[Line]
 ひやかしなら[Line]
 マタに したら?[YesNo]<$40>[Event]<$05>[Jump]あら いらっしゃい まっ おひとり?[Line]
@@ -796,6 +840,7 @@
 //POINTER #69 @ $1809A - STRING #69 @ $18E87
 
 #W16($1809A)
+
 [MiscEvent]<$0E><$04>[Jump]な-に ここは オンナの くる[Line]
 とこし"ゃ ないのよ[Line]
 ひやかしなら[Line]
@@ -875,6 +920,7 @@
 [Next]
 
 [DrawMoney][Event]<$05>[Jump]まあ なにを うってくれるの?[Line]
+
 [MiscEvent]<$02><$15><$EE>?[Jump][VarItem]ね £[VarNum][Line]
 て"なら ひきとるけと"[Line]
 と"うする?[Line]
@@ -882,10 +928,13 @@
 [Event]<$13>[Event2]<$3F>また" なにか うってくれるの?[Line]
 [YesNo]<$13>[Event]<$05>[Jump]あら うるものか" ないみたいよ[Next]
 
-[Event]<$05>[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
+[Event]<$05>
+[MiscEvent]<$60><$06>
+[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
 なんて"もって わけには[Line]
 いかないけと" ゆっくり みてってね[Line]
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -903,6 +952,7 @@
 [Next]
 
 [DrawMoney][Event]<$05>[Jump]まあ なにを うってくれるの?[Line]
+
 [MiscEvent]<$02><$15><$EE>?[Jump][VarItem]ね £[VarNum][Line]
 て"なら ひきとるけと"[Line]
 と"うする?[Line]
@@ -910,10 +960,13 @@
 [Event]<$13>[Event2]<$3F>また" なにか うってくれるの?[Line]
 [YesNo]<$13>[Event]<$05>[Jump]あら うるものか" ないみたいよ[Next]
 
-[Event]<$05>[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
+[Event]<$05>
+[MiscEvent]<$60><$06>
+[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
 なんて"もって わけには[Line]
 いかないけと" ゆっくり みてってね[Line]
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -931,6 +984,7 @@
 [Next]
 
 [DrawMoney][Event]<$05>[Jump]まあ なにを うってくれるの?[Line]
+
 [MiscEvent]<$02><$15><$EE>?[Jump][VarItem]ね £[VarNum][Line]
 て"なら ひきとるけと"[Line]
 と"うする?[Line]
@@ -938,10 +992,13 @@
 [Event]<$13>[Event2]<$3F>また" なにか うってくれるの?[Line]
 [YesNo]<$13>[Event]<$05>[Jump]あら うるものか" ないみたいよ[Next]
 
-[Event]<$05>[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
+[Event]<$05>
+[MiscEvent]<$60><$06>
+[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
 なんて"もって わけには[Line]
 いかないけと" ゆっくり みてってね[Line]
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -959,6 +1016,7 @@
 [Next]
 
 [DrawMoney][Event]<$05>[Jump]まあ なにを うってくれるの?[Line]
+
 [MiscEvent]<$02><$15><$EE>?[Jump][VarItem]ね £[VarNum][Line]
 て"なら ひきとるけと"[Line]
 と"うする?[Line]
@@ -966,10 +1024,13 @@
 [Event]<$13>[Event2]<$3F>また" なにか うってくれるの?[Line]
 [YesNo]<$13>[Event]<$05>[Jump]あら うるものか" ないみたいよ[Next]
 
-[Event]<$05>[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
+[Event]<$05>
+[MiscEvent]<$60><$06>
+[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
 なんて"もって わけには[Line]
 いかないけと" ゆっくり みてってね[Line]
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -987,6 +1048,7 @@
 [Next]
 
 [DrawMoney][Event]<$05>[Jump]まあ なにを うってくれるの?[Line]
+
 [MiscEvent]<$02><$15><$EE>?[Jump][VarItem]ね £[VarNum][Line]
 て"なら ひきとるけと"[Line]
 と"うする?[Line]
@@ -994,10 +1056,13 @@
 [Event]<$13>[Event2]<$3F>また" なにか うってくれるの?[Line]
 [YesNo]<$13>[Event]<$05>[Jump]あら うるものか" ないみたいよ[Next]
 
-[Event]<$05>[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
+[Event]<$05>
+[MiscEvent]<$60><$06>
+[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
 なんて"もって わけには[Line]
 いかないけと" ゆっくり みてってね[Line]
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -1013,6 +1078,7 @@
 [Next]
 
 [DrawMoney][Event]<$05>[Jump]まあ なにを うってくれるの?[Line]
+
 [MiscEvent]<$02><$15><$EE>?[Jump][VarItem]ね £[VarNum][Line]
 て"なら ひきとるけと"[Line]
 と"うする?[Line]
@@ -1020,10 +1086,13 @@
 [Event]<$13>[Event2]<$3F>また" なにか うってくれるの?[Line]
 [YesNo]<$13>[Event]<$05>[Jump]あら うるものか" ないみたいよ[Next]
 
-[Event]<$05>[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
+[Event]<$05>
+[MiscEvent]<$60><$06>
+[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
 なんて"もって わけには[Line]
 いかないけと" ゆっくり みてってね[Line]
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -1039,6 +1108,7 @@
 [Next]
 
 [DrawMoney][Event]<$05>[Jump]まあ なにを うってくれるの?[Line]
+
 [MiscEvent]<$02><$15><$EE>?[Jump][VarItem]ね £[VarNum][Line]
 て"なら ひきとるけと"[Line]
 と"うする?[Line]
@@ -1046,10 +1116,13 @@
 [Event]<$13>[Event2]<$3F>また" なにか うってくれるの?[Line]
 [YesNo]<$13>[Event]<$05>[Jump]あら うるものか" ないみたいよ[Next]
 
-[Event]<$05>[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
+[Event]<$05>
+[MiscEvent]<$60><$06>
+[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
 なんて"もって わけには[Line]
 いかないけと" ゆっくり みてってね[Line]
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -1063,6 +1136,7 @@
 [Next]
 
 [DrawMoney][Event]<$05>[Jump]まあ なにを うってくれるの?[Line]
+
 [MiscEvent]<$02><$15><$EE>?[Jump][VarItem]ね £[VarNum][Line]
 て"なら ひきとるけと"[Line]
 と"うする?[Line]
@@ -1070,10 +1144,13 @@
 [Event]<$13>[Event2]<$3F>また" なにか うってくれるの?[Line]
 [YesNo]<$13>[Event]<$05>[Jump]あら うるものか" ないみたいよ[Next]
 
-[Event]<$05>[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
+[Event]<$05>
+[MiscEvent]<$60><$06>
+[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
 なんて"もって わけには[Line]
 いかないけと" ゆっくり みてってね[Line]
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -1084,6 +1161,7 @@
 
 #W16($180B8)
 [Jump]まあ なにを うってくれるの?[Line]
+
 [MiscEvent]<$02><$15><$EE>?[Jump][VarItem]ね £[VarNum][Line]
 て"なら ひきとるけと"[Line]
 と"うする?[Line]
@@ -1091,10 +1169,13 @@
 [Event]<$13>[Event2]<$3F>また" なにか うってくれるの?[Line]
 [YesNo]<$13>[Event]<$05>[Jump]あら うるものか" ないみたいよ[Next]
 
-[Event]<$05>[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
+[Event]<$05>
+[MiscEvent]<$60><$06>
+[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
 なんて"もって わけには[Line]
 いかないけと" ゆっくり みてってね[Line]
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -1104,6 +1185,7 @@
 //POINTER #85 @ $180BA - STRING #85 @ $18FC1
 
 #W16($180BA)
+
 [MiscEvent]<$02><$15><$EE>?[Jump][VarItem]ね £[VarNum][Line]
 て"なら ひきとるけと"[Line]
 と"うする?[Line]
@@ -1111,10 +1193,13 @@
 [Event]<$13>[Event2]<$3F>また" なにか うってくれるの?[Line]
 [YesNo]<$13>[Event]<$05>[Jump]あら うるものか" ないみたいよ[Next]
 
-[Event]<$05>[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
+[Event]<$05>
+[MiscEvent]<$60><$06>
+[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
 なんて"もって わけには[Line]
 いかないけと" ゆっくり みてってね[Line]
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -1127,10 +1212,13 @@
 [Event2]<$3F>また" なにか うってくれるの?[Line]
 [YesNo]<$13>[Event]<$05>[Jump]あら うるものか" ないみたいよ[Next]
 
-[Event]<$05>[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
+[Event]<$05>
+[MiscEvent]<$60><$06>
+[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
 なんて"もって わけには[Line]
 いかないけと" ゆっくり みてってね[Line]
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -1142,10 +1230,13 @@
 #W16($180BE)
 [Jump]あら うるものか" ないみたいよ[Next]
 
-[Event]<$05>[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
+[Event]<$05>
+[MiscEvent]<$60><$06>
+[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
 なんて"もって わけには[Line]
 いかないけと" ゆっくり みてってね[Line]
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -1155,10 +1246,13 @@
 //POINTER #88 @ $180C0 - STRING #88 @ $19021
 
 #W16($180C0)
-[MiscEvent]<$60><$06>[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
+
+[MiscEvent]<$60><$06>
+[MiscEvent]<$0E><$03>いらっしゃいませ-[Line]
 なんて"もって わけには[Line]
 いかないけと" ゆっくり みてってね[Line]
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -1168,7 +1262,8 @@
 //POINTER #89 @ $180C2 - STRING #89 @ $19051
 
 #W16($180C2)
-[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Choices]<$04> 1>D♂♂▽Z[Event]<$2A>[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -1178,7 +1273,8 @@
 //POINTER #90 @ $180C4 - STRING #90 @ $1905D
 
 #W16($180C4)
-[Event2]<$28>[Event]<$07>[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
+[Event2]<$28>[Event]<$07>
+[MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
 
@@ -1188,6 +1284,7 @@
 //POINTER #91 @ $180C6 - STRING #91 @ $19061
 
 #W16($180C6)
+
 [MiscEvent]<$0D><$04>[Jump]うちは レテ"ィ-スよ[Line]
 それとも なにか ようか" あるの[Line]
 [YesNo]<$05>[Jump]また きてね[Next]
@@ -1273,6 +1370,7 @@
 [Next]
 
 [DrawMoney][Event]<$07>[Jump]なにを うりにきたの?[Line]
+
 [MiscEvent]<$02><$17><$EE>0[Jump][VarItem]ね £[VarNum][Line]
 という ところね と"うする?[Line]
 [YesNo]<$16>[Jump]やめるの? し"ゃ ほかには?[Line]
@@ -1299,6 +1397,7 @@
 [Next]
 
 [DrawMoney][Event]<$07>[Jump]なにを うりにきたの?[Line]
+
 [MiscEvent]<$02><$17><$EE>0[Jump][VarItem]ね £[VarNum][Line]
 という ところね と"うする?[Line]
 [YesNo]<$16>[Jump]やめるの? し"ゃ ほかには?[Line]
@@ -1325,6 +1424,7 @@
 [Next]
 
 [DrawMoney][Event]<$07>[Jump]なにを うりにきたの?[Line]
+
 [MiscEvent]<$02><$17><$EE>0[Jump][VarItem]ね £[VarNum][Line]
 という ところね と"うする?[Line]
 [YesNo]<$16>[Jump]やめるの? し"ゃ ほかには?[Line]
@@ -1351,6 +1451,7 @@
 [Next]
 
 [DrawMoney][Event]<$07>[Jump]なにを うりにきたの?[Line]
+
 [MiscEvent]<$02><$17><$EE>0[Jump][VarItem]ね £[VarNum][Line]
 という ところね と"うする?[Line]
 [YesNo]<$16>[Jump]やめるの? し"ゃ ほかには?[Line]
@@ -1377,6 +1478,7 @@
 [Next]
 
 [DrawMoney][Event]<$07>[Jump]なにを うりにきたの?[Line]
+
 [MiscEvent]<$02><$17><$EE>0[Jump][VarItem]ね £[VarNum][Line]
 という ところね と"うする?[Line]
 [YesNo]<$16>[Jump]やめるの? し"ゃ ほかには?[Line]
@@ -1402,6 +1504,7 @@
 [Next]
 
 [DrawMoney][Event]<$07>[Jump]なにを うりにきたの?[Line]
+
 [MiscEvent]<$02><$17><$EE>0[Jump][VarItem]ね £[VarNum][Line]
 という ところね と"うする?[Line]
 [YesNo]<$16>[Jump]やめるの? し"ゃ ほかには?[Line]
@@ -1427,6 +1530,7 @@
 [Next]
 
 [DrawMoney][Event]<$07>[Jump]なにを うりにきたの?[Line]
+
 [MiscEvent]<$02><$17><$EE>0[Jump][VarItem]ね £[VarNum][Line]
 という ところね と"うする?[Line]
 [YesNo]<$16>[Jump]やめるの? し"ゃ ほかには?[Line]
@@ -1448,6 +1552,7 @@
 [Next]
 
 [DrawMoney][Event]<$07>[Jump]なにを うりにきたの?[Line]
+
 [MiscEvent]<$02><$17><$EE>0[Jump][VarItem]ね £[VarNum][Line]
 という ところね と"うする?[Line]
 [YesNo]<$16>[Jump]やめるの? し"ゃ ほかには?[Line]
@@ -1466,6 +1571,7 @@
 
 #W16($180E8)
 [Jump]なにを うりにきたの?[Line]
+
 [MiscEvent]<$02><$17><$EE>0[Jump][VarItem]ね £[VarNum][Line]
 という ところね と"うする?[Line]
 [YesNo]<$16>[Jump]やめるの? し"ゃ ほかには?[Line]
@@ -1483,6 +1589,7 @@
 //POINTER #109 @ $180EA - STRING #109 @ $19198
 
 #W16($180EA)
+
 [MiscEvent]<$02><$17><$EE>0[Jump][VarItem]ね £[VarNum][Line]
 という ところね と"うする?[Line]
 [YesNo]<$16>[Jump]やめるの? し"ゃ ほかには?[Line]
@@ -1556,8 +1663,10 @@
 #W16($180F6)
 [Event2]<$10>[Jump]ほかに なにか いりようは ないて"すか?[Line]
 [Event]<$01>[Jump]と"ちらか" つかうのかね[Line]
+
 [MiscEvent]<$5F><$EE>![Jump]あつかってるのは こんなもんた"か"[Line]
-[ShopList]<$2C><$EE>![MiscEvent]<$61><$07>[Jump]しかし [Var]さんには[Line]
+[ShopList]<$2C><$EE>!
+[MiscEvent]<$61><$07>[Jump]しかし [Var]さんには[Line]
 つかいこなせない ようた"な[Next]
 
 [Event]<$04>[Jump][VarItem] て"すね[Line]
@@ -1574,8 +1683,10 @@
 #W16($180F8)
 [Jump]ほかに なにか いりようは ないて"すか?[Line]
 [Event]<$01>[Jump]と"ちらか" つかうのかね[Line]
+
 [MiscEvent]<$5F><$EE>![Jump]あつかってるのは こんなもんた"か"[Line]
-[ShopList]<$2C><$EE>![MiscEvent]<$61><$07>[Jump]しかし [Var]さんには[Line]
+[ShopList]<$2C><$EE>!
+[MiscEvent]<$61><$07>[Jump]しかし [Var]さんには[Line]
 つかいこなせない ようた"な[Next]
 
 [Event]<$04>[Jump][VarItem] て"すね[Line]
@@ -1591,8 +1702,10 @@
 
 #W16($180FA)
 [Jump]と"ちらか" つかうのかね[Line]
+
 [MiscEvent]<$5F><$EE>![Jump]あつかってるのは こんなもんた"か"[Line]
-[ShopList]<$2C><$EE>![MiscEvent]<$61><$07>[Jump]しかし [Var]さんには[Line]
+[ShopList]<$2C><$EE>!
+[MiscEvent]<$61><$07>[Jump]しかし [Var]さんには[Line]
 つかいこなせない ようた"な[Next]
 
 [Event]<$04>[Jump][VarItem] て"すね[Line]
@@ -1607,7 +1720,8 @@
 //POINTER #118 @ $180FC - STRING #118 @ $19272
 
 #W16($180FC)
-[ShopList]<$2C><$EE>![MiscEvent]<$61><$07>[Jump]しかし [Var]さんには[Line]
+[ShopList]<$2C><$EE>!
+[MiscEvent]<$61><$07>[Jump]しかし [Var]さんには[Line]
 つかいこなせない ようた"な[Next]
 
 [Event]<$04>[Jump][VarItem] て"すね[Line]
@@ -1657,6 +1771,7 @@
 にを へらすのて"すね[Next]
 
 [DrawMoney][Event]<$04>[Jump]なにか おもしろいものか" ありますか?[Line]
+
 [MiscEvent]<$01><$0E><$EE>![Jump][VarItem]て"すか[Line]
 £[VarNum]なら ひきとりましょう[Line]
 よろしいて"すかな?[YesNo]<$0D>[Event]<$04>[Event2]<$11>[Jump]また" うるものか"ありますか?[YesNo]<$0B>[Event]<$04>[Jump]うれるものか" ないようて"すな[Line]
@@ -1669,6 +1784,7 @@
 
 #W16($18106)
 [Jump]なにか おもしろいものか" ありますか?[Line]
+
 [MiscEvent]<$01><$0E><$EE>![Jump][VarItem]て"すか[Line]
 £[VarNum]なら ひきとりましょう[Line]
 よろしいて"すかな?[YesNo]<$0D>[Event]<$04>[Event2]<$11>[Jump]また" うるものか"ありますか?[YesNo]<$0B>[Event]<$04>[Jump]うれるものか" ないようて"すな[Line]
@@ -1680,6 +1796,7 @@
 //POINTER #124 @ $18108 - STRING #124 @ $19330
 
 #W16($18108)
+
 [MiscEvent]<$01><$0E><$EE>![Jump][VarItem]て"すか[Line]
 £[VarNum]なら ひきとりましょう[Line]
 よろしいて"すかな?[YesNo]<$0D>[Event]<$04>[Event2]<$11>[Jump]また" うるものか"ありますか?[YesNo]<$0B>[Event]<$04>[Jump]うれるものか" ないようて"すな[Line]
@@ -1720,7 +1837,9 @@
 
 #W16($18110)
 [Jump]た"れのステイタスをみますか[Line]
-[MiscEvent]<$48><$FF>[DrawMoney][MiscEvent]<$04><$F1>[Hero2?]は £[VarNum]を[Line]
+
+[MiscEvent]<$48><$FF>[DrawMoney]
+[MiscEvent]<$04><$F1>[Hero2?]は £[VarNum]を[Line]
 てにいれた[Next]
 
 [End]
@@ -1729,7 +1848,8 @@
 //POINTER #129 @ $18112 - STRING #129 @ $193AE
 
 #W16($18112)
-[DrawMoney][MiscEvent]<$04><$F1>[Hero2?]は £[VarNum]を[Line]
+[DrawMoney]
+[MiscEvent]<$04><$F1>[Hero2?]は £[VarNum]を[Line]
 てにいれた[Next]
 
 [End]
@@ -1753,6 +1873,7 @@
 //POINTER #132 @ $18118 - STRING #132 @ $193F2
 
 #W16($18118)
+
 [MiscEvent]<$35><$00>[End]
 
 
@@ -1779,6 +1900,7 @@
 //POINTER #135 @ $1811E - STRING #135 @ $1943B
 
 #W16($1811E)
+
 [MiscEvent]<$35><$05>[End]
 
 
@@ -1811,6 +1933,7 @@
 //POINTER #139 @ $18126 - STRING #139 @ $1947A
 
 #W16($18126)
+
 [MiscEvent]<$35><$03>[End]
 
 
@@ -1852,6 +1975,7 @@
 //POINTER #144 @ $18130 - STRING #144 @ $194E1
 
 #W16($18130)
+
 [MiscEvent]<$35><$06>[End]
 
 
@@ -1864,6 +1988,7 @@
 //POINTER #146 @ $18134 - STRING #146 @ $194EA
 
 #W16($18134)
+
 [MiscEvent]<$35><$01>[End]
 
 
@@ -1876,6 +2001,7 @@
 //POINTER #148 @ $18138 - STRING #148 @ $194F3
 
 #W16($18138)
+
 [MiscEvent]<$35><$04>[End]
 
 
@@ -1888,6 +2014,7 @@
 //POINTER #150 @ $1813C - STRING #150 @ $194FC
 
 #W16($1813C)
+
 [MiscEvent]<$35><$02>[End]
 
 
@@ -1906,6 +2033,7 @@
 //POINTER #153 @ $18142 - STRING #153 @ $19516
 
 #W16($18142)
+
 [MiscEvent]<$35><$0F>[End]
 
 
@@ -1924,6 +2052,7 @@
 //POINTER #156 @ $18148 - STRING #156 @ $1951F
 
 #W16($18148)
+
 [MiscEvent]<$35><$0F>[End]
 
 
@@ -1931,6 +2060,7 @@
 
 #W16($1814A)
 [Event3]<$42><$04>[Event3]<$45><$04>と"こへ いきますか?[Line]
+
 [MiscEvent]<$5A><$EE>?[Jump][Hero2?]は[Line]
 [VarItem]を つかった[Next]
 
@@ -1981,7 +2111,8 @@
 [Event3]<$52><$0C>[SetVar]<$FD>[Var]の カ"-ルフレント"の[Line]
 ヒロコの へや[Next]
 
-[Event3]<$07><$0B>[LoadNPC]<$22>[LoadNPC]<$D3>[Event3]<$80><$09>[MiscEvent]<$0F><$02>[Event3]<$03><$03>[Event]<$04>キャ-[Line]
+[Event3]<$07><$0B>[LoadNPC]<$22>[LoadNPC]<$D3>[Event3]<$80><$09>
+[MiscEvent]<$0F><$02>[Event3]<$03><$03>[Event]<$04>キャ-[Line]
 [SetVar]<$FD>[Var]と"うしたの?![Line]
 はやく てあてして![Next]
 
@@ -1991,7 +2122,8 @@
 //POINTER #164 @ $18158 - STRING #164 @ $19590
 
 #W16($18158)
-[Event3]<$07><$0B>[LoadNPC]<$22>[LoadNPC]<$D3>[Event3]<$80><$09>[MiscEvent]<$0F><$02>[Event3]<$03><$03>[Event]<$04>キャ-[Line]
+[Event3]<$07><$0B>[LoadNPC]<$22>[LoadNPC]<$D3>[Event3]<$80><$09>
+[MiscEvent]<$0F><$02>[Event3]<$03><$03>[Event]<$04>キャ-[Line]
 [SetVar]<$FD>[Var]と"うしたの?![Line]
 はやく てあてして![Next]
 
@@ -2014,6 +2146,7 @@
 [Event3]<$6F><$06>[Event3]<$00><$08>いつも ふたり いっしょね[Line]
 ちょっと やけるわ[Next]
 
+
 [MiscEvent]<$0D><$05>ねえ [Line]
 [Hero]くん[Line]
 テ"ヒ"ルハ"スタ-の [Line]
@@ -2028,6 +2161,7 @@
 #W16($1815E)
 [Event3]<$00><$08>いつも ふたり いっしょね[Line]
 ちょっと やけるわ[Next]
+
 
 [MiscEvent]<$0D><$05>ねえ [Line]
 [Hero]くん[Line]
@@ -2047,7 +2181,8 @@
 //POINTER #169 @ $18162 - STRING #169 @ $19601
 
 #W16($18162)
-[Event4]<$C1><$07>[Event]<$04><$D3>0[SetVar]<$FD>[Skip]ワ[MiscEvent]<$11><$80>あ [Var][Line]
+[Event4]<$C1><$07>[Event]<$04><$D3>0[SetVar]<$FD>[Skip]ワ
+[MiscEvent]<$11><$80>あ [Var][Line]
 そとから へんな おんなのこか"[Line]
 やってきたの[Line]
 それて" これを あなたたちにって[Line]
@@ -2064,7 +2199,8 @@
 //POINTER #170 @ $18164 - STRING #170 @ $19606
 
 #W16($18164)
-<$D3>0[SetVar]<$FD>[Skip]ワ[MiscEvent]<$11><$80>あ [Var][Line]
+<$D3>0[SetVar]<$FD>[Skip]ワ
+[MiscEvent]<$11><$80>あ [Var][Line]
 そとから へんな おんなのこか"[Line]
 やってきたの[Line]
 それて" これを あなたたちにって[Line]
@@ -2090,6 +2226,7 @@
 //POINTER #172 @ $18168 - STRING #172 @ $1968C
 
 #W16($18168)
+
 [MiscEvent]<$0E><$0A>いっしょに いるのは[Line]
 まえに わりふを もってきた[Line]
 へんなこのようた"けと"[Next]
@@ -2160,9 +2297,11 @@
 [Event]<$03>[Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2193,9 +2332,11 @@
 [Event]<$03>[Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2225,9 +2366,11 @@
 [Event]<$03>[Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2257,9 +2400,11 @@
 [Event]<$03>[Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2289,9 +2434,11 @@
 [Event]<$03>[Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2321,9 +2468,11 @@
 [Event]<$03>[Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2353,9 +2502,11 @@
 [Event]<$03>[Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2385,9 +2536,11 @@
 [Event]<$03>[Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2417,9 +2570,11 @@
 [Event]<$03>[Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2449,9 +2604,11 @@
 [Event]<$03>[Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2481,9 +2638,11 @@
 [Event]<$03>[Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2512,9 +2671,11 @@
 [Event]<$03>[Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2540,9 +2701,11 @@
 [Event]<$03>[Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2566,9 +2729,11 @@
 [Jump]し"ゃ マッカはかえすわ[Next]
 
 [DrawMoney][Event]<$03>[Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2590,9 +2755,11 @@
 
 #W16($18190)
 [Jump]なにをおうりになりますか?[Line]
+
 [MiscEvent]<$03><$12><$EE>▽[Jump][VarItem]ね £ [VarNum] [Line]
 という ところた"けと"。[Line]
-[YesNo]<$11>[Event]<$03>[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
+[YesNo]<$11>[Event]<$03>
+[MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
 
@@ -2613,6 +2780,7 @@
 //POINTER #193 @ $18192 - STRING #193 @ $19820
 
 #W16($18192)
+
 [MiscEvent]<$04><$CB>[Jump]また" ほかに かいとるものか"あるかしら?[Line]
 [YesNo]<$10>[Event]<$03>うるアイテムは なにももっていない[Line]
 [Next]
@@ -3114,7 +3282,8 @@
 [Skip]7わたしは ミコンの まちの ちょうろう[Next]
 
 [Event3]<$98><$01>[Event]<$03>[Jump]と"う する?[Line]
-[Choices]<$02><$31>♂▽!<$EE>![MiscEvent]<$33><$F1>むりするて" ないそ"[Next]
+[Choices]<$02><$31>♂▽!<$EE>!
+[MiscEvent]<$33><$F1>むりするて" ないそ"[Next]
 
 <$C1>の[Skip]せ[Teleport]<$2A><$0E>!![End]
 
@@ -3123,7 +3292,8 @@
 
 #W16($181E0)
 [Jump]と"う する?[Line]
-[Choices]<$02><$31>♂▽!<$EE>![MiscEvent]<$33><$F1>むりするて" ないそ"[Next]
+[Choices]<$02><$31>♂▽!<$EE>!
+[MiscEvent]<$33><$F1>むりするて" ないそ"[Next]
 
 <$C1>の[Skip]せ[Teleport]<$2A><$0E>!![End]
 
@@ -3131,6 +3301,7 @@
 //POINTER #233 @ $181E2 - STRING #233 @ $19C2C
 
 #W16($181E2)
+
 [MiscEvent]<$33><$F1>むりするて" ないそ"[Next]
 
 <$C1>の[Skip]せ[Teleport]<$2A><$0E>!![End]
@@ -3156,15 +3327,19 @@
 //POINTER #236 @ $181E8 - STRING #236 @ $19C65
 
 #W16($181E8)
+
 [MiscEvent]<$33><$FA>W[Jump]むりするて" ないそ"[Next]
 
-[Skip]せ[LoadBackground]<$2B>[LoadNPC]<$3F>[LoadNPC]<$B5>[MiscEvent]<$5C><$1C>[Event2]<$0B>[Next]
+[Skip]せ[LoadBackground]<$2B>[LoadNPC]<$3F>[LoadNPC]<$B5>
+[MiscEvent]<$5C><$1C>[Event2]<$0B>[Next]
 
 おや やめちゃうのかい?[Next]
 
 [Event3]<$84><$08>[SetVar]<$57>はやく [Var]を みせてくれよ[Next]
 
+
 [MiscEvent]<$57><$0D>まあ ホ"スを たおしたんた"からな[Next]
+
 
 [MiscEvent]<$57><$0D>[End]
 
@@ -3178,7 +3353,9 @@
 
 [Event3]<$84><$08>[SetVar]<$57>はやく [Var]を みせてくれよ[Next]
 
+
 [MiscEvent]<$57><$0D>まあ ホ"スを たおしたんた"からな[Next]
+
 
 [MiscEvent]<$57><$0D>[End]
 
@@ -3190,7 +3367,9 @@
 
 [Event3]<$84><$08>[SetVar]<$57>はやく [Var]を みせてくれよ[Next]
 
+
 [MiscEvent]<$57><$0D>まあ ホ"スを たおしたんた"からな[Next]
+
 
 [MiscEvent]<$57><$0D>[End]
 
@@ -3199,6 +3378,7 @@
 
 #W16($181EE)
 まあ ホ"スを たおしたんた"からな[Next]
+
 
 [MiscEvent]<$57><$0D>[End]
 
@@ -3221,6 +3401,7 @@
 また" つつ"けるのかい?[Line]
 コンヒ°ュ-タ-か"[Line]
 まってるせ"[Next]
+
 
 [MiscEvent]<$27><$FA>ネ▽[SetVar]<$FD>うしろて" [Hero]の ケ"-ムを[Line]
 みていた しんゆうの [Var]か"[Line]
@@ -3264,6 +3445,7 @@
 
 #W16($181FE)
 [Jump]ファイルを せんたくしてくた"さい[Line]
+
 [MiscEvent]<$32><$EE> [Jump]きろくしました[Next]
 
 [Event]<$00>[Event3]<$52><$05>[Event3]<$00><$06>[Jump]テ"ヒ"ルハ"スタ-...[Next]
@@ -3316,7 +3498,8 @@
 //POINTER #251 @ $18206 - STRING #251 @ $19DDF
 
 #W16($18206)
-<$C1>[Hero][Event3]<$52><$09>[MiscEvent]<$49><$FA>/ツ1▽  [End]
+<$C1>[Hero][Event3]<$52><$09>
+[MiscEvent]<$49><$FA>/ツ1▽  [End]
 
 
 //POINTER #252 @ $18208 - STRING #252 @ $19DEE
@@ -3349,6 +3532,7 @@ GAME DESIGN[Pause3][Line]
 
 しかし その よひ"なも[Line]
 きょうて" おわりて"す[Line]
+
 [MiscEvent]<$0D><$01>[SetVar]<$FD>[Var]さまか"[Line]
 しんの きゅうせいしゅ て"した[Next]
 
@@ -3399,13 +3583,15 @@ GAME DESIGN[Pause3][Line]
 
 #W16($18216)
 [Event3]<$F7><$04>[SetVar]<$13>[Var]のもん て"す[Line]
-さきへ すすみますか?[YesNo]<$03>[Event3]<$F7><$02><$C1>[Hero][MiscEvent]<$2E><$1B>フ  B[End]
+さきへ すすみますか?[YesNo]<$03>[Event3]<$F7><$02><$C1>[Hero]
+[MiscEvent]<$2E><$1B>フ  B[End]
 
 
 //POINTER #260 @ $18218 - STRING #260 @ $19F3C
 
 #W16($18218)
-<$C1>[Hero][MiscEvent]<$2E><$1B>フ  B[End]
+<$C1>[Hero]
+[MiscEvent]<$2E><$1B>フ  B[End]
 
 
 //POINTER #261 @ $1821A - STRING #261 @ $19F46
@@ -3570,7 +3756,8 @@ GAME DESIGN[Pause3][Line]
 //POINTER #276 @ $18238 - STRING #276 @ $1A0AE
 
 #W16($18238)
-[Event3]<$F7><$01>[Event]<$0F>[Event3]<$34><$07>[Event3]<$2A><$07>[Event3]<$90><$08>[LoadNPC]<$95>[MiscEvent]<$0D><$01>[Hero]か...[Pause4][Line]
+[Event3]<$F7><$01>[Event]<$0F>[Event3]<$34><$07>[Event3]<$2A><$07>[Event3]<$90><$08>[LoadNPC]<$95>
+[MiscEvent]<$0D><$01>[Hero]か...[Pause4][Line]
 こ"らんのとおりこのさ"また"[Next]
 
 ...ハ°ス"スに...た"まされた[Line]
@@ -3608,7 +3795,8 @@ GAME DESIGN[Pause3][Line]
 //POINTER #277 @ $1823A - STRING #277 @ $1A0B3
 
 #W16($1823A)
-[Event3]<$34><$07>[Event3]<$2A><$07>[Event3]<$90><$08>[LoadNPC]<$95>[MiscEvent]<$0D><$01>[Hero]か...[Pause4][Line]
+[Event3]<$34><$07>[Event3]<$2A><$07>[Event3]<$90><$08>[LoadNPC]<$95>
+[MiscEvent]<$0D><$01>[Hero]か...[Pause4][Line]
 こ"らんのとおりこのさ"また"[Next]
 
 ...ハ°ス"スに...た"まされた[Line]
@@ -3772,7 +3960,9 @@ GAME DESIGN[Pause3][Line]
 
 オレは...もう...[Next]
 
-.[Pause1].[Pause1].[Pause2].[Pause2].[Pause3].[Pause4][Jump][MiscEvent]<$11><$FA>A[MiscEvent]<$13><$FA>C[SetVar]<$FD>[Var]は しす"かに[Line]
+.[Pause1].[Pause1].[Pause2].[Pause2].[Pause3].[Pause4][Jump]
+[MiscEvent]<$11><$FA>A
+[MiscEvent]<$13><$FA>C[SetVar]<$FD>[Var]は しす"かに[Line]
 いきを ひきとった[Next]
 
 [Hero]は [VarItem]と[Line]
@@ -3887,7 +4077,8 @@ GAME DESIGN[Pause3][Line]
 //POINTER #298 @ $18264 - STRING #298 @ $1A42D
 
 #W16($18264)
-[Event4]<$D3><$01>[MiscEvent]<$2E><$58>ね?<$FB> [End]
+[Event4]<$D3><$01>
+[MiscEvent]<$2E><$58>ね?<$FB> [End]
 
 
 //POINTER #299 @ $18266 - STRING #299 @ $1A438
@@ -3901,6 +4092,7 @@ GAME DESIGN[Pause3][Line]
 
 [Fight]<$01>♂[Skip]ま[SetItem]<$D3><$D3>>[Jump][VarItem]を てにいれた[Next]
 
+
 [MiscEvent]<$2E><$58>ね?<$FB> [End]
 
 
@@ -3908,6 +4100,7 @@ GAME DESIGN[Pause3][Line]
 
 #W16($18268)
 [Fight]<$01>♂[Skip]ま[SetItem]<$D3><$D3>>[Jump][VarItem]を てにいれた[Next]
+
 
 [MiscEvent]<$2E><$58>ね?<$FB> [End]
 
@@ -4011,6 +4204,7 @@ GAME DESIGN[Pause3][Line]
 わたしか" おまえこ"ときに[Line]
 まけるはす"か"...[Next]
 
+
 [MiscEvent]<$4D><$DE><$D2><$D3>♂[Jump][VarItem]を てにいれた[Next]
 
 [LoadNPC]<$E1>ありか"とう [Var][Line]
@@ -4019,6 +4213,7 @@ GAME DESIGN[Pause3][Line]
 
 [Var]は[Line]
 [SetVar]<$15>[Var]を たすけた"した[Next]
+
 
 [MiscEvent]<$11><$FA>A[End]
 
@@ -4030,6 +4225,7 @@ GAME DESIGN[Pause3][Line]
 わたしか" おまえこ"ときに[Line]
 まけるはす"か"...[Next]
 
+
 [MiscEvent]<$4D><$DE><$D2><$D3>♂[Jump][VarItem]を てにいれた[Next]
 
 [LoadNPC]<$E1>ありか"とう [Var][Line]
@@ -4038,6 +4234,7 @@ GAME DESIGN[Pause3][Line]
 
 [Var]は[Line]
 [SetVar]<$15>[Var]を たすけた"した[Next]
+
 
 [MiscEvent]<$11><$FA>A[End]
 
@@ -4089,6 +4286,7 @@ GAME DESIGN[Pause3][Line]
 そなたのおんに むくい[Line]
 ともに たたかおう[Next]
 
+
 [MiscEvent]<$08><$08>しかし ナカマか" おおい![Next]
 
 [End]
@@ -4129,6 +4327,7 @@ GAME DESIGN[Pause3][Line]
 そなたのおんに むくい[Line]
 ともに たたかおう[Next]
 
+
 [MiscEvent]<$08><$08>しかし ナカマか" おおい![Next]
 
 [End]
@@ -4165,6 +4364,7 @@ GAME DESIGN[Pause3][Line]
 [Event2]<$10>[LoadBackground]<$25>[Event3]<$5A><$0C>[LoadEnemySprite]<$F9>わたしは [Var][Line]
 そなたのおんに むくい[Line]
 ともに たたかおう[Next]
+
 
 [MiscEvent]<$08><$08>しかし ナカマか" おおい![Next]
 
@@ -4203,6 +4403,7 @@ GAME DESIGN[Pause3][Line]
 そなたのおんに むくい[Line]
 ともに たたかおう[Next]
 
+
 [MiscEvent]<$08><$08>しかし ナカマか" おおい![Next]
 
 [End]
@@ -4239,6 +4440,7 @@ GAME DESIGN[Pause3][Line]
 そなたのおんに むくい[Line]
 ともに たたかおう[Next]
 
+
 [MiscEvent]<$08><$08>しかし ナカマか" おおい![Next]
 
 [End]
@@ -4254,6 +4456,7 @@ GAME DESIGN[Pause3][Line]
 そなたのおんに むくい[Line]
 ともに たたかおう[Next]
 
+
 [MiscEvent]<$08><$08>しかし ナカマか" おおい![Next]
 
 [End]
@@ -4266,6 +4469,7 @@ GAME DESIGN[Pause3][Line]
 そなたのおんに むくい[Line]
 ともに たたかおう[Next]
 
+
 [MiscEvent]<$08><$08>しかし ナカマか" おおい![Next]
 
 [End]
@@ -4274,6 +4478,7 @@ GAME DESIGN[Pause3][Line]
 //POINTER #322 @ $18294 - STRING #322 @ $1A789
 
 #W16($18294)
+
 [MiscEvent]<$4A><$F9>[Skip]ヒ[Event4]<$D8><$09>そのまえに そなたのもつ[Line]
 [VarItem]を[Line]
 <$D2>[SetItem]<$D7>[VarItem]へかえよう[Next]
@@ -4346,7 +4551,15 @@ GAME DESIGN[Pause3][Line]
 //POINTER #330 @ $182A4 - STRING #330 @ $1A80E
 
 #W16($182A4)
-<$C1>け[MiscEvent]<$50><$38>[MiscEvent]<$50><$39>[MiscEvent]<$50><$3A>[MiscEvent]<$50><$3B>[MiscEvent]<$50><$43>[MiscEvent]<$50><$44>[MiscEvent]<$50><$46>[MiscEvent]<$50><$47>[End]
+<$C1>け
+[MiscEvent]<$50><$38>
+[MiscEvent]<$50><$39>
+[MiscEvent]<$50><$3A>
+[MiscEvent]<$50><$3B>
+[MiscEvent]<$50><$43>
+[MiscEvent]<$50><$44>
+[MiscEvent]<$50><$46>
+[MiscEvent]<$50><$47>[End]
 
 
 //POINTER #331 @ $182A6 - STRING #331 @ $1A829
@@ -4358,21 +4571,7 @@ GAME DESIGN[Pause3][Line]
 と"れた"けの たたかいを[Line]
 くく"りぬけて きたことか...[Next]
 
-[Event3]<$5A><$03>[MiscEvent]<$5C><$1D>[SetVar]<$03>と"うやら おまえたちの[Line]
-さいこ"のときか" きたようた"[Next]
-
-この タ"イマオウ [Var]か"[Line]
-おおいなる し"ひをもって[Line]
-あのよへ おくってやろう[Next]
-
-[Fight]<$01>♂[Skip]ウ[Jump]サタンも おなし"く たおすか"よい...[Next]
-
-[MiscEvent]<$2E><$24>U> M[End]
-
-
-//POINTER #332 @ $182A8 - STRING #332 @ $1A875
-
-#W16($182A8)
+[Event3]<$5A><$03>
 [MiscEvent]<$5C><$1D>[SetVar]<$03>と"うやら おまえたちの[Line]
 さいこ"のときか" きたようた"[Next]
 
@@ -4382,6 +4581,24 @@ GAME DESIGN[Pause3][Line]
 
 [Fight]<$01>♂[Skip]ウ[Jump]サタンも おなし"く たおすか"よい...[Next]
 
+
+[MiscEvent]<$2E><$24>U> M[End]
+
+
+//POINTER #332 @ $182A8 - STRING #332 @ $1A875
+
+#W16($182A8)
+
+[MiscEvent]<$5C><$1D>[SetVar]<$03>と"うやら おまえたちの[Line]
+さいこ"のときか" きたようた"[Next]
+
+この タ"イマオウ [Var]か"[Line]
+おおいなる し"ひをもって[Line]
+あのよへ おくってやろう[Next]
+
+[Fight]<$01>♂[Skip]ウ[Jump]サタンも おなし"く たおすか"よい...[Next]
+
+
 [MiscEvent]<$2E><$24>U> M[End]
 
 
@@ -4389,6 +4606,7 @@ GAME DESIGN[Pause3][Line]
 
 #W16($182AA)
 [Fight]<$01>♂[Skip]ウ[Jump]サタンも おなし"く たおすか"よい...[Next]
+
 
 [MiscEvent]<$2E><$24>U> M[End]
 
@@ -4443,7 +4661,8 @@ GAME DESIGN[Pause3][Line]
 
 [YesNo]<$05>[Jump]しょせんは かみの しもへ"か...[Next]
 
-[Event]<$01>[MiscEvent]<$08><$06>[Skip]ァ[Jump]ナカマか" おおいようた"[Next]
+[Event]<$01>
+[MiscEvent]<$08><$06>[Skip]ァ[Jump]ナカマか" おおいようた"[Next]
 
 [End]
 
@@ -4456,7 +4675,8 @@ GAME DESIGN[Pause3][Line]
 
 [YesNo]<$05>[Jump]しょせんは かみの しもへ"か...[Next]
 
-[Event]<$01>[MiscEvent]<$08><$06>[Skip]ァ[Jump]ナカマか" おおいようた"[Next]
+[Event]<$01>
+[MiscEvent]<$08><$06>[Skip]ァ[Jump]ナカマか" おおいようた"[Next]
 
 [End]
 
@@ -4464,6 +4684,7 @@ GAME DESIGN[Pause3][Line]
 //POINTER #336 @ $182B0 - STRING #336 @ $1AAE9
 
 #W16($182B0)
+
 [MiscEvent]<$08><$06>[Skip]ァ[Jump]ナカマか" おおいようた"[Next]
 
 [End]
@@ -4472,6 +4693,7 @@ GAME DESIGN[Pause3][Line]
 //POINTER #337 @ $182B2 - STRING #337 @ $1AAFE
 
 #W16($182B2)
+
 [MiscEvent]<$4A><$F6>[Skip]カ[Jump]そのまえに これを さす"けよう[Next]
 
 これは のろわれて いるゆえ[Line]
@@ -4479,6 +4701,7 @@ GAME DESIGN[Pause3][Line]
 
 [SetItem]<$30><$D3>0[Event2]<$08>て"は トウキョウにいる[Line]
 サタンを しゅくせい しなくては...[Next]
+
 
 [MiscEvent]<$2E><$24>U> M[End]
 
@@ -4488,6 +4711,7 @@ GAME DESIGN[Pause3][Line]
 #W16($182B4)
 て"は トウキョウにいる[Line]
 サタンを しゅくせい しなくては...[Next]
+
 
 [MiscEvent]<$2E><$24>U> M[End]
 
@@ -4518,7 +4742,8 @@ GAME DESIGN[Pause3][Line]
 //POINTER #342 @ $182BC - STRING #342 @ $1AB8E
 
 #W16($182BC)
-[LoadNPC]<$34>[MiscEvent]<$0E><$02>そこの わかいムスメさん[Line]
+[LoadNPC]<$34>
+[MiscEvent]<$0E><$02>そこの わかいムスメさん[Line]
 おし"さんの たのみを きいておくれよ[Next]
 
 ちょっとて" いいから[Line]
@@ -4729,6 +4954,7 @@ GAME DESIGN[Pause3][Line]
 [Event3]<$3E><$01>[SetVar]<$05>あれか" すいしょうのきゅうて"ん[Line]
 [Var]し"ょうた"[Next]
 
+
 [MiscEvent]<$2E><$3D>ア> W[End]
 
 
@@ -4738,12 +4964,14 @@ GAME DESIGN[Pause3][Line]
 [SetVar]<$05>[Var]し"ょうへ いきますか?[YesNo]<$03>[SetVar]<$15>[Jump][Var]の さけひ"こ"えか"[Line]
 きこえた ような きか"した[Next]
 
+
 [MiscEvent]<$2E><$3D>ア> W[End]
 
 
 //POINTER #369 @ $182F2 - STRING #369 @ $1AE28
 
 #W16($182F2)
+
 [MiscEvent]<$2E><$3D>ア> W[End]
 
 
@@ -4795,6 +5023,7 @@ GAME DESIGN[Pause3][Line]
 なに? はしし"ゃなくって[Line]
 まんなかを とおるって?[Next]
 
+
 [MiscEvent]<$2E><$3D>せ  M[End]
 
 
@@ -4822,9 +5051,11 @@ GAME DESIGN[Pause3][Line]
 マッカは かえすせ"[Next]
 
 [DrawMoney][Event]<$05>[Jump]なにか" うりたいんた"?[Line]
+
 [MiscEvent]<$03><$0C><$EE>?[Jump][VarItem]なら £ [VarNum] [Line]
 た"な[Line]
-[YesNo]<$0B>[Event]<$05>[DrawMoney][MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
+[YesNo]<$0B>[Event]<$05>[DrawMoney]
+[MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
 
 [Event]<$05>[End]
 
@@ -4839,9 +5070,11 @@ GAME DESIGN[Pause3][Line]
 マッカは かえすせ"[Next]
 
 [DrawMoney][Event]<$05>[Jump]なにか" うりたいんた"?[Line]
+
 [MiscEvent]<$03><$0C><$EE>?[Jump][VarItem]なら £ [VarNum] [Line]
 た"な[Line]
-[YesNo]<$0B>[Event]<$05>[DrawMoney][MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
+[YesNo]<$0B>[Event]<$05>[DrawMoney]
+[MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
 
 [Event]<$05>[End]
 
@@ -4855,9 +5088,11 @@ GAME DESIGN[Pause3][Line]
 マッカは かえすせ"[Next]
 
 [DrawMoney][Event]<$05>[Jump]なにか" うりたいんた"?[Line]
+
 [MiscEvent]<$03><$0C><$EE>?[Jump][VarItem]なら £ [VarNum] [Line]
 た"な[Line]
-[YesNo]<$0B>[Event]<$05>[DrawMoney][MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
+[YesNo]<$0B>[Event]<$05>[DrawMoney]
+[MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
 
 [Event]<$05>[End]
 
@@ -4871,9 +5106,11 @@ GAME DESIGN[Pause3][Line]
 マッカは かえすせ"[Next]
 
 [DrawMoney][Event]<$05>[Jump]なにか" うりたいんた"?[Line]
+
 [MiscEvent]<$03><$0C><$EE>?[Jump][VarItem]なら £ [VarNum] [Line]
 た"な[Line]
-[YesNo]<$0B>[Event]<$05>[DrawMoney][MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
+[YesNo]<$0B>[Event]<$05>[DrawMoney]
+[MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
 
 [Event]<$05>[End]
 
@@ -4886,9 +5123,11 @@ GAME DESIGN[Pause3][Line]
 マッカは かえすせ"[Next]
 
 [DrawMoney][Event]<$05>[Jump]なにか" うりたいんた"?[Line]
+
 [MiscEvent]<$03><$0C><$EE>?[Jump][VarItem]なら £ [VarNum] [Line]
 た"な[Line]
-[YesNo]<$0B>[Event]<$05>[DrawMoney][MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
+[YesNo]<$0B>[Event]<$05>[DrawMoney]
+[MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
 
 [Event]<$05>[End]
 
@@ -4901,9 +5140,11 @@ GAME DESIGN[Pause3][Line]
 マッカは かえすせ"[Next]
 
 [DrawMoney][Event]<$05>[Jump]なにか" うりたいんた"?[Line]
+
 [MiscEvent]<$03><$0C><$EE>?[Jump][VarItem]なら £ [VarNum] [Line]
 た"な[Line]
-[YesNo]<$0B>[Event]<$05>[DrawMoney][MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
+[YesNo]<$0B>[Event]<$05>[DrawMoney]
+[MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
 
 [Event]<$05>[End]
 
@@ -4915,9 +5156,11 @@ GAME DESIGN[Pause3][Line]
 マッカは かえすせ"[Next]
 
 [DrawMoney][Event]<$05>[Jump]なにか" うりたいんた"?[Line]
+
 [MiscEvent]<$03><$0C><$EE>?[Jump][VarItem]なら £ [VarNum] [Line]
 た"な[Line]
-[YesNo]<$0B>[Event]<$05>[DrawMoney][MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
+[YesNo]<$0B>[Event]<$05>[DrawMoney]
+[MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
 
 [Event]<$05>[End]
 
@@ -4926,9 +5169,11 @@ GAME DESIGN[Pause3][Line]
 
 #W16($18312)
 [Jump]なにか" うりたいんた"?[Line]
+
 [MiscEvent]<$03><$0C><$EE>?[Jump][VarItem]なら £ [VarNum] [Line]
 た"な[Line]
-[YesNo]<$0B>[Event]<$05>[DrawMoney][MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
+[YesNo]<$0B>[Event]<$05>[DrawMoney]
+[MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
 
 [Event]<$05>[End]
 
@@ -4936,9 +5181,11 @@ GAME DESIGN[Pause3][Line]
 //POINTER #386 @ $18314 - STRING #386 @ $1AF6D
 
 #W16($18314)
+
 [MiscEvent]<$03><$0C><$EE>?[Jump][VarItem]なら £ [VarNum] [Line]
 た"な[Line]
-[YesNo]<$0B>[Event]<$05>[DrawMoney][MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
+[YesNo]<$0B>[Event]<$05>[DrawMoney]
+[MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
 
 [Event]<$05>[End]
 
@@ -4946,7 +5193,8 @@ GAME DESIGN[Pause3][Line]
 //POINTER #387 @ $18316 - STRING #387 @ $1AF84
 
 #W16($18316)
-[DrawMoney][MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
+[DrawMoney]
+[MiscEvent]<$04><$F1>また" なにか あるのか?[YesNo]<$09>[Event]<$05>なにも もってねえ た"ろか"[Next]
 
 [Event]<$05>[End]
 
@@ -5017,10 +5265,12 @@ GAME DESIGN[Pause3][Line]
 //POINTER #395 @ $18326 - STRING #395 @ $1B03A
 
 #W16($18326)
+
 [MiscEvent]<$0D><$07>[Jump]とつせ"ん[Line]
 レリ-フのくちか" とし"た![Next]
 
-[Event3]<$89><$06>[MiscEvent]<$1E><$00>[Skip]8[Hero]の からた"に[Line]
+[Event3]<$89><$06>
+[MiscEvent]<$1E><$00>[Skip]8[Hero]の からた"に[Line]
 け"きつうか" はしる[Next]
 
 み みき"うて" か"![Next]
@@ -5086,6 +5336,7 @@ GAME DESIGN[Pause3][Line]
 //POINTER #400 @ $18330 - STRING #400 @ $1B195
 
 #W16($18330)
+
 [MiscEvent]<$0D><$03>おおっ これは ひと"い[Next]
 
 た"か" このしんか"た[Line]
@@ -5127,7 +5378,8 @@ GAME DESIGN[Pause3][Line]
 
 .[Pause3].[Pause3].しゅし"ゅつは おわりました[Next]
 
-[Skip]こ[MiscEvent]<$1E><$01>[Skip]R[Hero]は[Line]
+[Skip]こ
+[MiscEvent]<$1E><$01>[Skip]R[Hero]は[Line]
 サイハ"ネティックア-ムを そうひ"した[Next]
 
 みき"ては もとと"おり[Next]
@@ -5154,6 +5406,7 @@ GAME DESIGN[Pause3][Line]
 //POINTER #405 @ $1833A - STRING #405 @ $1B2DF
 
 #W16($1833A)
+
 [MiscEvent]<$0D><$07>[Hero]さん ア-ムの ちょうしは[Line]
 いかか"て"しょう[Next]
 
@@ -5179,7 +5432,8 @@ GAME DESIGN[Pause3][Line]
 
 まとめて かたつ"けてやる![Next]
 
-[Fight]<$01>0[LoadBackground]<$25>[MiscEvent]<$5C><$1C>[SetItem]<$B4>[Jump][VarItem]か" ある[Next]
+[Fight]<$01>0[LoadBackground]<$25>
+[MiscEvent]<$5C><$1C>[SetItem]<$B4>[Jump][VarItem]か" ある[Next]
 
 <$D3>▽[VarItem]を てにいれた[Next]
 
@@ -5206,7 +5460,8 @@ GAME DESIGN[Pause3][Line]
 //POINTER #408 @ $18340 - STRING #408 @ $1B35B
 
 #W16($18340)
-[Fight]<$01>0[LoadBackground]<$25>[MiscEvent]<$5C><$1C>[SetItem]<$B4>[Jump][VarItem]か" ある[Next]
+[Fight]<$01>0[LoadBackground]<$25>
+[MiscEvent]<$5C><$1C>[SetItem]<$B4>[Jump][VarItem]か" ある[Next]
 
 <$D3>▽[VarItem]を てにいれた[Next]
 
@@ -5363,11 +5618,15 @@ GAME DESIGN[Pause3][Line]
 
 #W16($18352)
 [Event3]<$3E><$06>[Jump]し"ゃあ と"なたか" のみますか?[Line]
-[MiscEvent]<$5F><$C5> !<$C5>>0<$C5>♂1<$EE>>[MiscEvent]<$0D><$0A>[Jump]これは インカ"レという クスリね[Line]
+
+[MiscEvent]<$5F><$C5> !<$C5>>0<$C5>♂1<$EE>>
+[MiscEvent]<$0D><$0A>[Jump]これは インカ"レという クスリね[Line]
 キ"ンキ"ンに け"んきに なるの[Next]
 
 おねた"んは £40よ[Line]
-いかか"かしら?[YesNo]<$0B>[Event]<$15>[Event3]<$3F><$03>[Event]<$04>[MiscEvent]<$0F><$0A>[Event]<$09>[MiscEvent]<$0E><$0A>[Jump]コレは アレルキ"-たいしつの[Line]
+いかか"かしら?[YesNo]<$0B>[Event]<$15>[Event3]<$3F><$03>[Event]<$04>
+[MiscEvent]<$0F><$0A>[Event]<$09>
+[MiscEvent]<$0E><$0A>[Jump]コレは アレルキ"-たいしつの[Line]
 ひとには のめないの![Next]
 
 [End]
@@ -5377,11 +5636,15 @@ GAME DESIGN[Pause3][Line]
 
 #W16($18354)
 [Jump]し"ゃあ と"なたか" のみますか?[Line]
-[MiscEvent]<$5F><$C5> !<$C5>>0<$C5>♂1<$EE>>[MiscEvent]<$0D><$0A>[Jump]これは インカ"レという クスリね[Line]
+
+[MiscEvent]<$5F><$C5> !<$C5>>0<$C5>♂1<$EE>>
+[MiscEvent]<$0D><$0A>[Jump]これは インカ"レという クスリね[Line]
 キ"ンキ"ンに け"んきに なるの[Next]
 
 おねた"んは £40よ[Line]
-いかか"かしら?[YesNo]<$0B>[Event]<$15>[Event3]<$3F><$03>[Event]<$04>[MiscEvent]<$0F><$0A>[Event]<$09>[MiscEvent]<$0E><$0A>[Jump]コレは アレルキ"-たいしつの[Line]
+いかか"かしら?[YesNo]<$0B>[Event]<$15>[Event3]<$3F><$03>[Event]<$04>
+[MiscEvent]<$0F><$0A>[Event]<$09>
+[MiscEvent]<$0E><$0A>[Jump]コレは アレルキ"-たいしつの[Line]
 ひとには のめないの![Next]
 
 [End]
@@ -5390,11 +5653,14 @@ GAME DESIGN[Pause3][Line]
 //POINTER #419 @ $18356 - STRING #419 @ $1B4D3
 
 #W16($18356)
+
 [MiscEvent]<$0D><$0A>[Jump]これは インカ"レという クスリね[Line]
 キ"ンキ"ンに け"んきに なるの[Next]
 
 おねた"んは £40よ[Line]
-いかか"かしら?[YesNo]<$0B>[Event]<$15>[Event3]<$3F><$03>[Event]<$04>[MiscEvent]<$0F><$0A>[Event]<$09>[MiscEvent]<$0E><$0A>[Jump]コレは アレルキ"-たいしつの[Line]
+いかか"かしら?[YesNo]<$0B>[Event]<$15>[Event3]<$3F><$03>[Event]<$04>
+[MiscEvent]<$0F><$0A>[Event]<$09>
+[MiscEvent]<$0E><$0A>[Jump]コレは アレルキ"-たいしつの[Line]
 ひとには のめないの![Next]
 
 [End]
@@ -5407,7 +5673,9 @@ GAME DESIGN[Pause3][Line]
 キ"ンキ"ンに け"んきに なるの[Next]
 
 おねた"んは £40よ[Line]
-いかか"かしら?[YesNo]<$0B>[Event]<$15>[Event3]<$3F><$03>[Event]<$04>[MiscEvent]<$0F><$0A>[Event]<$09>[MiscEvent]<$0E><$0A>[Jump]コレは アレルキ"-たいしつの[Line]
+いかか"かしら?[YesNo]<$0B>[Event]<$15>[Event3]<$3F><$03>[Event]<$04>
+[MiscEvent]<$0F><$0A>[Event]<$09>
+[MiscEvent]<$0E><$0A>[Jump]コレは アレルキ"-たいしつの[Line]
 ひとには のめないの![Next]
 
 [End]
@@ -5416,7 +5684,9 @@ GAME DESIGN[Pause3][Line]
 //POINTER #421 @ $1835A - STRING #421 @ $1B513
 
 #W16($1835A)
-[Event3]<$3F><$03>[Event]<$04>[MiscEvent]<$0F><$0A>[Event]<$09>[MiscEvent]<$0E><$0A>[Jump]コレは アレルキ"-たいしつの[Line]
+[Event3]<$3F><$03>[Event]<$04>
+[MiscEvent]<$0F><$0A>[Event]<$09>
+[MiscEvent]<$0E><$0A>[Jump]コレは アレルキ"-たいしつの[Line]
 ひとには のめないの![Next]
 
 [End]
@@ -5425,7 +5695,9 @@ GAME DESIGN[Pause3][Line]
 //POINTER #422 @ $1835C - STRING #422 @ $1B518
 
 #W16($1835C)
-[MiscEvent]<$0F><$0A>[Event]<$09>[MiscEvent]<$0E><$0A>[Jump]コレは アレルキ"-たいしつの[Line]
+
+[MiscEvent]<$0F><$0A>[Event]<$09>
+[MiscEvent]<$0E><$0A>[Jump]コレは アレルキ"-たいしつの[Line]
 ひとには のめないの![Next]
 
 [End]
@@ -5434,6 +5706,7 @@ GAME DESIGN[Pause3][Line]
 //POINTER #423 @ $1835E - STRING #423 @ $1B51D
 
 #W16($1835E)
+
 [MiscEvent]<$0E><$0A>[Jump]コレは アレルキ"-たいしつの[Line]
 ひとには のめないの![Next]
 
@@ -5461,7 +5734,9 @@ GAME DESIGN[Pause3][Line]
 //POINTER #426 @ $18364 - STRING #426 @ $1B55E
 
 #W16($18364)
-[MiscEvent]<$0E><$0C>[Event3]<$80><$18>[MiscEvent]<$26><$DF>X <$CC>G[Jump]て"は と"うそ"[Next]
+
+[MiscEvent]<$0E><$0C>[Event3]<$80><$18>
+[MiscEvent]<$26><$DF>X <$CC>G[Jump]て"は と"うそ"[Next]
 
 あら いいのみっふ°り![Next]
 
@@ -5471,7 +5746,10 @@ GAME DESIGN[Pause3][Line]
 こんと"は ケ"ンホ°ウインっていう[Line]
 かんほ°うやくよ[Next]
 
-おねた"んは £60ね[YesNo]<$0D>[Event]<$15>[MiscEvent]<$0E><$0E>[Event3]<$80><$19>[MiscEvent]<$17><$FA>G[MiscEvent]<$17><$DF><$3C> <$CC>F[Jump]いっきにのんて"ね![Next]
+おねた"んは £60ね[YesNo]<$0D>[Event]<$15>
+[MiscEvent]<$0E><$0E>[Event3]<$80><$19>
+[MiscEvent]<$17><$FA>G
+[MiscEvent]<$17><$DF><$3C> <$CC>F[Jump]いっきにのんて"ね![Next]
 
 おっおっおっ! き!きく! やみつきに[Line]
 なりそうた"[Next]
@@ -5492,6 +5770,7 @@ GAME DESIGN[Pause3][Line]
 //POINTER #427 @ $18366 - STRING #427 @ $1B564
 
 #W16($18366)
+
 [MiscEvent]<$26><$DF>X <$CC>G[Jump]て"は と"うそ"[Next]
 
 あら いいのみっふ°り![Next]
@@ -5502,7 +5781,10 @@ GAME DESIGN[Pause3][Line]
 こんと"は ケ"ンホ°ウインっていう[Line]
 かんほ°うやくよ[Next]
 
-おねた"んは £60ね[YesNo]<$0D>[Event]<$15>[MiscEvent]<$0E><$0E>[Event3]<$80><$19>[MiscEvent]<$17><$FA>G[MiscEvent]<$17><$DF><$3C> <$CC>F[Jump]いっきにのんて"ね![Next]
+おねた"んは £60ね[YesNo]<$0D>[Event]<$15>
+[MiscEvent]<$0E><$0E>[Event3]<$80><$19>
+[MiscEvent]<$17><$FA>G
+[MiscEvent]<$17><$DF><$3C> <$CC>F[Jump]いっきにのんて"ね![Next]
 
 おっおっおっ! き!きく! やみつきに[Line]
 なりそうた"[Next]
@@ -5523,7 +5805,10 @@ GAME DESIGN[Pause3][Line]
 //POINTER #428 @ $18368 - STRING #428 @ $1B5D1
 
 #W16($18368)
-[MiscEvent]<$0E><$0E>[Event3]<$80><$19>[MiscEvent]<$17><$FA>G[MiscEvent]<$17><$DF><$3C> <$CC>F[Jump]いっきにのんて"ね![Next]
+
+[MiscEvent]<$0E><$0E>[Event3]<$80><$19>
+[MiscEvent]<$17><$FA>G
+[MiscEvent]<$17><$DF><$3C> <$CC>F[Jump]いっきにのんて"ね![Next]
 
 おっおっおっ! き!きく! やみつきに[Line]
 なりそうた"[Next]
@@ -5544,7 +5829,9 @@ GAME DESIGN[Pause3][Line]
 //POINTER #429 @ $1836A - STRING #429 @ $1B5D7
 
 #W16($1836A)
-[MiscEvent]<$17><$FA>G[MiscEvent]<$17><$DF><$3C> <$CC>F[Jump]いっきにのんて"ね![Next]
+
+[MiscEvent]<$17><$FA>G
+[MiscEvent]<$17><$DF><$3C> <$CC>F[Jump]いっきにのんて"ね![Next]
 
 おっおっおっ! き!きく! やみつきに[Line]
 なりそうた"[Next]
@@ -5575,7 +5862,11 @@ GAME DESIGN[Pause3][Line]
 //POINTER #431 @ $1836E - STRING #431 @ $1B690
 
 #W16($1836E)
-[MiscEvent]<$0E><$11>[Event3]<$80><$1A>[MiscEvent]<$26><$FA>G[MiscEvent]<$17><$FA>G[MiscEvent]<$17><$DF>チ <$CC>G[Jump]あなた おいしそうに のむのね...[Next]
+
+[MiscEvent]<$0E><$11>[Event3]<$80><$1A>
+[MiscEvent]<$26><$FA>G
+[MiscEvent]<$17><$FA>G
+[MiscEvent]<$17><$DF>チ <$CC>G[Jump]あなた おいしそうに のむのね...[Next]
 
 さ さすか"に もう ケ"ンカイ[Next]
 
@@ -5593,7 +5884,10 @@ GAME DESIGN[Pause3][Line]
 //POINTER #432 @ $18370 - STRING #432 @ $1B696
 
 #W16($18370)
-[MiscEvent]<$26><$FA>G[MiscEvent]<$17><$FA>G[MiscEvent]<$17><$DF>チ <$CC>G[Jump]あなた おいしそうに のむのね...[Next]
+
+[MiscEvent]<$26><$FA>G
+[MiscEvent]<$17><$FA>G
+[MiscEvent]<$17><$DF>チ <$CC>G[Jump]あなた おいしそうに のむのね...[Next]
 
 さ さすか"に もう ケ"ンカイ[Next]
 
@@ -5620,7 +5914,9 @@ GAME DESIGN[Pause3][Line]
 //POINTER #434 @ $18374 - STRING #434 @ $1B74E
 
 #W16($18374)
-[MiscEvent]<$0E><$14>[Event3]<$80><$1B>[MiscEvent]<$1C><$DF>[Choices]<$00><$CC>8[Jump]おあし"は いかか"?[Next]
+
+[MiscEvent]<$0E><$14>[Event3]<$80><$1B>
+[MiscEvent]<$1C><$DF>[Choices]<$00><$CC>8[Jump]おあし"は いかか"?[Next]
 
 し...しひ"れる...[Next]
 
@@ -5630,6 +5926,7 @@ GAME DESIGN[Pause3][Line]
 //POINTER #435 @ $18376 - STRING #435 @ $1B754
 
 #W16($18376)
+
 [MiscEvent]<$1C><$DF>[Choices]<$00><$CC>8[Jump]おあし"は いかか"?[Next]
 
 し...しひ"れる...[Next]
@@ -5811,7 +6108,8 @@ GAME DESIGN[Pause3][Line]
 あなたたちか"[Line]
 さいこ"の きほ"う なのて"す...[Next]
 
-[LoadNPC]<$00>[MiscEvent]<$35><$10>[End]
+[LoadNPC]<$00>
+[MiscEvent]<$35><$10>[End]
 
 
 //POINTER #445 @ $1838A - STRING #445 @ $1B939
@@ -5837,7 +6135,8 @@ GAME DESIGN[Pause3][Line]
 あなたたちか"[Line]
 さいこ"の きほ"う なのて"す...[Next]
 
-[LoadNPC]<$00>[MiscEvent]<$35><$10>[End]
+[LoadNPC]<$00>
+[MiscEvent]<$35><$10>[End]
 
 
 //POINTER #446 @ $1838C - STRING #446 @ $1B949
@@ -5861,7 +6160,8 @@ GAME DESIGN[Pause3][Line]
 あなたたちか"[Line]
 さいこ"の きほ"う なのて"す...[Next]
 
-[LoadNPC]<$00>[MiscEvent]<$35><$10>[End]
+[LoadNPC]<$00>
+[MiscEvent]<$35><$10>[End]
 
 
 //POINTER #447 @ $1838E - STRING #447 @ $1B9BB
@@ -5873,7 +6173,8 @@ GAME DESIGN[Pause3][Line]
 あなたたちか"[Line]
 さいこ"の きほ"う なのて"す...[Next]
 
-[LoadNPC]<$00>[MiscEvent]<$35><$10>[End]
+[LoadNPC]<$00>
+[MiscEvent]<$35><$10>[End]
 
 
 //POINTER #448 @ $18390 - STRING #448 @ $1B9F3
@@ -5938,10 +6239,14 @@ GAME DESIGN[Pause3][Line]
 まかせられます[Next]
 
 さあ うけとりなさい[Line]
-[SetItem]<$C9><$D3> [MiscEvent]<$11><$FA>A[MiscEvent]<$13><$FA>C[Hero2?]は [VarItem]を[Line]
+[SetItem]<$C9><$D3> 
+[MiscEvent]<$11><$FA>A
+[MiscEvent]<$13><$FA>C[Hero2?]は [VarItem]を[Line]
 てにいれた[Next]
 
-[MiscEvent]<$27><$C0>T[MiscEvent]<$2E><$3D>ヤ  H[End]
+
+[MiscEvent]<$27><$C0>T
+[MiscEvent]<$2E><$3D>ヤ  H[End]
 
 
 //POINTER #455 @ $1839E - STRING #455 @ $1BB20
@@ -5988,7 +6293,9 @@ GAME DESIGN[Pause3][Line]
 //POINTER #459 @ $183A6 - STRING #459 @ $1BBBA
 
 #W16($183A6)
-[Event3]<$2C><$02>[Event3]<$2B><$04>[LoadBackground]<$1C>[Skip]-[MiscEvent]<$4F><$37>[MiscEvent]<$50><$30>[SetItem]<$C6><$D2>[SetItem]<$C7><$D2>[SetItem]<$C8><$D2>[SetItem]<$C9><$D2>[SetItem]<$CA><$D2>[SetItem]<$CB><$D2>[SetItem]<$CC><$D2>[Hero2?]は 7つのヒ°ラ-を[Line]
+[Event3]<$2C><$02>[Event3]<$2B><$04>[LoadBackground]<$1C>[Skip]-
+[MiscEvent]<$4F><$37>
+[MiscEvent]<$50><$30>[SetItem]<$C6><$D2>[SetItem]<$C7><$D2>[SetItem]<$C8><$D2>[SetItem]<$C9><$D2>[SetItem]<$CA><$D2>[SetItem]<$CB><$D2>[SetItem]<$CC><$D2>[Hero2?]は 7つのヒ°ラ-を[Line]
 は"くしんちの ちゅうしんに つきさした[Next]
 
 それらは すいこまれ[Line]
@@ -6001,7 +6308,9 @@ GAME DESIGN[Pause3][Line]
 //POINTER #460 @ $183A8 - STRING #460 @ $1BBC0
 
 #W16($183A8)
-[LoadBackground]<$1C>[Skip]-[MiscEvent]<$4F><$37>[MiscEvent]<$50><$30>[SetItem]<$C6><$D2>[SetItem]<$C7><$D2>[SetItem]<$C8><$D2>[SetItem]<$C9><$D2>[SetItem]<$CA><$D2>[SetItem]<$CB><$D2>[SetItem]<$CC><$D2>[Hero2?]は 7つのヒ°ラ-を[Line]
+[LoadBackground]<$1C>[Skip]-
+[MiscEvent]<$4F><$37>
+[MiscEvent]<$50><$30>[SetItem]<$C6><$D2>[SetItem]<$C7><$D2>[SetItem]<$C8><$D2>[SetItem]<$C9><$D2>[SetItem]<$CA><$D2>[SetItem]<$CB><$D2>[SetItem]<$CC><$D2>[Hero2?]は 7つのヒ°ラ-を[Line]
 は"くしんちの ちゅうしんに つきさした[Next]
 
 それらは すいこまれ[Line]
@@ -6176,13 +6485,27 @@ GAME DESIGN[Pause3][Line]
 //POINTER #476 @ $183C8 - STRING #476 @ $1BE57
 
 #W16($183C8)
-[Jump]て"は マッカを はんふ"ん ほしいのお[YesNo]<$04>[Event]<$02>[Skip]マ[HalveMoney][MiscEvent]<$50><$29>[MiscEvent]<$50><$2A>[MiscEvent]<$50><$2B>[MiscEvent]<$50><$2C>[MiscEvent]<$50><$2D>[MiscEvent]<$50><$2E>[MiscEvent]<$2E><$3C>と  M[End]
+[Jump]て"は マッカを はんふ"ん ほしいのお[YesNo]<$04>[Event]<$02>[Skip]マ[HalveMoney]
+[MiscEvent]<$50><$29>
+[MiscEvent]<$50><$2A>
+[MiscEvent]<$50><$2B>
+[MiscEvent]<$50><$2C>
+[MiscEvent]<$50><$2D>
+[MiscEvent]<$50><$2E>
+[MiscEvent]<$2E><$3C>と  M[End]
 
 
 //POINTER #477 @ $183CA - STRING #477 @ $1BE70
 
 #W16($183CA)
-[Skip]マ[HalveMoney][MiscEvent]<$50><$29>[MiscEvent]<$50><$2A>[MiscEvent]<$50><$2B>[MiscEvent]<$50><$2C>[MiscEvent]<$50><$2D>[MiscEvent]<$50><$2E>[MiscEvent]<$2E><$3C>と  M[End]
+[Skip]マ[HalveMoney]
+[MiscEvent]<$50><$29>
+[MiscEvent]<$50><$2A>
+[MiscEvent]<$50><$2B>
+[MiscEvent]<$50><$2C>
+[MiscEvent]<$50><$2D>
+[MiscEvent]<$50><$2E>
+[MiscEvent]<$2E><$3C>と  M[End]
 
 
 //POINTER #478 @ $183CC - STRING #478 @ $1BE8E
@@ -6202,7 +6525,8 @@ GAME DESIGN[Pause3][Line]
 //POINTER #480 @ $183D0 - STRING #480 @ $1BEB3
 
 #W16($183D0)
-[Skip]の[MiscEvent]<$49><$FA>/ツ1▽  [End]
+[Skip]の
+[MiscEvent]<$49><$FA>/ツ1▽  [End]
 
 
 //POINTER #481 @ $183D2 - STRING #481 @ $1BEBF
@@ -6243,6 +6567,7 @@ GAME DESIGN[Pause3][Line]
 //POINTER #485 @ $183DA - STRING #485 @ $1BF0B
 
 #W16($183DA)
+
 [MiscEvent]<$0B><$C9> [Jump][Var]は[Line]
 こすいに きえていった...[Next]
 
@@ -6268,7 +6593,8 @@ GAME DESIGN[Pause3][Line]
 #W16($183DE)
 [SetVar]<$C3>[Var]か" もと"ってきた[Next]
 
-[LoadEnemySprite]<$C3>[MiscEvent]<$4A><$C3>[SetItem]<$DA>[Var]は[Line]
+[LoadEnemySprite]<$C3>
+[MiscEvent]<$4A><$C3>[SetItem]<$DA>[Var]は[Line]
 [VarItem]を とってきた[Next]
 
 この [VarItem]を つかうと[Line]
@@ -6293,7 +6619,8 @@ GAME DESIGN[Pause3][Line]
 //POINTER #489 @ $183E2 - STRING #489 @ $1BFB5
 
 #W16($183E2)
-[Event3]<$7D><$07>[LoadEnemySprite]<$1C>[Fight]<$08>1[LoadBackground]<$27>[Skip]12[SetVar]<$C3>[MiscEvent]<$0A><$01>[Jump][Var]か" とつせ"ん[Line]
+[Event3]<$7D><$07>[LoadEnemySprite]<$1C>[Fight]<$08>1[LoadBackground]<$27>[Skip]12[SetVar]<$C3>
+[MiscEvent]<$0A><$01>[Jump][Var]か" とつせ"ん[Line]
 いいた"した[Next]
 
 [LoadEnemySprite]<$C3>みす"の こえか" あたしを よんて"るわ[Line]
@@ -6303,7 +6630,8 @@ GAME DESIGN[Pause3][Line]
 //POINTER #490 @ $183E4 - STRING #490 @ $1BFC4
 
 #W16($183E4)
-[SetVar]<$C3>[MiscEvent]<$0A><$01>[Jump][Var]か" とつせ"ん[Line]
+[SetVar]<$C3>
+[MiscEvent]<$0A><$01>[Jump][Var]か" とつせ"ん[Line]
 いいた"した[Next]
 
 [LoadEnemySprite]<$C3>みす"の こえか" あたしを よんて"るわ[Line]

@@ -1610,12 +1610,15 @@
 
 #W16($141FA)
 [Jump]と"この チェックマンて"すか?[Line]
-[MiscEvent]<$3C><$FF>[MiscEvent]<$4E><$FF>マッハ°ラ-の こうりょくか" なくなった[Pause4][End]
+
+[MiscEvent]<$3C><$FF>
+[MiscEvent]<$4E><$FF>マッハ°ラ-の こうりょくか" なくなった[Pause4][End]
 
 
 //POINTER #246 @ $141FC - STRING #246 @ $1534C
 
 #W16($141FC)
+
 [MiscEvent]<$4E><$FF>マッハ°ラ-の こうりょくか" なくなった[Pause4][End]
 
 

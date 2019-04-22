@@ -1,6 +1,10 @@
 *.nes
+*.bak
 *.log
 *.exe
 Atlas/src
 comparisons
-
+*.cdl
+*.deb
+Atlas/Atlas.pdf
+Cartographer/readme.txt

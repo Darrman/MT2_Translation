@@ -285,6 +285,35 @@
 #COMMENTS:		No
 #END BLOCK
 
+#BLOCK NAME:		Script 1 Raw
+#TYPE:			NORMAL
+#METHOD:		RAW
+#SCRIPT START:		$103B0
+#SCRIPT STOP:		$1400F
+#TABLE:			dialogueraw.tbl
+#COMMENTS:		No
+#END BLOCK
+
+#BLOCK NAME:		Script 2 Raw
+#TYPE:			NORMAL
+#METHOD:		RAW
+#SCRIPT START:		$183E8
+#SCRIPT STOP:		$1C00F
+#TABLE:			dialogueraw.tbl
+#COMMENTS:		No
+#END BLOCK
+
+#BLOCK NAME:		Script 3 Raw
+#TYPE:			NORMAL
+#METHOD:		RAW
+#SCRIPT START:		$2A1A8
+#SCRIPT STOP:		$2BAE6
+#TABLE:			dialogueraw.tbl
+#COMMENTS:		No
+#END BLOCK
+
+
+
 //#BLOCK NAME:		Human Status Screen 
 //#TYPE:		NORMAL
 //#METHOD:		RAW
@@ -313,11 +342,11 @@
 //#COMMENTS:		No
 //#END BLOCK
 
-#BLOCK NAME:		Intro Sequence
-#TYPE:			NORMAL
-#METHOD:		RAW
-#SCRIPT START:		$7F483
-#SCRIPT STOP:		$7F6D2
-#TABLE:			intro.tbl
-#COMMENTS:		No
-#END BLOCK
+//#BLOCK NAME:		Intro Sequence
+//#TYPE:			NORMAL
+//#METHOD:		RAW
+//#SCRIPT START:		$7F483
+//#SCRIPT STOP:		$7F6D2
+//#TABLE:			intro.tbl
+//#COMMENTS:		No
+//#END BLOCK
