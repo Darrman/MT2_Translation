@@ -1,6 +1,0 @@
-//GAME NAME:		Megami Tensei 2 (NES)
-
-//BLOCK #012 NAME:		Script 3, Raw
-//Block Range: $2A010 - $2A1A7
-
-Y<$A1>ま<$A2>ノ<$A2>10<$A2>L<$A2>[Skip]<$A2>[Pause7]<$A2>[Pause8]<$A2>マやョゆTゆ[Skip]ゆ<$D2>ゆ<$D3>ゆ[VarSpell]ゆ よ?よ3よ8よBよセよSよらよわよぉよ,よ<$BD>よ<$C3>よ<$C7>よ<$DB>よOらSらXら.ら|>らWら<$D5>らGりハりろり[Event4]<$A7><$1E>る£るヒるルるSる<$BF>る[Pause4]るDれサれQれっれ・れDろEろFろ<$BD>ろ<$D1>ろコわテわンわ-わ<$CF>わ[Var]わCをぁを<$C4>を<$D8>を>んEんKんコん°んLんVん<$BE>ん<$C3>ん<$C6>ん<$D5>ん[Pause6]ん[VarNum]ん[Hero]ん!<$AE>A<$AE>N<$AE>-<$AE>ツ<$AE>を<$AE>ょ<$AE>!<$AF>N<$AF>£<$AF>ア<$AF>ィ<$AF>れ<$AF><$B8><$AF><$BB><$AF>[Pause7]<$AF> ぁ▽ぁほぁリぁロぁvぁょぁ[Choices]<$B0><$D3>ぁ5ぉオぉテぉリぉDぉEぉ<$A2>ぉ<$CF>ぉCゃGゃOゃTゃYゃ/ゃ<$31>ゃスゃェゃ"ゃHゃUゃ[Skip]ゃ[Pause3]ゃ[Pause9]ゃ<$EF>ゃ[VarItem]ゃ<$F9>ゃPゅテゅヤゅリゅvゅ<$A1>ゅりゅ[Event3]<$B3><$C8>ゅ▽ょ!ょLょ<$36>ょ<$3E>ょフょヤょ♀ょQょRょYょ<$A1>ょらょ<$AF>ょょょ<$BE>ょ<$C3>ょ<$CD>ょ<$D2>ょ<$F2>ょ[MiscEvent]<$B4><$FF>ょRっ/っほっチっ'っ<$AF>っ<$D1>っ<$DA>っQ・|>・コ・<$CC>・<$CD>・キ,ァ,!,<$A1>,<$BB>,[Pause1],[Event2]<$B7>[Var],P<$B8>カ<$B8>キ<$B8>ゅ<$B8>[JumpLine]<$B8>ま<$B9>キ<$B9>ク<$B9>ユ<$B9>ン<$B9>?<$B9>よ<$B9><$D6><$B9>▽<$BA>U<$BA>♀<$BA>ぅ<$BA>J<$BA><$BD>
