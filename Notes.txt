@@ -159,6 +159,13 @@ FF = end text
 0x30010 - 302cf = unknown pointer table
 0x38010 - 382cf = pointers???
 
+text stuff:
+e298: routine that reads current byte of text
+3f681 - 3f80f: free space
+f0 - free ram byte
+vanilla data starting from e296: A0 00 B1 AB 60
+
+
 table:
 
 latin:

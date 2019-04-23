@@ -1,0 +1,5 @@
+ORG $E296
+
+Branch:
+JSR $F671
+NOP
