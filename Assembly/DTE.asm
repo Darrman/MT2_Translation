@@ -1,11 +1,12 @@
 ;This is based on KingMike's Ys 3 DTE tutorial on RHDN.
 ;I've changed the values as appropriate for MT2.
-ORG $3F681
+
+ORG $F671
 
 Start:
 LDA $F0 ;Load RAM byte into A
 CMP #$00
-BNE 2ndTime ;Jump if byte !=0.
+BNE SecondTime ;Jump if byte !=0.
 
 LDY #$00
 LDA ($AB),Y ;Read byte of script data
@@ -30,13 +31,14 @@ TAX ;Transfer A to X
 LDA DTETblOffset,X ;Read byte of table
 RTS ;Back we go
 
-2ndTime:
+SecondTime:
 DEC $F0 ;decrease ram byte, DTE flag cleared
 DEC $AB ;decrease script pointer
 LDA $AB ;load it back in
 CMP #$FF ;underflow protection
-BNE $02 ;skip ahead
+BNE NoUnderflow ;skip ahead
 DEC $AC ;fix any errors
+NoUnderflow:
 LDY #$00
 LDA ($AB),Y
 SEC
