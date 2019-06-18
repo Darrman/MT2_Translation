@@ -89,15 +89,20 @@ E0 = pause text
 E1 - EA = varying lengths of pauses
 EB XX = load XX event
 EC XX = the above, but keep displaying text
+EF = displays demon race
 
 F0 = new line
 F1 = jump here on "no"
 F3 = loads the hero's name with some extra gibberish
 F4 = print variable set with DD
+see RAM 0x71A for what to print
 F5 = print item name variable
+see RAM 0x71B for what to print
 F6 = print money variable
+see RAM 0x71C for the first byte
 F7 = print the hero's name
 F8 = print the spell name variable
+see RAM 0x721 for what to print
 F9 = print three specific characters
 pointer at 2bbc3, text after
 FA 00 XX = shop list

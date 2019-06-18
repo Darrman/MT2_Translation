@@ -107,3 +107,17 @@ $0738#Input 2#
 $0739#Input 3#
 $0717#Text Scroll Location#Not much text scrolls, but it moves in the intro.
 $0384#PPU drawing value#This gets loaded into A right before breaking.
+$071A#Demon name variable#Whatever is loaded into here is what prints when using the demon name control code.
+$071B#Item name variable#Set an item name, load item id stored here.
+$0721#Spell name variable#
+$071C#Number variable 1#Low byte of money.
+$0110#Copyright message#DDSII PRESENTED BY ATLUS & PROGRAMING BY COZY - continues until 0x13C
+$04E8#Copyright message 2#DDSII PRESENTED BY ATLUS - until 0x4FF
+$0722#Race name variable#Not sure what sets this if anything.
+$071D#Number variable 2#
+$071E#Number variable 3#
+$00AB#Script Pointer Low#What byte of the script is currently being read.
+$00AC#Script Pointer High#
+$00F0#DTE Storage Byte#
+$0707#Script Pointer Low 2#Because it needs to copy to zero page?
+$0708#Script Pointer High 2#
