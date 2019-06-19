@@ -170,6 +170,9 @@ e298: routine that reads current byte of text
 f0 - free ram byte
 vanilla data starting from e296: A0 00 B1 AB 60
 
+e2eb - e316: control code pointer table: eb - ff
+1e622 - 1e661: control code pointer table: c0 - df
+
 
 table:
 

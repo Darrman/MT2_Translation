@@ -121,3 +121,4 @@ $00AC#Script Pointer High#
 $00F0#DTE Storage Byte#
 $0707#Script Pointer Low 2#Because it needs to copy to zero page?
 $0708#Script Pointer High 2#
+$0701#Event ID#What event should be played is set here.

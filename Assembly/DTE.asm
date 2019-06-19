@@ -10,17 +10,25 @@ BNE SecondTime ;Jump if byte !=0.
 
 LDY #$00
 LDA ($AB),Y ;Read byte of script data
+STA $F1 ;my latest dumb idea: store latest byte as well, 
+;just in case it's a control code so parameters don't get executed
+;a flaw in the logic: multiple parameters. /shrug
 CMP #$7F ;Is it greater than 0x7F
 BPL NextCheck
 
 Abort: ;If equal or less than 7F
 LDA ($AB),Y ;Reload original value
+STA $F1
 RTS ;Back we go
 
 NextCheck: ;Now to define the other end
 LDA ($AB),Y
 CMP #$BF ;Compare with BF
 BPL Abort ;If greater, back we go
+
+LDA ($F1),Y ;check that crazy last time byte
+CMP #$BF ;was it in control code range?
+BPL Abort ;no more executing those, routine
 
 INC $F0 ;increase ram byte, serves as DTE usage flag
 LDA ($AB),Y
@@ -39,7 +47,7 @@ LDA $AB ;load it back in
 CMP #$FF ;underflow protection
 BNE NoUnderflow ;skip ahead
 DEC $AC ;fix any errors
-DEC $0808 ;two pointer experiment
+DEC $0708 ;two pointer experiment
 NoUnderflow:
 LDY #$00
 LDA ($AB),Y
