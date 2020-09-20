@@ -1,5 +1,7 @@
 #GAME NAME:		Megami Tensei 2 (NES)
 
+#SUB TABLE:		demons.tbl
+#SUB TABLE:		items.tbl
 
 #BLOCK NAME:		Script 1
 #TYPE:			NORMAL
