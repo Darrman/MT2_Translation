@@ -72,34 +72,74 @@ f6: spell 2
 f7: spell 3
 fb: cost points
 
+CONTROL CODES:
+Everything up to B7 is a character that can be used in text. Beyond that point lie the control codes.
+These codes do a lot of stuff in the game. I have no idea on what most of these are.
+A big chunk of them seem to be pointless unused duplicates as well, for whatever reason.
 
-C0 = skip to here
-C2 00 XX = one of those event summoning codes
-C8 XX = list of selections, XX amount of choices
-C9 XX = load character sprite
-CB = draws money
+B8 = Crash
+B9 = No effect?
+BA = Code Breaker. Starting outside normal Code Breaker locations allows it to reach A (10). BA 00 loops infinite Code Breakers.
+BB = Arena. Needs further investigation.
+BC = Slots.
+BD = Big and Small.
+BE = One of those weird text switchers.
+BF = Healer screen. Glitchy mess and doesn't work.
 
-D0 XX YY = a common enough event summon thing
-DD XX = set demon name variable to XX
-DE XX = set item name variable to XX
-DF XX YY = set money variable
-XX lower byte, YY upper byte
+C0 = Skip to here
+C1 = One byte. No effect?
+C2 00 XX = One of those event summoning codes
+C3 XX = Skip the next XX+1 bytes. Doesn't play nicely with 00.
+C4 = One byte. No effect?
+C5 = Two bytes. A few occurrances in script. Effect unknown.
+C6 = One byte. No effect?
+C7 = If first byte is zero, change message to second byte, else no effect
+C8 XX = List of selections, XX amount of choices. It then takes two bytes per choice: the first being the label, the second the actual text.
+C9 XX = Load character sprite
+CA 00 00 = Shows player money, show message if not 00 00
+CB = Gives player money as set with DF
+CC = Takes away money as set with DF
+CD 00 00 = Shows magnetite if 00 00, else random message
+CE = Gives player magnetite as set with DF
+CF = Takes away magnetite as set with DF
+
+D0 XX YY = A common enough event summon thing
+D1 00 XX = Pulls some text out, not found in main script. The 00 can be anything.
+D2 = Remove item set with DE
+D3 = Give item set with DE. Takes another byte, does not influence quantity
+D4 = No effect if first byte is 00-04, else act like D1	
+D5 = One byte. No effect?
+D6 = Pulls out random messages. Only uses one byte.
+D7 = One byte. No effect?
+D8 = As above.
+D9 = As above.
+DA = As above.
+DB = Displays messages similar to D1, etc.
+DC = As above.
+DD XX = Set demon name variable to XX
+DE XX = Set item name variable to XX
+DF XX YY = Set money variable. XX lower byte, YY upper byte
 
 E0 = pause text
 E1 - EA = varying lengths of pauses
 EB XX = load XX event
 EC XX = the above, but keep displaying text
+ED = As D1, etc.
+EE = One byte. No effect?
+EF = print demon race
 
 F0 = new line
 F1 = jump here on "no"
-F3 = loads the hero's name with some extra gibberish
+F2 = Display text, then return to the current location.
+F3 = loads the hero's name with two extra characters: 8f 90 (たち, tachi - plural form)
 F4 = print variable set with DD
 F5 = print item name variable
 F6 = print money variable
 F7 = print the hero's name
 F8 = print the spell name variable
-F9 = print three specific characters
-pointer at 2bbc3, text after
+F9 = print 80 87 9e (あくま, akuma-demon): pointer at 2bbc3, text after
+
+FA = all sorts of variable things.
 FA 00 XX = shop list
 FA 01 = loads equipped weapons
 FA 02 = loads equipped armour
@@ -138,6 +178,7 @@ FA 51 XX = loads XX text, and heals as well
 FA 52 = pub menu
 FA 61 = last valid entry
 
+FB = another text summon, not used
 FC XX = yes/no box, XX is text for yes
 FD = skip to next newline
 FE = push button to continue
@@ -447,8 +488,18 @@ incense?
 blank spaces?
 pillars?
 
+There's a sound test of sorts when holding a secret button code.
+This is documented on GameFAQs. You can only select five songs, though.
+If I had space, I'd replace 1-5 with the track's names.
+1: Normal dungeon theme - Explorer
+2: Abyss dungeon theme - Labyrinth
+3: Tokyo tunnels theme - Dash Under the Ground
+4: Another Abyss theme - Hurry to the Exit (Hurry Up to Exit is a bit Engrishy.)
+5: Yet another Abyss theme - Dark Night
+
 TCRF STUFF:
 I should probably note down extra things to add into the page.
 I don't think "BAR BAKA BOND" or "BARAM HOUSE" get use at any point.
 Ariake bar and Balaam's lair are what I'm assuming they're for.
 Overworld type 04 is an Earth town. Type 05 is a hell town.
+
